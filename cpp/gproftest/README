@@ -1,0 +1,179 @@
+Contents of this directory
+==========================
+
+This directory records the results of an experimentation 
+with `GNU gprof 2.11.90.0.8', on a RedHat 7.2 system, running
+on Intel PIII.
+
+definefoo.c :
+defines a long-running function `foo()'
+
+usefoo.c :
+defines a do-nothing function `bar()'.
+defines `main()' function which simply calls `foo()' and
+`bar()'.
+
+definefoo1.c :
+derived from definefoo.c. instrumented `foo()' to record
+utime and stime of the long-running loop using times(2).
+also, inserted a printf() in the loop-body, so that we
+can record a sizable stime.
+
+usefoo1.c :
+derived from usefoo.c. the `main()' function prints the
+times recorded in `foo()'.
+
+gprof.yy : Both `main()' and `foo()' are profiled
+gcc -g -pg -c usefoo.c
+gcc -g -pg -c definefoo.c
+gcc -g -pg usefoo.o definefoo.o
+a.out
+gprof >& gprof.yy
+
+gprof.yn : `main()' is profiled but `foo()' is not
+gcc -g -pg -c usefoo.c
+gcc -g -c definefoo.c
+gcc -g -pg usefoo.o definefoo.o
+a.out
+gprof >& gprof.yn
+
+gprof.ny : `main()' is not profiled but `foo()' is
+gcc -g -c usefoo.c
+gcc -g -pg -c definefoo.c
+gcc -g -pg usefoo.o definefoo.o
+a.out
+gprof >& gprof.ny
+
+gprof.nn : none of `main()' and `foo()' are profiled
+gcc -g -c usefoo.c
+gcc -g -c definefoo.c
+gcc -g -pg usefoo.o definefoo.o
+a.out
+gprof >& gprof.nn
+
+gprof.nn-Q : none of `main()' and `foo()' are profiled
+gcc -g -c usefoo.c
+gcc -g -c definefoo.c
+gcc -g -pg usefoo.o definefoo.o
+a.out
+gprof -Q >& gprof.nn-Q
+
+gprof.dynamic_yy : both `main()' and `foo()' are profiled.
+                   however, `foo()' is built as a shared object.
+gcc -g -pg -fPIC -shared definefoo.c -o libdefinefoo.so
+gcc -g -pg usefoo.c -ldefinefoo -L.
+setenv LD_LIBRARY_PATH "$LD_LIBRARY_PATH":.
+a.out
+gprof > gprof.dynamic_yy
+
+gprof.dynamic : both `main()' and `foo()' are profiled.
+                but using shared object version of libc.
+gcc -g -pg definefoo1.c usefoo1.c
+a.out
+gprof >& gprof.dynamic
+
+gprof.static : both `main()' and `foo()' are profiled.
+               but using static version of libc.
+gcc -g -pg -static definefoo1.c usefoo1.c
+a.out
+gprof >& gprof.static
+
+gprof.static-lc_p : both `main()' and `foo()' are profiled.
+                    but using static profiled version of libc.
+gcc -g -pg -static definefoo1.c usefoo1.c -lc_p
+a.out
+gprof >& gprof.static-lc_p
+
+gcc-options :
+this file records the results of gcc -v for various invokations of
+gcc. it shows that iff -pg is used during linking then gcrt1.o is
+used instead of the normal start file crt1.o. it also shows that 
+-lc_p fails if -static is not used.
+
+OBS
+===
+
+1) If a function is not compiled with -pg
+then gcc does not instrument the function's entry code 
+to call 'mcount()'. As a result, gprof fails to determine
+the callers of the function and the number of times the 
+function has been called. But if the function runs long
+enuff then the total time spent in the function alone (ie
+excluding the time spent in its children) is recorded. 
+
+However, if the function does not run long enuff then
+it does not find a mention in the flat profile ie its
+self-time is not reported. This can be seen by looking
+at the present gprof.ny (`bar()', a do-nothing function,
+which is not compiled with -pg, is not mentioned in the 
+flat profile). However, `bar()' can be converted to a 
+long-running function by uncommenting the code in its 
+body. If gprof.ny is generated again then `bar()' will
+find itself in the flat profile.
+
+2) Using -pg during the link process ensures that the
+program links itself against the special gprof specific 
+start-up files. Special start-up files
+makes a call to Unix system call `profil(3)' at program
+entry. This enables sampling of PC values by the kernel 
+at fixed intervals thru-out the run-time of the program.
+Special start-up files also initializes certain profiling
+data-structures (e.g. call-graph) at program entry and
+writes profiling output to a file, `gmon.out', at program 
+exit. 
+
+Using -lc_p during the link process ensures that the program 
+links itself against a special profiled C library. Special C 
+library is the standard C library, compiled with -pg option.
+However, as of now, -lc_p works only if -static is 
+used during linking, ie, for statically linked binaries only.
+
+In fact, the bare minimum requirement for `gprof' to work is 
+to use -pg during linking. This has been demonstrated in gprof.nn-Q.
+The profile only contains a flat profile.
+
+3) Self-time reported by gprof against a user function in the flat
+profile is the user time spent by that function. This is 
+obvious because the time is estimated by sampling PC values.
+See times(2) for a description of user time and system time 
+of a process.
+
+4) Though both `main()' and `foo()' have been  compiled with -pg
+to generate gprof.dynamic_yy, it's unlike gprof.yy. Here, `foo()'
+is a part of a shared object library and it has no mention in the
+flat-profile and the call graph. This demonstrates that gprof fails
+to profile functions which are part of a shared object.
+
+This observation is further strenghtened by gprof.dynamic. It 
+profiles a long-running process, with 2583.45s of run-time (
+828.17s of utime and 2583.45s of stime, as described in times(2)). 
+A large part of the run-time is spent in libc functions, which are
+inside a shared object. The generated profile does not mention
+the libc functions and accounts for only 27.30s of run-time (nearly
+1%).
+
+However, gprof.static, which profiles the version of the same process,
+that links against a static libc, accounts for 1432.34s of total
+2743.07s (857.81s utime and 1885.26s stime) of run-time (nearly 52%).
+The profile mentions libc functions like printf(), write(), etc but
+fails to determine the callers and number of calls to them.
+
+gprof.static-lc_p, which profiles the version of the same process,
+that links against a static profiled libc, accounts for 1731.05s of 
+total 3041.79s (1353.41s utime and 1688.38s stime) of run-time 
+(nearly 57%).  The profile mentions libc functions like printf(), 
+write(), and determines the callers and number of calls to them.
+
+Unfortunately, the time accounted for by gprof, in the 3 cases 
+discussed above, is nowhere near 100%.
+
+5) gprof correctly determines the caller of a function compiled
+with -pg, even if it is called thru a function pointer. This can be 
+seen by modifying (uncommenting some stuff) usefoo.c a bit.
+
+Further Reading
+===============
+1) info gprof
+2) http://www.google.com
+3) man -S 2 times
+

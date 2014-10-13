@@ -1,0 +1,188 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 54.79    784.76   784.76                             write
+ 13.29    975.15   190.39                             vfprintf
+ 11.43   1138.84   163.69                             _IO_new_file_xsputn
+  5.64   1219.63    80.79                             _IO_file_overflow
+  4.74   1287.48    67.85                             new_do_write
+  4.47   1351.49    64.01                             _IO_file_write
+  2.53   1387.79    36.30                             printf
+  2.07   1417.47    29.68        1 29680.00 29680.00  foo
+  0.35   1422.54     5.07                             funlockfile
+  0.35   1427.51     4.97                             __errno_location
+  0.34   1432.34     4.83                             flockfile
+  0.00   1432.34     0.00        1     0.00     0.00  bar
+  0.00   1432.34     0.00        1     0.00 29680.00  main
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 0.00% of 1432.34 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]     54.8  784.76    0.00                 write [1]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]     13.3  190.39    0.00                 vfprintf [2]
+-----------------------------------------------
+                                                 <spontaneous>
+[3]     11.4  163.69    0.00                 _IO_new_file_xsputn [3]
+-----------------------------------------------
+                                                 <spontaneous>
+[4]      5.6   80.79    0.00                 _IO_file_overflow [4]
+-----------------------------------------------
+                                                 <spontaneous>
+[5]      4.7   67.85    0.00                 new_do_write [5]
+-----------------------------------------------
+                                                 <spontaneous>
+[6]      4.5   64.01    0.00                 _IO_file_write [6]
+-----------------------------------------------
+                                                 <spontaneous>
+[7]      2.5   36.30    0.00                 printf [7]
+-----------------------------------------------
+               29.68    0.00       1/1           main [9]
+[8]      2.1   29.68    0.00       1         foo [8]
+-----------------------------------------------
+                0.00   29.68       1/1           __libc_start_main [10]
+[9]      2.1    0.00   29.68       1         main [9]
+               29.68    0.00       1/1           foo [8]
+                0.00    0.00       1/1           bar [14]
+-----------------------------------------------
+                                                 <spontaneous>
+[10]     2.1    0.00   29.68                 __libc_start_main [10]
+                0.00   29.68       1/1           main [9]
+-----------------------------------------------
+                                                 <spontaneous>
+[11]     0.4    5.07    0.00                 funlockfile [11]
+-----------------------------------------------
+                                                 <spontaneous>
+[12]     0.3    4.97    0.00                 __errno_location [12]
+-----------------------------------------------
+                                                 <spontaneous>
+[13]     0.3    4.83    0.00                 flockfile [13]
+-----------------------------------------------
+                0.00    0.00       1/1           main [9]
+[14]     0.0    0.00    0.00       1         bar [14]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+   [4] _IO_file_overflow      [13] flockfile               [7] printf
+   [6] _IO_file_write          [8] foo                     [2] vfprintf
+   [3] _IO_new_file_xsputn    [11] funlockfile             [1] write
+  [12] __errno_location        [9] main
+  [14] bar                     [5] new_do_write (fileops.c)

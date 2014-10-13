@@ -1,0 +1,1364 @@
+28228:	
+28228:	file=libfoo.so;  needed by a.out
+28228:	find library=libfoo.so; searching
+28228:	 search path=/usr/lib/i686/mmx:/usr/lib/i686:/usr/lib/mmx:/usr/lib		(system search path)
+28228:	  trying file=/usr/lib/i686/mmx/libfoo.so
+28228:	  trying file=/usr/lib/i686/libfoo.so
+28228:	  trying file=/usr/lib/mmx/libfoo.so
+28228:	  trying file=/usr/lib/libfoo.so
+28228:	 search path=/usr/cygnus/mentor-98r2p26/H-sparc-sun-solaris2.7/lib/i686/mmx:/usr/cygnus/mentor-98r2p26/H-sparc-sun-solaris2.7/lib/i686:/usr/cygnus/mentor-98r2p26/H-sparc-sun-solaris2.7/lib/mmx:/usr/cygnus/mentor-98r2p26/H-sparc-sun-solaris2.7/lib:/usr/dt/lib/i686/mmx:/usr/dt/lib/i686:/usr/dt/lib/mmx:/usr/dt/lib:/usr/openwin/lib/i686/mmx:/usr/openwin/lib/i686:/usr/openwin/lib/mmx:/usr/openwin/lib:/project/seamless/Mgc_home/lib/i686/mmx:/project/seamless/Mgc_home/lib/i686:/project/seamless/Mgc_home/lib/mmx:/project/seamless/Mgc_home/lib:/project/seamless2/cve4.3_ixl/cve_home.ixl/lib/i686/mmx:/project/seamless2/cve4.3_ixl/cve_home.ixl/lib/i686:/project/seamless2/cve4.3_ixl/cve_home.ixl/lib/mmx:/project/seamless2/cve4.3_ixl/cve_home.ixl/lib:/project/seamless2/cve4.3_ixl/cve_home.ixl/isms/mri/master/lib/i686/mmx:/project/seamless2/cve4.3_ixl/cve_home.ixl/isms/mri/master/lib/i686:/project/seamless2/cve4.3_ixl/cve_home.ixl/isms/mri/master/lib/mmx:/project/seamless2/cve4.3_ixl/cve_home.ixl/isms/mri/master/lib:/home/soubhik/personal/pub/lib/i686/mmx:/home/soubhik/personal/pub/lib/i686:/home/soubhik/personal/pub/lib/mmx:/home/soubhik/personal/pub/lib:./i686/mmx:./i686:./mmx:.		(LD_LIBRARY_PATH)
+28228:	  trying file=/usr/cygnus/mentor-98r2p26/H-sparc-sun-solaris2.7/lib/i686/mmx/libfoo.so
+28228:	  trying file=/usr/cygnus/mentor-98r2p26/H-sparc-sun-solaris2.7/lib/i686/libfoo.so
+28228:	  trying file=/usr/cygnus/mentor-98r2p26/H-sparc-sun-solaris2.7/lib/mmx/libfoo.so
+28228:	  trying file=/usr/cygnus/mentor-98r2p26/H-sparc-sun-solaris2.7/lib/libfoo.so
+28228:	  trying file=/usr/dt/lib/i686/mmx/libfoo.so
+28228:	  trying file=/usr/dt/lib/i686/libfoo.so
+28228:	  trying file=/usr/dt/lib/mmx/libfoo.so
+28228:	  trying file=/usr/dt/lib/libfoo.so
+28228:	  trying file=/usr/openwin/lib/i686/mmx/libfoo.so
+28228:	  trying file=/usr/openwin/lib/i686/libfoo.so
+28228:	  trying file=/usr/openwin/lib/mmx/libfoo.so
+28228:	  trying file=/usr/openwin/lib/libfoo.so
+28228:	  trying file=/project/seamless/Mgc_home/lib/i686/mmx/libfoo.so
+28228:	  trying file=/project/seamless/Mgc_home/lib/i686/libfoo.so
+28228:	  trying file=/project/seamless/Mgc_home/lib/mmx/libfoo.so
+28228:	  trying file=/project/seamless/Mgc_home/lib/libfoo.so
+28228:	  trying file=/project/seamless2/cve4.3_ixl/cve_home.ixl/lib/i686/mmx/libfoo.so
+28228:	  trying file=/project/seamless2/cve4.3_ixl/cve_home.ixl/lib/i686/libfoo.so
+28228:	  trying file=/project/seamless2/cve4.3_ixl/cve_home.ixl/lib/mmx/libfoo.so
+28228:	  trying file=/project/seamless2/cve4.3_ixl/cve_home.ixl/lib/libfoo.so
+28228:	  trying file=/project/seamless2/cve4.3_ixl/cve_home.ixl/isms/mri/master/lib/i686/mmx/libfoo.so
+28228:	  trying file=/project/seamless2/cve4.3_ixl/cve_home.ixl/isms/mri/master/lib/i686/libfoo.so
+28228:	  trying file=/project/seamless2/cve4.3_ixl/cve_home.ixl/isms/mri/master/lib/mmx/libfoo.so
+28228:	  trying file=/project/seamless2/cve4.3_ixl/cve_home.ixl/isms/mri/master/lib/libfoo.so
+28228:	  trying file=/home/soubhik/personal/pub/lib/i686/mmx/libfoo.so
+28228:	  trying file=/home/soubhik/personal/pub/lib/i686/libfoo.so
+28228:	  trying file=/home/soubhik/personal/pub/lib/mmx/libfoo.so
+28228:	  trying file=/home/soubhik/personal/pub/lib/libfoo.so
+28228:	  trying file=./i686/mmx/libfoo.so
+28228:	  trying file=./i686/libfoo.so
+28228:	  trying file=./mmx/libfoo.so
+28228:	  trying file=./libfoo.so
+28228:	
+28228:	file=libfoo.so;  generating link map
+28228:	  dynamic: 0x40019830  base: 0x40018000   size: 0x00001908
+28228:	    entry: 0x40018600  phdr: 0x40018034  phnum:          3
+28228:	
+28228:	
+28228:	file=libc.so.6;  needed by a.out
+28228:	find library=libc.so.6; searching
+28228:	 search path=/usr/lib		(system search path)
+28228:	  trying file=/usr/lib/libc.so.6
+28228:	 search path=/project/seamless/Mgc_home/lib:/project/seamless2/cve4.3_ixl/cve_home.ixl/lib:/home/soubhik/personal/pub/lib:./i686/mmx:./i686:./mmx:.		(LD_LIBRARY_PATH)
+28228:	  trying file=/project/seamless/Mgc_home/lib/libc.so.6
+28228:	  trying file=/project/seamless2/cve4.3_ixl/cve_home.ixl/lib/libc.so.6
+28228:	  trying file=/home/soubhik/personal/pub/lib/libc.so.6
+28228:	  trying file=./i686/mmx/libc.so.6
+28228:	  trying file=./i686/libc.so.6
+28228:	  trying file=./mmx/libc.so.6
+28228:	  trying file=./libc.so.6
+28228:	 search cache=/etc/ld.so.cache
+28228:	  trying file=/lib/i686/libc.so.6
+28228:	
+28228:	file=libc.so.6;  generating link map
+28228:	  dynamic: 0x40169cb0  base: 0x40033000   size: 0x0013af68
+28228:	    entry: 0x4004f620  phdr: 0x40033034  phnum:          6
+28228:	
+28228:	checking for version `GLIBC_2.1.3' in file /lib/i686/libc.so.6 required by file a.out
+28228:	checking for version `GLIBC_2.0' in file /lib/i686/libc.so.6 required by file a.out
+28228:	checking for version `GLIBC_2.1.3' in file /lib/i686/libc.so.6 required by file ./libfoo.so
+28228:	checking for version `GLIBC_2.0' in file /lib/i686/libc.so.6 required by file ./libfoo.so
+28228:	checking for version `GLIBC_2.1.1' in file /lib/ld-linux.so.2 required by file /lib/i686/libc.so.6
+28228:	checking for version `GLIBC_2.2.3' in file /lib/ld-linux.so.2 required by file /lib/i686/libc.so.6
+28228:	checking for version `GLIBC_2.1' in file /lib/ld-linux.so.2 required by file /lib/i686/libc.so.6
+28228:	checking for version `GLIBC_2.2' in file /lib/ld-linux.so.2 required by file /lib/i686/libc.so.6
+28228:	checking for version `GLIBC_2.0' in file /lib/ld-linux.so.2 required by file /lib/i686/libc.so.6
+
+relocation processing: /lib/i686/libc.so.6 (lazy)
+28228:	symbol=_nl_current_LC_CTYPE;  lookup in file=a.out
+28228:	symbol=_nl_current_LC_CTYPE;  lookup in file=./libfoo.so
+28228:	symbol=_nl_current_LC_CTYPE;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_nl_current_LC_CTYPE' [GLIBC_2.0]
+28228:	symbol=_nl_current_LC_COLLATE;  lookup in file=a.out
+28228:	symbol=_nl_current_LC_COLLATE;  lookup in file=./libfoo.so
+28228:	symbol=_nl_current_LC_COLLATE;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_nl_current_LC_COLLATE' [GLIBC_2.0]
+28228:	symbol=_IO_default_finish;  lookup in file=a.out
+28228:	symbol=_IO_default_finish;  lookup in file=./libfoo.so
+28228:	symbol=_IO_default_finish;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_default_finish' [GLIBC_2.0]
+28228:	symbol=_IO_default_uflow;  lookup in file=a.out
+28228:	symbol=_IO_default_uflow;  lookup in file=./libfoo.so
+28228:	symbol=_IO_default_uflow;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_default_uflow' [GLIBC_2.0]
+28228:	symbol=_IO_default_pbackfail;  lookup in file=a.out
+28228:	symbol=_IO_default_pbackfail;  lookup in file=./libfoo.so
+28228:	symbol=_IO_default_pbackfail;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_default_pbackfail' [GLIBC_2.0]
+28228:	symbol=_IO_default_xsputn;  lookup in file=a.out
+28228:	symbol=_IO_default_xsputn;  lookup in file=./libfoo.so
+28228:	symbol=_IO_default_xsputn;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_default_xsputn' [GLIBC_2.0]
+28228:	symbol=_IO_default_xsgetn;  lookup in file=a.out
+28228:	symbol=_IO_default_xsgetn;  lookup in file=./libfoo.so
+28228:	symbol=_IO_default_xsgetn;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_default_xsgetn' [GLIBC_2.0]
+28228:	symbol=_IO_default_doallocate;  lookup in file=a.out
+28228:	symbol=_IO_default_doallocate;  lookup in file=./libfoo.so
+28228:	symbol=_IO_default_doallocate;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_default_doallocate' [GLIBC_2.0]
+28228:	symbol=_IO_wdefault_finish;  lookup in file=a.out
+28228:	symbol=_IO_wdefault_finish;  lookup in file=./libfoo.so
+28228:	symbol=_IO_wdefault_finish;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_wdefault_finish' [GLIBC_2.2]
+28228:	symbol=_IO_wdefault_pbackfail;  lookup in file=a.out
+28228:	symbol=_IO_wdefault_pbackfail;  lookup in file=./libfoo.so
+28228:	symbol=_IO_wdefault_pbackfail;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_wdefault_pbackfail' [GLIBC_2.2]
+28228:	symbol=_IO_wdefault_xsputn;  lookup in file=a.out
+28228:	symbol=_IO_wdefault_xsputn;  lookup in file=./libfoo.so
+28228:	symbol=_IO_wdefault_xsputn;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_wdefault_xsputn' [GLIBC_2.2]
+28228:	symbol=_IO_wdefault_xsgetn;  lookup in file=a.out
+28228:	symbol=_IO_wdefault_xsgetn;  lookup in file=./libfoo.so
+28228:	symbol=_IO_wdefault_xsgetn;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_wdefault_xsgetn' [GLIBC_2.2]
+28228:	symbol=_IO_wdefault_setbuf;  lookup in file=a.out
+28228:	symbol=_IO_wdefault_setbuf;  lookup in file=./libfoo.so
+28228:	symbol=_IO_wdefault_setbuf;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_wdefault_setbuf' [GLIBC_2.2]
+28228:	symbol=_IO_wdefault_doallocate;  lookup in file=a.out
+28228:	symbol=_IO_wdefault_doallocate;  lookup in file=./libfoo.so
+28228:	symbol=_IO_wdefault_doallocate;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_wdefault_doallocate' [GLIBC_2.2]
+28228:	symbol=_IO_file_finish;  lookup in file=a.out
+28228:	symbol=_IO_file_finish;  lookup in file=./libfoo.so
+28228:	symbol=_IO_file_finish;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_file_finish' [GLIBC_2.1]
+28228:	symbol=_IO_file_overflow;  lookup in file=a.out
+28228:	symbol=_IO_file_overflow;  lookup in file=./libfoo.so
+28228:	symbol=_IO_file_overflow;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_file_overflow' [GLIBC_2.1]
+28228:	symbol=_IO_file_underflow;  lookup in file=a.out
+28228:	symbol=_IO_file_underflow;  lookup in file=./libfoo.so
+28228:	symbol=_IO_file_underflow;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_file_underflow' [GLIBC_2.1]
+28228:	symbol=_IO_file_xsputn;  lookup in file=a.out
+28228:	symbol=_IO_file_xsputn;  lookup in file=./libfoo.so
+28228:	symbol=_IO_file_xsputn;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_file_xsputn' [GLIBC_2.1]
+28228:	symbol=_IO_file_seekoff;  lookup in file=a.out
+28228:	symbol=_IO_file_seekoff;  lookup in file=./libfoo.so
+28228:	symbol=_IO_file_seekoff;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_file_seekoff' [GLIBC_2.1]
+28228:	symbol=_IO_file_setbuf;  lookup in file=a.out
+28228:	symbol=_IO_file_setbuf;  lookup in file=./libfoo.so
+28228:	symbol=_IO_file_setbuf;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_file_setbuf' [GLIBC_2.1]
+28228:	symbol=_IO_file_sync;  lookup in file=a.out
+28228:	symbol=_IO_file_sync;  lookup in file=./libfoo.so
+28228:	symbol=_IO_file_sync;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_file_sync' [GLIBC_2.1]
+28228:	symbol=_IO_file_doallocate;  lookup in file=a.out
+28228:	symbol=_IO_file_doallocate;  lookup in file=./libfoo.so
+28228:	symbol=_IO_file_doallocate;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_file_doallocate' [GLIBC_2.0]
+28228:	symbol=_IO_file_read;  lookup in file=a.out
+28228:	symbol=_IO_file_read;  lookup in file=./libfoo.so
+28228:	symbol=_IO_file_read;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_file_read' [GLIBC_2.0]
+28228:	symbol=_IO_file_seek;  lookup in file=a.out
+28228:	symbol=_IO_file_seek;  lookup in file=./libfoo.so
+28228:	symbol=_IO_file_seek;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_file_seek' [GLIBC_2.0]
+28228:	symbol=_IO_file_stat;  lookup in file=a.out
+28228:	symbol=_IO_file_stat;  lookup in file=./libfoo.so
+28228:	symbol=_IO_file_stat;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_file_stat' [GLIBC_2.0]
+28228:	symbol=_IO_wdefault_uflow;  lookup in file=a.out
+28228:	symbol=_IO_wdefault_uflow;  lookup in file=./libfoo.so
+28228:	symbol=_IO_wdefault_uflow;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_wdefault_uflow' [GLIBC_2.2]
+28228:	symbol=_IO_wfile_overflow;  lookup in file=a.out
+28228:	symbol=_IO_wfile_overflow;  lookup in file=./libfoo.so
+28228:	symbol=_IO_wfile_overflow;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_wfile_overflow' [GLIBC_2.2]
+28228:	symbol=_IO_wfile_underflow;  lookup in file=a.out
+28228:	symbol=_IO_wfile_underflow;  lookup in file=./libfoo.so
+28228:	symbol=_IO_wfile_underflow;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_wfile_underflow' [GLIBC_2.2]
+28228:	symbol=_IO_wfile_xsputn;  lookup in file=a.out
+28228:	symbol=_IO_wfile_xsputn;  lookup in file=./libfoo.so
+28228:	symbol=_IO_wfile_xsputn;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_wfile_xsputn' [GLIBC_2.2]
+28228:	symbol=_IO_wfile_seekoff;  lookup in file=a.out
+28228:	symbol=_IO_wfile_seekoff;  lookup in file=./libfoo.so
+28228:	symbol=_IO_wfile_seekoff;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_wfile_seekoff' [GLIBC_2.2]
+28228:	symbol=_IO_wfile_sync;  lookup in file=a.out
+28228:	symbol=_IO_wfile_sync;  lookup in file=./libfoo.so
+28228:	symbol=_IO_wfile_sync;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_wfile_sync' [GLIBC_2.2]
+28228:	symbol=_IO_file_close;  lookup in file=a.out
+28228:	symbol=_IO_file_close;  lookup in file=./libfoo.so
+28228:	symbol=_IO_file_close;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_file_close' [GLIBC_2.0]
+28228:	symbol=_IO_str_overflow;  lookup in file=a.out
+28228:	symbol=_IO_str_overflow;  lookup in file=./libfoo.so
+28228:	symbol=_IO_str_overflow;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_str_overflow' [GLIBC_2.0]
+28228:	symbol=_IO_str_underflow;  lookup in file=a.out
+28228:	symbol=_IO_str_underflow;  lookup in file=./libfoo.so
+28228:	symbol=_IO_str_underflow;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_str_underflow' [GLIBC_2.0]
+28228:	symbol=_IO_str_pbackfail;  lookup in file=a.out
+28228:	symbol=_IO_str_pbackfail;  lookup in file=./libfoo.so
+28228:	symbol=_IO_str_pbackfail;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_str_pbackfail' [GLIBC_2.0]
+28228:	symbol=_IO_str_seekoff;  lookup in file=a.out
+28228:	symbol=_IO_str_seekoff;  lookup in file=./libfoo.so
+28228:	symbol=_IO_str_seekoff;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_str_seekoff' [GLIBC_2.0]
+28228:	symbol=_IO_wfile_jumps;  lookup in file=a.out
+28228:	symbol=_IO_wfile_jumps;  lookup in file=./libfoo.so
+28228:	symbol=_IO_wfile_jumps;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_wfile_jumps' [GLIBC_2.2]
+28228:	symbol=_IO_file_jumps;  lookup in file=a.out
+28228:	symbol=_IO_file_jumps;  lookup in file=./libfoo.so
+28228:	symbol=_IO_file_jumps;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_file_jumps' [GLIBC_2.0]
+28228:	symbol=_IO_2_1_stdin_;  lookup in file=a.out
+28228:	symbol=_IO_2_1_stdin_;  lookup in file=./libfoo.so
+28228:	symbol=_IO_2_1_stdin_;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_2_1_stdin_' [GLIBC_2.1]
+28228:	symbol=_IO_2_1_stdout_;  lookup in file=a.out
+28228:	symbol=_IO_2_1_stdout_;  lookup in file=./libfoo.so
+28228:	symbol=_IO_2_1_stdout_;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_2_1_stdout_' [GLIBC_2.1]
+28228:	symbol=_IO_2_1_stderr_;  lookup in file=a.out
+28228:	symbol=_IO_2_1_stderr_;  lookup in file=./libfoo.so
+28228:	symbol=_IO_2_1_stderr_;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_2_1_stderr_' [GLIBC_2.1]
+28228:	symbol=_IO_stdin_;  lookup in file=a.out
+28228:	symbol=_IO_stdin_;  lookup in file=./libfoo.so
+28228:	symbol=_IO_stdin_;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_stdin_' [GLIBC_2.0]
+28228:	symbol=_IO_stdout_;  lookup in file=a.out
+28228:	symbol=_IO_stdout_;  lookup in file=./libfoo.so
+28228:	symbol=_IO_stdout_;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_stdout_' [GLIBC_2.0]
+28228:	symbol=__default_morecore;  lookup in file=a.out
+28228:	symbol=__default_morecore;  lookup in file=./libfoo.so
+28228:	symbol=__default_morecore;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__default_morecore' [GLIBC_2.0]
+28228:	symbol=xdr_accepted_reply;  lookup in file=a.out
+28228:	symbol=xdr_accepted_reply;  lookup in file=./libfoo.so
+28228:	symbol=xdr_accepted_reply;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `xdr_accepted_reply' [GLIBC_2.0]
+28228:	symbol=xdr_rejected_reply;  lookup in file=a.out
+28228:	symbol=xdr_rejected_reply;  lookup in file=./libfoo.so
+28228:	symbol=xdr_rejected_reply;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `xdr_rejected_reply' [GLIBC_2.0]
+28228:	symbol=pthread_create;  lookup in file=a.out
+28228:	symbol=pthread_create;  lookup in file=./libfoo.so
+28228:	symbol=pthread_create;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=pthread_create;  lookup in file=/lib/ld-linux.so.2
+28228:	symbol=xdr_cryptkeyres;  lookup in file=a.out
+28228:	symbol=xdr_cryptkeyres;  lookup in file=./libfoo.so
+28228:	symbol=xdr_cryptkeyres;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `xdr_cryptkeyres' [GLIBC_2.0]
+28228:	symbol=__libc_internal_tsd_set;  lookup in file=a.out
+28228:	symbol=__libc_internal_tsd_set;  lookup in file=./libfoo.so
+28228:	symbol=__libc_internal_tsd_set;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__libc_internal_tsd_set' [GLIBC_2.0]
+28228:	symbol=__morecore;  lookup in file=a.out
+28228:	symbol=__morecore;  lookup in file=./libfoo.so
+28228:	symbol=__morecore;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__morecore' [GLIBC_2.0]
+28228:	symbol=in6addr_any;  lookup in file=a.out
+28228:	symbol=in6addr_any;  lookup in file=./libfoo.so
+28228:	symbol=in6addr_any;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `in6addr_any' [GLIBC_2.1]
+28228:	symbol=__daylight;  lookup in file=a.out
+28228:	symbol=__daylight;  lookup in file=./libfoo.so
+28228:	symbol=__daylight;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__daylight' [GLIBC_2.0]
+28228:	symbol=__malloc_hook;  lookup in file=a.out
+28228:	symbol=__malloc_hook;  lookup in file=./libfoo.so
+28228:	symbol=__malloc_hook;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__malloc_hook;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__malloc_hook' [GLIBC_2.0]
+28228:	symbol=h_nerr;  lookup in file=a.out
+28228:	symbol=h_nerr;  lookup in file=./libfoo.so
+28228:	symbol=h_nerr;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `h_nerr' [GLIBC_2.0]
+28228:	symbol=_dl_sysdep_start;  lookup in file=a.out
+28228:	symbol=_dl_sysdep_start;  lookup in file=./libfoo.so
+28228:	symbol=_dl_sysdep_start;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_sysdep_start;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/ld-linux.so.2: normal symbol `_dl_sysdep_start' [GLIBC_2.0]
+28228:	symbol=__malloc_initialize_hook;  lookup in file=a.out
+28228:	symbol=__malloc_initialize_hook;  lookup in file=./libfoo.so
+28228:	symbol=__malloc_initialize_hook;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__malloc_initialize_hook;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__malloc_initialize_hook' [GLIBC_2.0]
+28228:	symbol=_r_debug;  lookup in file=a.out
+28228:	symbol=_r_debug;  lookup in file=./libfoo.so
+28228:	symbol=_r_debug;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_r_debug;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/ld-linux.so.2: normal symbol `_r_debug' [GLIBC_2.0]
+28228:	symbol=__nss_hosts_lookup;  lookup in file=a.out
+28228:	symbol=__nss_hosts_lookup;  lookup in file=./libfoo.so
+28228:	symbol=__nss_hosts_lookup;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__nss_hosts_lookup' [GLIBC_2.0]
+28228:	symbol=stdout;  lookup in file=a.out
+28228:	symbol=stdout;  lookup in file=./libfoo.so
+28228:	symbol=stdout;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `stdout' [GLIBC_2.0]
+28228:	symbol=_dl_starting_up;  lookup in file=a.out
+28228:	symbol=_dl_starting_up;  lookup in file=./libfoo.so
+28228:	symbol=_dl_starting_up;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_starting_up;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/ld-linux.so.2: normal symbol `_dl_starting_up' [GLIBC_2.0]
+28228:	symbol=_sys_errlist;  lookup in file=a.out
+28228:	symbol=_sys_errlist;  lookup in file=./libfoo.so
+28228:	symbol=_sys_errlist;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_sys_errlist' [GLIBC_2.1]
+28228:	symbol=_dl_pagesize;  lookup in file=a.out
+28228:	symbol=_dl_pagesize;  lookup in file=./libfoo.so
+28228:	symbol=_dl_pagesize;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_pagesize;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/ld-linux.so.2: normal symbol `_dl_pagesize' [GLIBC_2.2]
+28228:	symbol=__pthread_once;  lookup in file=a.out
+28228:	symbol=__pthread_once;  lookup in file=./libfoo.so
+28228:	symbol=__pthread_once;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__pthread_once;  lookup in file=/lib/ld-linux.so.2
+28228:	symbol=__pthread_mutex_lock;  lookup in file=a.out
+28228:	symbol=__pthread_mutex_lock;  lookup in file=./libfoo.so
+28228:	symbol=__pthread_mutex_lock;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__pthread_mutex_lock;  lookup in file=/lib/ld-linux.so.2
+28228:	symbol=__ctype32_b;  lookup in file=a.out
+28228:	symbol=__ctype32_b;  lookup in file=./libfoo.so
+28228:	symbol=__ctype32_b;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__ctype32_b' [GLIBC_2.0]
+28228:	symbol=__rcmd_errstr;  lookup in file=a.out
+28228:	symbol=__rcmd_errstr;  lookup in file=./libfoo.so
+28228:	symbol=__rcmd_errstr;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__rcmd_errstr' [GLIBC_2.0]
+28228:	symbol=xdr_des_block;  lookup in file=a.out
+28228:	symbol=xdr_des_block;  lookup in file=./libfoo.so
+28228:	symbol=xdr_des_block;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `xdr_des_block' [GLIBC_2.0]
+28228:	symbol=__gconv_cache;  lookup in file=a.out
+28228:	symbol=__gconv_cache;  lookup in file=./libfoo.so
+28228:	symbol=__gconv_cache;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__gconv_cache' [GLIBC_2.2.5]
+28228:	symbol=_nl_domain_bindings;  lookup in file=a.out
+28228:	symbol=_nl_domain_bindings;  lookup in file=./libfoo.so
+28228:	symbol=_nl_domain_bindings;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_nl_domain_bindings' [GLIBC_2.0]
+28228:	symbol=re_syntax_options;  lookup in file=a.out
+28228:	symbol=re_syntax_options;  lookup in file=./libfoo.so
+28228:	symbol=re_syntax_options;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `re_syntax_options' [GLIBC_2.0]
+28228:	symbol=__ctype_b;  lookup in file=a.out
+28228:	symbol=__ctype_b;  lookup in file=./libfoo.so
+28228:	symbol=__ctype_b;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__ctype_b' [GLIBC_2.0]
+28228:	symbol=argp_program_bug_address;  lookup in file=a.out
+28228:	symbol=argp_program_bug_address;  lookup in file=./libfoo.so
+28228:	symbol=argp_program_bug_address;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `argp_program_bug_address' [GLIBC_2.1]
+28228:	symbol=errno;  lookup in file=a.out
+28228:	symbol=errno;  lookup in file=./libfoo.so
+28228:	symbol=errno;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `errno' [GLIBC_2.0]
+28228:	symbol=__pthread_key_create;  lookup in file=a.out
+28228:	symbol=__pthread_key_create;  lookup in file=./libfoo.so
+28228:	symbol=__pthread_key_create;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__pthread_key_create;  lookup in file=/lib/ld-linux.so.2
+28228:	symbol=__tzname;  lookup in file=a.out
+28228:	symbol=__tzname;  lookup in file=./libfoo.so
+28228:	symbol=__tzname;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__tzname' [GLIBC_2.0]
+28228:	symbol=__pthread_rwlock_wrlock;  lookup in file=a.out
+28228:	symbol=__pthread_rwlock_wrlock;  lookup in file=./libfoo.so
+28228:	symbol=__pthread_rwlock_wrlock;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__pthread_rwlock_wrlock;  lookup in file=/lib/ld-linux.so.2
+28228:	symbol=__gconv_modules_db;  lookup in file=a.out
+28228:	symbol=__gconv_modules_db;  lookup in file=./libfoo.so
+28228:	symbol=__gconv_modules_db;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__gconv_modules_db' [GLIBC_2.1]
+28228:	symbol=_dl_initial_searchlist;  lookup in file=a.out
+28228:	symbol=_dl_initial_searchlist;  lookup in file=./libfoo.so
+28228:	symbol=_dl_initial_searchlist;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_initial_searchlist;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/ld-linux.so.2: normal symbol `_dl_initial_searchlist' [GLIBC_2.1]
+28228:	symbol=__pthread_atfork;  lookup in file=a.out
+28228:	symbol=__pthread_atfork;  lookup in file=./libfoo.so
+28228:	symbol=__pthread_atfork;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__pthread_atfork;  lookup in file=/lib/ld-linux.so.2
+28228:	symbol=_IO_funlockfile;  lookup in file=a.out
+28228:	symbol=_IO_funlockfile;  lookup in file=./libfoo.so
+28228:	symbol=_IO_funlockfile;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_IO_funlockfile;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_funlockfile' [GLIBC_2.0]
+28228:	symbol=__realloc_hook;  lookup in file=a.out
+28228:	symbol=__realloc_hook;  lookup in file=./libfoo.so
+28228:	symbol=__realloc_hook;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__realloc_hook;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__realloc_hook' [GLIBC_2.0]
+28228:	symbol=_IO_stderr_;  lookup in file=a.out
+28228:	symbol=_IO_stderr_;  lookup in file=./libfoo.so
+28228:	symbol=_IO_stderr_;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_stderr_' [GLIBC_2.0]
+28228:	symbol=_sys_nerr;  lookup in file=a.out
+28228:	symbol=_sys_nerr;  lookup in file=./libfoo.so
+28228:	symbol=_sys_nerr;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_sys_nerr' [GLIBC_2.1]
+28228:	symbol=__pthread_mutex_init;  lookup in file=a.out
+28228:	symbol=__pthread_mutex_init;  lookup in file=./libfoo.so
+28228:	symbol=__pthread_mutex_init;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__pthread_mutex_init;  lookup in file=/lib/ld-linux.so.2
+28228:	symbol=malloc;  lookup in file=a.out
+28228:	symbol=malloc;  lookup in file=./libfoo.so
+28228:	symbol=malloc;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=malloc;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `malloc' [GLIBC_2.0]
+28228:	symbol=_nl_msg_cat_cntr;  lookup in file=a.out
+28228:	symbol=_nl_msg_cat_cntr;  lookup in file=./libfoo.so
+28228:	symbol=_nl_msg_cat_cntr;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_nl_msg_cat_cntr' [GLIBC_2.0]
+28228:	symbol=optarg;  lookup in file=a.out
+28228:	symbol=optarg;  lookup in file=./libfoo.so
+28228:	symbol=optarg;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `optarg' [GLIBC_2.0]
+28228:	symbol=loc2;  lookup in file=a.out
+28228:	symbol=loc2;  lookup in file=./libfoo.so
+28228:	symbol=loc2;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `loc2' [GLIBC_2.0]
+28228:	symbol=xdr_keystatus;  lookup in file=a.out
+28228:	symbol=xdr_keystatus;  lookup in file=./libfoo.so
+28228:	symbol=xdr_keystatus;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `xdr_keystatus' [GLIBC_2.0]
+28228:	symbol=h_errlist;  lookup in file=a.out
+28228:	symbol=h_errlist;  lookup in file=./libfoo.so
+28228:	symbol=h_errlist;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `h_errlist' [GLIBC_2.0]
+28228:	symbol=__pthread_rwlock_rdlock;  lookup in file=a.out
+28228:	symbol=__pthread_rwlock_rdlock;  lookup in file=./libfoo.so
+28228:	symbol=__pthread_rwlock_rdlock;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__pthread_rwlock_rdlock;  lookup in file=/lib/ld-linux.so.2
+28228:	symbol=__dso_handle;  lookup in file=a.out
+28228:	symbol=__dso_handle;  lookup in file=./libfoo.so
+28228:	symbol=__dso_handle;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__dso_handle;  lookup in file=/lib/ld-linux.so.2
+28228:	symbol=opterr;  lookup in file=a.out
+28228:	symbol=opterr;  lookup in file=./libfoo.so
+28228:	symbol=opterr;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `opterr' [GLIBC_2.0]
+28228:	symbol=error_message_count;  lookup in file=a.out
+28228:	symbol=error_message_count;  lookup in file=./libfoo.so
+28228:	symbol=error_message_count;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `error_message_count' [GLIBC_2.0]
+28228:	symbol=__pthread_rwlock_unlock;  lookup in file=a.out
+28228:	symbol=__pthread_rwlock_unlock;  lookup in file=./libfoo.so
+28228:	symbol=__pthread_rwlock_unlock;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__pthread_rwlock_unlock;  lookup in file=/lib/ld-linux.so.2
+28228:	symbol=_environ;  lookup in file=a.out
+28228:	symbol=_environ;  lookup in file=./libfoo.so
+28228:	symbol=_environ;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_environ;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_environ' [GLIBC_2.0]
+28228:	symbol=getdate_err;  lookup in file=a.out
+28228:	symbol=getdate_err;  lookup in file=./libfoo.so
+28228:	symbol=getdate_err;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `getdate_err' [GLIBC_2.1]
+28228:	symbol=xdr_void;  lookup in file=a.out
+28228:	symbol=xdr_void;  lookup in file=./libfoo.so
+28228:	symbol=xdr_void;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `xdr_void' [GLIBC_2.0]
+28228:	symbol=xdr_keybuf;  lookup in file=a.out
+28228:	symbol=xdr_keybuf;  lookup in file=./libfoo.so
+28228:	symbol=xdr_keybuf;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `xdr_keybuf' [GLIBC_2.0]
+28228:	symbol=__ctype_toupper;  lookup in file=a.out
+28228:	symbol=__ctype_toupper;  lookup in file=./libfoo.so
+28228:	symbol=__ctype_toupper;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__ctype_toupper' [GLIBC_2.0]
+28228:	symbol=xdr_pmap;  lookup in file=a.out
+28228:	symbol=xdr_pmap;  lookup in file=./libfoo.so
+28228:	symbol=xdr_pmap;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `xdr_pmap' [GLIBC_2.0]
+28228:	symbol=__pthread_kill_other_threads_np;  lookup in file=a.out
+28228:	symbol=__pthread_kill_other_threads_np;  lookup in file=./libfoo.so
+28228:	symbol=__pthread_kill_other_threads_np;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__pthread_kill_other_threads_np;  lookup in file=/lib/ld-linux.so.2
+28228:	symbol=__pthread_initialize;  lookup in file=a.out
+28228:	symbol=__pthread_initialize;  lookup in file=./libfoo.so
+28228:	symbol=__pthread_initialize;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__pthread_initialize;  lookup in file=/lib/ld-linux.so.2
+28228:	symbol=_dl_nloaded;  lookup in file=a.out
+28228:	symbol=_dl_nloaded;  lookup in file=./libfoo.so
+28228:	symbol=_dl_nloaded;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_nloaded;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/ld-linux.so.2: normal symbol `_dl_nloaded' [GLIBC_2.2]
+28228:	symbol=__environ;  lookup in file=a.out
+28228:	symbol=__environ;  lookup in file=./libfoo.so
+28228:	symbol=__environ;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__environ' [GLIBC_2.0]
+28228:	symbol=obstack_exit_failure;  lookup in file=a.out
+28228:	symbol=obstack_exit_failure;  lookup in file=./libfoo.so
+28228:	symbol=obstack_exit_failure;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `obstack_exit_failure' [GLIBC_2.0]
+28228:	symbol=xdr_rmtcall_args;  lookup in file=a.out
+28228:	symbol=xdr_rmtcall_args;  lookup in file=./libfoo.so
+28228:	symbol=xdr_rmtcall_args;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `xdr_rmtcall_args' [GLIBC_2.0]
+28228:	symbol=error_print_progname;  lookup in file=a.out
+28228:	symbol=error_print_progname;  lookup in file=./libfoo.so
+28228:	symbol=error_print_progname;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `error_print_progname' [GLIBC_2.0]
+28228:	symbol=xdr_rmtcallres;  lookup in file=a.out
+28228:	symbol=xdr_rmtcallres;  lookup in file=./libfoo.so
+28228:	symbol=xdr_rmtcallres;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `xdr_rmtcallres' [GLIBC_2.0]
+28228:	symbol=_dl_profile;  lookup in file=a.out
+28228:	symbol=_dl_profile;  lookup in file=./libfoo.so
+28228:	symbol=_dl_profile;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_profile;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/ld-linux.so.2: normal symbol `_dl_profile' [GLIBC_2.1]
+28228:	symbol=_dl_global_scope_alloc;  lookup in file=a.out
+28228:	symbol=_dl_global_scope_alloc;  lookup in file=./libfoo.so
+28228:	symbol=_dl_global_scope_alloc;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_global_scope_alloc;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/ld-linux.so.2: normal symbol `_dl_global_scope_alloc' [GLIBC_2.1]
+28228:	symbol=_dl_fpu_control;  lookup in file=a.out
+28228:	symbol=_dl_fpu_control;  lookup in file=./libfoo.so
+28228:	symbol=_dl_fpu_control;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_fpu_control;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/ld-linux.so.2: normal symbol `_dl_fpu_control' [GLIBC_2.1]
+28228:	symbol=__libc_internal_tsd_get;  lookup in file=a.out
+28228:	symbol=__libc_internal_tsd_get;  lookup in file=./libfoo.so
+28228:	symbol=__libc_internal_tsd_get;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__libc_internal_tsd_get' [GLIBC_2.0]
+28228:	symbol=__after_morecore_hook;  lookup in file=a.out
+28228:	symbol=__after_morecore_hook;  lookup in file=./libfoo.so
+28228:	symbol=__after_morecore_hook;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__after_morecore_hook;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__after_morecore_hook' [GLIBC_2.0]
+28228:	symbol=h_errno;  lookup in file=a.out
+28228:	symbol=h_errno;  lookup in file=./libfoo.so
+28228:	symbol=h_errno;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `h_errno' [GLIBC_2.0]
+28228:	symbol=xdr_bool;  lookup in file=a.out
+28228:	symbol=xdr_bool;  lookup in file=./libfoo.so
+28228:	symbol=xdr_bool;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `xdr_bool' [GLIBC_2.0]
+28228:	symbol=__pthread_mutex_unlock;  lookup in file=a.out
+28228:	symbol=__pthread_mutex_unlock;  lookup in file=./libfoo.so
+28228:	symbol=__pthread_mutex_unlock;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__pthread_mutex_unlock;  lookup in file=/lib/ld-linux.so.2
+28228:	symbol=__pthread_getspecific;  lookup in file=a.out
+28228:	symbol=__pthread_getspecific;  lookup in file=./libfoo.so
+28228:	symbol=__pthread_getspecific;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__pthread_getspecific;  lookup in file=/lib/ld-linux.so.2
+28228:	symbol=__key_encryptsession_pk_LOCAL;  lookup in file=a.out
+28228:	symbol=__key_encryptsession_pk_LOCAL;  lookup in file=./libfoo.so
+28228:	symbol=__key_encryptsession_pk_LOCAL;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__key_encryptsession_pk_LOCAL' [GLIBC_2.1]
+28228:	symbol=__pthread_mutex_trylock;  lookup in file=a.out
+28228:	symbol=__pthread_mutex_trylock;  lookup in file=./libfoo.so
+28228:	symbol=__pthread_mutex_trylock;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__pthread_mutex_trylock;  lookup in file=/lib/ld-linux.so.2
+28228:	symbol=_dl_debug_mask;  lookup in file=a.out
+28228:	symbol=_dl_debug_mask;  lookup in file=./libfoo.so
+28228:	symbol=_dl_debug_mask;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_debug_mask;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/ld-linux.so.2: normal symbol `_dl_debug_mask' [GLIBC_2.2.3]
+28228:	symbol=_dl_all_dirs;  lookup in file=a.out
+28228:	symbol=_dl_all_dirs;  lookup in file=./libfoo.so
+28228:	symbol=_dl_all_dirs;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_all_dirs;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/ld-linux.so.2: normal symbol `_dl_all_dirs' [GLIBC_2.2]
+28228:	symbol=__nss_group_lookup;  lookup in file=a.out
+28228:	symbol=__nss_group_lookup;  lookup in file=./libfoo.so
+28228:	symbol=__nss_group_lookup;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__nss_group_lookup' [GLIBC_2.0]
+28228:	symbol=argp_program_version;  lookup in file=a.out
+28228:	symbol=argp_program_version;  lookup in file=./libfoo.so
+28228:	symbol=argp_program_version;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `argp_program_version' [GLIBC_2.1]
+28228:	symbol=xdr_cryptkeyarg;  lookup in file=a.out
+28228:	symbol=xdr_cryptkeyarg;  lookup in file=./libfoo.so
+28228:	symbol=xdr_cryptkeyarg;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `xdr_cryptkeyarg' [GLIBC_2.0]
+28228:	symbol=__fpu_control;  lookup in file=a.out
+28228:	symbol=__fpu_control;  lookup in file=./libfoo.so
+28228:	symbol=__fpu_control;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__fpu_control' [GLIBC_2.0]
+28228:	symbol=_dl_load_lock;  lookup in file=a.out
+28228:	symbol=_dl_load_lock;  lookup in file=./libfoo.so
+28228:	symbol=_dl_load_lock;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_load_lock;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/ld-linux.so.2: normal symbol `_dl_load_lock' [GLIBC_2.2]
+28228:	symbol=optind;  lookup in file=a.out
+28228:	symbol=optind;  lookup in file=./libfoo.so
+28228:	symbol=optind;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `optind' [GLIBC_2.0]
+28228:	symbol=_res_hconf;  lookup in file=a.out
+28228:	symbol=_res_hconf;  lookup in file=./libfoo.so
+28228:	symbol=_res_hconf;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_res_hconf' [GLIBC_2.2]
+28228:	symbol=stdin;  lookup in file=a.out
+28228:	symbol=stdin;  lookup in file=./libfoo.so
+28228:	symbol=stdin;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `stdin' [GLIBC_2.0]
+28228:	symbol=__pthread_mutex_destroy;  lookup in file=a.out
+28228:	symbol=__pthread_mutex_destroy;  lookup in file=./libfoo.so
+28228:	symbol=__pthread_mutex_destroy;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__pthread_mutex_destroy;  lookup in file=/lib/ld-linux.so.2
+28228:	symbol=_res;  lookup in file=a.out
+28228:	symbol=_res;  lookup in file=./libfoo.so
+28228:	symbol=_res;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_res' [GLIBC_2.0]
+28228:	symbol=__progname;  lookup in file=a.out
+28228:	symbol=__progname;  lookup in file=./libfoo.so
+28228:	symbol=__progname;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__progname' [GLIBC_2.0]
+28228:	symbol=loc1;  lookup in file=a.out
+28228:	symbol=loc1;  lookup in file=./libfoo.so
+28228:	symbol=loc1;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `loc1' [GLIBC_2.0]
+28228:	symbol=_dl_origin_path;  lookup in file=a.out
+28228:	symbol=_dl_origin_path;  lookup in file=./libfoo.so
+28228:	symbol=_dl_origin_path;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_origin_path;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/ld-linux.so.2: normal symbol `_dl_origin_path' [GLIBC_2.1.1]
+28228:	symbol=_dl_argv;  lookup in file=a.out
+28228:	symbol=_dl_argv;  lookup in file=./libfoo.so
+28228:	symbol=_dl_argv;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_argv;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/ld-linux.so.2: normal symbol `_dl_argv' [GLIBC_2.2]
+28228:	symbol=in6addr_loopback;  lookup in file=a.out
+28228:	symbol=in6addr_loopback;  lookup in file=./libfoo.so
+28228:	symbol=in6addr_loopback;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `in6addr_loopback' [GLIBC_2.1]
+28228:	symbol=_dl_lazy;  lookup in file=a.out
+28228:	symbol=_dl_lazy;  lookup in file=./libfoo.so
+28228:	symbol=_dl_lazy;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_lazy;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/ld-linux.so.2: normal symbol `_dl_lazy' [GLIBC_2.1.1]
+28228:	symbol=program_invocation_short_name;  lookup in file=a.out
+28228:	symbol=program_invocation_short_name;  lookup in file=./libfoo.so
+28228:	symbol=program_invocation_short_name;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=program_invocation_short_name;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `program_invocation_short_name' [GLIBC_2.0]
+28228:	symbol=xdr_u_long;  lookup in file=a.out
+28228:	symbol=xdr_u_long;  lookup in file=./libfoo.so
+28228:	symbol=xdr_u_long;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `xdr_u_long' [GLIBC_2.0]
+28228:	symbol=_dl_out_of_memory;  lookup in file=a.out
+28228:	symbol=_dl_out_of_memory;  lookup in file=./libfoo.so
+28228:	symbol=_dl_out_of_memory;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_out_of_memory;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/ld-linux.so.2: normal symbol `_dl_out_of_memory' [GLIBC_2.2]
+28228:	symbol=__ctype32_toupper;  lookup in file=a.out
+28228:	symbol=__ctype32_toupper;  lookup in file=./libfoo.so
+28228:	symbol=__ctype32_toupper;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__ctype32_toupper' [GLIBC_2.2]
+28228:	symbol=argp_err_exit_status;  lookup in file=a.out
+28228:	symbol=argp_err_exit_status;  lookup in file=./libfoo.so
+28228:	symbol=argp_err_exit_status;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `argp_err_exit_status' [GLIBC_2.1]
+28228:	symbol=__gmtime_r;  lookup in file=a.out
+28228:	symbol=__gmtime_r;  lookup in file=./libfoo.so
+28228:	symbol=__gmtime_r;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__gmtime_r' [GLIBC_2.0]
+28228:	symbol=_sys_siglist;  lookup in file=a.out
+28228:	symbol=_sys_siglist;  lookup in file=./libfoo.so
+28228:	symbol=_sys_siglist;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_sys_siglist' [GLIBC_2.1]
+28228:	symbol=_itoa_lower_digits;  lookup in file=a.out
+28228:	symbol=_itoa_lower_digits;  lookup in file=./libfoo.so
+28228:	symbol=_itoa_lower_digits;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_itoa_lower_digits' [GLIBC_2.0]
+28228:	symbol=_pthread_cleanup_push_defer;  lookup in file=a.out
+28228:	symbol=_pthread_cleanup_push_defer;  lookup in file=./libfoo.so
+28228:	symbol=_pthread_cleanup_push_defer;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_pthread_cleanup_push_defer;  lookup in file=/lib/ld-linux.so.2
+28228:	symbol=__ctype32_tolower;  lookup in file=a.out
+28228:	symbol=__ctype32_tolower;  lookup in file=./libfoo.so
+28228:	symbol=__ctype32_tolower;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__ctype32_tolower' [GLIBC_2.2]
+28228:	symbol=_dl_loaded;  lookup in file=a.out
+28228:	symbol=_dl_loaded;  lookup in file=./libfoo.so
+28228:	symbol=_dl_loaded;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_loaded;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/ld-linux.so.2: normal symbol `_dl_loaded' [GLIBC_2.1]
+28228:	symbol=_dl_init_all_dirs;  lookup in file=a.out
+28228:	symbol=_dl_init_all_dirs;  lookup in file=./libfoo.so
+28228:	symbol=_dl_init_all_dirs;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_init_all_dirs;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/ld-linux.so.2: normal symbol `_dl_init_all_dirs' [GLIBC_2.2]
+28228:	symbol=xdr_u_int;  lookup in file=a.out
+28228:	symbol=xdr_u_int;  lookup in file=./libfoo.so
+28228:	symbol=xdr_u_int;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `xdr_u_int' [GLIBC_2.0]
+28228:	symbol=xdr_pmaplist;  lookup in file=a.out
+28228:	symbol=xdr_pmaplist;  lookup in file=./libfoo.so
+28228:	symbol=xdr_pmaplist;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `xdr_pmaplist' [GLIBC_2.0]
+28228:	symbol=_nl_default_dirname;  lookup in file=a.out
+28228:	symbol=_nl_default_dirname;  lookup in file=./libfoo.so
+28228:	symbol=_nl_default_dirname;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_nl_default_dirname' [GLIBC_2.0]
+28228:	symbol=strcmp;  lookup in file=a.out
+28228:	symbol=strcmp;  lookup in file=./libfoo.so
+28228:	symbol=strcmp;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `strcmp' [GLIBC_2.0]
+28228:	symbol=__check_rhosts_file;  lookup in file=a.out
+28228:	symbol=__check_rhosts_file;  lookup in file=./libfoo.so
+28228:	symbol=__check_rhosts_file;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__check_rhosts_file' [GLIBC_2.0]
+28228:	symbol=_dl_main_searchlist;  lookup in file=a.out
+28228:	symbol=_dl_main_searchlist;  lookup in file=./libfoo.so
+28228:	symbol=_dl_main_searchlist;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_main_searchlist;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/ld-linux.so.2: normal symbol `_dl_main_searchlist' [GLIBC_2.1]
+28228:	symbol=obstack_alloc_failed_handler;  lookup in file=a.out
+28228:	symbol=obstack_alloc_failed_handler;  lookup in file=./libfoo.so
+28228:	symbol=obstack_alloc_failed_handler;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `obstack_alloc_failed_handler' [GLIBC_2.0]
+28228:	symbol=_dl_profile_map;  lookup in file=a.out
+28228:	symbol=_dl_profile_map;  lookup in file=./libfoo.so
+28228:	symbol=_dl_profile_map;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_profile_map;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/ld-linux.so.2: normal symbol `_dl_profile_map' [GLIBC_2.1]
+28228:	symbol=_dl_clktck;  lookup in file=a.out
+28228:	symbol=_dl_clktck;  lookup in file=./libfoo.so
+28228:	symbol=_dl_clktck;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_clktck;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/ld-linux.so.2: normal symbol `_dl_clktck' [GLIBC_2.2]
+28228:	symbol=_libc_intl_domainname;  lookup in file=a.out
+28228:	symbol=_libc_intl_domainname;  lookup in file=./libfoo.so
+28228:	symbol=_libc_intl_domainname;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_libc_intl_domainname' [GLIBC_2.0]
+28228:	symbol=xdr_key_netstres;  lookup in file=a.out
+28228:	symbol=xdr_key_netstres;  lookup in file=./libfoo.so
+28228:	symbol=xdr_key_netstres;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `xdr_key_netstres' [GLIBC_2.0]
+28228:	symbol=stderr;  lookup in file=a.out
+28228:	symbol=stderr;  lookup in file=./libfoo.so
+28228:	symbol=stderr;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `stderr' [GLIBC_2.0]
+28228:	symbol=__key_gendes_LOCAL;  lookup in file=a.out
+28228:	symbol=__key_gendes_LOCAL;  lookup in file=./libfoo.so
+28228:	symbol=__key_gendes_LOCAL;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__key_gendes_LOCAL' [GLIBC_2.1]
+28228:	symbol=_dl_profile_output;  lookup in file=a.out
+28228:	symbol=_dl_profile_output;  lookup in file=./libfoo.so
+28228:	symbol=_dl_profile_output;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_profile_output;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/ld-linux.so.2: normal symbol `_dl_profile_output' [GLIBC_2.1]
+28228:	symbol=_mcleanup;  lookup in file=a.out
+28228:	binding file /lib/i686/libc.so.6 to a.out: normal symbol `_mcleanup' [GLIBC_2.0]
+28228:	symbol=optopt;  lookup in file=a.out
+28228:	symbol=optopt;  lookup in file=./libfoo.so
+28228:	symbol=optopt;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `optopt' [GLIBC_2.0]
+28228:	symbol=__timezone;  lookup in file=a.out
+28228:	symbol=__timezone;  lookup in file=./libfoo.so
+28228:	symbol=__timezone;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__timezone' [GLIBC_2.0]
+28228:	symbol=svcauthdes_stats;  lookup in file=a.out
+28228:	symbol=svcauthdes_stats;  lookup in file=./libfoo.so
+28228:	symbol=svcauthdes_stats;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `svcauthdes_stats' [GLIBC_2.0]
+28228:	symbol=_itoa_upper_digits;  lookup in file=a.out
+28228:	symbol=_itoa_upper_digits;  lookup in file=./libfoo.so
+28228:	symbol=_itoa_upper_digits;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_itoa_upper_digits' [GLIBC_2.0]
+28228:	symbol=mallwatch;  lookup in file=a.out
+28228:	symbol=mallwatch;  lookup in file=./libfoo.so
+28228:	symbol=mallwatch;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `mallwatch' [GLIBC_2.0]
+28228:	symbol=svc_fdset;  lookup in file=a.out
+28228:	symbol=svc_fdset;  lookup in file=./libfoo.so
+28228:	symbol=svc_fdset;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `svc_fdset' [GLIBC_2.0]
+28228:	symbol=re_max_failures;  lookup in file=a.out
+28228:	symbol=re_max_failures;  lookup in file=./libfoo.so
+28228:	symbol=re_max_failures;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `re_max_failures' [GLIBC_2.0]
+28228:	symbol=__curbrk;  lookup in file=a.out
+28228:	symbol=__curbrk;  lookup in file=./libfoo.so
+28228:	symbol=__curbrk;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__curbrk' [GLIBC_2.0]
+28228:	symbol=__free_hook;  lookup in file=a.out
+28228:	symbol=__free_hook;  lookup in file=./libfoo.so
+28228:	symbol=__free_hook;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__free_hook;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__free_hook' [GLIBC_2.0]
+28228:	symbol=__pthread_setspecific;  lookup in file=a.out
+28228:	symbol=__pthread_setspecific;  lookup in file=./libfoo.so
+28228:	symbol=__pthread_setspecific;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__pthread_setspecific;  lookup in file=/lib/ld-linux.so.2
+28228:	symbol=_null_auth;  lookup in file=a.out
+28228:	symbol=_null_auth;  lookup in file=./libfoo.so
+28228:	symbol=_null_auth;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_null_auth' [GLIBC_2.0]
+28228:	symbol=error_one_per_line;  lookup in file=a.out
+28228:	symbol=error_one_per_line;  lookup in file=./libfoo.so
+28228:	symbol=error_one_per_line;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `error_one_per_line' [GLIBC_2.0]
+28228:	symbol=_IO_stdin_used;  lookup in file=a.out
+28228:	binding file /lib/i686/libc.so.6 to a.out: normal symbol `_IO_stdin_used'
+28228:	symbol=program_invocation_name;  lookup in file=a.out
+28228:	symbol=program_invocation_name;  lookup in file=./libfoo.so
+28228:	symbol=program_invocation_name;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=program_invocation_name;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `program_invocation_name' [GLIBC_2.0]
+28228:	symbol=xdr_cryptkeyarg2;  lookup in file=a.out
+28228:	symbol=xdr_cryptkeyarg2;  lookup in file=./libfoo.so
+28228:	symbol=xdr_cryptkeyarg2;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `xdr_cryptkeyarg2' [GLIBC_2.0]
+28228:	symbol=_dl_platformlen;  lookup in file=a.out
+28228:	symbol=_dl_platformlen;  lookup in file=./libfoo.so
+28228:	symbol=_dl_platformlen;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_platformlen;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/ld-linux.so.2: normal symbol `_dl_platformlen' [GLIBC_2.1.1]
+28228:	symbol=__gconv_alias_db;  lookup in file=a.out
+28228:	symbol=__gconv_alias_db;  lookup in file=./libfoo.so
+28228:	symbol=__gconv_alias_db;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__gconv_alias_db' [GLIBC_2.1]
+28228:	symbol=svc_max_pollfd;  lookup in file=a.out
+28228:	symbol=svc_max_pollfd;  lookup in file=./libfoo.so
+28228:	symbol=svc_max_pollfd;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `svc_max_pollfd' [GLIBC_2.2]
+28228:	symbol=rpc_createerr;  lookup in file=a.out
+28228:	symbol=rpc_createerr;  lookup in file=./libfoo.so
+28228:	symbol=rpc_createerr;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `rpc_createerr' [GLIBC_2.0]
+28228:	symbol=argp_program_version_hook;  lookup in file=a.out
+28228:	symbol=argp_program_version_hook;  lookup in file=./libfoo.so
+28228:	symbol=argp_program_version_hook;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `argp_program_version_hook' [GLIBC_2.1]
+28228:	symbol=_IO_list_all;  lookup in file=a.out
+28228:	symbol=_IO_list_all;  lookup in file=./libfoo.so
+28228:	symbol=_IO_list_all;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_list_all' [GLIBC_2.0]
+28228:	symbol=svc_pollfd;  lookup in file=a.out
+28228:	symbol=svc_pollfd;  lookup in file=./libfoo.so
+28228:	symbol=svc_pollfd;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `svc_pollfd' [GLIBC_2.2]
+28228:	symbol=__key_decryptsession_pk_LOCAL;  lookup in file=a.out
+28228:	symbol=__key_decryptsession_pk_LOCAL;  lookup in file=./libfoo.so
+28228:	symbol=__key_decryptsession_pk_LOCAL;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__key_decryptsession_pk_LOCAL' [GLIBC_2.1]
+28228:	symbol=__ctype_tolower;  lookup in file=a.out
+28228:	symbol=__ctype_tolower;  lookup in file=./libfoo.so
+28228:	symbol=__ctype_tolower;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__ctype_tolower' [GLIBC_2.0]
+28228:	symbol=__memalign_hook;  lookup in file=a.out
+28228:	symbol=__memalign_hook;  lookup in file=./libfoo.so
+28228:	symbol=__memalign_hook;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__memalign_hook;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__memalign_hook' [GLIBC_2.0]
+28228:	symbol=__libc_enable_secure;  lookup in file=a.out
+28228:	symbol=__libc_enable_secure;  lookup in file=./libfoo.so
+28228:	symbol=__libc_enable_secure;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__libc_enable_secure;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/ld-linux.so.2: normal symbol `__libc_enable_secure' [GLIBC_2.0]
+28228:	symbol=__progname_full;  lookup in file=a.out
+28228:	symbol=__progname_full;  lookup in file=./libfoo.so
+28228:	symbol=__progname_full;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__progname_full' [GLIBC_2.0]
+28228:	symbol=__libc_stack_end;  lookup in file=a.out
+28228:	symbol=__libc_stack_end;  lookup in file=./libfoo.so
+28228:	symbol=__libc_stack_end;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__libc_stack_end;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/ld-linux.so.2: normal symbol `__libc_stack_end' [GLIBC_2.1]
+28228:	symbol=__nss_passwd_lookup;  lookup in file=a.out
+28228:	symbol=__nss_passwd_lookup;  lookup in file=./libfoo.so
+28228:	symbol=__nss_passwd_lookup;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__nss_passwd_lookup' [GLIBC_2.0]
+28228:	symbol=free;  lookup in file=a.out
+28228:	symbol=free;  lookup in file=./libfoo.so
+28228:	symbol=free;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=free;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `free' [GLIBC_2.0]
+28228:	symbol=xdr_u_short;  lookup in file=a.out
+28228:	symbol=xdr_u_short;  lookup in file=./libfoo.so
+28228:	symbol=xdr_u_short;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `xdr_u_short' [GLIBC_2.0]
+28228:	symbol=xdr_key_netstarg;  lookup in file=a.out
+28228:	symbol=xdr_key_netstarg;  lookup in file=./libfoo.so
+28228:	symbol=xdr_key_netstarg;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `xdr_key_netstarg' [GLIBC_2.0]
+
+relocation processing: ./libfoo.so (lazy)
+28228:	symbol=mcount;  lookup in file=a.out
+28228:	binding file ./libfoo.so to a.out: normal symbol `mcount' [GLIBC_2.0]
+28228:	symbol=__register_frame_info;  lookup in file=a.out
+28228:	symbol=__register_frame_info;  lookup in file=./libfoo.so
+28228:	symbol=__register_frame_info;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file ./libfoo.so to /lib/i686/libc.so.6: normal symbol `__register_frame_info' [GLIBC_2.0]
+28228:	symbol=__deregister_frame_info;  lookup in file=a.out
+28228:	symbol=__deregister_frame_info;  lookup in file=./libfoo.so
+28228:	symbol=__deregister_frame_info;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file ./libfoo.so to /lib/i686/libc.so.6: normal symbol `__deregister_frame_info' [GLIBC_2.0]
+28228:	symbol=__cxa_finalize;  lookup in file=a.out
+28228:	symbol=__cxa_finalize;  lookup in file=./libfoo.so
+28228:	symbol=__cxa_finalize;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file ./libfoo.so to /lib/i686/libc.so.6: normal symbol `__cxa_finalize' [GLIBC_2.1.3]
+28228:	symbol=__gmon_start__;  lookup in file=a.out
+28228:	binding file ./libfoo.so to a.out: normal symbol `__gmon_start__'
+
+relocation processing: a.out (lazy)
+28228:	symbol=__gmon_start__;  lookup in file=a.out
+28228:	binding file a.out to a.out: normal symbol `__gmon_start__'
+
+relocation processing: /lib/ld-linux.so.2
+28228:	symbol=__libc_internal_tsd_set;  lookup in file=a.out
+28228:	symbol=__libc_internal_tsd_set;  lookup in file=./libfoo.so
+28228:	symbol=__libc_internal_tsd_set;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/ld-linux.so.2 to /lib/i686/libc.so.6: normal symbol `__libc_internal_tsd_set' [GLIBC_2.0]
+28228:	symbol=_dl_nloaded;  lookup in file=a.out
+28228:	symbol=_dl_nloaded;  lookup in file=./libfoo.so
+28228:	symbol=_dl_nloaded;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_nloaded;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_nloaded' [GLIBC_2.2]
+28228:	symbol=__pthread_mutex_lock;  lookup in file=a.out
+28228:	symbol=__pthread_mutex_lock;  lookup in file=./libfoo.so
+28228:	symbol=__pthread_mutex_lock;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__pthread_mutex_lock;  lookup in file=/lib/ld-linux.so.2
+28228:	symbol=_dl_profile_output;  lookup in file=a.out
+28228:	symbol=_dl_profile_output;  lookup in file=./libfoo.so
+28228:	symbol=_dl_profile_output;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_profile_output;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_profile_output' [GLIBC_2.1]
+28228:	symbol=__libc_stack_end;  lookup in file=a.out
+28228:	symbol=__libc_stack_end;  lookup in file=./libfoo.so
+28228:	symbol=__libc_stack_end;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__libc_stack_end;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `__libc_stack_end' [GLIBC_2.1]
+28228:	symbol=_dl_debug_fd;  lookup in file=a.out
+28228:	symbol=_dl_debug_fd;  lookup in file=./libfoo.so
+28228:	symbol=_dl_debug_fd;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_debug_fd;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_debug_fd' [GLIBC_2.0]
+28228:	symbol=_dl_initial_searchlist;  lookup in file=a.out
+28228:	symbol=_dl_initial_searchlist;  lookup in file=./libfoo.so
+28228:	symbol=_dl_initial_searchlist;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_initial_searchlist;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_initial_searchlist' [GLIBC_2.1]
+28228:	symbol=_dl_platformlen;  lookup in file=a.out
+28228:	symbol=_dl_platformlen;  lookup in file=./libfoo.so
+28228:	symbol=_dl_platformlen;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_platformlen;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_platformlen' [GLIBC_2.1.1]
+28228:	symbol=_dl_debug_mask;  lookup in file=a.out
+28228:	symbol=_dl_debug_mask;  lookup in file=./libfoo.so
+28228:	symbol=_dl_debug_mask;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_debug_mask;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_debug_mask' [GLIBC_2.2.3]
+28228:	symbol=_dl_profile;  lookup in file=a.out
+28228:	symbol=_dl_profile;  lookup in file=./libfoo.so
+28228:	symbol=_dl_profile;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_profile;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_profile' [GLIBC_2.1]
+28228:	symbol=_dl_cpuclock_offset;  lookup in file=a.out
+28228:	symbol=_dl_cpuclock_offset;  lookup in file=./libfoo.so
+28228:	symbol=_dl_cpuclock_offset;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_cpuclock_offset;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_cpuclock_offset' [GLIBC_2.2.3]
+28228:	symbol=__libc_enable_secure;  lookup in file=a.out
+28228:	symbol=__libc_enable_secure;  lookup in file=./libfoo.so
+28228:	symbol=__libc_enable_secure;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__libc_enable_secure;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `__libc_enable_secure' [GLIBC_2.0]
+28228:	symbol=_dl_global_scope;  lookup in file=a.out
+28228:	symbol=_dl_global_scope;  lookup in file=./libfoo.so
+28228:	symbol=_dl_global_scope;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_global_scope;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_global_scope' [GLIBC_2.0]
+28228:	symbol=__libc_internal_tsd_get;  lookup in file=a.out
+28228:	symbol=__libc_internal_tsd_get;  lookup in file=./libfoo.so
+28228:	symbol=__libc_internal_tsd_get;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/ld-linux.so.2 to /lib/i686/libc.so.6: normal symbol `__libc_internal_tsd_get' [GLIBC_2.0]
+28228:	symbol=__pthread_mutex_unlock;  lookup in file=a.out
+28228:	symbol=__pthread_mutex_unlock;  lookup in file=./libfoo.so
+28228:	symbol=__pthread_mutex_unlock;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__pthread_mutex_unlock;  lookup in file=/lib/ld-linux.so.2
+28228:	symbol=_dl_lazy;  lookup in file=a.out
+28228:	symbol=_dl_lazy;  lookup in file=./libfoo.so
+28228:	symbol=_dl_lazy;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_lazy;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_lazy' [GLIBC_2.1.1]
+28228:	symbol=_dl_debug_state;  lookup in file=a.out
+28228:	symbol=_dl_debug_state;  lookup in file=./libfoo.so
+28228:	symbol=_dl_debug_state;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_debug_state;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_debug_state' [GLIBC_2.0]
+28228:	symbol=_dl_argv;  lookup in file=a.out
+28228:	symbol=_dl_argv;  lookup in file=./libfoo.so
+28228:	symbol=_dl_argv;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_argv;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_argv' [GLIBC_2.2]
+28228:	symbol=_dl_main_searchlist;  lookup in file=a.out
+28228:	symbol=_dl_main_searchlist;  lookup in file=./libfoo.so
+28228:	symbol=_dl_main_searchlist;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_main_searchlist;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_main_searchlist' [GLIBC_2.1]
+28228:	symbol=_dl_origin_path;  lookup in file=a.out
+28228:	symbol=_dl_origin_path;  lookup in file=./libfoo.so
+28228:	symbol=_dl_origin_path;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_origin_path;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_origin_path' [GLIBC_2.1.1]
+28228:	symbol=_dl_clktck;  lookup in file=a.out
+28228:	symbol=_dl_clktck;  lookup in file=./libfoo.so
+28228:	symbol=_dl_clktck;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_clktck;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_clktck' [GLIBC_2.2]
+28228:	symbol=_dl_starting_up;  lookup in file=a.out
+28228:	symbol=_dl_starting_up;  lookup in file=./libfoo.so
+28228:	symbol=_dl_starting_up;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_starting_up;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_starting_up' [GLIBC_2.0]
+28228:	symbol=_dl_out_of_memory;  lookup in file=a.out
+28228:	symbol=_dl_out_of_memory;  lookup in file=./libfoo.so
+28228:	symbol=_dl_out_of_memory;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_out_of_memory;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_out_of_memory' [GLIBC_2.2]
+28228:	symbol=_dl_mcount;  lookup in file=a.out
+28228:	symbol=_dl_mcount;  lookup in file=./libfoo.so
+28228:	symbol=_dl_mcount;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_mcount;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_mcount' [GLIBC_2.1]
+28228:	symbol=_dl_init_all_dirs;  lookup in file=a.out
+28228:	symbol=_dl_init_all_dirs;  lookup in file=./libfoo.so
+28228:	symbol=_dl_init_all_dirs;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_init_all_dirs;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_init_all_dirs' [GLIBC_2.2]
+28228:	symbol=_dl_load_lock;  lookup in file=a.out
+28228:	symbol=_dl_load_lock;  lookup in file=./libfoo.so
+28228:	symbol=_dl_load_lock;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_load_lock;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_load_lock' [GLIBC_2.2]
+28228:	symbol=_dl_fpu_control;  lookup in file=a.out
+28228:	symbol=_dl_fpu_control;  lookup in file=./libfoo.so
+28228:	symbol=_dl_fpu_control;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_fpu_control;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_fpu_control' [GLIBC_2.1]
+28228:	symbol=_dl_loaded;  lookup in file=a.out
+28228:	symbol=_dl_loaded;  lookup in file=./libfoo.so
+28228:	symbol=_dl_loaded;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_loaded;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_loaded' [GLIBC_2.1]
+28228:	symbol=_dl_profile_map;  lookup in file=a.out
+28228:	symbol=_dl_profile_map;  lookup in file=./libfoo.so
+28228:	symbol=_dl_profile_map;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_profile_map;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_profile_map' [GLIBC_2.1]
+28228:	symbol=_dl_all_dirs;  lookup in file=a.out
+28228:	symbol=_dl_all_dirs;  lookup in file=./libfoo.so
+28228:	symbol=_dl_all_dirs;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_all_dirs;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_all_dirs' [GLIBC_2.2]
+28228:	symbol=_r_debug;  lookup in file=a.out
+28228:	symbol=_r_debug;  lookup in file=./libfoo.so
+28228:	symbol=_r_debug;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_r_debug;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_r_debug' [GLIBC_2.0]
+28228:	symbol=_dl_pagesize;  lookup in file=a.out
+28228:	symbol=_dl_pagesize;  lookup in file=./libfoo.so
+28228:	symbol=_dl_pagesize;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_pagesize;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_pagesize' [GLIBC_2.2]
+28228:	symbol=_dl_debug_printf;  lookup in file=a.out
+28228:	symbol=_dl_debug_printf;  lookup in file=./libfoo.so
+28228:	symbol=_dl_debug_printf;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_debug_printf;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_debug_printf' [GLIBC_2.2.3]
+28228:	symbol=_dl_check_map_versions;  lookup in file=a.out
+28228:	symbol=_dl_check_map_versions;  lookup in file=./libfoo.so
+28228:	symbol=_dl_check_map_versions;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_check_map_versions;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_check_map_versions' [GLIBC_2.2]
+28228:	symbol=__pthread_mutex_lock;  lookup in file=a.out
+28228:	symbol=__pthread_mutex_lock;  lookup in file=./libfoo.so
+28228:	symbol=__pthread_mutex_lock;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__pthread_mutex_lock;  lookup in file=/lib/ld-linux.so.2
+28228:	symbol=_dl_sysdep_start;  lookup in file=a.out
+28228:	symbol=_dl_sysdep_start;  lookup in file=./libfoo.so
+28228:	symbol=_dl_sysdep_start;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_sysdep_start;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_sysdep_start' [GLIBC_2.0]
+28228:	symbol=_dl_init;  lookup in file=a.out
+28228:	symbol=_dl_init;  lookup in file=./libfoo.so
+28228:	symbol=_dl_init;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_init;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_init' [GLIBC_2.2]
+28228:	symbol=malloc;  lookup in file=a.out
+28228:	symbol=malloc;  lookup in file=./libfoo.so
+28228:	symbol=malloc;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=malloc;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/i686/libc.so.6: normal symbol `malloc' [GLIBC_2.0]
+28228:	symbol=_dl_lookup_versioned_symbol;  lookup in file=a.out
+28228:	symbol=_dl_lookup_versioned_symbol;  lookup in file=./libfoo.so
+28228:	symbol=_dl_lookup_versioned_symbol;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_lookup_versioned_symbol;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_lookup_versioned_symbol' [GLIBC_2.0]
+28228:	symbol=_dl_lookup_symbol;  lookup in file=a.out
+28228:	symbol=_dl_lookup_symbol;  lookup in file=./libfoo.so
+28228:	symbol=_dl_lookup_symbol;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_lookup_symbol;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_lookup_symbol' [GLIBC_2.0]
+28228:	symbol=calloc;  lookup in file=a.out
+28228:	symbol=calloc;  lookup in file=./libfoo.so
+28228:	symbol=calloc;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=calloc;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/i686/libc.so.6: normal symbol `calloc' [GLIBC_2.0]
+28228:	symbol=__pthread_mutex_unlock;  lookup in file=a.out
+28228:	symbol=__pthread_mutex_unlock;  lookup in file=./libfoo.so
+28228:	symbol=__pthread_mutex_unlock;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__pthread_mutex_unlock;  lookup in file=/lib/ld-linux.so.2
+28228:	symbol=_dl_debug_state;  lookup in file=a.out
+28228:	symbol=_dl_debug_state;  lookup in file=./libfoo.so
+28228:	symbol=_dl_debug_state;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_debug_state;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_debug_state' [GLIBC_2.0]
+28228:	symbol=_dl_dst_substitute;  lookup in file=a.out
+28228:	symbol=_dl_dst_substitute;  lookup in file=./libfoo.so
+28228:	symbol=_dl_dst_substitute;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_dst_substitute;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_dst_substitute' [GLIBC_2.1.1]
+28228:	symbol=realloc;  lookup in file=a.out
+28228:	symbol=realloc;  lookup in file=./libfoo.so
+28228:	symbol=realloc;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=realloc;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/i686/libc.so.6: normal symbol `realloc' [GLIBC_2.0]
+28228:	symbol=_dl_check_all_versions;  lookup in file=a.out
+28228:	symbol=_dl_check_all_versions;  lookup in file=./libfoo.so
+28228:	symbol=_dl_check_all_versions;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_check_all_versions;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_check_all_versions' [GLIBC_2.0]
+28228:	symbol=_dl_debug_initialize;  lookup in file=a.out
+28228:	symbol=_dl_debug_initialize;  lookup in file=./libfoo.so
+28228:	symbol=_dl_debug_initialize;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_debug_initialize;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_debug_initialize' [GLIBC_2.0]
+28228:	symbol=__xstat64;  lookup in file=a.out
+28228:	symbol=__xstat64;  lookup in file=./libfoo.so
+28228:	symbol=__xstat64;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/ld-linux.so.2 to /lib/i686/libc.so.6: normal symbol `__xstat64' [GLIBC_2.2]
+28228:	symbol=_dl_start_profile;  lookup in file=a.out
+28228:	symbol=_dl_start_profile;  lookup in file=./libfoo.so
+28228:	symbol=_dl_start_profile;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_start_profile;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_start_profile' [GLIBC_2.1]
+28228:	symbol=_dl_relocate_object;  lookup in file=a.out
+28228:	symbol=_dl_relocate_object;  lookup in file=./libfoo.so
+28228:	symbol=_dl_relocate_object;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_relocate_object;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_relocate_object' [GLIBC_2.0]
+28228:	symbol=_dl_dst_count;  lookup in file=a.out
+28228:	symbol=_dl_dst_count;  lookup in file=./libfoo.so
+28228:	symbol=_dl_dst_count;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_dst_count;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_dst_count' [GLIBC_2.1.1]
+28228:	symbol=_dl_unload_cache;  lookup in file=a.out
+28228:	symbol=_dl_unload_cache;  lookup in file=./libfoo.so
+28228:	symbol=_dl_unload_cache;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_unload_cache;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_unload_cache' [GLIBC_2.1]
+28228:	symbol=_dl_map_object;  lookup in file=a.out
+28228:	symbol=_dl_map_object;  lookup in file=./libfoo.so
+28228:	symbol=_dl_map_object;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_map_object;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_map_object' [GLIBC_2.0]
+28228:	symbol=_dl_signal_error;  lookup in file=a.out
+28228:	symbol=_dl_signal_error;  lookup in file=./libfoo.so
+28228:	symbol=_dl_signal_error;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_signal_error;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_signal_error' [GLIBC_2.0]
+28228:	symbol=_dl_catch_error;  lookup in file=a.out
+28228:	symbol=_dl_catch_error;  lookup in file=./libfoo.so
+28228:	symbol=_dl_catch_error;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_catch_error;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_catch_error' [GLIBC_2.0]
+28228:	symbol=__fxstat64;  lookup in file=a.out
+28228:	symbol=__fxstat64;  lookup in file=./libfoo.so
+28228:	symbol=__fxstat64;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/ld-linux.so.2 to /lib/i686/libc.so.6: normal symbol `__fxstat64' [GLIBC_2.2]
+28228:	symbol=free;  lookup in file=a.out
+28228:	symbol=free;  lookup in file=./libfoo.so
+28228:	symbol=free;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=free;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/i686/libc.so.6: normal symbol `free' [GLIBC_2.0]
+28228:	symbol=_dl_map_object_deps;  lookup in file=a.out
+28228:	symbol=_dl_map_object_deps;  lookup in file=./libfoo.so
+28228:	symbol=_dl_map_object_deps;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_map_object_deps;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/ld-linux.so.2 to /lib/ld-linux.so.2: normal symbol `_dl_map_object_deps' [GLIBC_2.0]
+28228:	
+28228:	calling init: /lib/i686/libc.so.6
+28228:	
+28228:	symbol=__register_frame_info;  lookup in file=a.out
+28228:	symbol=__register_frame_info;  lookup in file=./libfoo.so
+28228:	symbol=__register_frame_info;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__register_frame_info' [GLIBC_2.0]
+28228:	
+28228:	calling init: ./libfoo.so
+28228:	
+28228:	symbol=__monstartup;  lookup in file=a.out
+28228:	symbol=__monstartup;  lookup in file=./libfoo.so
+28228:	symbol=__monstartup;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file a.out to /lib/i686/libc.so.6: normal symbol `__monstartup' [GLIBC_2.0]
+28228:	symbol=calloc;  lookup in file=a.out
+28228:	symbol=calloc;  lookup in file=./libfoo.so
+28228:	symbol=calloc;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=calloc;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `calloc' [GLIBC_2.0]
+28228:	symbol=__getpagesize;  lookup in file=a.out
+28228:	symbol=__getpagesize;  lookup in file=./libfoo.so
+28228:	symbol=__getpagesize;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__getpagesize' [GLIBC_2.0]
+28228:	symbol=__libc_malloc;  lookup in file=a.out
+28228:	symbol=__libc_malloc;  lookup in file=./libfoo.so
+28228:	symbol=__libc_malloc;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__libc_malloc' [GLIBC_2.0]
+28228:	symbol=__sbrk;  lookup in file=a.out
+28228:	symbol=__sbrk;  lookup in file=./libfoo.so
+28228:	symbol=__sbrk;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__sbrk' [GLIBC_2.0]
+28228:	symbol=sigfillset;  lookup in file=a.out
+28228:	symbol=sigfillset;  lookup in file=./libfoo.so
+28228:	symbol=sigfillset;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `sigfillset' [GLIBC_2.0]
+28228:	symbol=__sigaction;  lookup in file=a.out
+28228:	symbol=__sigaction;  lookup in file=./libfoo.so
+28228:	symbol=__sigaction;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__sigaction;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__sigaction' [GLIBC_2.0]
+28228:	symbol=__cxa_atexit;  lookup in file=a.out
+28228:	symbol=__cxa_atexit;  lookup in file=./libfoo.so
+28228:	symbol=__cxa_atexit;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file a.out to /lib/i686/libc.so.6: normal symbol `__cxa_atexit' [GLIBC_2.1.3]
+28228:	symbol=__register_frame_info;  lookup in file=a.out
+28228:	symbol=__register_frame_info;  lookup in file=./libfoo.so
+28228:	symbol=__register_frame_info;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file ./libfoo.so to /lib/i686/libc.so.6: normal symbol `__register_frame_info' [GLIBC_2.0]
+28228:	symbol=__libc_start_main;  lookup in file=a.out
+28228:	symbol=__libc_start_main;  lookup in file=./libfoo.so
+28228:	symbol=__libc_start_main;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file a.out to /lib/i686/libc.so.6: normal symbol `__libc_start_main' [GLIBC_2.0]
+28228:	symbol=__cxa_atexit;  lookup in file=a.out
+28228:	symbol=__cxa_atexit;  lookup in file=./libfoo.so
+28228:	symbol=__cxa_atexit;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__cxa_atexit' [GLIBC_2.1.3]
+28228:	symbol=_dl_debug_printf;  lookup in file=a.out
+28228:	symbol=_dl_debug_printf;  lookup in file=./libfoo.so
+28228:	symbol=_dl_debug_printf;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_dl_debug_printf;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/ld-linux.so.2: normal symbol `_dl_debug_printf' [GLIBC_2.2.3]
+28228:	
+28228:	initialize program: a.out
+28228:	
+28228:	symbol=__register_frame_info;  lookup in file=a.out
+28228:	symbol=__register_frame_info;  lookup in file=./libfoo.so
+28228:	symbol=__register_frame_info;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file a.out to /lib/i686/libc.so.6: normal symbol `__register_frame_info' [GLIBC_2.0]
+28228:	
+28228:	transferring control: a.out
+28228:	
+28228:	symbol=mcount;  lookup in file=a.out
+28228:	symbol=mcount;  lookup in file=./libfoo.so
+28228:	symbol=mcount;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=mcount;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file a.out to /lib/i686/libc.so.6: normal symbol `mcount' [GLIBC_2.0]
+28228:	symbol=foo;  lookup in file=a.out
+28228:	symbol=foo;  lookup in file=./libfoo.so
+28228:	binding file a.out to ./libfoo.so: normal symbol `foo'
+28228:	symbol=exit;  lookup in file=a.out
+28228:	symbol=exit;  lookup in file=./libfoo.so
+28228:	symbol=exit;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `exit' [GLIBC_2.0]
+28228:	symbol=__deregister_frame_info;  lookup in file=a.out
+28228:	symbol=__deregister_frame_info;  lookup in file=./libfoo.so
+28228:	symbol=__deregister_frame_info;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file a.out to /lib/i686/libc.so.6: normal symbol `__deregister_frame_info' [GLIBC_2.0]
+28228:	
+28228:	calling fini: ./libfoo.so
+28228:	
+28228:	symbol=__cxa_finalize;  lookup in file=a.out
+28228:	symbol=__cxa_finalize;  lookup in file=./libfoo.so
+28228:	symbol=__cxa_finalize;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file ./libfoo.so to /lib/i686/libc.so.6: normal symbol `__cxa_finalize' [GLIBC_2.1.3]
+28228:	symbol=__deregister_frame_info;  lookup in file=a.out
+28228:	symbol=__deregister_frame_info;  lookup in file=./libfoo.so
+28228:	symbol=__deregister_frame_info;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file ./libfoo.so to /lib/i686/libc.so.6: normal symbol `__deregister_frame_info' [GLIBC_2.0]
+28228:	
+28228:	calling fini: /lib/i686/libc.so.6
+28228:	
+28228:	symbol=__deregister_frame_info;  lookup in file=a.out
+28228:	symbol=__deregister_frame_info;  lookup in file=./libfoo.so
+28228:	symbol=__deregister_frame_info;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__deregister_frame_info' [GLIBC_2.0]
+28228:	symbol=_mcleanup;  lookup in file=a.out
+28228:	symbol=_mcleanup;  lookup in file=./libfoo.so
+28228:	symbol=_mcleanup;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file a.out to /lib/i686/libc.so.6: normal symbol `_mcleanup' [GLIBC_2.0]
+28228:	symbol=getenv;  lookup in file=a.out
+28228:	symbol=getenv;  lookup in file=./libfoo.so
+28228:	symbol=getenv;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `getenv' [GLIBC_2.0]
+28228:	symbol=__open;  lookup in file=a.out
+28228:	symbol=__open;  lookup in file=./libfoo.so
+28228:	symbol=__open;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__open;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__open' [GLIBC_2.0]
+28228:	symbol=__write;  lookup in file=a.out
+28228:	symbol=__write;  lookup in file=./libfoo.so
+28228:	symbol=__write;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__write;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__write' [GLIBC_2.0]
+28228:	symbol=__profile_frequency;  lookup in file=a.out
+28228:	symbol=__profile_frequency;  lookup in file=./libfoo.so
+28228:	symbol=__profile_frequency;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__profile_frequency' [GLIBC_2.0]
+28228:	symbol=__errno_location;  lookup in file=a.out
+28228:	symbol=__errno_location;  lookup in file=./libfoo.so
+28228:	symbol=__errno_location;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__errno_location;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__errno_location' [GLIBC_2.0]
+28228:	symbol=__close;  lookup in file=a.out
+28228:	symbol=__close;  lookup in file=./libfoo.so
+28228:	symbol=__close;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=__close;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `__close' [GLIBC_2.0]
+28228:	symbol=free;  lookup in file=a.out
+28228:	symbol=free;  lookup in file=./libfoo.so
+28228:	symbol=free;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=free;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `free' [GLIBC_2.0]
+28228:	symbol=_IO_flush_all;  lookup in file=a.out
+28228:	symbol=_IO_flush_all;  lookup in file=./libfoo.so
+28228:	symbol=_IO_flush_all;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_flush_all' [GLIBC_2.0]
+28228:	symbol=_IO_flockfile;  lookup in file=a.out
+28228:	symbol=_IO_flockfile;  lookup in file=./libfoo.so
+28228:	symbol=_IO_flockfile;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_IO_flockfile;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_flockfile' [GLIBC_2.0]
+28228:	symbol=_IO_funlockfile;  lookup in file=a.out
+28228:	symbol=_IO_funlockfile;  lookup in file=./libfoo.so
+28228:	symbol=_IO_funlockfile;  lookup in file=/lib/i686/libc.so.6
+28228:	symbol=_IO_funlockfile;  lookup in file=/lib/ld-linux.so.2
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_IO_funlockfile' [GLIBC_2.0]
+28228:	symbol=_exit;  lookup in file=a.out
+28228:	symbol=_exit;  lookup in file=./libfoo.so
+28228:	symbol=_exit;  lookup in file=/lib/i686/libc.so.6
+28228:	binding file /lib/i686/libc.so.6 to /lib/i686/libc.so.6: normal symbol `_exit' [GLIBC_2.0]

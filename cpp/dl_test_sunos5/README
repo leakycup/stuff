@@ -1,0 +1,41 @@
+This is an experiment with various ways of building shared objects and executables that dlopen them in SunOS5. It shows that a shared object built by passing '-Wl,-G' to gcc contains unresolved reference to 'main' (because it is incorrectly linked with crt1.o). An attempt to dlopen it from an executable may fail, if the executable is linked with GNU linker, has not been linked with another '-Wl,-G' shared object, and has not been linked with '-export-dynamic' passed to the linker.
+
+The recommendation is to build shared object with '-shared' passed to gcc and not '-Wl,-G'. Passing '-export-dynamic' to GNU linker while building an executable may solve some problems but this is not an universal recommendation.
+
+Important files
+================
+* README : this file
+* Makefile : makefile for this experiment. you may have to edit it to set CYGROOT variable appropriately.
+* Runall.csh : run script for this experiment.
+* make.out : stdout/stderr messages from make.
+
+What to do 
+============
+make
+./Runall.csh
+
+Observe that one of the testcase is failing to load a shared object
+and complaining about unresolved reference to 'main'.
+
+Other files
+===========
+The following files are built after 'make'.
+
+* libloadable-gccshared.so : A shared object that is to be dlopened by the testcases. This has been built by passing '-shared' to gcc. This is the recommended way of building shared object files with gcc.
+* libloadable-gccG.so : A shared object that is to be dlopened by the testcases. This has been built by passing '-Wl,-G' to gcc. This is NOT the recommended way of building shared object files with gcc.
+
+* libtest-gccG.so : A shared object file to be linked with some of the testcases. This has been built by passing '-Wl,-G' to gcc. This is not recommended.
+* libtest-gccshared.so : This has been built by passing '-shared' to gcc. This is recommended.
+
+* runitshared_ccs : This is a testcase executable, linked with ccs linker. It links with libtest-gccshared.so. It successfully locates the symbol 'main' in its address space and can dlopen both 'libloadable-gccshared.so' and 'libloadable-gccG.so'.
+* runitG_ccs : This is a testcase executable, linked with ccs linker. It links with libtest-gccG.so. It successfully locates the symbol 'main' in its address space and can dlopen both 'libloadable-gccshared.so' and 'libloadable-gccG.so'.
+* runitG_gcc : This is a testcase executable, linked with GNU linker. It links with libtest-gccG.so. It successfully locates the symbol 'main' in its address space and can dlopen both 'libloadable-gccshared.so' and 'libloadable-gccG.so'.
+* runitshared_gcc1 : This is a testcase executable, linked with GNU linker. It links with libtest-gccshared.so and '-export-dynamic' has been passed to linker. It successfully locates the symbol 'main' in its address space and can dlopen both 'libloadable-gccshared.so' and 'libloadable-gccG.so'.
+* runitshared_gcc2 : This is a testcase executable, linked with GNU linker. It links with libtest-gccshared.so and '-export-dynamic' has NOT been passed to linker. It fails to locate the symbol 'main' in its address space (though it is present) and fail to dlopen both 'libloadable-gccG.so'. However, it can dlopen 'libloadable-gccG.so'.
+
+Following are source files.
+
+* loadable.c : source for 'libloadable-gccshared.so' and 'libloadable-gccG.so'.
+* tests.cxx : source for 'libtest-gccshared.so' and 'libtest-gccG.so'.
+* runit.cxx : source for testcase executables.
+

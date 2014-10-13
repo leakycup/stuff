@@ -1,0 +1,183 @@
+=====================================================================================================
+
+/tools/gcc-3.3/ss5/bin/g++ -v -DDLL1=\"./libloadable-gccshared.so\" -DDLL2=\"./libloadable-gccG.so\" -g -c runit.cxx	-o runit.o
+Reading specs from /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/specs
+Configured with: ../srcdir/configure --prefix=/tools/gcc-3.3/ss5
+Thread model: posix
+gcc version 3.3
+ /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/cc1plus -quiet -v -D__GNUC__=3 -D__GNUC_MINOR__=3 -D__GNUC_PATCHLEVEL__=0 -Dsparc -D__sparc__ -D__sparc -D__GCC_NEW_VARARGS__ -Acpu=sparc -Amachine=sparc -DDLL1="./libloadable-gccshared.so" -DDLL2="./libloadable-gccG.so" runit.cxx -D__GNUG__=3 -quiet -dumpbase runit.cxx -auxbase-strip runit.o -g -version -o /var/tmp//cc0ca1Vd.s
+GNU C++ version 3.3 (sparc-sun-solaris2.6)
+	compiled by GNU C version 3.3.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/tools/gcc-3.3/ss5/sparc-sun-solaris2.6/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /tools/gcc-3.3/ss5/include/c++/3.3
+ /tools/gcc-3.3/ss5/include/c++/3.3/sparc-sun-solaris2.6
+ /tools/gcc-3.3/ss5/include/c++/3.3/backward
+ /usr/local/include
+ /tools/gcc-3.3/ss5/include
+ /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/include
+ /usr/include
+End of search list.
+ /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/../../../../sparc-sun-solaris2.6/bin/as -V -Qy -s -o runit.o /var/tmp//cc0ca1Vd.s
+GNU assembler version 2.14 (sparc-sun-solaris2.6) using BFD version 2.14 20030612
+=====================================================================================================
+
+/tools/gcc-3.3/ss5/bin/g++ -v -g -fPIC -c tests.cxx -o foo.o;
+Reading specs from /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/specs
+Configured with: ../srcdir/configure --prefix=/tools/gcc-3.3/ss5
+Thread model: posix
+gcc version 3.3
+ /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/cc1plus -quiet -v -D__GNUC__=3 -D__GNUC_MINOR__=3 -D__GNUC_PATCHLEVEL__=0 -Dsparc -D__sparc__ -D__sparc -D__GCC_NEW_VARARGS__ -Acpu=sparc -Amachine=sparc tests.cxx -D__GNUG__=3 -quiet -dumpbase tests.cxx -auxbase-strip foo.o -g -version -fPIC -o /var/tmp//cc7Yj7jt.s
+GNU C++ version 3.3 (sparc-sun-solaris2.6)
+	compiled by GNU C version 3.3.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/tools/gcc-3.3/ss5/sparc-sun-solaris2.6/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /tools/gcc-3.3/ss5/include/c++/3.3
+ /tools/gcc-3.3/ss5/include/c++/3.3/sparc-sun-solaris2.6
+ /tools/gcc-3.3/ss5/include/c++/3.3/backward
+ /usr/local/include
+ /tools/gcc-3.3/ss5/include
+ /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/include
+ /usr/include
+End of search list.
+ /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/../../../../sparc-sun-solaris2.6/bin/as -V -Qy -s -K PIC -o foo.o /var/tmp//cc7Yj7jt.s
+GNU assembler version 2.14 (sparc-sun-solaris2.6) using BFD version 2.14 20030612
+/tools/gcc-3.3/ss5/bin/ld -V -g -Ur -Bstatic -L/tools/gcc-3.3/ss5/lib -lstdc++ foo.o -o tests.o
+GNU ld version 2.14 20030612
+  Supported emulations:
+   elf32_sparc
+rm -f foo.o
+=====================================================================================================
+
+/tools/gcc-3.3/ss5/bin/g++ -v -g -shared tests.o -o libtest-gccshared.so -nodefaultlibs -lgcc -lc
+Reading specs from /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/specs
+Configured with: ../srcdir/configure --prefix=/tools/gcc-3.3/ss5
+Thread model: posix
+gcc version 3.3
+ /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/collect2 -V -G -dy -z text -Y P,/usr/ccs/lib:/usr/lib -Qy -o libtest-gccshared.so /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crti.o /usr/ccs/lib/values-Xa.o /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crtbegin.o -L/tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3 -L/tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/../../../../sparc-sun-solaris2.6/lib -L/usr/ccs/bin -L/usr/ccs/lib -L/tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/../../.. tests.o -lgcc -lc /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crtend.o /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crtn.o
+GNU ld version 2.14 20030612
+  Supported emulations:
+   elf32_sparc
+=====================================================================================================
+
+/usr/ccs/bin/ld	-V runit.o -o runitshared_ccs -L. -ltest-gccshared -ldl -lc -L/tools/gcc-3.3/ss5/lib -lstdc++ -lgcc_s
+ld: Software Generation Utilities - Solaris-ELF (4.0)
+=====================================================================================================
+
+/tools/gcc-3.3/ss5/bin/g++ -v -g -fPIC -Wl,-G tests.cxx -o libtest-gccG.so -nodefaultlibs -lgcc -lc -lstdc++
+Reading specs from /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/specs
+Configured with: ../srcdir/configure --prefix=/tools/gcc-3.3/ss5
+Thread model: posix
+gcc version 3.3
+ /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/cc1plus -quiet -v -D__GNUC__=3 -D__GNUC_MINOR__=3 -D__GNUC_PATCHLEVEL__=0 -Dsparc -D__sparc__ -D__sparc -D__GCC_NEW_VARARGS__ -Acpu=sparc -Amachine=sparc tests.cxx -D__GNUG__=3 -quiet -dumpbase tests.cxx -auxbase tests -g -version -fPIC -o /var/tmp//ccvoi6QW.s
+GNU C++ version 3.3 (sparc-sun-solaris2.6)
+	compiled by GNU C version 3.3.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/tools/gcc-3.3/ss5/sparc-sun-solaris2.6/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /tools/gcc-3.3/ss5/include/c++/3.3
+ /tools/gcc-3.3/ss5/include/c++/3.3/sparc-sun-solaris2.6
+ /tools/gcc-3.3/ss5/include/c++/3.3/backward
+ /usr/local/include
+ /tools/gcc-3.3/ss5/include
+ /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/include
+ /usr/include
+End of search list.
+ /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/../../../../sparc-sun-solaris2.6/bin/as -V -Qy -s -K PIC -o /var/tmp//cciXY6i2.o /var/tmp//ccvoi6QW.s
+GNU assembler version 2.14 (sparc-sun-solaris2.6) using BFD version 2.14 20030612
+ /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/collect2 -V -Y P,/usr/ccs/lib:/usr/lib -Qy -o libtest-gccG.so /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crt1.o /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crti.o /usr/ccs/lib/values-Xa.o /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crtbegin.o -L/tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3 -L/tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/../../../../sparc-sun-solaris2.6/lib -L/usr/ccs/bin -L/usr/ccs/lib -L/tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/../../.. -G /var/tmp//cciXY6i2.o -lgcc -lc -lstdc++ /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crtend.o /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crtn.o
+GNU ld version 2.14 20030612
+  Supported emulations:
+   elf32_sparc
+=====================================================================================================
+
+/usr/ccs/bin/ld	-V runit.o -o runitG_ccs -L. -ltest-gccG -ldl -lc -L/tools/gcc-3.3/ss5/lib -lstdc++ -lgcc_s
+ld: Software Generation Utilities - Solaris-ELF (4.0)
+=====================================================================================================
+
+/tools/gcc-3.3/ss5/bin/g++ -v runit.o -o	runitG_gcc -L. -ltest-gccG -ldl
+Reading specs from /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/specs
+Configured with: ../srcdir/configure --prefix=/tools/gcc-3.3/ss5
+Thread model: posix
+gcc version 3.3
+ /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/collect2 -V -Y P,/usr/ccs/lib:/usr/lib -Qy -o runitG_gcc /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crt1.o /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crti.o /usr/ccs/lib/values-Xa.o /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crtbegin.o -L. -L/tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3 -L/tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/../../../../sparc-sun-solaris2.6/lib -L/usr/ccs/bin -L/usr/ccs/lib -L/tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/../../.. runit.o -ltest-gccG -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc -lc /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crtend.o /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crtn.o
+GNU ld version 2.14 20030612
+  Supported emulations:
+   elf32_sparc
+=====================================================================================================
+
+/tools/gcc-3.3/ss5/bin/g++ -v runit.o -o runitshared_gcc1  -Wl,-export-dynamic -L.	-ltest-gccshared -ldl
+Reading specs from /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/specs
+Configured with: ../srcdir/configure --prefix=/tools/gcc-3.3/ss5
+Thread model: posix
+gcc version 3.3
+ /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/collect2 -V -Y P,/usr/ccs/lib:/usr/lib -Qy -o runitshared_gcc1 /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crt1.o /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crti.o /usr/ccs/lib/values-Xa.o /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crtbegin.o -L. -L/tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3 -L/tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/../../../../sparc-sun-solaris2.6/lib -L/usr/ccs/bin -L/usr/ccs/lib -L/tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/../../.. runit.o -export-dynamic -ltest-gccshared -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc -lc /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crtend.o /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crtn.o
+GNU ld version 2.14 20030612
+  Supported emulations:
+   elf32_sparc
+=====================================================================================================
+
+/tools/gcc-3.3/ss5/bin/g++ -v runit.o -o runitshared_gcc2  -L.	-ltest-gccshared -ldl
+Reading specs from /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/specs
+Configured with: ../srcdir/configure --prefix=/tools/gcc-3.3/ss5
+Thread model: posix
+gcc version 3.3
+ /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/collect2 -V -Y P,/usr/ccs/lib:/usr/lib -Qy -o runitshared_gcc2 /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crt1.o /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crti.o /usr/ccs/lib/values-Xa.o /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crtbegin.o -L. -L/tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3 -L/tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/../../../../sparc-sun-solaris2.6/lib -L/usr/ccs/bin -L/usr/ccs/lib -L/tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/../../.. runit.o -ltest-gccshared -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc -lc /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crtend.o /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crtn.o
+GNU ld version 2.14 20030612
+  Supported emulations:
+   elf32_sparc
+=====================================================================================================
+
+/tools/gcc-3.3/ss5/bin/gcc -v -g -fPIC -shared loadable.c -o libloadable-gccshared.so -nodefaultlibs -lgcc -lc
+Reading specs from /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/specs
+Configured with: ../srcdir/configure --prefix=/tools/gcc-3.3/ss5
+Thread model: posix
+gcc version 3.3
+ /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/cc1 -quiet -v -D__GNUC__=3 -D__GNUC_MINOR__=3 -D__GNUC_PATCHLEVEL__=0 -Dsparc -D__sparc__ -D__sparc -D__GCC_NEW_VARARGS__ -Acpu=sparc -Amachine=sparc loadable.c -quiet -dumpbase loadable.c -auxbase loadable -g -version -fPIC -o /var/tmp//cc23qndc.s
+GNU C version 3.3 (sparc-sun-solaris2.6)
+	compiled by GNU C version 3.3.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/tools/gcc-3.3/ss5/sparc-sun-solaris2.6/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/include
+ /tools/gcc-3.3/ss5/include
+ /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/include
+ /usr/include
+End of search list.
+ /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/../../../../sparc-sun-solaris2.6/bin/as -V -Qy -s -K PIC -o /var/tmp//ccEJazRh.o /var/tmp//cc23qndc.s
+GNU assembler version 2.14 (sparc-sun-solaris2.6) using BFD version 2.14 20030612
+ /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/collect2 -V -G -dy -z text -Y P,/usr/ccs/lib:/usr/lib -Qy -o libloadable-gccshared.so /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crti.o /usr/ccs/lib/values-Xa.o /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crtbegin.o -L/tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3 -L/tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/../../../../sparc-sun-solaris2.6/lib -L/usr/ccs/bin -L/usr/ccs/lib -L/tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/../../.. /var/tmp//ccEJazRh.o -lgcc -lc /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crtend.o /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crtn.o
+GNU ld version 2.14 20030612
+  Supported emulations:
+   elf32_sparc
+=====================================================================================================
+
+/tools/gcc-3.3/ss5/bin/gcc -v -g -fPIC -Wl,-G loadable.c -o libloadable-gccG.so -nodefaultlibs -lgcc -lc
+Reading specs from /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/specs
+Configured with: ../srcdir/configure --prefix=/tools/gcc-3.3/ss5
+Thread model: posix
+gcc version 3.3
+ /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/cc1 -quiet -v -D__GNUC__=3 -D__GNUC_MINOR__=3 -D__GNUC_PATCHLEVEL__=0 -Dsparc -D__sparc__ -D__sparc -D__GCC_NEW_VARARGS__ -Acpu=sparc -Amachine=sparc loadable.c -quiet -dumpbase loadable.c -auxbase loadable -g -version -fPIC -o /var/tmp//cc8xmO0D.s
+GNU C version 3.3 (sparc-sun-solaris2.6)
+	compiled by GNU C version 3.3.
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/tools/gcc-3.3/ss5/sparc-sun-solaris2.6/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/include
+ /tools/gcc-3.3/ss5/include
+ /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/include
+ /usr/include
+End of search list.
+ /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/../../../../sparc-sun-solaris2.6/bin/as -V -Qy -s -K PIC -o /var/tmp//ccKuOy6a.o /var/tmp//cc8xmO0D.s
+GNU assembler version 2.14 (sparc-sun-solaris2.6) using BFD version 2.14 20030612
+ /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/collect2 -V -Y P,/usr/ccs/lib:/usr/lib -Qy -o libloadable-gccG.so /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crt1.o /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crti.o /usr/ccs/lib/values-Xa.o /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crtbegin.o -L/tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3 -L/tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/../../../../sparc-sun-solaris2.6/lib -L/usr/ccs/bin -L/usr/ccs/lib -L/tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/../../.. -G /var/tmp//ccKuOy6a.o -lgcc -lc /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crtend.o /tools/gcc-3.3/ss5/lib/gcc-lib/sparc-sun-solaris2.6/3.3/crtn.o
+GNU ld version 2.14 20030612
+  Supported emulations:
+   elf32_sparc
