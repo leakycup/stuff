@@ -1,0 +1,15 @@
+#!/bin/tcsh -f
+######################################################
+#1st argument is a file name
+#2nd argument is a charecter to be interpreted as line delimiter
+######################################################
+#this program writes to the standard output
+#the content of the file named in 1st arg, with
+#each occurrence of the charecter specified in 2nd arg
+#replaced by a newline charecter.
+######################################################
+#an example : echo $PATH | split_into_lines - :
+######################################################
+
+cat $1 | tr "$2" '\n'
+

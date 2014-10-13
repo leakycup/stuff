@@ -1,0 +1,54 @@
+#!/bin/csh -f
+
+if ($#argv < 1) then
+    echo "Usage:"
+    echo "$0 <caller-data-file-name>"
+    echo "<caller-data-file-name>: output of external_callers tool"
+    exit 1
+endif
+
+set caller_file = $1
+
+set getcomp_file = /ws/pradkris/API_mining/Caller_Impact/getcomp-output-consolidated
+set VIEWS = "sobhatta-redoak_infra sobhatta-hoodoo_infra sobhatta-eveready_infra sobhatta-flo_dsgs7_infra"
+
+foreach line ("`cat $caller_file | grep -v '^#' | cut -f 1 -d ' ' | sort -u`")
+    echo "$line" | grep '^REFCOUNT:' > /dev/null
+    if ($status == 0) continue
+    set symbol = `echo "$line" | cut -f 1 -d ' '`
+    grep -e "^WAYTOOMANYCALLERS: $symbol" "$caller_file" > /dev/null
+    if ($status == 0) then
+	echo "$symbol : WAYTOOMANYCALLERS"
+	continue
+    endif
+    foreach view ($VIEWS)
+	foreach caller_line ("`grep "^$symbol"'[ ]' "$caller_file" | grep "$view"`")
+	    set file_a = `echo "$caller_line" | cut -f 3 -d ' '`
+	    set file_b = `echo $file_a | sed -e 's/^[.][.][/][.][.]/\/vob/'`
+	    set file_c = `echo $file_b | sed -e 's/^\/vob\/ios[.]comp/\/vob\/cisco.comp/'`
+	    set file_d = `echo $file_c | sed -e 's/^\/vob\/ss[.]comp1/\/vob\/cisco.comp/'`
+	    set file_e = `echo $file_d | sed -e 's/^\/vob\/ios[.]sys[[:digit:]]\/sys\//\/vob\/ios\/sys\//'`
+	    set file = `echo $file_e | sed -e 's/^[^/]/\/vob\/ios\/sys\/&/'`
+	    grep "$file" "$getcomp_file" > /dev/null
+	    if ($status == 0) then
+		set comp = `grep "$file" "$getcomp_file" | cut -f 2 -d ' '`
+	    else
+		pushd /view/$view/vob/ios/sys > /dev/null
+		set comp_info = `/usr/cisco/bin/cc_interest $file_a`
+		if ($status != 0) then
+		    set comp = ERROR
+		else
+		    echo "$comp_info" | grep 'INTEREST attribute not set' > /dev/null
+		    if ($status == 0) then
+			set comp = UNKNOWN
+		    else
+			set comp = `echo "$comp_info" | cut -f 2 -d ' ' | sed 's/[(]INTEREST=interest[-]//' | sed 's/[;].*//'`
+		    endif
+		endif
+		popd > /dev/null
+	    endif
+	    echo "$symbol $view $comp $file"
+	end
+    end
+end
+

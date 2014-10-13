@@ -1,0 +1,27 @@
+#!/bin/csh -f
+
+set disparity_file = $1
+set apilist_file = $2
+set view = $3
+
+cd /view/$view/vob/ios/sys
+
+echo "Symbol Caller Component"
+
+foreach symbol (`cut -f 1 -d ' ' $disparity_file`)
+    foreach callerinfo (`grep "^$symbol" $apilist_file`)
+	set caller = `echo "$callerinfo" | cut -f 5 -d ','`
+	set comp_info = `/usr/cisco/bin/cc_interest $caller`
+	if ($status) then
+	    echo "$symbol $caller ERROR"
+	    continue
+	endif
+	echo "$comp_info" | grep 'INTEREST attribute not set' > /dev/null
+	if ($status == 0) then
+	    echo "$symbol $caller UNKNOWN"
+	else
+	    set comp = `echo "$comp_info" | cut -f 2 -d ' ' | sed 's/[(]INTEREST=interest[-]//' | sed 's/[;].*//'`
+	    echo "$symbol $caller $comp"
+	endif
+    end
+end

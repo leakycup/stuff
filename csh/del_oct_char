@@ -1,0 +1,14 @@
+#!/bin/tcsh -f
+######################################################
+#1st argument is a file name
+#2nd argument is an octal number,
+#represented as \ooo, where `o' is an octal digit.
+######################################################
+#this program writes to the standard output
+#the content of the file named in 1st arg, with
+#each occurrence of the charecter specified in 2nd arg
+#deleted.
+######################################################
+
+cat $1 | tr -d $2
+

@@ -1,0 +1,79 @@
+#!/bin/csh -f
+
+set GREP = "/router/bin/grep"
+set REL2ABS = "/users/sanjeeth/cmpt/rel2abs.pl"
+
+set filelist = ""
+set view = ""
+set help = ""
+
+set last_keyword = ""
+foreach arg ($*)
+    if ("$last_keyword" == "-filelist") then
+	set filelist = "$arg"
+    endif
+    if ("$last_keyword" == "-view") then
+	set view = "$arg"
+    endif
+    if ("$arg" == "-help") then
+	set help = "help"
+    endif
+    set last_keyword = "$arg"
+end
+
+if (("$help" != "") || ("$filelist" == "") || ("$view" == "") ) then
+    goto USAGE
+endif
+
+if (!(-f "$filelist" && -r "$filelist")) then
+	echo "Filelist $filelist not readable."
+	echo "Exiting..."
+	exit 1
+endif
+
+set prefix = "/view/$view"
+
+foreach o_path ("`cat $filelist`")
+    echo "$o_path" | "$GREP" '^#'
+    if ($status == 0) continue
+    echo "$o_path" | "$GREP" '^[[:space:]]*$'
+    if ($status == 0) continue
+    echo "$o_path" | "$GREP" -v '^[/]vob[/]cisco[.]comp[/]' | "$GREP" -v '^[/]vob[/]ios[/]sys[/]' > /dev/null
+    if ($status == 0) then
+	echo "$o_path,BADPATH"
+	continue
+    endif
+    if (!(-f "$prefix/$o_path")) then
+	echo "$o_path,NOTFOUND"
+	continue
+    endif
+    set a_path = `"$REL2ABS" $prefix/$o_path`
+    set a_path = `echo "$a_path" | sed -e 's/^\/view\/[^/]*\/vob\//\/vob\//'`
+    echo "$o_path,$a_path"
+end
+
+exit 0
+
+USAGE:
+echo "USAGE:"
+echo ""
+echo "$0 -filelist <file-list> -view <view-name>"
+echo ""
+echo "    file-list : a text file with one filename per line."
+echo "        Empty lines and lines beginning with '#' are ignored."
+echo "        A filename is a full path of the file in one of the following forms:"
+echo "            /vob/cisco.comp/<component-name>/...  [the file is in a true or pseudo component]"
+echo "            /vob/ios/sys/<directory>/...  [otherwise]"
+echo ""
+echo "    view-name : name of an IOS view where the absolute path has to be found. please ensure that the path /view/<view-name>/ exists in the server where you're running this script."
+echo ""
+echo "    output : for each path in <file-list>, it dumps its absolute path as found in the view. if the path doesn't exist, it dumps NOTFOUND. if the path is not in one of the above forms, it dumps BADPATH. the output is dumped in stdout. each line of output is of the following form :"
+echo "        <original-path><comma><absolute-path>"
+echo "        OR"
+echo "        <original-path><comma>NOTFOUND"
+echo "        OR"
+echo "        <original-path><comma>BADPATH"
+echo ""
+
+exit 1
+

@@ -1,0 +1,24 @@
+#!/bin/csh -f
+
+# searches LD_LIBRARY_PATH for a shared object file.
+# reports all matching paths, in order. if no shared object file is 
+# specified, lists all valid paths present in LD_LIBRARY_PATH, in order.
+# if `-Ipath' is specified in the command-line then `path' is prepended
+# to LD_LIBRARY_PATH.
+
+set sofile = ""
+
+foreach arg ($*)
+    if (`expr $arg : -I`) then
+        setenv LD_LIBRARY_PATH `echo $arg | sed 's/-I//'`":"$LD_LIBRARY_PATH
+    else
+        set sofile = $arg
+    endif
+end
+
+foreach path (`echo $LD_LIBRARY_PATH | sed 's/:/ /g'`)
+    if (-e $path/$sofile) then
+        echo $path/$sofile
+    endif
+end
+

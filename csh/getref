@@ -1,0 +1,124 @@
+#!/bin/csh -f
+
+# getref: dumps references to a symbol in a given train to stdout
+#
+# usage: getref <symbol-name> <train-name> [options]
+#
+# Depends on IOS snapshots in the following directories: /auto/ios-snaps
+# Depends on cscope in the following directory: /auto/ios-snaps/bin/cscope
+
+set debug = ""
+
+if ($#argv < 2) then
+    goto USAGE
+endif
+
+set fun = $1
+set train = $2
+set view = ""
+set count = ""
+set caller = ""
+set help = ""
+
+set last_keyword = ""
+foreach arg ($*)
+    if ("$last_keyword" == "-view") then
+	set view = "$arg"
+    endif
+    if ("$arg" == "-count") then
+	set count = "count"
+    endif
+    if ("$arg" == "-caller") then
+	set caller = "caller"
+    endif
+    if ("$arg" == "-help") then
+	set help = "help"
+    endif
+    set last_keyword = "$arg"
+end
+
+if ($help != "") then
+    goto USAGE
+endif
+
+if ($debug) then
+    echo $fun $train
+endif
+
+set snapshot = "/auto/ios-snaps"
+if ($view == "") then
+    set dest = "$snapshot/$train.snap/ios"
+else
+    set dest = "/view/$view/vob/ios/sys"
+endif
+
+if ($debug) then
+    echo $snapshot $dest
+endif
+
+if (!(-d $dest && -x $dest)) then
+    echo "Can not change directory to $dest"
+    if ($view == "") then
+	echo "Please ensure that $train is a valid train"
+	echo " and its snapshot is maintained in $snapshot"
+	echo " and $dest is reachable"
+    else
+	echo "Please ensure that the view $view exists"
+	echo "and $dest is reachable"
+    endif
+    echo "Exiting..."
+    exit 1
+endif
+cd $dest
+
+if (!(-e ./cscope.out && -r ./cscope.out)) then
+    echo "No cscope.out found in `pwd`"
+    echo "Exiting..."
+    exit 1
+endif
+
+set cscope_opt = 0
+if ($caller != "") then
+    set cscope_opt = 3
+endif
+
+set filecount = `/auto/ios-snaps/bin/cscope -d -q -L "-$cscope_opt$fun" | wc -l`
+echo "REFCOUNT: $filecount"
+
+if ($count != "") then
+    exit 0
+endif
+
+if ($filecount == 0) then
+    echo "No reference to $fun found in train $train"
+    echo "Exiting..."
+    exit 1
+endif
+
+/auto/ios-snaps/bin/cscope -d -q -L "-$cscope_opt$fun" | gawk '{printf "==>%s %s %s\n", $1, $3, $2;}'
+
+exit 0
+
+USAGE:
+echo "Usage:"
+echo ""
+echo "$0 <symbol-name> <train-name> [optional arguments]"
+echo ""
+echo "    Optional Arguments:"
+echo ""
+echo "        -view <viewname> : get information from the view instead of from the snapshot of the train. the view must have a cscope database built in it. this option is useful if the symbol definition is to be obtained from a given clearcase label or from a branch which is not snapshotted. it is also useful if the IOS snapshot area is temporarily unavailable."
+echo ""
+echo "        -count           : print only number of references or callers to the given symbol"
+echo ""
+echo "        -caller          : print callers of the given function. assumes that the symbol is a C function."
+echo ""
+echo "        -help            : print usage summary"
+echo ""
+echo ""
+echo "Output Format:"
+echo ""
+echo "The output has a line prefixed with 'REFCOUNT: ' which has the count of references or callers."
+echo "Also, for each reference or caller, the output has a line of the following form:"
+echo "==><filename><space><lineno><space><referee><newline>"
+exit 1
+

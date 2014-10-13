@@ -1,0 +1,261 @@
+#!/bin/csh -f
+
+# getsig: dumps signature of a symbol in a given train to stdout
+#
+# usage: getsig <symbol-name> <train-name> [options]
+#
+# Depends on IOS snapshots in the following directories: /auto/ios-snaps
+# Depends on cscope in the following directory: /auto/ios-snaps/bin/cscope
+
+set debug = ""
+
+set fun = $1
+set train = $2
+set lines_before = 2
+set lines_after = 8
+set vi = ""
+set vi_default = "gvim"
+set filelist = ""
+set all = ""
+set smart = ""
+set view = ""
+set help = ""
+
+if ($#argv < 2) then
+    goto USAGE
+endif
+
+set last_keyword = ""
+foreach arg ($*)
+    if ("$last_keyword" == "-before") then
+        set lines_before = "$arg"
+    endif
+    if ("$last_keyword" == "-after") then
+        set lines_after = "$arg"
+    endif
+    if ("$last_keyword" == "-filelist") then
+	unset filelist
+        set filelist = "$arg"
+    endif
+    if ("$last_keyword" == "-view") then
+	set view = "$arg"
+    endif
+    if ("$arg" == "-vi") then
+	set vi = "$vi_default"
+    endif
+    if ("$arg" == "-dumb" || "$arg" == "-smart") then
+        set smart = "dumb"
+    endif
+    if ("$arg" == "-all") then
+	set all = "all"
+    endif
+    if ("$arg" == "-help") then
+	set help = "help"
+    endif
+    set last_keyword = "$arg"
+end
+
+if ($help != "") then
+    goto USAGE
+endif
+
+set filelist_cat = ""
+if ($filelist != "") then
+    if ("$all" != "") then
+	echo "Since -all is specified, ignoring filelist $filelist"
+    else if (!(-f $filelist && -r $filelist)) then
+	echo "Filelist $filelist not readable. ignoring..."
+    else
+	unset filelist_cat
+	set filelist_cat = "`cat $filelist` "
+    endif
+endif
+
+if ($debug) then
+    echo $fun $train $lines_before $lines_after
+endif
+
+set snapshot = "/auto/ios-snaps"
+if ($view == "") then
+    set dest = "$snapshot/$train.snap/ios"
+else
+    set dest = "/view/$view/vob/ios/sys"
+endif
+
+if ($debug) then
+    echo $snapshot $dest
+endif
+
+if (!(-d $dest && -x $dest)) then
+    echo "Can not change directory to $dest"
+    if ($view == "") then
+	echo "Please ensure that $train is a valid train"
+	echo " and its snapshot is maintained in $snapshot"
+	echo " and $dest is reachable"
+    else
+	echo "Please ensure that the view $view exists"
+	echo "and $dest is reachable"
+    endif
+    echo "Exiting..."
+    exit 1
+endif
+cd $dest
+
+if (!(-e ./cscope.out && -r ./cscope.out)) then
+    echo "No cscope.out found in `pwd`"
+    echo "Exiting..."
+    exit 1
+endif
+
+set filecount = `/auto/ios-snaps/bin/cscope -d -q -L "-1$fun" | wc -l`
+if ($filecount == 0) then
+    echo "No definition of $fun found in train $train"
+    echo "Exiting..."
+    exit 1
+endif
+
+set filename_list = `/auto/ios-snaps/bin/cscope -d -q -L "-1$fun" | gawk '{printf "%s ", $1;}'`
+set lineno_list = `/auto/ios-snaps/bin/cscope -d -q -L "-1$fun" | gawk '{printf "%d ", $3;}'`
+
+if ($filecount > 1) then
+    echo "Multiple ($filecount) definitions of $fun found in train $train"
+    if ("$all" == "") then
+	if ("$filelist" == "") then
+	    echo "Picking up the 1st definition"
+	else
+	    echo "Picking up the 1st definition from filelist"
+	endif
+    else
+	echo "Dumping all the definitions"
+    endif
+    echo ""
+    if ("$filelist_cat" != "") then
+	set idx = 1
+        foreach match ($filename_list)
+	    set match_base = `basename $match`
+            echo "$filelist_cat" | /router/bin/grep -E "$match_base " - > /dev/null
+            if ($status == 0) then
+                set filename = $match
+		set lineno = $lineno_list[$idx]
+            endif
+	    @ idx += 1
+        end
+    endif
+endif
+
+set idx = 1
+
+if (!($?filename)) then
+    if ("$filelist" != "") then
+	echo "No definition of $fun found from filelist $filelist"
+	echo "Exiting..."
+	exit 1
+    endif
+    set filename = $filename_list[$idx]
+endif
+if (!($?lineno)) then
+    set lineno = $lineno_list[$idx]
+endif
+
+if ("$all" != "") then
+    set loop = "yes"
+endif
+
+while ($idx <= $#filename_list)
+    if ($?loop) then
+	set filename = $filename_list[$idx]
+	set lineno = $lineno_list[$idx]
+	@ idx += 1
+    endif
+
+    if ($debug) then
+	echo $filename $lineno
+    endif
+
+    set start = 0
+    @ start = $lineno - $lines_before
+
+    set end = 0
+    @ end = $lineno + $lines_after
+
+    echo "FILEINFO: $dest/$filename : $lineno"
+    echo ""
+
+    if ($smart == "") then
+	head "-$end" $filename | tail "+$start" | sed 's/^/==>/'
+    else
+	set sig = "`head "-$lineno" $filename | tail "-1"`"
+	echo "$sig" | /router/bin/grep -E "[[:alnum:]][[:space:]]+[*]*$fun" > /dev/null
+	if ($status) then
+	    set current = $lineno
+	    while ($current > $start)
+		@ current -= 1
+		set line = "`head "-$current" $filename | tail "-1"`"
+		echo "$line" | /router/bin/grep -E '[[:alnum:]]' > /dev/null
+		if ($status == 0) then
+		    set sig = "$line $sig"
+		    break
+		endif
+	    end
+	endif
+	echo "$sig" | /router/bin/grep ')' > /dev/null
+	if ($status) then
+	    set current = $lineno
+	    while ($current < $end)
+		@ current += 1
+		set line = "`head "-$current" $filename | tail "-1"`"
+		set sig = "$sig $line"
+		echo "$line" | /router/bin/grep ')' > /dev/null
+		if ($status == 0) break
+	    end
+	endif
+	echo "==> $sig" | sed 's/[ ]\{1,\}/ /g'
+    endif
+
+    echo ""
+    if (!($?loop)) then
+	break
+    endif
+end
+
+if ($vi != "") then
+    if ("$all" != "") then
+	echo "Since -all option is specified, ignoring -vi"
+    else
+	$vi "+$lineno" $filename
+    endif
+endif
+
+exit 0
+
+USAGE:
+echo "Usage:"
+echo ""
+echo "$0 <symbol-name> <train-name> [optional arguments]"
+echo ""
+echo "    Optional Arguments:"
+echo "        -before <number> : number of lines of context before the symbol definition (default 2)"
+echo ""
+echo "        -after <number>  : number of lines of context after the symbol definition (default 8)"
+echo ""
+echo "        -vi              : open the symbol definition using $vi_default (requires that $vi_default is on PATH)"
+echo ""
+echo "        -filelist <file> : in case of multiple definitions of a symbol, pick a definition found in one of the files specified in the list"
+echo ""
+echo "        -all             : in case of multiple definitions of a symbol, dump all the definitions. overrides -filelist and -vi."
+echo ""
+echo "        -dumb            : use a heuristic to extract the exact signature of the function and dump it in one line, trimming all whitespace charecters. assumes that the symbol being looked up is a C function. it's harmless (doesn't cause crash), though not useful, to use this option for a symbol which is not a C function."
+echo ""
+echo "        -smart           : same as -dumb"
+echo ""
+echo "        -view <viewname> : get information from the view instead of from the snapshot of the train. the view must have a cscope database built in it. this option is useful if the symbol definition is to be obtained from a given clearcase label or from a branch which is not snapshotted. it is also useful if the IOS snapshot area is temporarily unavailable."
+echo ""
+echo "        -help            : print usage summary"
+echo ""
+echo ""
+echo "Output Format:"
+echo ""
+echo "The output has a line prefixed with 'FILEINFO: ' which has the filename and line number where the symbol is defined."
+echo "Also, the lines on which the actual signature is dumped are prefixed with '==>'."
+exit 1
+

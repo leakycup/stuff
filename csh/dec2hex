@@ -1,0 +1,3 @@
+#!/bin/csh -f
+echo "ibase=10; obase=16; value=$1; print value" | bc -l
+echo ""

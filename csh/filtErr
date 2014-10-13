@@ -1,0 +1,12 @@
+#! /bin/csh -f
+
+# this script expects a command (name and arguments) as its arguments.
+# it executes the command, suppresses its stdout and copies its 
+# stderr to stderr, so that
+# only the stderr of the command can be redirected to a file or piped to
+# another command or viewed on screen.
+# caveat: the script works in a subshell, which does not inherit the
+# aliases of the parent shell.
+
+( ($*) > /dev/null )
+

@@ -1,0 +1,3 @@
+#!/bin/csh -f
+#hex dump tool
+od -X -Ax $1

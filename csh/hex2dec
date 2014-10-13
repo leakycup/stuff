@@ -1,0 +1,6 @@
+#!/bin/csh -f
+#use capital letters A, B, C, D, E, F as hexits
+
+echo "ibase=16; value=$1; print value" | bc -l
+echo ""
+

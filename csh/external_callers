@@ -1,0 +1,121 @@
+#!/bin/csh -f
+
+set symbol_file = ""
+set exclude_file = ""
+set views = ""
+set help = ""
+
+set last_keyword = ""
+foreach arg ($*)
+    if ("$last_keyword" == "-symbols") then
+	set symbol_file = "$arg"
+    endif
+    if ("$last_keyword" == "-excludes") then
+	set exclude_file = "$arg"
+    endif
+    if ("$last_keyword" == "-viewlist") then
+	set views = "$arg"
+    endif
+    if ("$arg" == "-help") then
+	set help = "help"
+    endif
+    set last_keyword = "$arg"
+end
+
+if ($help != "") then
+    goto USAGE
+endif
+
+set GETREF = "/users/sobhatta/bin/getref"
+set GREP = "/router/bin/grep"
+set VIEWS = "sobhatta-redoak_infra sobhatta-hoodoo_infra sobhatta-eveready_infra sobhatta-flo_dsgs7_infra"
+
+if ("$views" == "") then
+    set views = "$VIEWS"
+endif
+
+if (!(-e "$symbol_file" && -r "$symbol_file")) then
+    echo "Could not locate symbol file $symbol_file"
+    echo "Exiting..."
+    goto USAGE
+endif
+
+if (!(-e "$exclude_file" && -r "$exclude_file")) then
+    echo "Could not locate exclude file $exclude_file"
+    echo "Exiting..."
+    goto USAGE
+endif
+
+foreach symbol_def ("`cat $symbol_file`")
+    set symbol = `echo $symbol_def | cut -f 1 -d ','`
+    set type = `echo $symbol_def | cut -f 2 -d ','`
+    if ($type == "func") then
+	set getcallers = "-caller"
+    else
+	set getcallers = ""
+    endif
+    #echo "symbol: $symbol"
+    set count = 0
+    foreach view ($views)
+	#echo "view: $view"
+	set train = $view
+	set num_callers = `$GETREF $symbol $train -view $view $getcallers -count | $GREP -e '^REFCOUNT[:]' | cut -f 2 -d ' '`
+	if ($num_callers > 1500) then
+	    echo "WAYTOOMANYCALLERS: $symbol $view $num_callers"
+	    continue
+	endif
+	foreach line ("`$GETREF $symbol $train -view $view $getcallers`")
+	    #echo "$line"
+	    set line = `echo "$line" | sed -e 's/[<>]//g'`
+	    echo "$line" | $GREP -e '^REFCOUNT[:]' > /dev/null
+	    if ($status ==  0) then
+		@ count += `echo "$line" | cut -f 2 -d ' '` 
+		continue
+	    endif
+	    echo "$line" | $GREP '^==' > /dev/null
+	    if ($status ==  0) then
+		set ref = "`echo $line | sed -e 's/^==//'`"
+		set file = `echo $ref | cut -f 1 -d ' '`
+		$GREP `basename "$file"` $exclude_file > /dev/null
+		if ($status == 0) then
+		    @ count -= 1
+		else
+		    set referee = `echo $ref | cut -f 3 -d ' '`
+		    echo "$symbol $view $file $referee"
+		endif
+		continue
+	    endif
+	end
+    end
+    echo "REFCOUNT: $symbol $count"
+    echo ""
+end
+
+exit 0
+USAGE:
+echo "Usage:"
+echo ""
+echo "$0 -symbols <symbol-file> -excludes <exclude-file> [-viewlist 'view1 view2 ...']"
+echo ""
+echo "<symbol-file> is the list of exported symbols for the vertical. the format of each line of symbol-file is <symbol-name>,<symbol-type>,<other information>"
+echo "'other information' is ignored by the script."
+echo "Example : adaptive_chunk_create,func"
+echo ""
+echo "<exclude-file> is the list of files for the vertical. all references to the exported symbols which are from this file list are ignored. to account for all references (external and internal), use a blank file as an exclude file."
+echo ""
+echo "-viewlist is optional. Use this option to pass a list of view names (separated by a space) where the script will work on. All views must have cscope database built in them."
+echo "The script must run in a server where all the views are mounted on /view/ area."
+echo ""
+echo "OUTPUT Format: For every caller of every symbol, the script will print on stdout a line of the following form:"
+echo "<symbol-name> <view-name> <caller-file-name> <caller-symbol-name>"
+echo "caller info of a given symbol are printed together. In the end, a summary information of the following form is printed:"
+echo "REFCOUNT: <symbol-name> <total-number-of-references>"
+echo "Example:"
+echo "	adaptive_chunk_create sobhatta-redoak_infra fib/fib_shim.c fib_dynamic_chunk_create"
+echo "	adaptive_chunk_create sobhatta-eveready_infra fib/fib_shim.c fib_dynamic_chunk_create"
+echo "	adaptive_chunk_create sobhatta-flo_dsgs7_infra fib/fib_shim.c fib_dynamic_chunk_create"
+echo "	REFCOUNT: adaptive_chunk_create 3"
+echo ""
+
+exit 0
+
