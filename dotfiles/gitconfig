@@ -1,0 +1,7 @@
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+[user]
+	name = Soubhik
+	email = soubhik@gmail.com

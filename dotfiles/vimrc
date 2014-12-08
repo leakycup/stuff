@@ -1,0 +1,102 @@
+set mouse=a
+set nu
+"set nonumber
+set noshowmatch
+set backspace=2
+set exrc
+set autoindent
+set noautowrite
+set backupdir=/tmp
+set nobackup
+
+" no automatic line break
+set textwidth=0
+set wrapmargin=0
+"set nowrap
+set wrap
+
+set writebackup
+set sidescroll=1
+set shiftwidth=8
+set updatecount=0
+set taglength=0
+set tags=.tags,./.tags,tags
+set wrapscan
+set shell=$SHELL\ -f
+set ruler
+set report=1
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+"set noexpandtab
+set expandtab
+"set title
+set noicon
+set showmode
+"set showmatch
+set helpheight=100
+set incsearch
+set nohls
+set nostartofline
+set background=dark
+set highlight=@n,db,er,rr,sr,tr,wr,l:MySearch
+set history=20
+set noic
+set magic
+"let mysyntaxfile  = "~jsolomon/lib/vim/syntax/mysyntax.vim"
+"let $mysyntaxdir  = "~jsolomon/lib/vim/syntax"
+"let myscriptsfile = "~jsolomon/lib/vim/syntax/myscripts.vim"
+:noremap Q gq
+:cnoremap  <Home>
+:cnoremap  <End>
+
+map - 0i# <ESC>j
+map _ :s/^\s*# \=//g<CR>j
+"map m :set autoindent<CR>
+"map M :set noautoindent<CR>
+map  :bN<CR>
+unmap 
+map  :bn<CR>
+map  :buffers<CR>
+"map s :source $VIM/syntax/syntax.vim<CR>
+
+map  <Home>
+map!  <Home>
+imap  <Home>
+
+map!  <End>
+map  <End>
+imap  <End>
+
+"map  <Delete>
+"imap  <Delete>
+"map!  <Delete>
+
+map <F5> :set hls!<CR>
+map cc :cd $CD<CR>
+map + 0xx$xx<CR>
+
+map <F2> :w<CR>
+map! <F2> <ESC>:w<CR>li
+imap <F2> <ESC>:w<CR>li
+
+map <F3> <ESC>u
+map! <F3> <ESC>ui
+
+map <F12> :wq<CR>
+map! <F12> <ESC>:wq<CR>
+map v :1,$s/\t/        /g:w
+imap <F12> <ESC>:wq<CR>
+
+
+" Remove ALL auto-commands.  This avoids having the autocommands twice when
+" the vimrc file is sourced again.
+autocmd!
+
+
+syntax on
+let c_comment_strings=1
+let c_min_lines=100
+"set background=light
+hi Label ctermfg=Green
+

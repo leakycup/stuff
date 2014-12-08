@@ -1,0 +1,29 @@
+#shell variables
+set filec
+set autolist
+set symlinks=ignore
+#set prompt="${HOST}:%/>"
+if ($?prompt) then
+        bash -c 'echo -ne "\033]0;${USER}@${HOSTNAME}\007"'
+endif
+
+#env variables
+setenv EDITOR vim
+setenv TAGS_TYPE "ctags"
+setenv PAGER less
+setenv PATH /bin:/usr/bin:/usr/local/bin:$PATH
+setenv PATH ~soubhik/bin:$PATH
+
+#aliases
+alias vi vim
+alias ls 'ls -F'
+alias ks ls
+alias ll ls -l
+alias c clear
+alias t 'cd ~/temp; setenv SHELL /bin/tcsh; exec tcsh';
+alias cp 'cp -i'
+alias mv 'mv -i'
+alias rm 'rm -i'
+
+#git auto-complete at command line
+source ~/bin/git-completion.tcsh

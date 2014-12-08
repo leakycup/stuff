@@ -1,0 +1,306 @@
+# Button 1: Mini Icon
+ButtonStyle 1 (MiniIcon -- Flat)
+AddButtonStyle 1 ActiveDown (5 01x01@0 99x01@0 99x99@1 01x99@1 01x01@0)
+
+# Button 4: Minimize (image of large window being shrunk down)
+ButtonStyle 4 ActiveUp (12 40x10@1 90x10@1 90x60@0 20x90@0 90x60@0 40x60@0 40x10@1 10x80@1 20x80@1 20x90@0 10x90@0 10x80@1) -- Flat
+ButtonStyle 4 ActiveDown (18 40x10@0 90x10@0 90x60@1 20x90@1 90x60@1 40x60@1 40x10@0 10x80@0 20x80@0 20x90@1 10x90@1 01x99@1 01x01@0 99x01@0 99x99@1 01x99@1 10x90@0 10x80@0) -- Flat
+ButtonStyle 4 Inactive (12 40x10@1 90x10@1 90x60@0 20x90@0 90x60@0 40x60@0 40x10@1 10x80@1 20x80@1 20x90@0 10x90@0 10x80@1) -- Flat
+
+# Button 2: Maximize (image of window being enlarged)
+ButtonStyle 2 ActiveUp (11 90x10@0 90x75@0 25x75@0 60x75@0 60x90@0 10x90@0 10x55@1 25x55@1 25x75@1 25x10@1 90x10@1) -- Flat
+ButtonStyle 2 ActiveDown (17 90x10@1 90x75@1 25x75@1 60x75@1 60x90@1 10x90@1 01x99@1 01x01@0 99x01@0 99x99@1 01x99@1 10x90@0 10x55@0 25x55@0 25x75@0 25x10@0 90x10@0) -- Flat
+ButtonStyle 2 Inactive (11 90x10@0 90x75@0 25x75@0 60x75@0 60x90@0 10x90@0 10x55@1 25x55@1 25x75@1 25x10@1 90x10@1) -- Flat
+
+TitleStyle ActiveUp (HGradient 128 2 #c06077 50 white 50 #c06077 -- Flat) ActiveDown (HGradient 128 2 #c06077 50 white 50 #c06077 -- Flat) Inactive (HGradient 128 2 #40a0c0 50 white 50 #40a0c0 -- Flat)
+
+EdgeResistance 0 0
+EdgeScroll 0 0
+#AutoRaise 250 HilightColor black #c06077
+DeskTopSize 2x3
+MenuStyle Black #c0c0c0 grey51 -adobe-helvetica-medium-r-*-*-14-*-*-*-*-*-*-* fvwm
+ColormapFocus FollowsFocus ClickToFocus
+XORValue 65535
+
+ModulePath /usr/local/packages/fvwm/current/libexec/fvwm/2.2.4
+PixmapPath /usr/local/packages/fvwm/current/icons:/users/shobhitp/.fvwm/icons/big-icons:/users/shobhitp/.fvwm/icons/mini-icons
+IconPath   /usr/local/packages/fvwm/current/icons:/users/shobhitp/.fvwm/icons/big-icons:/users/shobhitp/.fvwm/icons/mini-icons:/usr/X/include/X11/bitmaps
+
+define(`XSETROOT',  `xsetroot    -mod 2 2 -fg \#554055 -bg \#705070')dnl
+
+WindowFont		-adobe-helvetica-bold-r-*-*-12-*-*-*-*-*-*-*
+IconFont		-adobe-helvetica-bold-r-*-*-10-*-*-*-*-*-*-*
+
+# default Styles:
+Style "*"		BorderWidth 5, HandleWidth 5
+Style "*"		Color Blue
+Style "*"		MWMFunctions, MWMBorder, MWMDecor, HintOverride
+Style "*"		DecorateTransient,
+Style "*"		ClickToFocus	
+Style "*"		RandomPlacement, SmartPlacement
+Style "*"		Icon fvwm.xpm, MiniIcon mini.x2.xpm
+
+# Styles for various Fvwm modules:
+Style "Fvwm*"		NoTitle,  Sticky, WindowListSkip
+Style "Fvwm*"		BorderWidth 2, CirculateSkipIcon, CirculateSkip
+Style "FvwmPager"	StaysOnTop, BorderWidth 0
+Style "FvwmButtons"	ClickToFocus
+
+Style "Frame*"		MiniIcon mini.frame.xpm
+
+#
+# Icons and mini-icons
+#
+Style "*xterm*"		Icon xterm-sun.xpm,	MiniIcon mini.xterm.xpm
+
+# some simple default key bindings:
+Key Next	A	SCM	Next [*] Focus
+Key Prior	A	SCM	Prev [*] Focus
+
+# some simple default mouse bindings:
+#   for the root window:
+Mouse 1	R	A	Menu RootMenu Nop
+Mouse 2	R	A	Menu Window-Ops Nop
+Mouse 3	R	A	WindowList NoGeometry
+
+#   for the title bar buttons:
+Mouse 0	1	A	Menu Window-Ops2 Close
+Mouse 0	2	A	Maximize-Func
+Mouse 0	4	A	Iconify
+
+#   for other parts of the window/borders/icons:
+Mouse 1	F	A	Resize-or-Raise
+Mouse 1	TS	A	Move-or-Raise
+Mouse 1	I	A	Move-or-Iconify
+Mouse 2	I	A	Iconify
+Mouse 2	FST	A	Menu Window-Ops2 Nop
+Mouse 3	TSIF	A	RaiseLower
+
+######################## Initialization Functions ############################
+
+AddToFunc TELNET-ROUTER "I" Exec xterm -sb -sl 10000 -bg black -fg white -e "telnet" $2 $3
+
+AddToFunc InitFunction
++			"I"	Module	FvwmButtons
+#+			"I"	Module	FvwmAuto 350 Raise Lower
+
+AddToFunc RestartFunction
++			"I"	Module	FvwmButtons
+#+			"I"	Module	FvwmAuto 350 Raise Lower
+
+
+######################## Menus ###################
+AddToMenu RootMenu "Root Menu	%mini.fvwm.xpm%"	Title
++ "xterm	%mini.xterm.xpm%"	XTERM grey75 black
++ "maker	%mini.frame.xpm%"	Exec	maker
++ "xman		%mini.xman.xpm%"	Exec	xman
++ "xlock	%mini.xlock.xpm%"	Exec	xlock
++ "buttonbar	%mini.pager.xpm%"				Module  FvwmButtons
++ ""					Nop
++ "modules	%mini.modules.xpm%"	Popup	Module-Popup
++ ""					Nop
++ "Routers	%mini.xterm.xpm%"		Popup	Routers-Menu
++ ""					Nop
++ "quit		%mini.exit.xpm%"	Popup	Quit-Verify
+
+AddToMenu Window-Ops "Window Ops %mini.windows.xpm"	Title		
++ "Identify	%mini.checkmark.xpm%"	Module	FvwmIdent
++ "Move		%mini.move.xpm%"	Move
++ "Resize	%mini.resize.xpm%"	Resize
++ "Raise	%mini.raise.xpm%"	Raise
++ "Lower	%mini.lower.xpm%"	Lower
++ "(De)Iconify"				Iconify
++ "(Un)Stick"				Stick
++ "(Un)Maximize"			Maximize
++ ""					Nop
++ "Delete	%mini.delete.xpm%"	Delete
++ "Close"				Close
++ "Destroy	%mini.bomb.xpm%"	Destroy
++ ""					Nop
++ "Refresh	%mini.refresh.xpm%"	RefreshWindow
+
+AddToMenu Window-Ops2
++ "Identify	%mini.checkmark.xpm%"	Module	FvwmIdent
++ "&Move	%mini.move.xpm%"	Move
++ "&Resize	%mini.resize.xpm%"	Resize
++ "R&aise	%mini.raise.xpm%"	Raise
++ "&Lower	%mini.lower.xpm%"	Lower
++ "(De)&Iconify	%mini.iconify.xpm%"	Iconify
++ "(Un)&Stick	%mini.stick.xpm%"	Stick
++ "(Un)Ma&ximize	%mini.max1.xpm%"			Maximize
++ ""					Nop
++ "&Delete	%mini.delete.xpm%"	Delete
++ "&Close	%mini.destroy.xpm%"	Close
++ "Destroy	%mini.bomb.xpm%"	Destroy
++ ""					Nop
++ "ScrollBar"				Module FvwmScroll 2 2
++ "Print"				PrintFunction
++ "Print Reverse"			PrintReverseFunction
+
+AddToMenu Module-Popup	"%mini.modules.xpm%FvwmModules"	Title
++ "Identify"				Module	FvwmIdent
++ "Talk"  				Module	FvwmTalk
++ ""					Nop
++ "Button-Bar"				Module	FvwmButtons
++ "Pager"				Module  FvwmPager 0 0
++ "WinList"				Module  FvwmWinList
++ ""					Nop
++ "Banner"				Module	FvwmBanner
++ "ScrollBar"				Module  FvwmScroll 50 50
++ "Background"				Module  FvwmBacker
++ "AutoRaise"				Module  FvwmAuto 350 Raise Nop
++ "Stop AutoRaise"			KillModule FvwmAuto
++ ""					Nop
++ "IconBox"				Module	FvwmIconBox
++ "IconMan"				Module  FvwmIconMan
++ ""					Nop
++ "Form - Rlogin"			Module FvwmForm Rlogin
++ "Form - MyFvwmTalk"			Module FvwmForm MyFvwmTalk
++ "Form - QuitVerify"			Module FvwmForm QuitVerify
+
+AddToMenu "Quit-Verify"			"%mini.exit.xpm%Quit?" Title
++ "Restart	%mini.refresh.xpm%"	Restart fvwm2
++ "Quit		%mini.exit.xpm%"	Quit
+
+AddToMenu "Routers-Menu"		"Routers" Title
++ "ios108		%mini.xterm.xpm%"	TELNET-ROUTER lemonchiffon \
+					midnightblue 10.76.80.128 2008
++ "ios403		%mini.xterm.xpm%"	TELNET-ROUTER lemonchiffon \
+					midnightblue 10.76.80.131 2003
++ "console1		%mini.xterm.xpm%"	TELNET-ROUTER lemonchiffon \
+					midnightblue 10.76.80.128
++ "console2		%mini.xterm.xpm%"	TELNET-ROUTER lemonchiffon \
+					midnightblue 10.76.80.129
++ "console4		%mini.xterm.xpm%"	TELNET-ROUTER lemonchiffon \
+					midnightblue 10.76.80.131
+
+
+######################## Functions ##########################
+
+AddToFunc switchNext
+ + "I" Next [!Iconic !Sticky] WarpToWindow 100 100
+ + "I" Next [!Iconic !Sticky] Focus
+ + "I" Current [Iconic] Iconify
+ + "I" Current [*] Raise
+ + "I" Current [*] WarpToWindow 0 0
+ + "I" Current [*] WarpToWindow 50 50
+     
+Key F11 A   M   Function switchNext
+
+
+AddToFunc Move-or-Raise		"I" Raise
++				"M" Move
++  				"D" Lower
+
+AddToFunc Move-or-Raise2	"M" Raise
++				"M" Move
++  				"D" Lower
+
+AddToFunc Maximize-Func		"M" Maximize	 0 100
++				"C" Maximize	 0 80
++				"D" Maximize	 100 100
+
+AddToFunc Move-or-Iconify	"I" Raise
++				"M" Move
++				"D" Iconify
+
+AddToFunc Resize-or-Raise	"I" Raise
++				"M" Resize
++				"D" Lower
+
+AddToFunc Resize-or-Raise2	"M" Raise
++				"M" Resize
++				"D" Lower
+
+AddToFunc PrintFunction		"I" Raise
++				"I" Exec xdpr -id $w
+
+AddToFunc PrintReverseFunction  "I" Raise
++                               "I" Exec xdpr 1/2 -h -rv -id $w
+
+AddToFunc Iconify-and-Raise     "I" Iconify
++                               "I" Raise
+
+# XTERM fg bg
+AddToFunc XTERM "I" Exec xterm -sb -sl 10000 -bg black -fg white
+
+# RLOGIN machine user fg bg
+AddToFunc RLOGIN "I" Exec xterm -sb -sl 10000 -bg black -fg white -e "rlogin" "-l" "$1" "$0"
+AddToFunc SSH "I" Exec xterm -sb -sl 10000 -bg black -fg white -e "ssh" "$0"
+
+AddToFunc FocusAndWarp "I" Focus
++                      "I" WarpToWindow 2p 2p
+
+AddToFunc DeiconifyFocusAndWarp "I" Iconify -1
++                               "I" FocusAndWarp
+
+AddToFunc ChangeDefaultFocus "I" Style "*" $0
++                            "I" Recapture
+
+################## FvwmButtons button-bar ################################
+*FvwmButtonsFore Black
+*FvwmButtonsBack #c0c0c0
+*FvwmButtonsGeometry -0+0
+*FvwmButtonsColumns 1
+*FvwmButtonsFont -adobe-helvetica-medium-r-*-*-12-*-*-*-*-*-*-*
+
+*FvwmButtons(1x1, Swallow "FvwmPager" 'Module FvwmPager 0 0')
+*FvwmButtons "xterm"        xterm.xpm	    XTERM black white 
+*FvwmButtons "bgl-lds-006"	xterm-sun.xpm	SSH bgl-lds-006
+*FvwmButtons "sjc-lds-011"	xterm-sun.xpm	SSH sjc-lds-011
+*FvwmButtons "blr-iosinfra-lnx01"	xterm-sun.xpm	SSH blr-iosinfra-lnx01
+*FvwmButtons "blr-eng-view9"	xterm-sun.xpm	SSH blr-eng-view9
+*FvwmButtons "bgl11-nsstg-view1"	xterm-sun.xpm	SSH bgl11-nsstg-view1
+*FvwmButtons "bgl-ios-view1"	xterm-sun.xpm	SSH bgl-ios-view1
+
+########################## Window-Identifier ###############################
+# Just choose colors and a fonts
+*FvwmIdentBack MidnightBlue
+*FvwmIdentFore Yellow
+*FvwmIdentFont -adobe-helvetica-medium-r-*-*-12-*-*-*-*-*-*-*
+
+########################### Pager #########################################
+*FvwmPagerBack grey60
+*FvwmPagerFore black
+#*FvwmPagerFont -adobe-helvetica-bold-r-*-*-10-*-*-*-*-*-*-*
+*FvwmPagerFont none
+*FvwmPagerHilight #c0c0c0
+*FvwmPagerGeometry 60x50+0-0
+#*FvwmPagerSmallFont 5x8
+*FvwmPagerMiniIcons
+*FvwmPagerLabel 0 Desktop
+
+FuncFvwmSetFont-WindowTitle * -*-lucidabright-medium-r-*-*-14-*
+FuncFvwmSetFont-IconTitle   * -*-lucidabright-medium-r-*-*-12-*
+
+Style "*"	BorderWidth 5, HandleWidth 6
+Style "*"	MWMBorder, DepressableBorder
+
+BorderStyle	Simple
+
+TitleStyle	Centered
+TitleStyle	-- Raised
+
+ButtonStyle	All -- Raised
+
+AddToFunc   FuncFvwmReloadDecor
++ I FuncFvwmSetFont-WindowTitle * -*-lucidabright-medium-r-*-*-14-*
++ I FuncFvwmSetFont-IconTitle   * -*-lucidabright-medium-r-*-*-12-*
++ I BorderStyle	Simple
++ I TitleStyle	-- Raised
++ I ButtonStyle	All -- Raised
++ I FuncFvwmOverRideWindowLook
+
+#MenuStyle * Hilight3DThickness -1
+#MenuStyle * PopupDelayed, PopupDelay 100, PopdownImmediately, PopdownDelay
+#MenuStyle * PopupOffset -3 100, TitleWarpOff
+#MenuStyle * TitleUnderlines2, SeparatorsLong, TrianglesRelief
+#MenuStyle * AnimationOff, AutomaticHotkeysOff, DoubleClickTime
+#MenuStyle * BorderWidth 2, SidePic, SideColor
+#MenuStyle * PopupAsSubmenu, HoldSubmenus, SubmenusRight
+#MenuStyle * ItemFormat "%.4s%.1|%.5i%.5l%.5l%.5r%.5i%2.3>%1|"
+#MenuStyle * VerticalItemSpacing, VerticalTitleSpacing
+#MenuStyle Black #c0c0c0 grey51 -adobe-helvetica-medium-r-*-*-14-*-*-*-*-*-*-* fvwm
+
+#FuncFvwmSetFont-Menu * -*-lucidabright-medium-r-*-*-12-*
+#BusyCursor DynamicMenu True
