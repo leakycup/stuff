@@ -149,12 +149,12 @@ public class ReaderWriterLock {
         public ReaderWriterLockTest(int readers, int writers, ContentionPolicy policy) {
             ReaderWriterLock lock = new ReaderWriterLock(policy);
 
-            readerList = new ArrayList<>(readers);
+            readerList = new ArrayList<LockThread>(readers);
             for (int i = 0; i < readers; i++) {
                 readerList.add(new LockThread(lock, true));
             }
 
-            writerList = new ArrayList<>(writers);
+            writerList = new ArrayList<LockThread>(writers);
             for (int i = 0; i < writers; i++) {
                 writerList.add(new LockThread(lock, false));
             }

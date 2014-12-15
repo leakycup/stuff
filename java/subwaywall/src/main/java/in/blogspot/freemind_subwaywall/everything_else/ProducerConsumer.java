@@ -126,12 +126,12 @@ public class ProducerConsumer {
         this.itemList = new int[maxItems];
         this.noItems = 0;
 
-        producerList = new ArrayList<>(noProducers);
+        producerList = new ArrayList<Producer>(noProducers);
         for (int i = 0; i < noProducers; i++) {
             producerList.add(new Producer(i, SLEEP));
         }
 
-        consumerList = new ArrayList<>(noConsumers);
+        consumerList = new ArrayList<Consumer>(noConsumers);
         for (int i = 0; i < noConsumers; i++) {
             consumerList.add(new Consumer(i));
         }

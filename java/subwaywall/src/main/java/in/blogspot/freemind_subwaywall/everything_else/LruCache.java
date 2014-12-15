@@ -1,7 +1,14 @@
 package in.blogspot.freemind_subwaywall.everything_else;
 
-public class LruCache implements Cache<K, V> {
-    private static class Entry {
+import java.util.Map;
+import java.util.HashMap;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicBoolean;
+
+public class LruCache<K, V> implements Cache<K, V> {
+    private class Entry {
        final K key;
        final  V value;
        final long expiryTime;
@@ -15,7 +22,7 @@ public class LruCache implements Cache<K, V> {
        }
     }
 
-    private static class EntryList {
+    private class EntryList {
         Entry head;
         Entry tail;
 
@@ -54,8 +61,8 @@ public class LruCache implements Cache<K, V> {
         }
     }
 
-    private static class TimeoutCommand implements Runnable {
-        void run() {
+    private class TimeoutCommand implements Runnable {
+        public void run() {
             while (!lock.compareAndSet(false, true));
             long now = System.nanoTime();
             while (true) {
@@ -67,7 +74,7 @@ public class LruCache implements Cache<K, V> {
                 if (expiryTime > now) {
                     timeoutList.remove(tail);
                     accessList.remove(tail);
-                    cache.remove(e.key);
+                    cache.remove(tail.key);
                 } else {
                     break;
                 }
@@ -83,14 +90,14 @@ public class LruCache implements Cache<K, V> {
     private final EntryList accessList;
     private final EntryList timeoutList;
     private final ScheduledExecutorService timeoutHandler;
-    private final timeoutCommand;
+    private final TimeoutCommand timeoutCommand;
 
     public LruCache(int capacity, long timeout) {
         this.capacity = capacity;
         this.timeout = timeout;
 
-        lock = new AtomocBoolean(false);
-        cache = new HashMap<>();
+        lock = new AtomicBoolean(false);
+        cache = new HashMap<K, Entry>();
         accessList = new EntryList();
         timeoutList = new EntryList();
         timeoutHandler = Executors.newSingleThreadScheduledExecutor();
@@ -126,7 +133,7 @@ public class LruCache implements Cache<K, V> {
 
         long expiryTime = System.nanoTime() + timeout;
         Entry e = new Entry(key, value, expiryTime);
-        cache.put(e);
+        cache.put(e.key, e);
         accessList.addAtHead(e);
         timeoutList.addAtHead(e);
 

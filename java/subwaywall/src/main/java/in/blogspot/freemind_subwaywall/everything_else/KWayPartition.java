@@ -1,5 +1,8 @@
 package in.blogspot.freemind_subwaywall.everything_else;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class KWayPartition<T> {
     private static interface Partitioner<T> {
         public int numPartitions();
@@ -58,6 +61,7 @@ public class KWayPartition<T> {
     private static class MSDRadixPartitioner implements Partitioner<Integer> {
         int min;
         int stop;
+        int position;
 
         //position can be 0, 1, 2, ... (from left or MSD)
         //position == 0 => most significant digit.
@@ -69,6 +73,7 @@ public class KWayPartition<T> {
                 stop *= 10;
                 position--;
             }
+            this.position = position;
         }
 
         //10 partitions for 10 digits: 0, 1, ..., 9 and then another one if 
@@ -108,13 +113,13 @@ public class KWayPartition<T> {
         }
 
         int[] startIndex = new int[k]; //0-initialized by Java
-        for (p = 1; p < k; p++) {
+        for (int p = 1; p < k; p++) {
             startIndex[p] = startIndex[p - 1] + size[p - 1]; //inclusive
         }
 
         int[] endIndex = new int[k];
-        for (p = 0; p < (k - 1); p++) {
-            endIndex[p] = starIndex[p + 1]; //exclusive
+        for (int p = 0; p < (k - 1); p++) {
+            endIndex[p] = startIndex[p + 1]; //exclusive
         }
         endIndex[k - 1] = n;
 
@@ -128,7 +133,7 @@ public class KWayPartition<T> {
             while (i == endIndex[currentPartition]) {
                 currentPartition++;
             }
-            T item = a[i];
+            T item = a.get(i);
             int p = partitioner.getPartition(item);
             if (p == currentPartition) {
                 continue;
@@ -140,21 +145,21 @@ public class KWayPartition<T> {
             }
             //each iteration ensures 'item' is moved to the partition it belongs to.
             while (p != currentPartition) { //O(n^2)
-                T displaced = a[currentIndex[p]];
+                T displaced = a.get(currentIndex[p]);
                 int q = partitioner.getPartition(displaced);
                 //find the first element in partiion p that does not belong to
                 //partition p.
                 while (q == p) {
                     currentIndex[p]++;
-                    displaced = a[currentIndex[p]];
+                    displaced = a.get(currentIndex[p]);
                     q = partitioner.getPartition(displaced);
                 }
-                a[currentIndex[p]] = item;
+                a.add(currentIndex[p], item);
                 currentIndex[p]++;
                 item = displaced;
                 p = partitioner.getPartition(item);
             }
-            a[i] = item;
+            a.add(i, item);
             //NOTE:
             //this is a loop inside a loop. 
             //the outer loop iterates n times, one to find destination for each element of the input array.
