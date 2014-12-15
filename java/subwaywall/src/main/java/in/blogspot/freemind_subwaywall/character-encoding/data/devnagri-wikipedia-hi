@@ -1,0 +1,1285 @@
+HTTP/1.0 200 OK
+Date: Sun, 20 Feb 2011 09:39:54 GMT
+Server: Apache
+Cache-Control: private, s-maxage=0, max-age=0, must-revalidate
+Content-Language: hi
+Vary: Accept-Encoding,Cookie
+Last-Modified: Sun, 20 Feb 2011 09:39:53 GMT
+Content-Length: 202595
+Content-Type: text/html; charset=UTF-8
+Age: 114079
+X-Cache: HIT from sq73.wikimedia.org
+X-Cache-Lookup: HIT from sq73.wikimedia.org:3128
+X-Cache: MISS from sq78.wikimedia.org
+X-Cache-Lookup: MISS from sq78.wikimedia.org:80
+Connection: keep-alive
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="hi" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>देवनागरी - विकिपीडिया</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="generator" content="MediaWiki 1.17wmf1" />
+<link rel="alternate" type="application/x-wiki" title="संपादित करें" href="/w/index.php?title=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80&amp;action=edit" />
+<link rel="edit" title="संपादित करें" href="/w/index.php?title=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80&amp;action=edit" />
+<link rel="apple-touch-icon" href="http://hi.wikipedia.org/apple-touch-icon.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="विकिपीडिया (hi)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://hi.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="विकिपीडिया की अणु फ़ीड" href="/w/index.php?title=%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/hi.wikipedia.org/load.php?debug=false&amp;lang=hi&amp;modules=mediawiki.legacy.commonPrint%7Cmediawiki.legacy.shared%7Cskins.vector&amp;only=styles&amp;skin=vector" type="text/css" media="all" />
+<style type="text/css" media="all">a.new,#quickbar a.new{color:#ba0000}
+
+/* cache key: hiwiki:resourceloader:filter:minify-css:3:f2a9127573a22335c2a9102b208c73e7 */</style><meta name="ResourceLoaderDynamicStyles" content="" /><link rel="stylesheet" href="http://bits.wikimedia.org/hi.wikipedia.org/load.php?debug=false&amp;lang=hi&amp;modules=site&amp;only=styles&amp;skin=vector&amp;version=20110115T162906Z" type="text/css" media="all" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/hi.wikipedia.org/load.php?debug=false&amp;lang=hi&amp;modules=user&amp;only=styles&amp;skin=vector&amp;version=19700101T000001Z" type="text/css" media="all" />
+
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins-1.17/vector/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr ns-0 ns-subject page-देवनागरी skin-vector">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- sitenotice -->
+			<div id="siteNotice"><!-- centralNotice loads here --><script type="text/javascript">
+/* <![CDATA[ */
+document.writeln("\x3cdiv id=\"localNotice\"\x3e\x3ctable align=\"center\" style=\"text-align: center; font-size: 100%;\"\x3e\n\n\x3ctr\x3e\n\x3ctd\x3e\x3cdiv style=\"position:relative;width:136px;height:25px;z-index:2;overflow:hidden;vertical-align:middle;\"\x3e\x3cdiv class=\"nodeco\" style=\"position:absolute;font-size:25px;overflow:hidden;line-height:25px;letter-spacing:136px;\"\x3e\x3ca href=\"/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:Devanagari_Help\" title=\"विकिपीडिया:Devanagari Help\"\x3e\x3cspan title=\"विकिपीडिया:Devanagari Help\" style=\"text-decoration:none;\"\x3e\x26nbsp; \x26nbsp;\x3c/span\x3e\x3c/a\x3e\x3c/div\x3e\x3ca href=\"/wiki/%E0%A4%9A%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0:Devnagari-help-image.png\" class=\"image\" title=\"विकिपीडिया:Devanagari Help\"\x3e\x3cimg alt=\"विकिपीडिया:Devanagari Help\" src=\"http://upload.wikimedia.org/wikipedia/hi/thumb/a/a6/Devnagari-help-image.png/136px-Devnagari-help-image.png\" width=\"136\" height=\"14\" /\x3e\x3c/a\x3e\x3c/div\x3e\n\x3c/td\x3e\n\x3ctd\x3e\n\x3c/td\x3e\n\x3ctd\x3e\x3ca href=\"/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80_%E0%A4%AE%E0%A5%87%E0%A4%82_%E0%A4%95%E0%A5%88%E0%A4%B8%E0%A5%87_%E0%A4%9F%E0%A4%BE%E0%A4%87%E0%A4%AA_%E0%A4%95%E0%A4%B0%E0%A5%87%E0%A4%82\" title=\"विकिपीडिया:देवनागरी में कैसे टाइप करें\" class=\"mw-redirect\"\x3eदेवनागरी में लिखने के लिए सहायता\x3c/a\x3e\n\x3c/td\x3e\x3c/tr\x3e\x3c/table\x3e\n\x3ctable align=\"center\" style=\"text-align: center; font-size: 70%;\"\x3e\n\n\x3ctr\x3e\n\x3ctd\x3e\x3cdiv style=\"font-size:120%;border:none;margin: 0;padding:.1em;color:green\"\x3e\x3ca href=\"/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%85%E0%A4%95%E0%A5%8D%E0%A4%B8%E0%A4%B0_%E0%A4%AA%E0%A5%82%E0%A4%9B%E0%A5%87_%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A5%87_%E0%A4%B5%E0%A4%BE%E0%A4%B2%E0%A5%87_%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B6%E0%A5%8D%E0%A4%A8\" title=\"विकिपीडिया:अक्सर पूछे जाने वाले प्रश्न\"\x3e(अक्सर पूछे जाने वाले प्रश्न)\x3c/a\x3e\x3c/div\x3e\n\x3c/td\x3e\x3c/tr\x3e\x3c/table\x3e\n\x3c/div\x3e");
+/* ]]> */
+</script></div>
+			<!-- /sitenotice -->
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">देवनागरी</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+				<!-- tagline -->
+				<div id="siteSub">विकिपीडिया, एक मुक्त ज्ञानकोष से</div>
+				<!-- /tagline -->
+				<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav">
+					यहाँ जाएँ: <a href="#mw-head">भ्रमण</a>,
+					<a href="#p-search">खोज</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodytext -->
+				<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/%E0%A4%9A%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0:Rigveda_MS2097.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Rigveda_MS2097.jpg/300px-Rigveda_MS2097.jpg" width="300" height="291" class="thumbimage" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/%E0%A4%9A%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0:Rigveda_MS2097.jpg" class="internal" title="बड़ा करें"><img src="http://bits.wikimedia.org/skins-1.17/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+देवनागरी में लिखी ऋग्वेद की पाण्डुलिपि</div>
+</div>
+</div>
+<p><b>देवनागरी</b> एक लिपि है जिसमें अनेक <a href="/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4" title="भारत">भारतीय</a> <a href="/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" title="भाषा">भाषाएँ</a> तथा कुछ विदेशी भाषाएं लिखीं जाती हैं। <a href="/wiki/%E0%A4%B8%E0%A4%82%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A5%83%E0%A4%A4" class="mw-redirect" title="संस्कृत">संस्कृत</a>, <a href="/wiki/%E0%A4%AA%E0%A4%BE%E0%A4%B2%E0%A4%BF" class="mw-redirect" title="पालि">पालि</a>, <a href="/wiki/%E0%A4%B9%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%80">हिन्दी</a>, <a href="/wiki/%E0%A4%AE%E0%A4%B0%E0%A4%BE%E0%A4%A0%E0%A5%80" class="mw-redirect" title="मराठी">मराठी</a>, <a href="/wiki/%E0%A4%95%E0%A5%8B%E0%A4%82%E0%A4%95%E0%A4%A3%E0%A5%80">कोंकणी</a>, <a href="/wiki/%E0%A4%B8%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%A7%E0%A5%80" class="mw-redirect" title="सिन्धी">सिन्धी</a>, <a href="/wiki/%E0%A4%95%E0%A4%B6%E0%A5%8D%E0%A4%AE%E0%A5%80%E0%A4%B0%E0%A5%80">कश्मीरी</a>, <a href="/wiki/%E0%A4%A8%E0%A5%87%E0%A4%AA%E0%A4%BE%E0%A4%B2%E0%A5%80" class="mw-redirect" title="नेपाली">नेपाली</a>, <a href="/wiki/%E0%A4%A4%E0%A4%BE%E0%A4%AE%E0%A4%BE%E0%A4%99_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">तामाङ भाषा</a>, <a href="/wiki/%E0%A4%97%E0%A4%A2%E0%A4%BC%E0%A4%B5%E0%A4%BE%E0%A4%B2%E0%A5%80" class="mw-redirect" title="गढ़वाली">गढ़वाली</a>, <a href="/wiki/%E0%A4%AC%E0%A5%8B%E0%A4%A1%E0%A5%8B">बोडो</a>, <a href="/wiki/%E0%A4%85%E0%A4%82%E0%A4%97%E0%A4%BF%E0%A4%95%E0%A4%BE">अंगिका</a>, <a href="/wiki/%E0%A4%AE%E0%A4%97%E0%A4%B9%E0%A5%80">मगही</a>, <a href="/wiki/%E0%A4%AD%E0%A5%8B%E0%A4%9C%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A5%80" class="mw-redirect" title="भोजपुरी">भोजपुरी</a>, <a href="/wiki/%E0%A4%AE%E0%A5%88%E0%A4%A5%E0%A4%BF%E0%A4%B2%E0%A5%80">मैथिली</a>, <a href="/wiki/%E0%A4%B8%E0%A4%82%E0%A4%A5%E0%A4%BE%E0%A4%B2%E0%A5%80">संथाली</a> आदि भाषाएँ देवनागरी में लिखी जाती हैं। इसके अतिरिक्त कुछ स्थितियों में गुजराती, पंजाबी, <a href="/wiki/%E0%A4%AC%E0%A4%BF%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A5%81%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE_%E0%A4%AE%E0%A4%A3%E0%A4%BF%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A5%80" class="mw-redirect" title="बिष्णुपुरिया मणिपुरी">बिष्णुपुरिया मणिपुरी</a>, <a href="/wiki/%E0%A4%B0%E0%A5%8B%E0%A4%AE%E0%A4%BE%E0%A4%A8%E0%A5%80" class="mw-redirect" title="रोमानी">रोमानी</a> और उर्दू भाषाएं भी देवनागरी में लिखी जाती हैं।</p>
+<p>अधिकतर भाषाओं की तरह देवनागरी भी बायें से दायें लिखी जाती है। प्रत्येक शब्द के ऊपर एक रेखा खिंची होती है (कुछ वर्णों के ऊपर रेखा नहीं होती है)इसे शिरोरे़खा कहते हैं। इसका विकास <a href="/wiki/%E0%A4%AC%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B9%E0%A5%8D%E0%A4%AE%E0%A5%80_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF">ब्राह्मी लिपि</a> से हुआ है। यह एक <a href="/w/index.php?title=%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95&amp;action=edit&amp;redlink=1" class="new" title="ध्वन्यात्मक (पृष्ठ मौजूद नहीं है)">ध्वन्यात्मक</a> लिपि है जो प्रचलित लिपियों (रोमन, अरबी, चीनी आदि) में सबसे अधिक वैज्ञानिक है। इससे वैज्ञानिक और व्यापक लिपि शायद केवल <a href="/wiki/%E0%A4%86%E0%A4%87%E0%A4%AA%E0%A5%80%E0%A4%8F" class="mw-redirect" title="आइपीए">आइपीए</a> लिपि है। भारत की कई लिपियाँ देवनागरी से बहुत अधिक मिलती-जुलती हैं, जैसे- बांग्ला, गुजराती, गुरुमुखी आदि। कम्प्यूटर प्रोग्रामों की सहायता से भारतीय लिपियों को परस्पर परिवर्तन बहुत आसान हो गया है।</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;"><a href="/wiki/%E0%A4%9A%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0:Varanasi_Transparente.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Varanasi_Transparente.png/300px-Varanasi_Transparente.png" width="300" height="363" class="thumbimage" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/%E0%A4%9A%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0:Varanasi_Transparente.png" class="internal" title="बड़ा करें"><img src="http://bits.wikimedia.org/skins-1.17/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+वाराणसी में देवनागरी लिपि में लिखे विज्ञापन</div>
+</div>
+</div>
+<p>भारतीय भाषाओं के किसी भी शब्द या ध्वनि को देवनागरी लिपि में ज्यों का त्यों लिखा जा सकता है और फिर लिखे पाठ को लगभग 'हू-ब-हू' उच्चारण किया जा सकता है, जो कि <a href="/wiki/%E0%A4%B0%E0%A5%8B%E0%A4%AE%E0%A4%A8_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF">रोमन लिपि</a> और अन्य कई लिपियों में सम्भव नहीं है, जब तक कि उनका कोई ख़ास मानकीकरण न किया जाये, जैसे <a href="/wiki/%E0%A4%86%E0%A4%87%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%82%E0%A4%B8" class="mw-redirect" title="आइट्रांस">आइट्रांस</a> या <a href="/w/index.php?title=%E0%A4%86%E0%A4%87%E0%A4%8F%E0%A4%8F%E0%A4%B8%E0%A4%9F%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="आइएएसटी (पृष्ठ मौजूद नहीं है)">आइएएसटी</a>।</p>
+<p>इसमें कुल ५२ अक्षर हैं, जिसमें १४ स्वर और ३८ व्यंजन हैं। अक्षरों की क्रम व्यवस्था (विन्यास) भी बहुत ही वैज्ञानिक है। स्वर-व्यंजन, कोमल-कठोर, अल्पप्राण-महाप्राण, अनुनासिक्य-अन्तस्थ-उष्म इत्यादि वर्गीकरण भी वैज्ञानिक हैं। एक मत के अनुसार देवनगर (काशी) मे प्रचलन के कारण इसका नाम देवनागरी पड़ा।</p>
+<p>भारत तथा एशिया की अनेक लिपियों के संकेत देवनागरी से अलग हैं (उर्दू को छोडकर), पर उच्चारण व वर्ण-क्रम आदि देवनागरी के ही समान हैं -- क्योंकि वो सभी <a href="/wiki/%E0%A4%AC%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B9%E0%A5%8D%E0%A4%AE%E0%A5%80_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF">ब्राह्मी लिपि</a> से उत्पन्न हुई हैं। इसलिए इन लिपियों को परस्पर आसानी से लिप्यन्तरित किया जा सकता है। देवनागरी लेखन की दृष्टि से सरल, सौन्दर्य की दृष्टि से सुन्दर और वाचन की दृष्टि से सुपाठ्य है।</p>
+<p>जिस प्रकार <a href="/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4%E0%A5%80%E0%A4%AF_%E0%A4%85%E0%A4%82%E0%A4%95" title="भारतीय अंक">भारतीय अंकों</a> को उनकी वैज्ञानिकता के कारण विश्व ने सहर्ष स्वीकार कर लिया वैसे ही देवनागरी भी अपनी वैज्ञानिकता के कारण ही एक दिन विश्वनागरी बनेगी।</p>
+<table id="toc" class="toc">
+<tr>
+<td>
+<div id="toctitle">
+<h2>अनुक्रम</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.E0.A4.AD.E0.A4.BE.E0.A4.B7.E0.A4.BE.E0.A4.B5.E0.A4.BF.E0.A4.9C.E0.A5.8D.E0.A4.9E.E0.A4.BE.E0.A4.A8_.E0.A4.95.E0.A5.80_.E0.A4.A6.E0.A5.83.E0.A4.B7.E0.A5.8D.E0.A4.9F.E0.A4.BF_.E0.A4.B8.E0.A5.87_.E0.A4.A6.E0.A5.87.E0.A4.B5.E0.A4.A8.E0.A4.BE.E0.A4.97.E0.A4.B0.E0.A5.80"><span class="tocnumber">१</span> <span class="toctext">भाषाविज्ञान की दृष्टि से देवनागरी</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.E0.A4.B2.E0.A4.BF.E0.A4.AA.E0.A4.BF"><span class="tocnumber">२</span> <span class="toctext">लिपि</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#.E0.A4.B8.E0.A5.8D.E0.A4.B5.E0.A4.B0"><span class="tocnumber">२.१</span> <span class="toctext">स्वर</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#.E0.A4.B5.E0.A5.8D.E0.A4.AF.E0.A4.82.E0.A4.9C.E0.A4.A8"><span class="tocnumber">२.२</span> <span class="toctext">व्यंजन</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#.E0.A4.A8.E0.A5.81.E0.A4.95.E0.A4.BC.E0.A5.8D.E0.A4.A4.E0.A4.BE_.E0.A4.B5.E0.A4.BE.E0.A4.B2.E0.A5.80_.E0.A4.A7.E0.A5.8D.E0.A4.B5.E0.A4.A8.E0.A4.BF.E0.A4.AF.E0.A4.BE.E0.A4.81"><span class="tocnumber">२.३</span> <span class="toctext">नुक़्ता वाली ध्वनियाँ</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#.E0.A4.A6.E0.A5.87.E0.A4.B5.E0.A4.A8.E0.A4.BE.E0.A4.97.E0.A4.B0.E0.A5.80_.E0.A4.85.E0.A4.82.E0.A4.95"><span class="tocnumber">२.४</span> <span class="toctext">देवनागरी अंक</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="#.E0.A4.A6.E0.A5.87.E0.A4.B5.E0.A4.A8.E0.A4.BE.E0.A4.97.E0.A4.B0.E0.A5.80_.E0.A4.B2.E0.A4.BF.E0.A4.AA.E0.A4.BF_.E0.A4.95.E0.A5.87_.E0.A4.97.E0.A5.81.E0.A4.A3"><span class="tocnumber">३</span> <span class="toctext">देवनागरी लिपि के गुण</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="#.E0.A4.A6.E0.A5.87.E0.A4.B5.E0.A4.A8.E0.A4.BE.E0.A4.97.E0.A4.B0.E0.A5.80_.E0.A4.AA.E0.A4.B0_.E0.A4.AE.E0.A4.B9.E0.A4.BE.E0.A4.AA.E0.A5.81.E0.A4.B0.E0.A5.81.E0.A4.B7.E0.A5.8B.E0.A4.82_.E0.A4.95.E0.A5.87_.E0.A4.B5.E0.A4.BF.E0.A4.9A.E0.A4.BE.E0.A4.B0"><span class="tocnumber">४</span> <span class="toctext">देवनागरी पर महापुरुषों के विचार</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="#.E0.A4.AD.E0.A4.BE.E0.A4.B0.E0.A4.A4_.E0.A4.95.E0.A5.87_.E0.A4.B2.E0.A4.BF.E0.A4.AF.E0.A5.87_.E0.A4.A6.E0.A5.87.E0.A4.B5.E0.A4.A8.E0.A4.BE.E0.A4.97.E0.A4.B0.E0.A5.80_.E0.A4.95.E0.A4.BE_.E0.A4.AE.E0.A4.B9.E0.A4.A4.E0.A5.8D.E0.A4.B5"><span class="tocnumber">५</span> <span class="toctext">भारत के लिये देवनागरी का महत्व</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="#.E0.A4.B2.E0.A4.BF.E0.A4.AA.E0.A4.BF-.E0.A4.B5.E0.A4.BF.E0.A4.B9.E0.A5.80.E0.A4.A8_.E0.A4.AD.E0.A4.BE.E0.A4.B7.E0.A4.BE.E0.A4.93.E0.A4.82_.E0.A4.95.E0.A5.87_.E0.A4.B2.E0.A4.BF.E0.A4.AF.E0.A5.87_.E0.A4.A6.E0.A5.87.E0.A4.B5.E0.A4.A8.E0.A4.BE.E0.A4.97.E0.A4.B0.E0.A5.80"><span class="tocnumber">६</span> <span class="toctext">लिपि-विहीन भाषाओं के लिये देवनागरी</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="#.E0.A4.A6.E0.A5.87.E0.A4.B5.E0.A4.A8.E0.A4.BE.E0.A4.97.E0.A4.B0.E0.A5.80_.E0.A4.95.E0.A4.BE_.E0.A4.87.E0.A4.A4.E0.A4.BF.E0.A4.B9.E0.A4.BE.E0.A4.B8"><span class="tocnumber">७</span> <span class="toctext">देवनागरी का इतिहास</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="#.E0.A4.A6.E0.A5.87.E0.A4.B5.E0.A4.A8.E0.A4.BE.E0.A4.97.E0.A4.B0.E0.A5.80_.E0.A4.95.E0.A5.80_.E0.A4.B5.E0.A5.88.E0.A4.9C.E0.A5.8D.E0.A4.9E.E0.A4.BE.E0.A4.A8.E0.A4.BF.E0.A4.95.E0.A4.A4.E0.A4.BE"><span class="tocnumber">८</span> <span class="toctext">देवनागरी की वैज्ञानिकता</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="#.E0.A4.A6.E0.A5.87.E0.A4.B5.E0.A4.A8.E0.A4.BE.E0.A4.97.E0.A4.B0.E0.A5.80_.E0.A4.95.E0.A5.87_.E0.A4.B8.E0.A4.AE.E0.A5.8D.E0.A4.AA.E0.A4.BE.E0.A4.A6.E0.A4.BF.E0.A4.A4.E0.A5.8D.E0.A4.B0_.E0.A4.B5_.E0.A4.85.E0.A4.A8.E0.A5.8D.E0.A4.AF_.E0.A4.B8.E0.A5.89.E0.A4.AB.E0.A5.8D.E0.A4.9F.E0.A4.B5.E0.A5.87.E0.A4.AF.E0.A4.B0"><span class="tocnumber">९</span> <span class="toctext">देवनागरी के सम्पादित्र व अन्य सॉफ्टवेयर</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="#.E0.A4.A6.E0.A5.87.E0.A4.B5.E0.A4.A8.E0.A4.BE.E0.A4.97.E0.A4.B0.E0.A5.80_.E0.A4.B8.E0.A5.87_.E0.A4.85.E0.A4.A8.E0.A5.8D.E0.A4.AF_.E0.A4.B2.E0.A4.BF.E0.A4.AA.E0.A4.BF.E0.A4.AF.E0.A5.8B.E0.A4.82_.E0.A4.AE.E0.A5.87.E0.A4.82_.E0.A4.B0.E0.A5.82.E0.A4.AA.E0.A4.BE.E0.A4.A8.E0.A5.8D.E0.A4.A4.E0.A4.B0.E0.A4.A3"><span class="tocnumber">१०</span> <span class="toctext">देवनागरी से अन्य लिपियों में रूपान्तरण</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="#.E0.A4.A6.E0.A5.87.E0.A4.B5.E0.A4.A8.E0.A4.BE.E0.A4.97.E0.A4.B0.E0.A5.80_.E0.A4.AF.E0.A5.82.E0.A4.A8.E0.A4.BF.E0.A4.95.E0.A5.8B.E0.A4.A1"><span class="tocnumber">११</span> <span class="toctext">देवनागरी यूनिकोड</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="#.E0.A4.95.E0.A4.AE.E0.A5.8D.E0.A4.AA.E0.A5.8D.E0.A4.AF.E0.A5.82.E0.A4.9F.E0.A4.B0_.E0.A4.95.E0.A5.81.E0.A4.82.E0.A4.9C.E0.A5.80.E0.A4.AA.E0.A4.9F.E0.A4.B2_.E0.A4.AA.E0.A4.B0_.E0.A4.A6.E0.A5.87.E0.A4.B5.E0.A4.A8.E0.A4.BE.E0.A4.97.E0.A4.B0.E0.A5.80"><span class="tocnumber">१२</span> <span class="toctext">कम्प्यूटर कुंजीपटल पर देवनागरी</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="#.E0.A4.87.E0.A4.A8.E0.A5.8D.E0.A4.B9.E0.A5.87.E0.A4.82_.E0.A4.AD.E0.A5.80_.E0.A4.A6.E0.A5.87.E0.A4.96.E0.A5.87.E0.A4.82"><span class="tocnumber">१३</span> <span class="toctext">इन्हें भी देखें</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="#.E0.A4.AC.E0.A4.BE.E0.A4.B9.E0.A4.B0.E0.A5.80_.E0.A4.95.E0.A4.A1.E0.A4.BC.E0.A4.BF.E0.A4.AF.E0.A4.BE.E0.A4.81"><span class="tocnumber">१४</span> <span class="toctext">बाहरी कड़ियाँ</span></a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h2><span class="editsection">[<a href="/w/index.php?title=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80&amp;action=edit&amp;section=1" title="विभाग संपादन: भाषाविज्ञान की दृष्टि से देवनागरी">संपादित करें</a>]</span> <span class="mw-headline" id=".E0.A4.AD.E0.A4.BE.E0.A4.B7.E0.A4.BE.E0.A4.B5.E0.A4.BF.E0.A4.9C.E0.A5.8D.E0.A4.9E.E0.A4.BE.E0.A4.A8_.E0.A4.95.E0.A5.80_.E0.A4.A6.E0.A5.83.E0.A4.B7.E0.A5.8D.E0.A4.9F.E0.A4.BF_.E0.A4.B8.E0.A5.87_.E0.A4.A6.E0.A5.87.E0.A4.B5.E0.A4.A8.E0.A4.BE.E0.A4.97.E0.A4.B0.E0.A5.80">भाषाविज्ञान की दृष्टि से देवनागरी</span></h2>
+<table align="right" style="margin:0 0 .5em 1em; background: white; border:1px solid #999; padding:5px; font-size: 90%; width:19em; clear: right" class="box">
+<tr>
+<th style="font-weight:normal;"><b><a href="/wiki/%E0%A4%AC%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B9%E0%A5%8D%E0%A4%AE%E0%A5%80_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="ब्राह्मी लिपि">ब्राह्मी लिपि से जन्मी लिपियाँ</a></b></th>
+</tr>
+<tr>
+<td>
+<p><b>उत्तरी ब्राह्मी</b></p>
+<ul>
+<li>कुषाण</li>
+<li><a href="/w/index.php?title=%E0%A4%A4%E0%A5%8B%E0%A4%9A%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%A8_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="तोचरियन लिपि (पृष्ठ मौजूद नहीं है)">तोचरियन</a></li>
+<li><a href="/w/index.php?title=%E0%A4%AE%E0%A5%88%E0%A4%A4%E0%A5%88_%E0%A4%AE%E0%A4%AF%E0%A5%87%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="मैतै मयेक लिपि (पृष्ठ मौजूद नहीं है)">मैतै मयेक</a></li>
+<li><a href="/wiki/%E0%A4%97%E0%A5%81%E0%A4%AA%E0%A5%8D%E0%A4%A4_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="गुप्त लिपि">गुप्त</a>
+<ul>
+<li><a href="/wiki/%E0%A4%B6%E0%A4%BE%E0%A4%B0%E0%A4%A6%E0%A4%BE_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="शारदा लिपि">शारदा</a>
+<ul>
+<li><a href="/wiki/%E0%A4%B2%E0%A5%8D%E0%A4%B9%E0%A4%BE%E0%A4%82%E0%A4%A1%E0%A4%BE">ल्हांडा</a>
+<ul>
+<li><a href="/wiki/%E0%A4%95%E0%A4%B6%E0%A5%8D%E0%A4%AE%E0%A5%80%E0%A4%B0%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" title="कश्मीरी भाषा">प्राचीन कश्मीरी</a></li>
+<li><a href="/wiki/%E0%A4%97%E0%A5%81%E0%A4%B0%E0%A5%81%E0%A4%AE%E0%A5%81%E0%A4%96%E0%A5%80_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="गुरुमुखी लिपि">गुरुमुखी</a></li>
+<li><a href="/w/index.php?title=%E0%A4%96%E0%A5%8B%E0%A4%9C%E0%A4%95%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="खोजकी (पृष्ठ मौजूद नहीं है)">खोजकी</a></li>
+</ul>
+</li>
+<li><a href="/wiki/%E0%A4%9F%E0%A4%BE%E0%A4%95%E0%A4%B0%E0%A5%80_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="टाकरी लिपि">टाकरी</a>
+<ul>
+<li><a href="/wiki/%E0%A4%A1%E0%A5%8B%E0%A4%97%E0%A4%B0%E0%A5%80" class="mw-redirect" title="डोगरी">डोगरी</a></li>
+<li><a href="/w/index.php?title=%E0%A4%9A%E0%A4%AE%E0%A4%BF%E0%A4%AF%E0%A4%BE%E0%A4%B2%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="चमियाली (पृष्ठ मौजूद नहीं है)">चमियाली</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="/wiki/%E0%A4%B8%E0%A4%BF%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%AE_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="सिद्धम लिपि" class="mw-redirect">सिद्धम</a>
+<ul>
+<li><a href="/wiki/%E0%A4%A4%E0%A4%BF%E0%A4%AC%E0%A5%8D%E0%A4%AC%E0%A4%A4%E0%A5%80_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="तिब्बती लिपि">तिब्बती</a>
+<ul>
+<li><a href="/w/index.php?title=%E0%A4%AB%E0%A4%BE%E0%A4%97%E0%A5%8D%E0%A4%B8%E0%A5%8D%E0%A4%AA%E0%A4%BE_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="फाग्स्पा लिपि (पृष्ठ मौजूद नहीं है)">फाग्स्पा</a>
+<ul>
+<li><a href="/wiki/%E0%A4%B9%E0%A4%82%E0%A4%97%E0%A5%81%E0%A4%B2">हंगुल</a> (परिकाल्पनिक)</li>
+</ul>
+</li>
+<li><a href="/w/index.php?title=%E0%A4%B2%E0%A5%87%E0%A4%AA%E0%A4%9A%E0%A4%BE_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="लेपचा लिपि (पृष्ठ मौजूद नहीं है)">लेपचा</a>
+<ul>
+<li><a href="/w/index.php?title=%E0%A4%B2%E0%A4%BF%E0%A4%82%E0%A4%AC%E0%A5%81_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="लिंबु लिपि (पृष्ठ मौजूद नहीं है)">लिंबु</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="/wiki/%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="नागरी लिपि">नागरी</a>
+<ul>
+<li><strong class="selflink">देवनागरी</strong>
+<ul>
+<li><a href="/w/index.php?title=%E0%A4%AE%E0%A5%8B%E0%A4%A6%E0%A5%80_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="मोदी लिपि (पृष्ठ मौजूद नहीं है)">मोदी</a></li>
+</ul>
+</li>
+<li><a href="/w/index.php?title=%E0%A4%A8%E0%A4%82%E0%A4%A6%E0%A5%80%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="नंदीनागरी (पृष्ठ मौजूद नहीं है)">नंदीनागरी</a></li>
+<li><a href="/wiki/%E0%A4%97%E0%A5%81%E0%A4%9C%E0%A4%B0%E0%A4%BE%E0%A4%A4%E0%A5%80_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="गुजराती लिपि">गुजराती</a></li>
+</ul>
+</li>
+<li>आद्य-बंगाली
+<ul>
+<li><a href="/wiki/%E0%A4%95%E0%A5%88%E0%A4%A5%E0%A5%80">कैथी</a>
+<ul>
+<li><a href="/w/index.php?title=%E0%A4%B8%E0%A4%BF%E0%A4%B2%E0%A4%B9%E0%A4%9F%E0%A5%80_%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="सिलहटी नागरी (पृष्ठ मौजूद नहीं है)">सिलहटी नागरी</a></li>
+</ul>
+</li>
+<li><a href="/wiki/%E0%A4%AA%E0%A5%82%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A5%80_%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="पूर्वी नागरी लिपि">पूर्वी नागरी</a>
+<ul>
+<li><a href="/wiki/%E0%A4%AC%E0%A4%82%E0%A4%97%E0%A4%BE%E0%A4%B2%E0%A5%80_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="बंगाली लिपि" class="mw-redirect">बंगाली</a></li>
+<li><a href="/wiki/%E0%A4%85%E0%A4%B8%E0%A4%AE%E0%A4%BF%E0%A4%AF%E0%A4%BE_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="असमिया लिपि">असमिया</a></li>
+</ul>
+</li>
+<li><a href="/wiki/%E0%A4%AE%E0%A4%BF%E0%A4%A5%E0%A4%BF%E0%A4%B2%E0%A4%BE%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%B0">मिथिलाक्षर</a></li>
+<li><a href="/wiki/%E0%A4%89%E0%A4%A1%E0%A4%BC%E0%A4%BF%E0%A4%AF%E0%A4%BE_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="उड़िया लिपि">उड़िया</a></li>
+</ul>
+</li>
+<li><a href="/w/index.php?title=%E0%A4%A8%E0%A5%87%E0%A4%AA%E0%A4%BE%E0%A4%B2%E0%A5%80_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="नेपाली लिपि (पृष्ठ मौजूद नहीं है)">नेपाली</a>
+<ul>
+<li><a href="/wiki/%E0%A4%AD%E0%A5%82%E0%A4%9C%E0%A4%BF%E0%A4%AE%E0%A5%8B%E0%A4%B2">भूजिमोल</a></li>
+<li><a href="/w/index.php?title=%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%9A%E0%A4%B2%E0%A4%BF%E0%A4%A4_%E0%A4%A8%E0%A5%87%E0%A4%AA%E0%A4%BE%E0%A4%B2_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="प्रचलित नेपाल लिपि (पृष्ठ मौजूद नहीं है)">प्रचलित नेपाल</a></li>
+<li><a href="/wiki/%E0%A4%B0%E0%A4%82%E0%A4%9C%E0%A4%A8%E0%A4%BE_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="रंजना लिपि">रंजना</a>
+<ul>
+<li><a href="/w/index.php?title=%E0%A4%B8%E0%A5%8B%E0%A4%AF%E0%A5%8B%E0%A4%82%E0%A4%AC%E0%A5%8B_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="सोयोंबो लिपि (पृष्ठ मौजूद नहीं है)">सोयोंबो</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><b>दक्षिणी ब्राह्मी</b></p>
+<ul>
+<li><a href="/w/index.php?title=%E0%A4%A4%E0%A4%AE%E0%A4%BF%E0%A4%B2_%E0%A4%AC%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B9%E0%A5%8D%E0%A4%AE%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="तमिल ब्राह्मी (पृष्ठ मौजूद नहीं है)">तमिल ब्राह्मी</a>
+<ul>
+<li><a href="/wiki/%E0%A4%B5%E0%A4%9F%E0%A5%8D%E0%A4%9F%E0%A5%87%E0%A4%B4%E0%A5%81%E0%A4%A4%E0%A5%8D%E0%A4%A4%E0%A5%81">वट्टेऴुत्तु</a>
+<ul>
+<li><a href="/wiki/%E0%A4%A4%E0%A4%AE%E0%A4%BF%E0%A4%B2_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="तमिल लिपि">तमिल</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="/wiki/%E0%A4%B8%E0%A4%BF%E0%A4%82%E0%A4%B9%E0%A4%B2_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="सिंहल लिपि">सिंहल</a></li>
+<li><a href="/wiki/%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%82%E0%A4%A5_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="ग्रंथ लिपि" class="mw-redirect">पल्लव ग्रंथ</a>
+<ul>
+<li><a href="/wiki/%E0%A4%AE%E0%A4%B2%E0%A4%AF%E0%A4%BE%E0%A4%B2%E0%A4%AE_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="मलयालम लिपि">मलयालम</a></li>
+<li><a href="/w/index.php?title=%E0%A4%A4%E0%A5%81%E0%A4%B3%E0%A5%81_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="तुळु लिपि (पृष्ठ मौजूद नहीं है)">तुळु</a></li>
+<li><a href="/w/index.php?title=%E0%A4%A6%E0%A4%BF%E0%A4%B5%E0%A5%87%E0%A4%B8_%E0%A4%85%E0%A4%95%E0%A5%81%E0%A4%B0%E0%A5%81&amp;action=edit&amp;redlink=1" class="new" title="दिवेस अकुरु (पृष्ठ मौजूद नहीं है)">दिवेस अकुरु</a></li>
+<li><a href="/w/index.php?title=%E0%A4%B8%E0%A5%8C%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="सौराष्ट्र लिपि (पृष्ठ मौजूद नहीं है)">सौराष्ट्र</a></li>
+<li><a href="/w/index.php?title=%E0%A4%96%E0%A5%8D%E0%A4%AE%E0%A5%87%E0%A4%B0_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="ख्मेर लिपि (पृष्ठ मौजूद नहीं है)">ख्मेर</a>
+<ul>
+<li><a href="/wiki/%E0%A4%B2%E0%A4%BE%E0%A4%93_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="लाओ लिपि">लाओ</a></li>
+<li><a href="/wiki/%E0%A4%A5%E0%A4%BE%E0%A4%88_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="थाई लिपि">थाई</a></li>
+</ul>
+</li>
+<li><a href="/w/index.php?title=%E0%A4%9A%E0%A4%BE%E0%A4%AE_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="चाम लिपि (पृष्ठ मौजूद नहीं है)">चाम</a></li>
+<li><a href="/w/index.php?title=%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%9A%E0%A5%80%E0%A4%A8_%E0%A4%95%E0%A4%BE%E0%A4%B5%E0%A5%80_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="प्राचीन कावी लिपि (पृष्ठ मौजूद नहीं है)">प्राचीन कावी</a>
+<ul>
+<li><a href="/wiki/%E0%A4%AC%E0%A4%BE%E0%A4%B2%E0%A5%80_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="बाली लिपि">बाली</a></li>
+<li><a href="/w/index.php?title=%E0%A4%9C%E0%A4%BE%E0%A4%B5%E0%A4%BE%E0%A4%88_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="जावाई लिपि (पृष्ठ मौजूद नहीं है)">जावाई</a></li>
+<li><a href="/w/index.php?title=%E0%A4%AC%E0%A4%AC%E0%A4%AF%E0%A4%BF%E0%A4%A8&amp;action=edit&amp;redlink=1" class="new" title="बबयिन (पृष्ठ मौजूद नहीं है)">बबयिन</a></li>
+<li><a href="/w/index.php?title=%E0%A4%AC%E0%A4%A4%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="बतक लिपि (पृष्ठ मौजूद नहीं है)">बतक</a></li>
+<li><a href="/w/index.php?title=%E0%A4%AC%E0%A5%81%E0%A4%B9%E0%A4%BF%E0%A4%A6_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="बुहिद लिपि (पृष्ठ मौजूद नहीं है)">बुहिद</a></li>
+<li><a href="/w/index.php?title=%E0%A4%B9%E0%A4%A8%E0%A5%81%E0%A4%93%E0%A4%A8%E0%A5%8B%E0%A4%93_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="हनुओनोओ लिपि (पृष्ठ मौजूद नहीं है)">हनुओनोओ</a></li>
+<li><a href="/w/index.php?title=%E0%A4%A4%E0%A4%97%E0%A4%AC%E0%A4%A8%E0%A5%8D%E0%A4%B5%E0%A4%BE_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="तगबन्वा लिपि (पृष्ठ मौजूद नहीं है)">तगबन्वा</a></li>
+<li><a href="/w/index.php?title=%E0%A4%B8%E0%A5%81%E0%A4%82%E0%A4%A6%E0%A4%BE%E0%A4%A8%E0%A5%80_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="सुंदानी लिपि (पृष्ठ मौजूद नहीं है)">सुंदानी</a></li>
+<li><a href="/w/index.php?title=%E0%A4%B2%E0%A5%8B%E0%A4%82%E0%A4%A4%E0%A4%BE%E0%A4%B0%E0%A4%BE_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="लोंतारा लिपि (पृष्ठ मौजूद नहीं है)">लोंतारा</a></li>
+<li><a href="/w/index.php?title=%E0%A4%B0%E0%A5%87%E0%A4%9C%E0%A4%82%E0%A4%97_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="रेजंग लिपि (पृष्ठ मौजूद नहीं है)">रेजंग</a></li>
+</ul>
+</li>
+<li><a href="/wiki/%E0%A4%AE%E0%A5%8B%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" title="मोन भाषा">मोन</a>
+<ul>
+<li><a href="/wiki/%E0%A4%AC%E0%A4%B0%E0%A5%8D%E0%A4%AE%E0%A5%80_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="बर्मी लिपि">बर्मी</a></li>
+<li><a href="/w/index.php?title=%E0%A4%93%E0%A4%9D%E0%A5%8B%E0%A4%AA%E0%A4%A5&amp;action=edit&amp;redlink=1" class="new" title="ओझोपथ (पृष्ठ मौजूद नहीं है)">ओझोपथ</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="/wiki/%E0%A4%95%E0%A4%B2%E0%A4%BF%E0%A4%82%E0%A4%97_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="कलिंग लिपि">कलिंग</a></li>
+<li><a href="/w/index.php?title=%E0%A4%AD%E0%A4%9F%E0%A5%8D%E0%A4%9F%E0%A4%BF%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%8B%E0%A4%B2%E0%A5%81_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="भट्टिप्रोलु लिपि (पृष्ठ मौजूद नहीं है)">भट्टिप्रोलु लिपि</a>
+<ul>
+<li><a href="/w/index.php?title=%E0%A4%95%E0%A4%A6%E0%A4%82%E0%A4%AC_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="कदंब लिपि (पृष्ठ मौजूद नहीं है)">कदंब</a></li>
+<li><a href="/wiki/%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A8%E0%A4%A1%E0%A4%BC_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="कन्नड़ लिपि">कन्नड़</a></li>
+<li><a href="/wiki/%E0%A4%A4%E0%A5%87%E0%A4%B2%E0%A5%81%E0%A4%97%E0%A5%81_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="तेलुगु लिपि" class="mw-redirect">तेलुगु</a></li>
+<li><a href="/w/index.php?title=%E0%A4%A4%E0%A4%BE%E0%A4%88_%E0%A4%B2%E0%A5%87_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="ताई ले लिपि (पृष्ठ मौजूद नहीं है)">ताई ले</a>
+<ul>
+<li><a href="/w/index.php?title=%E0%A4%A8%E0%A4%88_%E0%A4%A4%E0%A4%BE%E0%A4%88_%E0%A4%B2%E0%A5%81%E0%A4%8F&amp;action=edit&amp;redlink=1" class="new" title="नई ताई लुए (पृष्ठ मौजूद नहीं है)">नई ताई लुए</a></li>
+</ul>
+</li>
+<li><a href="/w/index.php?title=%E0%A4%85%E0%A4%B9%E0%A5%8B%E0%A4%AE_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="अहोम लिपि (पृष्ठ मौजूद नहीं है)">अहोम</a></li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+<p><a href="/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE%E0%A4%B5%E0%A4%BF%E0%A4%9C%E0%A5%8D%E0%A4%9E%E0%A4%BE%E0%A4%A8" title="भाषाविज्ञान">भाषावैज्ञानिक</a> दृष्टि से देवनागरी लिपि अक्षरात्मक (सिलेबिक) लिपि मानी जाती है। लिपि के विकाससोपानों की दृष्टि से "<a href="/wiki/%E0%A4%9A%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="चित्रलिपि">चित्रात्मक</a>", "भावात्मक" और "भावचित्रात्मक" लिपियों के अनंतर "<a href="/w/index.php?title=%E0%A4%85%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%B0%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="अक्षरात्मक लिपि (पृष्ठ मौजूद नहीं है)">अक्षरात्मक</a>" स्तर की लिपियों का विकास माना जाता है। पाश्चात्य और अनेक भारतीय भाषाविज्ञानविज्ञों के मत से लिपि की अक्षरात्मक अवस्था के बाद अल्फाबेटिक (वर्णात्मक) अवस्था का विकास हुआ। सबसे विकसित अवस्था मानी गई है ध्वन्यात्मक (फोनेटिक) लिपि की। "देवनागरी" को अक्षरात्मक इसलिए कहा जाता है कि इसके वर्ण- अक्षर (सिलेबिल) हैं- स्वर भी और व्यंजन भी। "क", "ख" आदि व्यंजन सस्वर हैं- अकारयुक्त हैं। वे केवल ध्वनियाँ नहीं हैं अपितु सस्वर अक्षर हैं। अत: ग्रीक, रोमन आदि वर्णमालाएँ हैं। परंतु यहाँ यह ध्यान रखनेकी बात है कि भारत की "ब्राह्मी" या "भारती" वर्णमाला की ध्वनियों में व्यंजनों का "<a href="/wiki/%E0%A4%AA%E0%A4%BE%E0%A4%A3%E0%A4%BF%E0%A4%A8%E0%A4%BF">पाणिनि</a>" ने वर्णसमाम्नाय के 14 सूत्रों में जो स्वरूप परिचय दिया है- उसके विषय में "<a href="/w/index.php?title=%E0%A4%AA%E0%A4%82%E0%A4%A4%E0%A4%9C%E0%A4%B2%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="पंतजलि (पृष्ठ मौजूद नहीं है)">पंतजलि</a>" (द्वितीय शती ई.पू.) ने यह स्पष्ट बता दिया है कि व्यंजनों में संनियोजित "अकार" स्वर का उपयोग केवल उच्चारण के उद्देश्य से है। वह तत्वत: वर्ण का अंग नहीं है। इस दृष्टि से विचार करते हुए <b>कहा जा सकता है कि इस लिपि की वर्णमाला तत्वत: ध्वन्यात्मक है, अक्षरात्मक नहीं।</b></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80&amp;action=edit&amp;section=2" title="विभाग संपादन: लिपि">संपादित करें</a>]</span> <span class="mw-headline" id=".E0.A4.B2.E0.A4.BF.E0.A4.AA.E0.A4.BF">लिपि</span></h2>
+<p>देवनागरी में १२ <a href="/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%B5%E0%A4%B0">स्वर</a> और ३४ <a href="/wiki/%E0%A4%B5%E0%A5%8D%E0%A4%AF%E0%A4%82%E0%A4%9C%E0%A4%A8">व्यंजन</a> हैं। शून्य या एक या अधिक व्यंजनों और एक स्वर के मेल से एक <a href="/wiki/%E0%A4%85%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%B0">अक्षर</a> बनता है।</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80&amp;action=edit&amp;section=3" title="विभाग संपादन: स्वर">संपादित करें</a>]</span> <span class="mw-headline" id=".E0.A4.B8.E0.A5.8D.E0.A4.B5.E0.A4.B0"><b>स्वर</b></span></h3>
+<p>ये स्वर आधुनिक हिन्दी (खड़ीबोली) के लिये दिये गये हैं। संस्कृत में इनके उच्चारण थोड़े अलग होते हैं।</p>
+<table align="center" border="2">
+<tr>
+<th><b>वर्णाक्षर</b></th>
+<th><b>“प” के साथ मात्रा</b></th>
+<th><b><a href="/wiki/%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि" class="mw-redirect">IPA</a> उच्चारण</b></th>
+<th>"प्" के साथ उच्चारण</th>
+<th><b><a href="/wiki/IAST" class="mw-redirect" title="IAST">IAST</a> समतुल्य</b></th>
+<th><b><a href="/wiki/%E0%A4%85%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%9C%E0%A4%BC%E0%A5%80" class="mw-redirect" title="अंग्रेज़ी">अंग्रेज़ी</a> समतुल्य</b></th>
+<th>हिन्दी में वर्णन</th>
+</tr>
+<tr align="center">
+<td>अ</td>
+<td>प</td>
+<td><a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ ə /</span></a></td>
+<td><a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ pə /</span></a></td>
+<td>a</td>
+<td>short or long <a href="http://en.wikipedia.org/wiki/Schwa" class="extiw">en:Schwa</a>: as the <i>a</i> in <b>a</b>bove or <b>a</b>go</td>
+<td>बीच का मध्य प्रसृत स्वर</td>
+</tr>
+<tr align="center">
+<td>आ</td>
+<td>पा</td>
+<td><a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ α: /</span></a></td>
+<td><a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ pα: /</span></a></td>
+<td>ā</td>
+<td>long <a href="http://en.wikipedia.org/wiki/Open_back_unrounded_vowel" class="extiw">en:Open back unrounded vowel</a>: as the <i>a</i> in f<b>a</b>ther</td>
+<td>दीर्घ विवृत पश्व प्रसृत स्वर</td>
+</tr>
+<tr align="center">
+<td>इ</td>
+<td>पि</td>
+<td><a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ i /</span></a></td>
+<td><a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ pi /</span></a></td>
+<td>i</td>
+<td>short <a href="http://en.wikipedia.org/wiki/close_front_unrounded_vowel" class="extiw">en:close front unrounded vowel</a>: as <i>i</i> in b<b>i</b>t</td>
+<td>ह्रस्व संवृत अग्र प्रसृत स्वर</td>
+</tr>
+<tr align="center">
+<td>ई</td>
+<td>पी</td>
+<td><a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ i: /</span></a></td>
+<td><a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ pi: /</span></a></td>
+<td>ī</td>
+<td>long <a href="http://en.wikipedia.org/wiki/close_front_unrounded_vowel" class="extiw">en:close front unrounded vowel</a>: as <i>i</i> in mach<b>i</b>ne</td>
+<td>दीर्घ संवृत अग्र प्रसृत स्वर</td>
+</tr>
+<tr align="center">
+<td>उ</td>
+<td>पु</td>
+<td><a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ u /</span></a></td>
+<td><a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ pu /</span></a></td>
+<td>u</td>
+<td>short <a href="http://en.wikipedia.org/wiki/close_back_rounded_vowel" class="extiw">en:close back rounded vowel</a>: as <i>u</i> in p<b>u</b>t</td>
+<td>ह्रस्व संवृत पश्व वर्तुल स्वर</td>
+</tr>
+<tr align="center">
+<td>ऊ</td>
+<td>पू</td>
+<td><a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ u: /</span></a></td>
+<td><a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ pu: /</span></a></td>
+<td>ū</td>
+<td>long <a href="http://en.wikipedia.org/wiki/close_back_rounded_vowel" class="extiw">en:close back rounded vowel</a>: as <i>oo</i> in sch<b>oo</b>l</td>
+<td>दीर्घ संवृत पश्व वर्तुल स्वर</td>
+</tr>
+<tr align="center">
+<td>ए</td>
+<td>पे</td>
+<td><a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ e: /</span></a></td>
+<td><a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ pe: /</span></a></td>
+<td>e</td>
+<td>long <a href="http://en.wikipedia.org/wiki/close-mid_front_unrounded_vowel" class="extiw">en:close-mid front unrounded vowel</a>: as <i>a</i> in g<b>a</b>me (not a diphthong)</td>
+<td>दीर्घ अर्धसंवृत अग्र प्रसृत स्वर</td>
+</tr>
+<tr align="center">
+<td>ऐ</td>
+<td>पै</td>
+<td><a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ æ: /</span></a></td>
+<td><a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ pæ: /</span></a></td>
+<td>ai</td>
+<td>long <a href="http://en.wikipedia.org/wiki/near-open_front_unrounded_vowel" class="extiw">en:near-open front unrounded vowel</a>: as <i>a</i> in c<b>a</b>t</td>
+<td>दीर्घ लगभग-विवृत अग्र प्रसृत स्वर</td>
+</tr>
+<tr align="center">
+<td>ओ</td>
+<td>पो</td>
+<td><a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ ο: /</span></a></td>
+<td><a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ pο: /</span></a></td>
+<td>o</td>
+<td>long <a href="http://en.wikipedia.org/wiki/close-mid_back_rounded_vowel" class="extiw">en:close-mid back rounded vowel</a>: as <i>o</i> in t<b>o</b>ne (not a diphthong)</td>
+<td>दीर्घ अर्धसंवृत पश्व वर्तुल स्वर</td>
+</tr>
+<tr align="center">
+<td>औ</td>
+<td>पौ</td>
+<td><a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ ɔ: /</span></a></td>
+<td><a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ pɔ: /</span></a></td>
+<td>au</td>
+<td>long <a href="http://en.wikipedia.org/wiki/open-mid_back_rounded_vowel" class="extiw">en:open-mid back rounded vowel</a>: as <i>au</i> in c<b>au</b>ght</td>
+<td>दीर्घ अर्धविवृत पश्व वर्तुल स्वर</td>
+</tr>
+<tr align="center">
+<td>&lt;none&gt;</td>
+<td>&lt;none&gt;</td>
+<td><a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ ɛ /</span></a></td>
+<td><a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ pɛ /</span></a></td>
+<td>&lt;none&gt;</td>
+<td>short <a href="http://en.wikipedia.org/wiki/open-mid_front_unrounded_vowel" class="extiw">en:open-mid front unrounded vowel</a>: as <i>e</i> in g<b>e</b>t</td>
+<td>ह्रस्व अर्धविवृत अग्र प्रसृत स्वर</td>
+</tr>
+</table>
+<p>संस्कृत में <b>ऐ</b> दो स्वरों का युग्म होता है और "अ-इ" या "आ-इ" की तरह बोला जाता है। इसी तरह <b>औ</b> "अ-उ" या "आ-उ" की तरह बोला जाता है।</p>
+<p>इसके अलावा हिन्दी और संस्कृत में ये वर्णाक्षर भी स्वर माने जाते हैं&#160;:</p>
+<ul>
+<li>ऋ -- आधुनिक हिन्दी में "रि" की तरह</li>
+<li>ॠ -- केवल संस्कृत में</li>
+<li>ऌ -- केवल संस्कृत में</li>
+<li>ॡ -- केवल संस्कृत में</li>
+<li>अं -- आधे न्, म्, ङ्, ञ्, ण् के लिये या स्वर का नासिकीकरण करने के लिये</li>
+<li>अँ -- स्वर का नासिकीकरण करने के लिये</li>
+<li>अः -- अघोष "ह्" (निःश्वास) के लिये</li>
+</ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80&amp;action=edit&amp;section=4" title="विभाग संपादन: व्यंजन">संपादित करें</a>]</span> <span class="mw-headline" id=".E0.A4.B5.E0.A5.8D.E0.A4.AF.E0.A4.82.E0.A4.9C.E0.A4.A8"><b>व्यंजन</b></span></h3>
+<p>जब किसी स्वर प्रयोग नहीं हो, तो वहाँ पर 'अ' माना जाता है । स्वर के न होने को हलन्त्‌ अथवा <a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%B0%E0%A4%BE%E0%A4%AE">विराम</a> से दर्शाया जाता है । जैसे कि क्‌ ख्‌ ग्‌ घ्‌ ।</p>
+<table border="2">
+<tr>
+<td align="center" colspan="6"><b>Plosives / स्पर्श</b></td>
+</tr>
+<tr>
+<th></th>
+<th><a href="http://en.wikipedia.org/wiki/Unaspirated_consonant" class="extiw" title="en:Unaspirated consonant">अल्पप्राण</a><br />
+<a href="http://en.wikipedia.org/wiki/Voiceless_consonant" class="extiw" title="en:Voiceless consonant">अघोष</a></th>
+<th><a href="http://en.wikipedia.org/wiki/Aspirated_consonant" class="extiw" title="en:Aspirated consonant">महाप्राण</a><br />
+<a href="http://en.wikipedia.org/wiki/Voiceless_consonant" class="extiw" title="en:Voiceless consonant">अघोष</a></th>
+<th><a href="http://en.wikipedia.org/wiki/Unaspirated_consonant" class="extiw" title="en:Unaspirated consonant">अल्पप्राण</a><br />
+<a href="http://en.wikipedia.org/wiki/Voiced_consonant" class="extiw" title="en:Voiced consonant">घोष</a></th>
+<th><a href="http://en.wikipedia.org/wiki/Aspirated_consonant" class="extiw" title="en:Aspirated consonant">महाप्राण</a><br />
+<a href="http://en.wikipedia.org/wiki/Voiced_consonant" class="extiw" title="en:Voiced consonant">घोष</a></th>
+<th><a href="http://en.wikipedia.org/wiki/Nasal" class="extiw" title="en:Nasal">नासिक्य</a></th>
+</tr>
+<tr align="center">
+<td><a href="http://en.wikipedia.org/wiki/Velar_consonant" class="extiw" title="en:Velar consonant">कण्ठ्य</a></td>
+<td>क <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ kə /</span></a><br />
+k; English: s<b>k</b>ip</td>
+<td>ख <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ k<sup>h</sup>ə /</span></a><br />
+kh; English: <b>c</b>at</td>
+<td>ग <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ gə /</span></a><br />
+g; English: <b>g</b>ame</td>
+<td>घ <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ g<sup>ɦ</sup>ə /</span></a><br />
+gh; Aspirated /g/</td>
+<td>ङ <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ ŋə /</span></a><br />
+n; English: ri<b>ng</b></td>
+</tr>
+<tr align="center">
+<td><a href="http://en.wikipedia.org/wiki/Palatal_consonant" class="extiw" title="en:Palatal consonant">तालव्य</a></td>
+<td>च <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ cə / <i>or</i> / tʃə /</span></a><br />
+ch; English: <b>ch</b>at</td>
+<td>छ <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ c<sup>h</sup>ə / <i>or</i> /tʃ<sup>h</sup>ə/</span></a><br />
+chh; Aspirated /c/</td>
+<td>ज <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ ɟə / <i>or</i> / dʒə /</span></a><br />
+j; English: <b>j</b>am</td>
+<td>झ <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ ɟ<sup>ɦ</sup>ə / <i>or</i> / dʒ<sup>ɦ</sup>ə /</span></a><br />
+jh; Aspirated <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ɟ/</span></a></td>
+<td>ञ <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ ɲə /</span></a><br />
+n; English: fi<b>n</b>ch</td>
+</tr>
+<tr align="center">
+<td><a href="http://en.wikipedia.org/wiki/Retroflex_consonant" class="extiw" title="en:Retroflex consonant">मूर्धन्य</a></td>
+<td>ट <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ ʈə /</span></a><br />
+t; American Eng: hur<b>t</b>ing</td>
+<td>ठ <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ ʈ<sup>h</sup>ə /</span></a><br />
+th; Aspirated <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ʈ/</span></a></td>
+<td>ड <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ ɖə /</span></a><br />
+d; American Eng: mur<b>d</b>er</td>
+<td>ढ <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ ɖ<sup>ɦ</sup>ə /</span></a><br />
+dh; Aspirated <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ɖ/</span></a></td>
+<td>ण <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ ɳə /</span></a><br />
+n; American Eng: hu<b>n</b>ter</td>
+</tr>
+<tr align="center">
+<td><a href="http://en.wikipedia.org/wiki/Dental_consonant" class="extiw" title="en:Dental consonant">दन्त्य</a></td>
+<td>त <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ t̪ə /</span></a><br />
+t; Spanish: <b>t</b>oma<b>t</b>e</td>
+<td>थ <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ t̪<sup>h</sup>ə /</span></a><br />
+th; Aspirated <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/t̪/</span></a></td>
+<td>द <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ d̪ə /</span></a><br />
+d; Spanish: <b>d</b>on<b>d</b>e</td>
+<td>ध <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ d̪<sup>ɦ</sup>ə /</span></a><br />
+dh; Aspirated <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/d̪/</span></a></td>
+<td>न <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ nə /</span></a><br />
+n; English: <b>n</b>ame</td>
+</tr>
+<tr align="center">
+<td><a href="http://en.wikipedia.org/wiki/Labial_consonant" class="extiw" title="en:Labial consonant">ओष्ठ्य</a></td>
+<td>प <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ pə /</span></a><br />
+p; English: s<b>p</b>in</td>
+<td>फ <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ p<sup>h</sup>ə /</span></a><br />
+ph; English: <b>p</b>it</td>
+<td>ब <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ bə /</span></a><br />
+b; English: <b>b</b>one</td>
+<td>भ <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ b<sup>ɦ</sup>ə /</span></a><br />
+bh; Aspirated /b/</td>
+<td>म <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ mə /</span></a><br />
+m; English: <b>m</b>ine</td>
+</tr>
+</table>
+<table border="2">
+<tr>
+<td align="center" colspan="5"><b>Non-Plosives / स्पर्शरहित</b></td>
+</tr>
+<tr>
+<th></th>
+<th><a href="http://en.wikipedia.org/wiki/Palatal_consonant" class="extiw" title="en:Palatal consonant">तालव्य</a></th>
+<th><a href="http://en.wikipedia.org/wiki/Retroflex_consonant" class="extiw" title="en:Retroflex consonant">मूर्धन्य</a></th>
+<th><a href="http://en.wikipedia.org/wiki/Dental_consonant" class="extiw" title="en:Dental consonant">दन्त्य</a>/<br />
+<a href="http://en.wikipedia.org/wiki/Alveolar_consonant" class="extiw" title="en:Alveolar consonant">वर्त्स्य</a></th>
+<th><a href="http://en.wikipedia.org/wiki/Velar_consonant" class="extiw" title="en:Velar consonant">कण्ठोष्ठ्य</a>/<br />
+<a href="http://en.wikipedia.org/wiki/Glottal_consonant" class="extiw" title="en:Glottal consonant">काकल्य</a></th>
+</tr>
+<tr align="center">
+<td><a href="http://en.wikipedia.org/wiki/Approximant" class="extiw" title="en:Approximant">अन्तस्थ</a></td>
+<td>य <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ jə /</span></a><br />
+y; English: <b>y</b>ou</td>
+<td>र <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ rə /</span></a><br />
+r; Scottish Eng: t<b>r</b>ip</td>
+<td>ल <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ lə /</span></a><br />
+l; English: <b>l</b>ove</td>
+<td>व <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ ʋə /</span></a><br />
+v; English: <b>v</b>ase</td>
+</tr>
+<tr align="center">
+<td><a href="http://en.wikipedia.org/wiki/Sibilant" class="extiw" title="en:Sibilant">ऊष्म</a>/<br />
+<a href="http://en.wikipedia.org/wiki/Fricative_consonant" class="extiw" title="en:Fricative consonant">संघर्षी</a></td>
+<td>श <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ ʃə /</span></a><br />
+sh; English: <b>sh</b>ip</td>
+<td>ष <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ ʂə /</span></a><br />
+sh; Retroflex <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ʃ/</span></a></td>
+<td>स <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ sə /</span></a><br />
+s; English: <b>s</b>ame</td>
+<td>ह <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%9A%E0%A4%BF%E0%A4%B9%E0%A5%8D%E0%A4%A8_%E0%A4%B8%E0%A5%82%E0%A4%9A%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="अन्तर्राष्ट्रीय ध्वन्यात्मक लिपि चिह्न सूची (पृष्ठ मौजूद नहीं है)"><span title="Aussprache, IPA" class="IPA" style="font-family:'Arial Unicode MS', 'Lucida Sans Unicode', 'Lucida Grande', 'DejaVu Sans', 'TITUS Cyberbit Basic', Code2000, 'MV Boli', 'MS Mincho', Arial, sans-serif; text-decoration:none!important">/ ɦə / or / hə /</span></a><br />
+h; English <b>h</b>ome</td>
+</tr>
+</table>
+<dl>
+<dt>नोट करें -</dt>
+</dl>
+<ul>
+<li>इनमें से ळ (मूर्धन्य पार्विक अन्तस्थ) एक अतिरिक्त व्यंजन है जिसका प्रयोग हिन्दी में नहीं होता है। मराठी और वैदिक संस्कृत में सभी का प्रयोग किया जाता है।</li>
+</ul>
+<ul>
+<li>संस्कृत में <b>ष</b> का उच्चारण ऐसे होता था&#160;: जीभ की नोक को मूर्धा (मुँह की छत) की ओर उठाकर <b>श</b> जैसी आवाज़ करना। शुक्ल <a href="/wiki/%E0%A4%AF%E0%A4%9C%E0%A5%81%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A5%87%E0%A4%A6">यजुर्वेद</a> की माध्यंदिनि शाखा में <i>कुछ वाक़्यात</i> में <b>ष</b> का उच्चारण <b>ख</b> की तरह करना मान्य था। आधुनिक हिन्दी में <b>ष</b> का उच्चारण पूरी तरह <b>श</b> की तरह होता है।</li>
+</ul>
+<ul>
+<li>हिन्दी में <b>ण</b> का उच्चारण ज़्यादातर <b>ड़ँ</b> की तरह होता है, यानि कि जीभ मुँह की छत को एक ज़ोरदार ठोकर मारती है। हिन्दी में <b>क्षणिक</b> और <b>क्शड़िंक</b> में कोई फ़र्क नहीं। पर संस्कृत में ण का उच्चारण <b>न</b> की तरह बिना ठोकर मारे होता था, फ़र्क सिर्फ़ इतना कि जीभ <b>ण</b> के समय मुँह की छत को छूती है।</li>
+</ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80&amp;action=edit&amp;section=5" title="विभाग संपादन: नुक़्ता वाली ध्वनियाँ">संपादित करें</a>]</span> <span class="mw-headline" id=".E0.A4.A8.E0.A5.81.E0.A4.95.E0.A4.BC.E0.A5.8D.E0.A4.A4.E0.A4.BE_.E0.A4.B5.E0.A4.BE.E0.A4.B2.E0.A5.80_.E0.A4.A7.E0.A5.8D.E0.A4.B5.E0.A4.A8.E0.A4.BF.E0.A4.AF.E0.A4.BE.E0.A4.81"><b>नुक़्ता वाली ध्वनियाँ</b></span></h3>
+<p>ये ध्वनियाँ मुख्यत: अरबी और फ़ारसी ज़बानों से उधार ली गयी हैं। इनका स्त्रोत संस्कृत नहीं है। कई हिन्दीभाषी इनका ग़लत उच्चारण करते हैं। देवनागरी लिपि में ये सबसे करीबी संस्कृत के वर्णाक्षर के नीचे नुक्ता (बिन्दु) लगाकर लिखे जाते हैं किन्तु अधिकांश लोग नुक्तों का प्रयोग नहीं करते हैं।</p>
+<table border="2">
+<tr align="center">
+<td>वर्णाक्षर (<a href="/w/index.php?title=IPA&amp;action=edit&amp;redlink=1" class="new" title="IPA (पृष्ठ मौजूद नहीं है)">IPA</a> उच्चारण)</td>
+<td>उदाहरण</td>
+<td>वर्णन</td>
+<td>अंग्रेज़ी में वर्णन</td>
+<td>ग़लत उच्चारण</td>
+</tr>
+<tr align="center">
+<td>क़ (/ q /)</td>
+<td>क़त्ल</td>
+<td>अघोष अलिजिह्वीय स्पर्श</td>
+<td>Voiceless uvular stop</td>
+<td>क (/ k /)</td>
+</tr>
+<tr align="center">
+<td>ख़ (/ x or χ /)</td>
+<td>ख़ास</td>
+<td>अघोष अलिजिह्वीय या कण्ठ्य संघर्षी</td>
+<td>Voiceless uvular or velar fricative</td>
+<td>ख (/ k<sup>h</sup> /)</td>
+</tr>
+<tr align="center">
+<td>ग़ (/ ɣ or ʁ /)</td>
+<td>ग़ैर</td>
+<td>घोष अलिजिह्वीय या कण्ठ्य संघर्षी</td>
+<td>Voiced uvular or velar fricative</td>
+<td>ग (/ g /)</td>
+</tr>
+<tr align="center">
+<td>फ़ (/ f /)</td>
+<td>फ़र्क</td>
+<td>अघोष दन्त्यौष्ठ्य संघर्षी</td>
+<td>Voiceless labio-dental fricative</td>
+<td>फ (/ p<sup>h</sup> /)</td>
+</tr>
+<tr align="center">
+<td>ज़ (/ z /)</td>
+<td>ज़ालिम</td>
+<td>घोष वर्त्स्य संघर्षी</td>
+<td>Voiced alveolar fricative</td>
+<td>ज (/ dʒ /)</td>
+</tr>
+<tr align="center">
+<td>झ़ (/ ʒ /)</td>
+<td>टेलेवीझ़न</td>
+<td>घोष तालव्य संघर्षी</td>
+<td>Voiced palatal fricative</td>
+<td>ज (/ dʒ /)</td>
+</tr>
+<tr align="center">
+<td>ड़ (/ ɽ /)</td>
+<td>पेड़</td>
+<td>अल्पप्राण मूर्धन्य उत्क्षिप्त</td>
+<td>Unaspirated retroflex flap</td>
+<td>-</td>
+</tr>
+<tr align="center">
+<td>ढ़ (/ ɽ<sup>h</sup> /)</td>
+<td>पढ़ना</td>
+<td>महाप्राण मूर्धन्य उत्क्षिप्त</td>
+<td>Aspirated retroflex flap</td>
+<td>-</td>
+</tr>
+</table>
+<p>हिन्दी में <b>ड़</b> और <b>ढ़</b> व्यंजन फ़ारसी या अरबी से नहीं लिये गये हैं, न ही ये संस्कृत में पाये जाये हैं। असल में ये संस्कृत के साधारण <b>ड</b> और <b>ढ</b> के बदले हुए रूप हैं।</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80&amp;action=edit&amp;section=6" title="विभाग संपादन: देवनागरी अंक">संपादित करें</a>]</span> <span class="mw-headline" id=".E0.A4.A6.E0.A5.87.E0.A4.B5.E0.A4.A8.E0.A4.BE.E0.A4.97.E0.A4.B0.E0.A5.80_.E0.A4.85.E0.A4.82.E0.A4.95"><b>देवनागरी अंक</b></span></h3>
+<p><a href="/w/index.php?title=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80_%E0%A4%85%E0%A4%82%E0%A4%95&amp;action=edit&amp;redlink=1" class="new" title="देवनागरी अंक (पृष्ठ मौजूद नहीं है)">देवनागरी अंक</a> निम्न रूप में लिखे जाते हैं।&#160;:</p>
+<table class="prettytable">
+<tr>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+</tr>
+<tr>
+<td style="font-size:40px">०</td>
+<td style="font-size:40px">१</td>
+<td style="font-size:40px">२</td>
+<td style="font-size:40px">३</td>
+<td style="font-size:40px">४</td>
+<td style="font-size:40px">५</td>
+<td style="font-size:40px">६</td>
+<td style="font-size:40px">७</td>
+<td style="font-size:40px">८</td>
+<td style="font-size:40px">९</td>
+</tr>
+</table>
+<p><br /></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80&amp;action=edit&amp;section=7" title="विभाग संपादन: देवनागरी लिपि के गुण">संपादित करें</a>]</span> <span class="mw-headline" id=".E0.A4.A6.E0.A5.87.E0.A4.B5.E0.A4.A8.E0.A4.BE.E0.A4.97.E0.A4.B0.E0.A5.80_.E0.A4.B2.E0.A4.BF.E0.A4.AA.E0.A4.BF_.E0.A4.95.E0.A5.87_.E0.A4.97.E0.A5.81.E0.A4.A3">देवनागरी लिपि के गुण</span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="/wiki/%E0%A4%9A%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0:%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80_%E0%A4%A4%E0%A4%BE%E0%A4%B2%E0%A4%BF%E0%A4%95%E0%A4%BE.gif" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/hi/thumb/7/7e/%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80_%E0%A4%A4%E0%A4%BE%E0%A4%B2%E0%A4%BF%E0%A4%95%E0%A4%BE.gif/220px-%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80_%E0%A4%A4%E0%A4%BE%E0%A4%B2%E0%A4%BF%E0%A4%95%E0%A4%BE.gif" width="220" height="289" class="thumbimage" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/%E0%A4%9A%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0:%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80_%E0%A4%A4%E0%A4%BE%E0%A4%B2%E0%A4%BF%E0%A4%95%E0%A4%BE.gif" class="internal" title="बड़ा करें"><img src="http://bits.wikimedia.org/skins-1.17/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+देवनागरी के वर्णों के वर्गीकरण की तालिका</div>
+</div>
+</div>
+<ul>
+<li>एक ध्वनि&#160;: एक सांकेतिक चिह्न</li>
+</ul>
+<ul>
+<li>एक सांकेतिक चिह्न&#160;: एक ध्वनि</li>
+</ul>
+<ul>
+<li>स्वर और व्यंजन में तर्कसंगत एवं वैज्ञानिक क्रम-विन्यास - देवनागरी के वर्णों का क्रमविन्यास उनके उच्चारण के स्थान को ध्यान में रखते हुए बनाया गया है। इसके अतिरिक्त वर्ण-क्रम के निर्धारण में <a href="/w/index.php?title=%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE-%E0%A4%B5%E0%A4%BF%E0%A4%9C%E0%A5%8D%E0%A4%9E%E0%A4%BE%E0%A4%A8&amp;action=edit&amp;redlink=1" class="new" title="भाषा-विज्ञान (पृष्ठ मौजूद नहीं है)">भाषा-विज्ञान</a> के कई अन्य पहलुओ का भी ध्यान रखा गया है। देवनागरी की वर्णमाला ( वास्तव में, ब्राह्मी से उत्पन्न सभी लिपियों की वर्णमालाएँ) एक अत्यन्त तर्कपूर्ण ध्वन्यात्मक क्रम (phonetic order) में व्यवस्थित है। यह क्रम इतना तर्कपूर्ण है कि <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B8%E0%A4%82%E0%A4%98&amp;action=edit&amp;redlink=1" class="new" title="अन्तरराष्ट्रीय ध्वन्यात्मक संघ (पृष्ठ मौजूद नहीं है)">अन्तरराष्ट्रीय ध्वन्यात्मक संघ</a> (IPA) ने <a href="/wiki/%E0%A4%85%E0%A4%A8%E0%A5%8D%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF_%E0%A4%A7%E0%A5%8D%E0%A4%B5%E0%A4%A8%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%95_%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%A3%E0%A4%AE%E0%A4%BE%E0%A4%B2%E0%A4%BE">अन्तर्राष्ट्रीय ध्वन्यात्मक वर्णमाला</a> के निर्माण के लिये मामूली परिवर्तनों के साथ इसी क्रम को अंगीकार कर लिया ।</li>
+</ul>
+<ul>
+<li>भारतीय भाषाओं के लिये वर्णों की पूर्णता एवं सम्पन्नता (५२ वर्ण, न बहुत अधिक न बहुत कम)।</li>
+</ul>
+<ul>
+<li><a href="/wiki/%E0%A4%89%E0%A4%9A%E0%A5%8D%E0%A4%9A%E0%A4%BE%E0%A4%B0%E0%A4%A3">उच्चारण</a> और लेखन में एकरुपता</li>
+</ul>
+<ul>
+<li>लेखन और मुद्रण मे एकरूपता (रोमन, अरबी और फ़ारसी मे हस्तलिखित और मुद्रित रूप अलग-अलग हैं)</li>
+</ul>
+<ul>
+<li>लिपि चिह्नों के नाम और ध्वनि मे कोई अन्तर नहीं (जैसे रोमन में अक्षर का नाम “बी” है और ध्वनि “ब” है)</li>
+</ul>
+<ul>
+<li>मात्राओं का प्रयोग</li>
+</ul>
+<div class="thumb tright">
+<div class="thumbinner" style="width:602px;"><a href="/wiki/%E0%A4%9A%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0:Devanagari_matras.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Devanagari_matras.png/600px-Devanagari_matras.png" width="600" height="67" class="thumbimage" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/%E0%A4%9A%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0:Devanagari_matras.png" class="internal" title="बड़ा करें"><img src="http://bits.wikimedia.org/skins-1.17/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>
+<b>क</b> के उपर विभिन्न मात्राएं लगाने के बाद का स्वरूप</div>
+</div>
+</div>
+<ul>
+<li>अर्ध-अक्षर के रूप की सुगमता (खड़ी पाई को हटाकर - दायें से बायें क्रम में लिखकर तथा अर्द्ध अक्षर को ऊपर तथा उसके नीचे पूर्ण अक्षर</li>
+</ul>
+<p>को लिखकर - ऊपर नीचे क्रम में संयुक्ताक्षर बनाने की दो प्रकार की रीति प्रचलित है.)</p>
+<ul>
+<li>देवनागरी, 'स्माल लेटर" और 'कैपिटल लेटर' की अवैज्ञानिक व्यवस्था से मुक्त है।</li>
+</ul>
+<ul>
+<li>देवनागरी लिपि के वर्णों का उपयोग संख्याओं को निरूपित करने के लिये किया जाता रहा है। ( देखिये, <a href="/wiki/%E0%A4%95%E0%A4%9F%E0%A4%AA%E0%A4%AF%E0%A4%BE%E0%A4%A6%E0%A4%BF">कटपयादि</a> तथा <a href="/wiki/%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%AF%E0%A4%AD%E0%A4%9F%E0%A5%8D%E0%A4%9F_%E0%A4%95%E0%A5%80_%E0%A4%B8%E0%A4%82%E0%A4%96%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%AA%E0%A4%A6%E0%A5%8D%E0%A4%A7%E0%A4%A4%E0%A4%BF">आर्यभट्ट की संख्यापद्धति</a> )</li>
+</ul>
+<p>भारतवर्ष के साहित्य में कुछ ऐसे रूप विकसित हुए हैं जो देवनागरी लिपि मे ही व्यक्त किये जा सकते हैं। उदाहरणस्वरूप केशवदास का एक नया सवैया लीजिये&#160;:</p>
+<p><b>मां सस मोह सजै बन बीन, नवीन बजै सह मोस समा। '</b><br />
+<b>मार लतानि बनावति सारि, रिसाति वनाबनि ताल रमा ॥</b></p>
+<p><b>मानव ही रहि मोरद मोद, दमोदर मोहि रही वनमा।</b><br />
+<b>माल बनी बल केसबदास, सदा बसकेल बनी बलमा ॥</b></p>
+<p>इस सवैया की किसी भी पंक्ति को किसी ओर से भी पढिये, कोई अंतर नही पड़ेगा। इस प्रकार के चित्रालंकार रोमन और अन्य लिपियों में अभिव्यक्त नही किये जा सकते।</p>
+<pre>
+  सदा सील तुम सरद के दरस हर तरह खास | 
+  सखा हर तरह सरद के सर सम तुलसीदास ||
+</pre>
+<h2><span class="editsection">[<a href="/w/index.php?title=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80&amp;action=edit&amp;section=8" title="विभाग संपादन: देवनागरी पर महापुरुषों के विचार">संपादित करें</a>]</span> <span class="mw-headline" id=".E0.A4.A6.E0.A5.87.E0.A4.B5.E0.A4.A8.E0.A4.BE.E0.A4.97.E0.A4.B0.E0.A5.80_.E0.A4.AA.E0.A4.B0_.E0.A4.AE.E0.A4.B9.E0.A4.BE.E0.A4.AA.E0.A5.81.E0.A4.B0.E0.A5.81.E0.A4.B7.E0.A5.8B.E0.A4.82_.E0.A4.95.E0.A5.87_.E0.A4.B5.E0.A4.BF.E0.A4.9A.E0.A4.BE.E0.A4.B0">देवनागरी पर महापुरुषों के विचार</span></h2>
+<p>१) हिन्दुस्तान की एकता के लिये हिन्दी भाषा जितना काम देगी, उससे बहुत अधिक काम देवनागरी लिपि दे सकती है। — <b>आचार्य विनोबा भावे</b></p>
+<p>२) देवनागरी किसी भी लिपि की तुलना में अधिक वैज्ञानिक एवं व्यवस्थित लिपि है। — <b>सर विलियम जोन्स</b></p>
+<p>३) मानव मस्तिष्क से निकली हुई वर्णमालाओं में नागरी सबसे अधिक <b>पूर्ण</b> वर्णमाला है। — <b>जान क्राइस्ट</b></p>
+<p>४) उर्दू लिखने के लिये देवनागरी लिपि अपनाने से उर्दू उत्कर्ष को प्राप्त होगी। — <b>खुशवन्त सिंह</b></p>
+<p>५) The Devanagri alphabet is a splendid monument of phonological accuracy, in the sciences of language.<br />
+— <b>मोहन लाल विद्यार्थी</b> - Indian Culture Through the Ages, p.&#160;61<br /></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80&amp;action=edit&amp;section=9" title="विभाग संपादन: भारत के लिये देवनागरी का महत्व">संपादित करें</a>]</span> <span class="mw-headline" id=".E0.A4.AD.E0.A4.BE.E0.A4.B0.E0.A4.A4_.E0.A4.95.E0.A5.87_.E0.A4.B2.E0.A4.BF.E0.A4.AF.E0.A5.87_.E0.A4.A6.E0.A5.87.E0.A4.B5.E0.A4.A8.E0.A4.BE.E0.A4.97.E0.A4.B0.E0.A5.80_.E0.A4.95.E0.A4.BE_.E0.A4.AE.E0.A4.B9.E0.A4.A4.E0.A5.8D.E0.A4.B5">भारत के लिये देवनागरी का महत्व</span></h2>
+<p>भारतीय भाषाओं की सबसे बड़ी विशेषता यह है कि भारत की प्राय: सभी प्रमुख भाषाओं की (उर्दू और सिंधी को छोड़कर) लिपियां <a href="/wiki/%E0%A4%AC%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B9%E0%A5%8D%E0%A4%AE%E0%A5%80_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF">ब्राह्मी लिपि</a> से ही उद्भत हैं। देवनागरी, ब्राह्मी लिपि की सबसे व्यापक, विकसित और वैज्ञानिक लिपि है, जो भारतीय भाषाओं की सहोदरा लिपि होने के नाते इन सबके बीच स्वाभाविक रूप से <a href="/w/index.php?title=%E0%A4%B8%E0%A4%82%E0%A4%AA%E0%A4%B0%E0%A5%8D%E0%A4%95_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF&amp;action=edit&amp;redlink=1" class="new" title="संपर्क लिपि (पृष्ठ मौजूद नहीं है)">संपर्क लिपि</a> का कार्य कर सकती है। यदि हम इन भाषाओं के साहित्य को उनकी अपनी-अपनी लिपियों के अलावा एक समान लिपि देवनागरी लिपि में भी उपलब्ध करा दें, तो इन भाषाओं का साहित्य अन्य भाषाभाषियों के लिए भी सुलभ हो सकेगा। नागरी लिपि इन भाषाओं के बीच सेतु का कार्य कर सकेगी।</p>
+<p>इसी लिए आधुनिक युग के हमारे अग्रणी नेताओं, प्रबुद्ध विचारको और मनीषियों ने राष्ट्रीय एकता के लिए देवनागरी के प्रयोग पर बल दिया था। निश्चय ही ये सभी विचारक हिंदी क्षेत्रों के नहीं थे, अपितु इतर हिंदी प्रदेशों के ही थे। उनका मानना था कि भावात्मक एकता की दृष्टि से भारतीय भाषाओं के लिए एक लिपि का होना आवश्यक है और यह लिपि केवल देवनागरी ही हो सकती हैं। श्री <a href="/w/index.php?title=%E0%A4%95%E0%A5%87%E0%A4%B6%E0%A4%B5%E0%A4%B5%E0%A4%BE%E0%A4%AE%E0%A4%A8_%E0%A4%AA%E0%A5%87%E0%A4%A0%E0%A5%87&amp;action=edit&amp;redlink=1" class="new" title="केशववामन पेठे (पृष्ठ मौजूद नहीं है)">केशववामन पेठे</a>, <a href="/wiki/%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A4%BE_%E0%A4%B0%E0%A4%BE%E0%A4%AE%E0%A4%AE%E0%A5%8B%E0%A4%B9%E0%A4%A8_%E0%A4%B0%E0%A4%BE%E0%A4%AF">राजा राममोहन राय</a>, <a href="/wiki/%E0%A4%B6%E0%A4%BE%E0%A4%B0%E0%A4%A6%E0%A4%BE%E0%A4%9A%E0%A4%B0%E0%A4%A3_%E0%A4%AE%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0" class="mw-redirect" title="शारदाचरण मित्र">शारदाचरण मित्र</a> (1848-1916) ने नागरी लिपि के महत्व को समझते हुए देश भर में इसके प्रयोग को बढ़ाने की आवाज उठायी थी।</p>
+<p><a href="/wiki/%E0%A4%B6%E0%A4%BE%E0%A4%B0%E0%A4%A6%E0%A4%BE%E0%A4%9A%E0%A4%B0%E0%A4%A3_%E0%A4%AE%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0" class="mw-redirect" title="शारदाचरण मित्र">शारदाचरण मित्र</a> ने इसे "राष्ट्र लिपि" बताया और अगस्त 1905 में एक "<a href="/w/index.php?title=%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF_%E0%A4%B5%E0%A4%BF%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A4%BE%E0%A4%B0_%E0%A4%AA%E0%A4%B0%E0%A4%BF%E0%A4%B7%E0%A4%A6&amp;action=edit&amp;redlink=1" class="new" title="लिपि विस्तार परिषद (पृष्ठ मौजूद नहीं है)">लिपि विस्तार परिषद</a>" की स्थापना की। उन्होने 1907 में "देवनागर" नाम से एक पत्रिका भी निकाली, जिसमें <a href="/wiki/%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A8%E0%A4%A1%E0%A4%BC">कन्नड़</a>, <a href="/wiki/%E0%A4%A4%E0%A5%87%E0%A4%B2%E0%A5%81%E0%A4%97%E0%A5%81" class="mw-redirect" title="तेलुगु">तेलुगु</a>, <a href="/wiki/%E0%A4%AC%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B2%E0%A4%BE" class="mw-redirect" title="बांग्ला">बांग्ला</a> आदि की रचनाएं नागरी लिपि में प्रकाशित की जाती थीं। <a href="/wiki/%E0%A4%B2%E0%A5%8B%E0%A4%95%E0%A4%AE%E0%A4%BE%E0%A4%A8%E0%A5%8D%E0%A4%AF_%E0%A4%A4%E0%A4%BF%E0%A4%B2%E0%A4%95" class="mw-redirect" title="लोकमान्य तिलक">लोकमान्य तिलक</a> और गांधीजी ने देश की एकता के लिए एक लिपि की आवश्यकता पर बल दिया। <a href="/wiki/%E0%A4%97%E0%A5%81%E0%A4%9C%E0%A4%B0%E0%A4%BE%E0%A4%A4">गुजरात</a> में जन्मे <a href="/w/index.php?title=%E0%A4%AE%E0%A4%B9%E0%A4%B0%E0%A5%8D%E0%A4%B7%E0%A4%BF_%E0%A4%A6%E0%A4%AF%E0%A4%BE%E0%A4%A8%E0%A4%82%E0%A4%A6_%E0%A4%B8%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%B5%E0%A4%A4%E0%A5%80&amp;action=edit&amp;redlink=1" class="new" title="महर्षि दयानंद सरस्वती (पृष्ठ मौजूद नहीं है)">महर्षि दयानंद सरस्वती</a>, दक्षिण के <a href="/w/index.php?title=%E0%A4%95%E0%A5%83%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A4%B8%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%AE%E0%A5%80_%E0%A4%85%E0%A4%AF%E0%A5%8D%E0%A4%AF%E0%A4%B0&amp;action=edit&amp;redlink=1" class="new" title="कृष्णस्वामी अय्यर (पृष्ठ मौजूद नहीं है)">कृष्णस्वामी अय्यर</a> तथा अनन्तशयनम् अयंगर और मुहम्मद <a href="/w/index.php?title=%E0%A4%95%E0%A4%B0%E0%A5%80%E0%A4%AE_%E0%A4%9B%E0%A4%BE%E0%A4%97%E0%A4%B2%E0%A4%BE&amp;action=edit&amp;redlink=1" class="new" title="करीम छागला (पृष्ठ मौजूद नहीं है)">करीम छागला</a> ने भी नागरी लिपि के महत्व पर बल दिया। <a href="/wiki/%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%A4%E0%A5%8D%E0%A4%AE%E0%A4%BE_%E0%A4%97%E0%A4%BE%E0%A4%82%E0%A4%A7%E0%A5%80">महात्मा गांधी</a> चाहते थे कि भारत में भाषायी एकता के लिए एक समान लिपि की आवश्यकता है। एक स्थान पर उन्होने लिखा है "लिपि विभिन्नता के कारण प्रांतीय भाषाओं का ज्ञान आज असंभव सा हो गया है। बांग्ला लिपि में लिखी हुई गुरुदेव की <a href="/wiki/%E0%A4%97%E0%A5%80%E0%A4%A4%E0%A4%BE%E0%A4%82%E0%A4%9C%E0%A4%B2%E0%A4%BF">गीतांजलि</a> को सिवाय बंगालियों के और कौन पढ़ेगा पर यदि वह देवनागरी में लिखी जाये, तो उसे सभी लोग पढ़ सकते हैं। "आज दक्ख़िनी हिंदी की भी यही स्थिति है, जिसका लगभग 400 वर्षों का अपार साहित्य फारसी लिपि में होने के कारण हिंदी शोधार्थियों की दृष्टि से ओझल है। कहना न होगा कि लिपिभेद के कारण हिंदी साहित्य के इतिहास की इस कड़ी को हम अभी तक जोड़ नहीं पाये हैं।</p>
+<p>उर्दू और हिंदी भी लिपि भेद के कारण मूलरूप से एक होते हुए भी अलग अलग भाषाएं बनी हुई हैं। यदि उर्दू भाषा की वैकल्पिक लिपि के रूप में नागरी को अपना लें, तो उर्दू को लोकप्रिय बनाने में बड़ी सहायता मिलेगी। महाराष्ट्र के भूतपूर्व राज्यपाल स्वर्गीय श्री अलीयावर जंग ने कहा था, "मेरा मत है कि उर्दू साहित्यकार को अपनी लिपि चुनने की स्वतंत्रता होनी चाहिए, लेकिन देवनागरी लिपि को देश में जोड़लिपि के रूप में प्रयोग किया जाना चाहिए।"</p>
+<p><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%A8%E0%A5%8B%E0%A4%AC%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B5%E0%A5%87" title="विनोबा भावे">आचार्य विनोबा भावे</a> ने नागरी लिपि के महत्व को स्वीकार करते हुए यहां तक कहा था "हिंदुस्तान की एकता के लिए हिंदी भाषा जितना काम देगी, उससे बहुत अधिक काम देवनागरी देगी। इसलिए मैं चाहता हूं कि सभी भाषाएं सिर्फ देवनागरी में भी लिखी जाएं। "सभी लिपियां चलें लेकिन साथ साथ देवनागरी का भी प्रयोग किया जाये। विनोबा जी "नागरी ही" नहीं "नागरी भी" चाहते थे। उन्हीं की सद्प्रेरणा से 1975 में नागरी लिपि परिषद की स्थापना हुई। जो भारत की एकतात्रा ऐसी संस्था है, जो नागरी लिपि के प्रचार प्रसार में लगी है। 1961 में पं जवाहर लाल नेहरू की अध्यक्षता में सम्पन्न मुख्य मंत्रियों के सम्मेलन में भी यह सिफारश की गयी कि, "भारत की सभी भाषाओं के लिए एक लिपि अपनाना वांछनीय हैं। इतना ही नहीं, यह सब भाषाओं को जोड़ने वाली एक मजबूत कड़ी का काम करेगी और देश के एकीकरण में सहायक होगी। भारत की भाषायी स्थिति में यह जगह केवल देवनागरी ले सकती है। "16-17 जनवरी, 1960 को बेंगलोर में आयोजित 'ऑल इण्डिया देवनागरी कांग्रेस' में श्री <a href="/w/index.php?title=%E0%A4%85%E0%A4%A8%E0%A4%82%E0%A4%A4%E0%A4%B6%E0%A4%AF%E0%A4%A8%E0%A4%AE%E0%A5%8D_%E0%A4%86%E0%A4%AF%E0%A4%82%E0%A4%97%E0%A4%B0&amp;action=edit&amp;redlink=1" class="new" title="अनंतशयनम् आयंगर (पृष्ठ मौजूद नहीं है)">अनंतशयनम् आयंगर</a> ने भारतीय भाषाओं के लिए देवनागरी को अपनाये जाने का समर्थन किया था। नि:संदेह देवनागरी लिपि में वे गुण हैं, वह सभी भारतीय भाषाओं को जोड़ सकती है। यह संसार की सबसे अधिक वैज्ञानिक और ध्वन्यात्मक लिपि जो है।</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80&amp;action=edit&amp;section=10" title="विभाग संपादन: लिपि-विहीन भाषाओं के लिये देवनागरी">संपादित करें</a>]</span> <span class="mw-headline" id=".E0.A4.B2.E0.A4.BF.E0.A4.AA.E0.A4.BF-.E0.A4.B5.E0.A4.BF.E0.A4.B9.E0.A5.80.E0.A4.A8_.E0.A4.AD.E0.A4.BE.E0.A4.B7.E0.A4.BE.E0.A4.93.E0.A4.82_.E0.A4.95.E0.A5.87_.E0.A4.B2.E0.A4.BF.E0.A4.AF.E0.A5.87_.E0.A4.A6.E0.A5.87.E0.A4.B5.E0.A4.A8.E0.A4.BE.E0.A4.97.E0.A4.B0.E0.A5.80">लिपि-विहीन भाषाओं के लिये देवनागरी</span></h2>
+<div class="rellink relarticle mainarticle"><i>मुख्य लेख&#160;: <a href="/wiki/%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF%E0%A4%B5%E0%A4%BF%E0%A4%B9%E0%A5%80%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE%E0%A4%93%E0%A4%82_%E0%A4%95%E0%A5%87_%E0%A4%B2%E0%A4%BF%E0%A4%AF%E0%A5%87_%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80">लिपिविहीन भाषाओं के लिये देवनागरी</a></i></div>
+<p>दुनिया की कई भाषाओं के लिये देवनागरी सबसे अच्छा विकल्प हो सकती है क्योंकि यह यह बोलने की पूरी आजादी देता है। दुनिया की और किसी भी लिपि मे यह नही हो सकता है। इन्डोनेशिया, विएतनाम , अफ्रीका आदि के लिये तो यही सबसे सही रहेगा । अष्टाध्यायी को देखकर कोई भी समझ सकता है की दुनिया मे इससे अच्छी कोई भी लिपि नहीं है। अग‍र दुनिया पक्षपातरहित हो तो देवनागरी ही दुनिया की सर्वमान्य लिपि होगी क्योंकि यह पूर्णत: वैज्ञानिक है। <a href="/wiki/%E0%A4%85%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%9C%E0%A5%80" class="mw-redirect" title="अंग्रेजी">अंग्रेजी</a> भाषा में वर्तनी (स्पेलिंग) की विकराल समस्या के कारगर समाधान के लिये देवनागरी पर आधारित <a href="/w/index.php?title=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%95&amp;action=edit&amp;redlink=1" class="new" title="देवग्रीक (पृष्ठ मौजूद नहीं है)">देवग्रीक</a> लिपि प्रस्तावित की गयी है।</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80&amp;action=edit&amp;section=11" title="विभाग संपादन: देवनागरी का इतिहास">संपादित करें</a>]</span> <span class="mw-headline" id=".E0.A4.A6.E0.A5.87.E0.A4.B5.E0.A4.A8.E0.A4.BE.E0.A4.97.E0.A4.B0.E0.A5.80_.E0.A4.95.E0.A4.BE_.E0.A4.87.E0.A4.A4.E0.A4.BF.E0.A4.B9.E0.A4.BE.E0.A4.B8">देवनागरी का इतिहास</span></h2>
+<p>विस्तृत लेख <b><a href="/wiki/%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80_%E0%A4%95%E0%A4%BE_%E0%A4%87%E0%A4%A4%E0%A4%BF%E0%A4%B9%E0%A4%BE%E0%A4%B8">देवनागरी का इतिहास</a></b> देखें।</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80&amp;action=edit&amp;section=12" title="विभाग संपादन: देवनागरी की वैज्ञानिकता">संपादित करें</a>]</span> <span class="mw-headline" id=".E0.A4.A6.E0.A5.87.E0.A4.B5.E0.A4.A8.E0.A4.BE.E0.A4.97.E0.A4.B0.E0.A5.80_.E0.A4.95.E0.A5.80_.E0.A4.B5.E0.A5.88.E0.A4.9C.E0.A5.8D.E0.A4.9E.E0.A4.BE.E0.A4.A8.E0.A4.BF.E0.A4.95.E0.A4.A4.E0.A4.BE">देवनागरी की वैज्ञानिकता</span></h2>
+<p>विस्तृत लेख <a href="/wiki/%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80_%E0%A4%95%E0%A5%80_%E0%A4%B5%E0%A5%88%E0%A4%9C%E0%A5%8D%E0%A4%9E%E0%A4%BE%E0%A4%A8%E0%A4%BF%E0%A4%95%E0%A4%A4%E0%A4%BE">देवनागरी की वैज्ञानिकता</a> देखें।</p>
+<p>जिस प्रकार <a href="/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4%E0%A5%80%E0%A4%AF_%E0%A4%85%E0%A4%82%E0%A4%95" title="भारतीय अंक">भारतीय अंकों</a> को उनकी वैज्ञानिकता के कारण विश्व ने सहर्ष स्वीकार कर लिया वैसे ही देवनागरी भी अपनी वैज्ञानिकता के कारण ही एक दिन विश्वनागरी बनेगी।</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80&amp;action=edit&amp;section=13" title="विभाग संपादन: देवनागरी के सम्पादित्र व अन्य सॉफ्टवेयर">संपादित करें</a>]</span> <span class="mw-headline" id=".E0.A4.A6.E0.A5.87.E0.A4.B5.E0.A4.A8.E0.A4.BE.E0.A4.97.E0.A4.B0.E0.A5.80_.E0.A4.95.E0.A5.87_.E0.A4.B8.E0.A4.AE.E0.A5.8D.E0.A4.AA.E0.A4.BE.E0.A4.A6.E0.A4.BF.E0.A4.A4.E0.A5.8D.E0.A4.B0_.E0.A4.B5_.E0.A4.85.E0.A4.A8.E0.A5.8D.E0.A4.AF_.E0.A4.B8.E0.A5.89.E0.A4.AB.E0.A5.8D.E0.A4.9F.E0.A4.B5.E0.A5.87.E0.A4.AF.E0.A4.B0">देवनागरी के सम्पादित्र व अन्य सॉफ्टवेयर</span></h2>
+<p><b><a href="/wiki/%E0%A4%87%E0%A4%82%E0%A4%9F%E0%A4%B0%E0%A4%A8%E0%A5%87%E0%A4%9F_%E0%A4%AA%E0%A4%B0_%E0%A4%B9%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%80_%E0%A4%95%E0%A5%87_%E0%A4%B8%E0%A4%BE%E0%A4%A7%E0%A4%A8" class="mw-redirect" title="इंटरनेट पर हिन्दी के साधन">इंटरनेट पर हिन्दी के साधन</a></b> देखिये।<br /></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80&amp;action=edit&amp;section=14" title="विभाग संपादन: देवनागरी से अन्य लिपियों में रूपान्तरण">संपादित करें</a>]</span> <span class="mw-headline" id=".E0.A4.A6.E0.A5.87.E0.A4.B5.E0.A4.A8.E0.A4.BE.E0.A4.97.E0.A4.B0.E0.A5.80_.E0.A4.B8.E0.A5.87_.E0.A4.85.E0.A4.A8.E0.A5.8D.E0.A4.AF_.E0.A4.B2.E0.A4.BF.E0.A4.AA.E0.A4.BF.E0.A4.AF.E0.A5.8B.E0.A4.82_.E0.A4.AE.E0.A5.87.E0.A4.82_.E0.A4.B0.E0.A5.82.E0.A4.AA.E0.A4.BE.E0.A4.A8.E0.A5.8D.E0.A4.A4.E0.A4.B0.E0.A4.A3">देवनागरी से अन्य लिपियों में रूपान्तरण</span></h2>
+<ul>
+<li><a href="/wiki/%E0%A4%86%E0%A4%87%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%81%E0%A4%B8" title="आइट्राँस">ITRANS</a> (iTrans) निरूपण , देवनागरी को लैटिन (रोमन) में परिवर्तित करने का आधुनिकतम और अक्षत (lossless) तरीका है। ( <a href="http://www.aczoom.com/itrans/online/" class="external text" rel="nofollow">Online Interface to iTrans</a> )</li>
+<li>आजकल अनेक कम्प्यूटर प्रोग्राम उपलब्ध हैं जिनकी सहायता से देवनागरी में लिखे पाठ को किसी भी भारतीय लिपि में बदला जा सकता है। ( <a href="http://www.bhomiyo.com/xliteratepage.aspx" class="external text" rel="nofollow">भोमियो क्रास_लिटरेशन</a> )</li>
+</ul>
+<ul>
+<li>कुछ ऐसे भी कम्प्यूटर प्रोग्राम हैं जिनकी सहायता से देवनागरी में लिखे पाठ को लैटिन, अरबी, चीनी, क्रिलिक, आईपीए (IPA) आदि में बदला जा सकता है। (<a href="http://demo.icu-project.org/icu-bin/translit" class="external text" rel="nofollow">ICU Transform Demo</a>)</li>
+</ul>
+<ul>
+<li><a href="/wiki/%E0%A4%AF%E0%A5%82%E0%A4%A8%E0%A4%BF%E0%A4%95%E0%A5%8B%E0%A4%A1">यूनिकोड</a> के पदार्पण के बाद देवनागरी का रोमनीकरण (romanization) अब अनावश्यक होता जा रहा है। क्योंकि धीरे-धीरे कम्प्यूटर पर देवनागरी को (और अन्य लिपियों को भी) पूर्ण समर्थन मिलने लगा है।</li>
+</ul>
+<p><br /></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80&amp;action=edit&amp;section=15" title="विभाग संपादन: देवनागरी यूनिकोड">संपादित करें</a>]</span> <span class="mw-headline" id=".E0.A4.A6.E0.A5.87.E0.A4.B5.E0.A4.A8.E0.A4.BE.E0.A4.97.E0.A4.B0.E0.A5.80_.E0.A4.AF.E0.A5.82.E0.A4.A8.E0.A4.BF.E0.A4.95.E0.A5.8B.E0.A4.A1">देवनागरी यूनिकोड</span></h2>
+<table border="1" cellspacing="0" cellpadding="5" style="font-size: large; border-collapse:collapse; width:100%">
+<tr style="font-size: small; text-align:center;">
+<td>&#160;</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>A</td>
+<td>B</td>
+<td>C</td>
+<td>D</td>
+<td>E</td>
+<td>F</td>
+</tr>
+<tr>
+<td style="font-size: small;">U+090x</td>
+<td bgcolor="#CCCCCC">&#160;</td>
+<td>ँ</td>
+<td>ं</td>
+<td>ः</td>
+<td>ऄ</td>
+<td>अ</td>
+<td>आ</td>
+<td>इ</td>
+<td>ई</td>
+<td>उ</td>
+<td>ऊ</td>
+<td>ऋ</td>
+<td>ऌ</td>
+<td>ऍ</td>
+<td>ऎ</td>
+<td>ए</td>
+</tr>
+<tr>
+<td style="font-size: small;">U+091x</td>
+<td>ऐ</td>
+<td>ऑ</td>
+<td>ऒ</td>
+<td>ओ</td>
+<td>औ</td>
+<td>क</td>
+<td>ख</td>
+<td>ग</td>
+<td>घ</td>
+<td>ङ</td>
+<td>च</td>
+<td>छ</td>
+<td>ज</td>
+<td>झ</td>
+<td>ञ</td>
+<td>ट</td>
+</tr>
+<tr>
+<td style="font-size: small;">U+092x</td>
+<td>ठ</td>
+<td>ड</td>
+<td>ढ</td>
+<td>ण</td>
+<td>त</td>
+<td>थ</td>
+<td>द</td>
+<td>ध</td>
+<td>न</td>
+<td>ऩ</td>
+<td>प</td>
+<td>फ</td>
+<td>ब</td>
+<td>भ</td>
+<td>म</td>
+<td>य</td>
+</tr>
+<tr>
+<td style="font-size: small;">U+093x</td>
+<td>र</td>
+<td>ऱ</td>
+<td>ल</td>
+<td>ळ</td>
+<td>ऴ</td>
+<td>व</td>
+<td>श</td>
+<td>ष</td>
+<td>स</td>
+<td>ह</td>
+<td bgcolor="#CCCCCC">&#160;</td>
+<td bgcolor="#CCCCCC">&#160;</td>
+<td>़</td>
+<td>ऽ</td>
+<td>ा</td>
+<td>ि</td>
+</tr>
+<tr>
+<td style="font-size: small;">U+094x</td>
+<td>ी</td>
+<td>ु</td>
+<td>ू</td>
+<td>ृ</td>
+<td>ॄ</td>
+<td>ॅ</td>
+<td>ॆ</td>
+<td>े</td>
+<td>ै</td>
+<td>ॉ</td>
+<td>ॊ</td>
+<td>ो</td>
+<td>ौ</td>
+<td>्</td>
+<td bgcolor="#CCCCCC">&#160;</td>
+<td bgcolor="#CCCCCC">&#160;</td>
+</tr>
+<tr>
+<td style="font-size: small;">U+095x</td>
+<td>ॐ</td>
+<td>॑</td>
+<td>॒</td>
+<td>॓</td>
+<td>॔</td>
+<td bgcolor="#CCCCCC">&#160;</td>
+<td bgcolor="#CCCCCC">&#160;</td>
+<td bgcolor="#CCCCCC">&#160;</td>
+<td>क़</td>
+<td>ख़</td>
+<td>ग़</td>
+<td>ज़</td>
+<td>ड़</td>
+<td>ढ़</td>
+<td>फ़</td>
+<td>य़</td>
+</tr>
+<tr>
+<td style="font-size: small;">U+096x</td>
+<td>ॠ</td>
+<td>ॡ</td>
+<td>ॢ</td>
+<td>ॣ</td>
+<td>।</td>
+<td>॥</td>
+<td>०</td>
+<td>१</td>
+<td>२</td>
+<td>३</td>
+<td>४</td>
+<td>५</td>
+<td>६</td>
+<td>७</td>
+<td>८</td>
+<td>९</td>
+</tr>
+<tr>
+<td style="font-size: small;">U+097x</td>
+<td>॰</td>
+<td bgcolor="#CCCCCC">&#160;</td>
+<td bgcolor="#CCCCCC">&#160;</td>
+<td bgcolor="#CCCCCC">&#160;</td>
+<td bgcolor="#CCCCCC">&#160;</td>
+<td bgcolor="#CCCCCC">&#160;</td>
+<td bgcolor="#CCCCCC">&#160;</td>
+<td bgcolor="#CCCCCC">&#160;</td>
+<td bgcolor="#CCCCCC">&#160;</td>
+<td bgcolor="#CCCCCC">&#160;</td>
+<td bgcolor="#CCCCCC">&#160;</td>
+<td bgcolor="#CCCCCC">&#160;</td>
+<td bgcolor="#CCCCCC">&#160;</td>
+<td bgcolor="#CCCCCC">&#160;</td>
+<td bgcolor="#CCCCCC">&#160;</td>
+<td bgcolor="#CCCCCC">&#160;</td>
+</tr>
+</table>
+<h2><span class="editsection">[<a href="/w/index.php?title=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80&amp;action=edit&amp;section=16" title="विभाग संपादन: कम्प्यूटर कुंजीपटल पर देवनागरी">संपादित करें</a>]</span> <span class="mw-headline" id=".E0.A4.95.E0.A4.AE.E0.A5.8D.E0.A4.AA.E0.A5.8D.E0.A4.AF.E0.A5.82.E0.A4.9F.E0.A4.B0_.E0.A4.95.E0.A5.81.E0.A4.82.E0.A4.9C.E0.A5.80.E0.A4.AA.E0.A4.9F.E0.A4.B2_.E0.A4.AA.E0.A4.B0_.E0.A4.A6.E0.A5.87.E0.A4.B5.E0.A4.A8.E0.A4.BE.E0.A4.97.E0.A4.B0.E0.A5.80">कम्प्यूटर कुंजीपटल पर देवनागरी</span></h2>
+<p><a href="/w/index.php?title=%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7:Upload&amp;wpDestFile=Devanagari_INSCRIPT.png" class="new" title="चित्र:Devanagari INSCRIPT.png">इंस्क्रिप्ट कुंजीपटल पर देवनागरी वर्ण (Windows, Solaris, Java)</a></p>
+<h2><span class="editsection">[<a href="/w/index.php?title=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80&amp;action=edit&amp;section=17" title="विभाग संपादन: इन्हें भी देखें">संपादित करें</a>]</span> <span class="mw-headline" id=".E0.A4.87.E0.A4.A8.E0.A5.8D.E0.A4.B9.E0.A5.87.E0.A4.82_.E0.A4.AD.E0.A5.80_.E0.A4.A6.E0.A5.87.E0.A4.96.E0.A5.87.E0.A4.82">इन्हें भी देखें</span></h2>
+<ul>
+<li><a href="/wiki/%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80_%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%A3%E0%A4%AE%E0%A4%BE%E0%A4%B2%E0%A4%BE">देवनागरी वर्णमाला</a></li>
+<li><a href="/wiki/%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80_%E0%A4%95%E0%A5%80_%E0%A4%B5%E0%A5%88%E0%A4%9C%E0%A5%8D%E0%A4%9E%E0%A4%BE%E0%A4%A8%E0%A4%BF%E0%A4%95%E0%A4%A4%E0%A4%BE">देवनागरी की वैज्ञानिकता</a></li>
+<li><a href="/wiki/%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80_%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%9A%E0%A4%BE%E0%A4%B0%E0%A4%BF%E0%A4%A3%E0%A5%80_%E0%A4%B8%E0%A4%AD%E0%A4%BE" class="mw-redirect" title="नागरी प्रचारिणी सभा">नागरी प्रचारिणी सभा</a></li>
+<li><a href="/wiki/%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80_%E0%A4%B8%E0%A4%82%E0%A4%97%E0%A4%AE_%E0%A4%AA%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%BF%E0%A4%95%E0%A4%BE">नागरी संगम पत्रिका</a></li>
+<li><a href="/wiki/%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80_%E0%A4%8F%E0%A4%B5%E0%A4%82_%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4%E0%A5%80%E0%A4%AF_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE%E0%A4%8F%E0%A4%81">नागरी एवं भारतीय भाषाएँ</a></li>
+<li><a href="/wiki/%E0%A4%97%E0%A5%8C%E0%A4%B0%E0%A5%80%E0%A4%A6%E0%A4%A4%E0%A5%8D%E0%A4%A4">गौरीदत्त</a> - देवनागरी के महान प्रचारक</li>
+<li><a href="/wiki/%E0%A4%AF%E0%A5%82%E0%A4%A8%E0%A4%BF%E0%A4%95%E0%A5%8B%E0%A4%A1">यूनिकोड</a></li>
+<li><a href="/wiki/%E0%A4%87%E0%A4%A3%E0%A5%8D%E0%A4%A1%E0%A4%BF%E0%A4%95_%E0%A4%AF%E0%A5%82%E0%A4%A8%E0%A4%BF%E0%A4%95%E0%A5%8B%E0%A4%A1">इण्डिक यूनिकोड</a></li>
+<li><a href="/wiki/%E0%A4%87%E0%A4%82%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A5%8D%E0%A4%B0%E0%A4%BF%E0%A4%AA%E0%A5%8D%E0%A4%9F" class="mw-redirect" title="इंस्क्रिप्ट">इंस्क्रिप्ट</a></li>
+<li><a href="/wiki/%E0%A4%87%E0%A4%B8%E0%A5%8D%E0%A4%95%E0%A5%80">इस्की</a> ( ISCII )</li>
+<li><a href="/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4%E0%A5%80%E0%A4%AF_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF%E0%A4%AF%E0%A4%BE%E0%A4%81">भारतीय लिपियाँ</a></li>
+<li><a href="/wiki/%E0%A4%AC%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%B9%E0%A5%8D%E0%A4%AE%E0%A5%80_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF">ब्राह्मी लिपि</a></li>
+</ul>
+<h2><span class="editsection">[<a href="/w/index.php?title=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80&amp;action=edit&amp;section=18" title="विभाग संपादन: बाहरी कड़ियाँ">संपादित करें</a>]</span> <span class="mw-headline" id=".E0.A4.AC.E0.A4.BE.E0.A4.B9.E0.A4.B0.E0.A5.80_.E0.A4.95.E0.A4.A1.E0.A4.BC.E0.A4.BF.E0.A4.AF.E0.A4.BE.E0.A4.81">बाहरी कड़ियाँ</span></h2>
+<ul>
+<li><a href="http://www.geocities.com/Athens/Academy/9594/brahmi.html" class="external text" rel="nofollow"><b>ब्राह्मी लिपि से व्युत्पन्न लिपियाँ</b></a> - यहाँ देवनागरी के वर्णों के संगत अन्य ब्राह्मी-व्युत्पन्न लिपियों के वर्णों की सारणी दी हुई है।</li>
+<li><a href="http://www.cs.colostate.edu/~malaiya/images/brah11.gif" class="external text" rel="nofollow">ब्राह्मी-लिपि परिवार का वृक्ष</a> - इसमें ब्राह्मी से उत्पन्न लिपियों की समय-रेखा का चित्र दिया हुआ है।</li>
+<li><a href="http://www.cs.colostate.edu/~malaiya/images/south1.gif" class="external text" rel="nofollow">पहलवी-ब्राह्मी लिपि से उत्पन्न दक्षिण-पूर्व एशिया की लिपियों की समय-रेखा</a></li>
+<li><a href="http://uvavani.blogspot.com/2009/07/blog-post_23.html" class="external text" rel="nofollow">हाँ, देवनागरी के विकास का इतिहास ६००० साल पुराना</a></li>
+<li><a href="http://kavibabakanpuri.blogspot.com/2010/03/blog-post_28.html" class="external text" rel="nofollow">देवनागरी लिपि की महिमा</a> (कविता)</li>
+<li><a href="http://www.prabhasakshi.com/ShowArticle.aspx?ArticleId=090723-131027-440010" class="external text" rel="nofollow">सबने स्वीकारा है देवनागरी की वैज्ञानिकता को</a> (प्रभासाक्षी)</li>
+<li><a href="http://tlt.its.psu.edu/suggestions/international/bylanguage/devanagarichart.html" class="external text" rel="nofollow">Unicode Entity Codes for the Devanāgarī Script</a></li>
+<li><a href="http://www.avashy.com/hindiscripttutor.htm" class="external free" rel="nofollow">http://www.avashy.com/hindiscripttutor.htm</a></li>
+<li><a href="http://www.ancientscripts.com/devanagari.html" class="external free" rel="nofollow">http://www.ancientscripts.com/devanagari.html</a></li>
+<li><a href="http://www.anu.edu.au/asianstudies/hindi/alphabet/" class="external free" rel="nofollow">http://www.anu.edu.au/asianstudies/hindi/alphabet/</a></li>
+<li><a href="http://www.unicode.org/charts/PDF/U0900.pdf" class="external free" rel="nofollow">http://www.unicode.org/charts/PDF/U0900.pdf</a></li>
+<li><a href="http://www.fonetikspell.info/devagreek.htm" class="external text" rel="nofollow">Extended English Alphabet with Devanagari Orthography</a></li>
+<li><a href="http://rds.yahoo.com/_ylt=A0geu8xJwnlHTDwBEtdXNyoA;_ylu=X3oDMTFhaHRwOTBpBHNlYwNzcgRwb3MDMQRjb2xvA2FjMgR2dGlkA1BSMDE1XzExOARsA1dTMQ--/SIG=128gm2crp/EXP=1199248329/**http%3a//www.cs.jhu.edu/~habib/papers/LangIndPaper.pdf" class="external text" rel="nofollow">Language Independent Speech Compression using Devanagari Phonetics</a></li>
+<li><a href="http://books.google.co.in/books?id=j3umF2zqe_wC&amp;printsec=frontcover#v=onepage&amp;q=&amp;f=false" class="external text" rel="nofollow">राजभाषा हिन्दी</a> (गूगल पुस्तक&#160;; लेखक - भोलानाथ तिवारी)</li>
+<li><a href="http://www.marathimati.com/" class="external text" rel="nofollow">देवनागरी मे संपादित संकेतस्थल</a></li>
+<li><a href="http://groups.google.co.in/group/technical-hindi/browse_thread/thread/c922140a950b0a53?hl=en" class="external text" rel="nofollow">अंग्रेजी भी देवनागरी में लिखें</a></li>
+<li><a href="http://www.fonetikspell.info/devagreek.htm" class="external text" rel="nofollow">Extended English Alphabet with Hindi Orthography</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 956/1000000
+Post-expand include size: 33884/2048000 bytes
+Template argument size: 1093/2048000 bytes
+Expensive parser function count: 0/500
+-->
+
+<!-- Saved in parser cache with key hiwiki:pcache:idhash:58-0!*!0!!hi!4 and timestamp 20110220093953 -->
+<div class="printfooter">
+"<a href="http://hi.wikipedia.org/wiki/%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80">http://hi.wikipedia.org/wiki/%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80</a>" से लिया गया</div>
+				<!-- /bodytext -->
+								<!-- catlinks -->
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7:Categories" title="विशेष:Categories">श्रेणियाँ</a>: <span dir='ltr'><a href="/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%A3%E0%A5%80:%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="श्रेणी:लिपि">लिपि</a></span> | <span dir='ltr'><a href="/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%A3%E0%A5%80:%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE%E0%A4%B5%E0%A4%BF%E0%A4%9C%E0%A5%8D%E0%A4%9E%E0%A4%BE%E0%A4%A8" class="mw-redirect" title="श्रेणी:भाषाविज्ञान">भाषाविज्ञान</a></span> | <span dir='ltr'><a href="/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%A3%E0%A5%80:%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE-%E0%A4%B5%E0%A4%BF%E0%A4%9C%E0%A5%8D%E0%A4%9E%E0%A4%BE%E0%A4%A8" title="श्रेणी:भाषा-विज्ञान">भाषा-विज्ञान</a></span> | <span dir='ltr'><a href="/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%A3%E0%A5%80:%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80" title="श्रेणी:देवनागरी">देवनागरी</a></span> | <span dir='ltr'><a href="/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%A3%E0%A5%80:%E0%A4%B9%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%80" title="श्रेणी:हिन्दी">हिन्दी</a></span></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>वैयक्तिक औज़ार</h5>
+	<ul>
+					<li  id="pt-login"><a href="/w/index.php?title=%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7:UserLogin&amp;returnto=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80" title="आपसे सत्रारंभ करने की गुज़ारिश है; लेकिन यह लाज़मी नहीं है [o]" accesskey="o">सदस्य प्रवेश करें / नया खाता बनाएँ</a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>नामस्थान</h5>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80"  title="सामग्री वाला पन्ना देखें [c]" accesskey="c">लेख</a></span></li>
+					<li  id="ca-talk"><span><a href="/wiki/%E0%A4%B5%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%A4%E0%A4%BE:%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80"  title="सामग्री पन्ने के बारे में वार्तालाप [t]" accesskey="t">संवाद</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>संस्करण</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>दर्शाव</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="/wiki/%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80" >पढ़ें</a></span></li>
+					<li id="ca-edit"><span><a href="/w/index.php?title=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80&amp;action=edit"  title="आप यह पन्ना बदल सकते हैं।&#10;कृपया बदलाव संजोने से पहले झलक देखें। [e]" accesskey="e">संपादन</a></span></li>
+					<li id="ca-history" class="collapsible "><span><a href="/w/index.php?title=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80&amp;action=history"  title="इस पन्ने के पुराने अवतरण [h]" accesskey="h">इतिहास देखें</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>क्रियाएँ</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">खोजें</label></h5>
+	<form action="/w/index.php" id="searchform">
+		<input type='hidden' name="title" value="विशेष:Search"/>
+				<div id="simpleSearch">
+						<input id="searchInput" name="search" type="text"  title="इस विकि में खोजें [f]" accesskey="f"  value="" />
+						<button id="searchButton" type='submit' name='button'  title="इस वाक्यांश को पन्नों में खोजें"><img src="http://bits.wikimedia.org/skins-1.17/vector/images/search-ltr.png?301-2" alt="खोजें" /></button>
+					</div>
+			</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(http://upload.wikimedia.org/wikipedia/hi/b/bc/Wiki.png);" href="/wiki/%E0%A4%AE%E0%A5%81%E0%A4%96%E0%A4%AA%E0%A5%83%E0%A4%B7%E0%A5%8D%E0%A4%A0"  title="मुखपृष्ठ"></a></div>
+				<!-- /logo -->
+				
+<!-- परिभ्रमण -->
+<div class="portal" id='p-.E0.A4.AA.E0.A4.B0.E0.A4.BF.E0.A4.AD.E0.A5.8D.E0.A4.B0.E0.A4.AE.E0.A4.A3'>
+	<h5>परिभ्रमण</h5>
+	<div class="body">
+				<ul>
+					<li id="n-.E0.A4.AE.E0.A5.81.E0.A4.96.E0.A4.AA.E0.A5.83.E0.A4.B7.E0.A5.8D.E0.A4.A0"><a href="/wiki/%E0%A4%AE%E0%A5%81%E0%A4%96%E0%A4%AA%E0%A5%83%E0%A4%B7%E0%A5%8D%E0%A4%A0">मुखपृष्ठ</a></li>
+					<li id="n-.E0.A4.9A.E0.A5.8C.E0.A4.AA.E0.A4.BE.E0.A4.B2"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%9A%E0%A5%8C%E0%A4%AA%E0%A4%BE%E0%A4%B2">चौपाल</a></li>
+					<li id="n-recentchanges"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7:RecentChanges" title="विकि में हाल में हुए बदलावों की फ़ेरहिस्त [r]" accesskey="r">हाल में हुए परिवर्तन</a></li>
+					<li id="n-portal"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%B8%E0%A4%AE%E0%A4%BE%E0%A4%9C_%E0%A4%AE%E0%A5%81%E0%A4%96%E0%A4%AA%E0%A5%83%E0%A4%B7%E0%A5%8D%E0%A4%A0" title="परियोजना के बारे में, आप क्या कर सकतें हैं, मदद कहाँ से लें">समाज मुखपृष्ठ</a></li>
+					<li id="n-.E0.A4.A6.E0.A5.82.E0.A4.A4.E0.A4.BE.E0.A4.B5.E0.A4.BE.E0.A4.B8"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%A6%E0%A5%82%E0%A4%A4%E0%A4%BE%E0%A4%B5%E0%A4%BE%E0%A4%B8">दूतावास</a></li>
+					<li id="n-.E0.A4.B8.E0.A4.BE.E0.A4.B9.E0.A4.BF.E0.A4.A4.E0.A5.8D.E0.A4.AF-.E0.A4.A6.E0.A4.B0.E0.A5.8D.E0.A4.B6.E0.A4.A8"><a href="/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%A3%E0%A5%80:%E0%A4%B8%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%AF">साहित्य दर्शन</a></li>
+					<li id="n-.E0.A4.A8.E0.A4.BF.E0.A4.B0.E0.A5.8D.E0.A4.B5.E0.A4.BE.E0.A4.9A.E0.A4.BF.E0.A4.A4-.E0.A4.B5.E0.A4.BF.E0.A4.B7.E0.A4.AF.E0.A4.B5.E0.A4.B8.E0.A5.8D.E0.A4.A4.E0.A5.81"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%A8%E0%A4%BF%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%9A%E0%A4%BF%E0%A4%A4_%E0%A4%B5%E0%A4%BF%E0%A4%B7%E0%A4%AF_%E0%A4%B5%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%81">निर्वाचित विषयवस्तु</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /परिभ्रमण -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- सहायता -->
+<div class="portal" id='p-.E0.A4.B8.E0.A4.B9.E0.A4.BE.E0.A4.AF.E0.A4.A4.E0.A4.BE'>
+	<h5>सहायता</h5>
+	<div class="body">
+				<ul>
+					<li id="n-.E0.A4.85.E0.A4.95.E0.A5.8D.E0.A4.B8.E0.A4.B0-.E0.A4.AA.E0.A5.82.E0.A4.9B.E0.A5.87-.E0.A4.9C.E0.A4.BE.E0.A4.A8.E0.A5.87-.E0.A4.B5.E0.A4.BE.E0.A4.B2.E0.A5.87-.E0.A4.AA.E0.A5.8D.E0.A4.B0.E0.A4.B6.E0.A5.8D.E0.A4.A8"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%85%E0%A4%95%E0%A5%8D%E0%A4%B8%E0%A4%B0_%E0%A4%AA%E0%A5%82%E0%A4%9B%E0%A5%87_%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A5%87_%E0%A4%B5%E0%A4%BE%E0%A4%B2%E0%A5%87_%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B6%E0%A5%8D%E0%A4%A8">अक्सर पूछे जाने वाले प्रश्न</a></li>
+					<li id="n-.E0.A4.A6.E0.A5.87.E0.A4.B5.E0.A4.A8.E0.A4.BE.E0.A4.97.E0.A4.B0.E0.A5.80-.E0.A4.95.E0.A5.88.E0.A4.B8.E0.A5.87-.E0.A4.9F.E0.A4.BE.E0.A4.87.E0.A4.AA-.E0.A4.95.E0.A4.B0.E0.A5.87.E0.A4.82"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80_%E0%A4%AE%E0%A5%87%E0%A4%82_%E0%A4%95%E0%A5%88%E0%A4%B8%E0%A5%87_%E0%A4%9F%E0%A4%BE%E0%A4%87%E0%A4%AA_%E0%A4%95%E0%A4%B0%E0%A5%87%E0%A4%82">देवनागरी कैसे टाइप करें</a></li>
+					<li id="n-.E0.A4.A8.E0.A4.AF.E0.A4.BE-.E0.A4.AA.E0.A4.A8.E0.A5.8D.E0.A4.A8.E0.A4.BE-.E0.A4.95.E0.A5.88.E0.A4.B8.E0.A5.87-.E0.A4.AC.E0.A4.A8.E0.A4.BE.E0.A4.8F.E0.A4.82"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%A8%E0%A4%AF%E0%A4%BE_%E0%A4%AA%E0%A4%A8%E0%A5%8D%E0%A4%A8%E0%A4%BE_%E0%A4%95%E0%A5%88%E0%A4%B8%E0%A5%87_%E0%A4%86%E0%A4%B0%E0%A4%AE%E0%A5%8D%E0%A4%AD_%E0%A4%95%E0%A4%B0%E0%A5%87%E0%A4%82">नया पन्ना कैसे बनाएं</a></li>
+					<li id="n-.E0.A4.85.E0.A4.9A.E0.A5.8D.E0.A4.9B.E0.A5.87-.E0.A4.B2.E0.A5.87.E0.A4.96.E0.A4.A8-.E0.A4.B9.E0.A5.87.E0.A4.A4.E0.A5.81-.E0.A4.B8.E0.A5.81.E0.A4.9D.E0.A4.BE.E0.A4.B5"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%85%E0%A4%9A%E0%A5%8D%E0%A4%9B%E0%A5%87_%E0%A4%B2%E0%A5%87%E0%A4%96_%E0%A4%B2%E0%A4%BF%E0%A4%96%E0%A4%A8%E0%A5%87_%E0%A4%95%E0%A5%87_%E0%A4%B8%E0%A5%81%E0%A4%9D%E0%A4%BE%E0%A4%B5">अच्छे लेखन हेतु सुझाव</a></li>
+					<li id="n-.E0.A4.B8.E0.A4.B9.E0.A4.BE.E0.A4.AF.E0.A4.95-.E0.A4.95.E0.A4.A1.E0.A4.BC.E0.A4.BF.E0.A4.AF.E0.A4.BE.E0.A4.81"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%B8%E0%A4%B9%E0%A4%BE%E0%A4%AF%E0%A4%A4%E0%A4%BE">सहायक कड़ियाँ</a></li>
+					<li id="n-.E0.A4.B5.E0.A4.BF.E0.A4.95.E0.A4.BF-.E0.A4.A8.E0.A5.80.E0.A4.A4.E0.A4.BF.E0.A4.AF.E0.A4.BE.E0.A4.81"><a href="/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%A3%E0%A5%80:%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%A8%E0%A5%80%E0%A4%A4%E0%A4%BF%E0%A4%AF%E0%A4%BE%E0%A4%81">विकि नीतियाँ</a></li>
+					<li id="n-.E0.A4.A4.E0.A5.8D.E0.A4.B5.E0.A4.B0.E0.A4.BF.E0.A4.A4.E0.A4.B5.E0.A4.BE.E0.A4.B0.E0.A5.8D.E0.A4.A4.E0.A4.BE"><a href="http://webchat.freenode.net?channels=HindiWiki&amp;uio=Mj10cnVlJjQ9dHJ1ZSY5PXRydWUmMTI9dHJ1ZQ81">त्वरितवार्ता</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /सहायता -->
+
+<!-- योगदान -->
+<div class="portal" id='p-.E0.A4.AF.E0.A5.8B.E0.A4.97.E0.A4.A6.E0.A4.BE.E0.A4.A8'>
+	<h5>योगदान</h5>
+	<div class="body">
+				<ul>
+					<li id="n-.E0.A4.AA.E0.A5.8D.E0.A4.B0.E0.A4.AF.E0.A5.8B.E0.A4.97.E0.A4.AA.E0.A5.83.E0.A4.B7.E0.A5.8D.E0.A4.A0"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%AF%E0%A5%8B%E0%A4%97%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A4%B2">प्रयोगपृष्ठ</a></li>
+					<li id="n-.E0.A4.85.E0.A4.A8.E0.A5.81.E0.A4.B5.E0.A4.BE.E0.A4.A6-.E0.A4.B9.E0.A5.87.E0.A4.A4.E0.A5.81-.E0.A4.B2.E0.A5.87.E0.A4.96"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%85%E0%A4%A8%E0%A5%81%E0%A4%B5%E0%A4%BE%E0%A4%A6_%E0%A4%B9%E0%A5%87%E0%A4%A4%E0%A5%81_%E0%A4%B2%E0%A5%87%E0%A4%96">अनुवाद हेतु लेख</a></li>
+					<li id="n-sitesupport"><a href="http://wikimediafoundation.org/wiki/Fundraising" title="हमें सहायता दें">दान</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /योगदान -->
+
+<!-- विविध पन्ने -->
+<div class="portal" id='p-.E0.A4.B5.E0.A4.BF.E0.A4.B5.E0.A4.BF.E0.A4.A7_.E0.A4.AA.E0.A4.A8.E0.A5.8D.E0.A4.A8.E0.A5.87'>
+	<h5>विविध पन्ने</h5>
+	<div class="body">
+				<ul>
+					<li id="n-.E0.A4.A8.E0.A4.AF.E0.A5.87-.E0.A4.AA.E0.A4.A8.E0.A5.8D.E0.A4.A8.E0.A5.87"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7:NewPages">नये पन्ने</a></li>
+					<li id="n-.E0.A4.B2.E0.A4.AE.E0.A5.8D.E0.A4.AC.E0.A4.BF.E0.A4.A4-.E0.A4.B8.E0.A4.82.E0.A4.AA.E0.A4.BE.E0.A4.A6.E0.A4.A8"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7:%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A8%E0%A5%87%E0%A4%A6%E0%A5%87%E0%A4%96%E0%A5%87%E0%A4%82%E0%A4%B9%E0%A5%81%E0%A4%8F%E0%A4%AA%E0%A4%A8%E0%A5%8D%E0%A4%A8%E0%A5%87">लम्बित संपादन</a></li>
+					<li id="n-.E0.A4.A6.E0.A5.81.E0.A4.B0.E0.A5.81.E0.A4.AA.E0.A4.AF.E0.A5.8B.E0.A4.97-.E0.A4.9B.E0.A4.A8.E0.A4.BF.E0.A4.A4-.E0.A4.AA.E0.A5.83.E0.A4.B7.E0.A5.8D.E0.A4.A0"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7:AbuseLog">दुरुपयोग छनित पृष्ठ</a></li>
+					<li id="n-.E0.A4.B6.E0.A4.AC.E0.A5.8D.E0.A4.A6-.E0.A4.96.E0.A5.8B.E0.A4.9C"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7:PrefixIndex">शब्द खोज</a></li>
+					<li id="n-.E0.A4.B9.E0.A4.9F.E0.A4.BE.E0.A4.A8.E0.A5.87-.E0.A4.AF.E0.A5.8B.E0.A4.97.E0.A5.8D.E0.A4.AF-.E0.A4.AA.E0.A5.83.E0.A4.B7.E0.A5.8D.E0.A4.A0"><a href="/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%A3%E0%A5%80:%E0%A4%B6%E0%A5%80%E0%A4%98%E0%A5%8D%E0%A4%B0_%E0%A4%B9%E0%A4%9F%E0%A4%BE%E0%A4%A8%E0%A5%87_%E0%A4%AF%E0%A5%8B%E0%A4%97%E0%A5%8D%E0%A4%AF_%E0%A4%AA%E0%A5%83%E0%A4%B7%E0%A5%8D%E0%A4%A0">हटाने योग्य पृष्ठ</a></li>
+					<li id="n-.E0.A4.B5.E0.A4.BF.E0.A4.B6.E0.A5.87.E0.A4.B7.E0.A4.BE.E0.A4.A7.E0.A4.BF.E0.A4.95.E0.A4.BE.E0.A4.B0-.E0.A4.A8.E0.A4.BF.E0.A4.B5.E0.A5.87.E0.A4.A6.E0.A4.A8"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7%E0%A4%BE%E0%A4%A7%E0%A4%BF%E0%A4%95%E0%A4%BE%E0%A4%B0_%E0%A4%A8%E0%A4%BF%E0%A4%B5%E0%A5%87%E0%A4%A6%E0%A4%A8">विशेषाधिकार निवेदन</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /विविध पन्ने -->
+
+<!-- TOOLBOX -->
+<div class="portal" id="p-tb">
+	<h5>उपकरण</h5>
+	<div class="body">
+		<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7:WhatLinksHere/%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80" title="यहाँ का हवाला देने वाले सभी विकि पन्नों की सूची [j]" accesskey="j">यहाँ क्या जुड़ता है</a></li>
+						<li id="t-recentchangeslinked"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7:RecentChangesLinked/%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80" title="यहां जुडे हुए सभी पन्नोंमें हुए हाल के बदलाव [k]" accesskey="k">पन्ने से जुडे बदलाव</a></li>
+																																										<li id="t-specialpages"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7:SpecialPages" title="सभी खास पन्नोंकी सूची [q]" accesskey="q">विशेष पन्ने</a></li>
+									<li id="t-print"><a href="/w/index.php?title=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80&amp;printable=yes" rel="alternate" title="इस पन्नेका छपानेलायक अवतरण [p]" accesskey="p">प्रिन्ट करने लायक</a></li>
+						<li id="t-permalink"><a href="/w/index.php?title=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80&amp;oldid=921699" title="पन्ने के इस संस्करण की स्थायी कड़ी">स्थायी कड़ी</a></li>
+				<li id="t-cite"><a href="/w/index.php?title=%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7:Cite&amp;page=%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80&amp;id=921699" title="Information on how to cite this page">यह लेख उद्धृत करें</a></li>		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- भारतीय विकिपीडिया -->
+<div class="portal" id='p-.E0.A4.AD.E0.A4.BE.E0.A4.B0.E0.A4.A4.E0.A5.80.E0.A4.AF_.E0.A4.B5.E0.A4.BF.E0.A4.95.E0.A4.BF.E0.A4.AA.E0.A5.80.E0.A4.A1.E0.A4.BF.E0.A4.AF.E0.A4.BE'>
+	<h5>भारतीय विकिपीडिया</h5>
+	<div class="body">
+				<ul>
+					<li id="n-.E0.A4.A8.E0.A5.87.E0.A4.AA.E0.A4.BE.E0.A4.B2.E0.A5.80"><a href="http://www.ne.wikipedia.org">नेपाली</a></li>
+					<li id="n-.E0.A4.A8.E0.A5.87.E0.A4.AA.E0.A4.BE.E0.A4.B2-.E0.A4.AD.E0.A4.BE.E0.A4.B7.E0.A4.BE"><a href="http://www.new.wikipedia.org">नेपाल भाषा</a></li>
+					<li id="n-.E0.A4.AC.E0.A4.82.E0.A4.97.E0.A4.BE.E0.A4.B2.E0.A5.80"><a href="http://www.bn.wikipedia.org">बंगाली</a></li>
+					<li id="n-.E0.A4.AE.E0.A4.B0.E0.A4.BE.E0.A4.A0.E0.A5.80"><a href="http://www.mr.wikipedia.org">मराठी</a></li>
+					<li id="n-.E0.A4.97.E0.A5.81.E0.A4.9C.E0.A4.B0.E0.A4.BE.E0.A4.A4.E0.A5.80"><a href="http://www.gu.wikipedia.org">गुजराती</a></li>
+					<li id="n-.E0.A4.B8.E0.A4.BF.E0.A4.82.E0.A4.B9.E0.A4.B2"><a href="http://www.si.wikipedia.org">सिंहल</a></li>
+					<li id="n-.E0.A4.93.E0.A4.A1.E0.A4.BC.E0.A4.BF.E0.A4.AF.E0.A4.BE"><a href="http://www.or.wikipedia.org">ओड़िया</a></li>
+					<li id="n-.E0.A4.AC.E0.A4.B0.E0.A5.8D.E0.A4.AE.E0.A5.80"><a href="http://www.my.wikipedia.org">बर्मी</a></li>
+					<li id="n-.E0.A4.AD.E0.A5.8B.E0.A4.9C.E0.A4.AA.E0.A5.81.E0.A4.B0.E0.A5.80"><a href="http://www.bh.wikipedia.org">भोजपुरी</a></li>
+					<li id="n-.E0.A4.89.E0.A4.B0.E0.A5.8D.E0.A4.A6.E0.A5.81"><a href="http://www.ur.wikipedia.org">उर्दु</a></li>
+					<li id="n-.E0.A4.AE.E0.A4.A3.E0.A4.BF.E0.A4.AA.E0.A5.81.E0.A4.B0.E0.A5.80"><a href="http://www.bpy.wikipedia.org">मणिपुरी</a></li>
+					<li id="n-.E0.A4.85.E0.A4.B8.E0.A4.AE.E0.A5.80"><a href="http://www.as.wikipedia.org">असमी</a></li>
+					<li id="n-.E0.A4.95.E0.A4.A8.E0.A5.8D.E0.A4.A8.E0.A4.A1.E0.A4.BC"><a href="http://www.kn.wikipedia.org">कन्नड़</a></li>
+					<li id="n-.E0.A4.AA.E0.A4.82.E0.A4.9C.E0.A4.BE.E0.A4.AC.E0.A5.80"><a href="http://www.pa.wikipedia.org">पंजाबी</a></li>
+					<li id="n-.E0.A4.B8.E0.A4.82.E0.A4.B8.E0.A5.8D.E0.A4.95.E0.A5.83.E0.A4.A4"><a href="http://www.sa.wikipedia.org">संस्कृत</a></li>
+					<li id="n-.E0.A4.AE.E0.A4.B2.E0.A4.AF.E0.A4.BE.E0.A4.B2.E0.A4.AE"><a href="http://www.ml.wikipedia.org">मलयालम</a></li>
+					<li id="n-.E0.A4.A4.E0.A4.AE.E0.A4.BF.E0.A4.B2"><a href="http://www.ta.wikipedia.org">तमिल</a></li>
+					<li id="n-.E0.A4.A4.E0.A5.87.E0.A4.B2.E0.A4.97.E0.A5.81"><a href="http://www.te.wikipedia.org">तेलगु</a></li>
+					<li id="n-.E0.A4.AA.E0.A4.BE.E0.A4.B2.E0.A5.80"><a href="http://www.pi.wikipedia.org">पाली</a></li>
+					<li id="n-.E0.A4.95.E0.A4.B6.E0.A5.8D.E0.A4.AE.E0.A5.80.E0.A4.B0.E0.A5.80"><a href="http://www.ks.wikipedia.org">कश्मीरी</a></li>
+					<li id="n-.E0.A4.B8.E0.A4.BF.E0.A4.A8.E0.A5.8D.E0.A4.A7.E0.A5.80"><a href="http://www.sd.wikipedia.org">सिन्धी</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /भारतीय विकिपीडिया -->
+
+<!-- LANGUAGES -->
+<div class="portal" id="p-lang">
+	<h5>अन्य भाषाएँ</h5>
+	<div class="body">
+		<ul>
+					<li class="interwiki-bar"><a href="http://bar.wikipedia.org/wiki/Devanagari" title="Devanagari">Boarisch</a></li>
+					<li class="interwiki-bg"><a href="http://bg.wikipedia.org/wiki/%D0%94%D0%B5%D0%B2%D0%B0%D0%BD%D0%B0%D0%B3%D0%B0%D1%80%D0%B8" title="Деванагари">Български</a></li>
+					<li class="interwiki-bn"><a href="http://bn.wikipedia.org/wiki/%E0%A6%A6%E0%A7%87%E0%A6%AC%E0%A6%A8%E0%A6%BE%E0%A6%97%E0%A6%B0%E0%A7%80_%E0%A6%B2%E0%A6%BF%E0%A6%AA%E0%A6%BF" title="দেবনাগরী লিপি">বাংলা</a></li>
+					<li class="interwiki-br"><a href="http://br.wikipedia.org/wiki/Devan%C4%81gar%C4%AB" title="Devanāgarī">Brezhoneg</a></li>
+					<li class="interwiki-ca"><a href="http://ca.wikipedia.org/wiki/Devanagari" title="Devanagari">Català</a></li>
+					<li class="interwiki-cs"><a href="http://cs.wikipedia.org/wiki/D%C3%A9van%C3%A1gar%C3%AD" title="Dévanágarí">Česky</a></li>
+					<li class="interwiki-cy"><a href="http://cy.wikipedia.org/wiki/Devan%C4%81gar%C4%AB" title="Devanāgarī">Cymraeg</a></li>
+					<li class="interwiki-da"><a href="http://da.wikipedia.org/wiki/Devanagari" title="Devanagari">Dansk</a></li>
+					<li class="interwiki-de"><a href="http://de.wikipedia.org/wiki/Devanagari" title="Devanagari">Deutsch</a></li>
+					<li class="interwiki-en"><a href="http://en.wikipedia.org/wiki/Devanagari" title="Devanagari">English</a></li>
+					<li class="interwiki-eo"><a href="http://eo.wikipedia.org/wiki/Nagario" title="Nagario">Esperanto</a></li>
+					<li class="interwiki-es"><a href="http://es.wikipedia.org/wiki/Devanagari" title="Devanagari">Español</a></li>
+					<li class="interwiki-fa"><a href="http://fa.wikipedia.org/wiki/%D8%AF%D9%88%D9%86%D8%A7%DA%AF%D8%B1%DB%8C" title="دوناگری">فارسی</a></li>
+					<li class="interwiki-fi"><a href="http://fi.wikipedia.org/wiki/Devanagari" title="Devanagari">Suomi</a></li>
+					<li class="interwiki-fr"><a href="http://fr.wikipedia.org/wiki/D%C3%A9vanagari" title="Dévanagari">Français</a></li>
+					<li class="interwiki-gl"><a href="http://gl.wikipedia.org/wiki/Devan%C4%81gar%C4%AB" title="Devanāgarī">Galego</a></li>
+					<li class="interwiki-gu"><a href="http://gu.wikipedia.org/wiki/%E0%AA%A6%E0%AB%87%E0%AA%B5%E0%AA%A8%E0%AA%BE%E0%AA%97%E0%AA%B0%E0%AB%80" title="દેવનાગરી">ગુજરાતી</a></li>
+					<li class="interwiki-he"><a href="http://he.wikipedia.org/wiki/%D7%93%D7%95%D7%95%D7%A0%D7%90%D7%92%D7%A8%D7%99" title="דוונאגרי">עברית</a></li>
+					<li class="interwiki-hu"><a href="http://hu.wikipedia.org/wiki/D%C3%A9van%C3%A1gari_%C3%ADr%C3%A1s" title="Dévanágari írás">Magyar</a></li>
+					<li class="interwiki-id"><a href="http://id.wikipedia.org/wiki/Aksara_Dewanagari" title="Aksara Dewanagari">Bahasa Indonesia</a></li>
+					<li class="interwiki-is"><a href="http://is.wikipedia.org/wiki/Devanagari" title="Devanagari">Íslenska</a></li>
+					<li class="interwiki-it"><a href="http://it.wikipedia.org/wiki/Alfabeto_devanagari" title="Alfabeto devanagari">Italiano</a></li>
+					<li class="interwiki-ja"><a href="http://ja.wikipedia.org/wiki/%E3%83%87%E3%83%BC%E3%83%B4%E3%82%A1%E3%83%8A%E3%83%BC%E3%82%AC%E3%83%AA%E3%83%BC" title="デーヴァナーガリー">日本語</a></li>
+					<li class="interwiki-jv"><a href="http://jv.wikipedia.org/wiki/Aksara_Dewanagari" title="Aksara Dewanagari">Basa Jawa</a></li>
+					<li class="interwiki-ka"><a href="http://ka.wikipedia.org/wiki/%E1%83%93%E1%83%94%E1%83%95%E1%83%90%E1%83%9C%E1%83%90%E1%83%92%E1%83%90%E1%83%A0%E1%83%98" title="დევანაგარი">ქართული</a></li>
+					<li class="interwiki-kn"><a href="http://kn.wikipedia.org/wiki/%E0%B2%A6%E0%B3%87%E0%B2%B5%E0%B2%A8%E0%B2%BE%E0%B2%97%E0%B2%B0%E0%B2%BF_%E0%B2%B2%E0%B2%BF%E0%B2%AA%E0%B2%BF" title="ದೇವನಾಗರಿ ಲಿಪಿ">ಕನ್ನಡ</a></li>
+					<li class="interwiki-ko"><a href="http://ko.wikipedia.org/wiki/%EB%8D%B0%EB%B0%94%EB%82%98%EA%B0%80%EB%A6%AC_%EB%AC%B8%EC%9E%90" title="데바나가리 문자">한국어</a></li>
+					<li class="interwiki-ks"><a href="http://ks.wikipedia.org/wiki/%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80" title="देवनागरी">कश्मीरी - (كشميري)</a></li>
+					<li class="interwiki-ku"><a href="http://ku.wikipedia.org/wiki/Devan%C4%81gar%C4%AB" title="Devanāgarī">Kurdî</a></li>
+					<li class="interwiki-la"><a href="http://la.wikipedia.org/wiki/Devanagari" title="Devanagari">Latina</a></li>
+					<li class="interwiki-lt"><a href="http://lt.wikipedia.org/wiki/Devanagari_ra%C5%A1tas" title="Devanagari raštas">Lietuvių</a></li>
+					<li class="interwiki-lv"><a href="http://lv.wikipedia.org/wiki/D%C4%93van%C4%81gar%C4%AB" title="Dēvanāgarī">Latviešu</a></li>
+					<li class="interwiki-mg"><a href="http://mg.wikipedia.org/wiki/Devanagari" title="Devanagari">Malagasy</a></li>
+					<li class="interwiki-mk"><a href="http://mk.wikipedia.org/wiki/%D0%94%D0%B5%D0%B2%D0%B0%D0%BD%D0%B0%D0%B3%D0%B0%D1%80%D0%B8" title="Деванагари">Македонски</a></li>
+					<li class="interwiki-ml"><a href="http://ml.wikipedia.org/wiki/%E0%B4%A6%E0%B5%87%E0%B4%B5%E0%B4%A8%E0%B4%BE%E0%B4%97%E0%B4%B0%E0%B4%BF" title="ദേവനാഗരി">മലയാളം</a></li>
+					<li class="interwiki-mr"><a href="http://mr.wikipedia.org/wiki/%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80" title="देवनागरी">मराठी</a></li>
+					<li class="interwiki-ms"><a href="http://ms.wikipedia.org/wiki/Devan%C4%81gar%C4%AB" title="Devanāgarī">Bahasa Melayu</a></li>
+					<li class="interwiki-ne"><a href="http://ne.wikipedia.org/wiki/%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="देवनागरी लिपि">नेपाली</a></li>
+					<li class="interwiki-new"><a href="http://new.wikipedia.org/wiki/%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF" title="देवनागरी लिपि">नेपाल भाषा</a></li>
+					<li class="interwiki-nl"><a href="http://nl.wikipedia.org/wiki/Devanagari" title="Devanagari">Nederlands</a></li>
+					<li class="interwiki-nn"><a href="http://nn.wikipedia.org/wiki/Devanagari" title="Devanagari">‪Norsk (nynorsk)‬</a></li>
+					<li class="interwiki-no"><a href="http://no.wikipedia.org/wiki/Devanagari" title="Devanagari">‪Norsk (bokmål)‬</a></li>
+					<li class="interwiki-oc"><a href="http://oc.wikipedia.org/wiki/Devanagari" title="Devanagari">Occitan</a></li>
+					<li class="interwiki-pl"><a href="http://pl.wikipedia.org/wiki/Pismo_dewanagari" title="Pismo dewanagari">Polski</a></li>
+					<li class="interwiki-pt"><a href="http://pt.wikipedia.org/wiki/Devan%C3%A1gari" title="Devanágari">Português</a></li>
+					<li class="interwiki-qu"><a href="http://qu.wikipedia.org/wiki/Diwanaqri_siq%27i_llumpa" title="Diwanaqri siq'i llumpa">Runa Simi</a></li>
+					<li class="interwiki-rmy"><a href="http://rmy.wikipedia.org/wiki/%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80" title="देवनागरी">Romani</a></li>
+					<li class="interwiki-ro"><a href="http://ro.wikipedia.org/wiki/Devanagari" title="Devanagari">Română</a></li>
+					<li class="interwiki-ru"><a href="http://ru.wikipedia.org/wiki/%D0%94%D0%B5%D0%B2%D0%B0%D0%BD%D0%B0%D0%B3%D0%B0%D1%80%D0%B8" title="Деванагари">Русский</a></li>
+					<li class="interwiki-se"><a href="http://se.wikipedia.org/wiki/Devanagari" title="Devanagari">Sámegiella</a></li>
+					<li class="interwiki-simple"><a href="http://simple.wikipedia.org/wiki/Devanagari" title="Devanagari">Simple English</a></li>
+					<li class="interwiki-sk"><a href="http://sk.wikipedia.org/wiki/D%C3%A9van%C3%A1gar%C3%AD" title="Dévanágarí">Slovenčina</a></li>
+					<li class="interwiki-sr"><a href="http://sr.wikipedia.org/wiki/%D0%94%D0%B5%D0%B2%D0%B0%D0%BD%D0%B0%D0%B3%D0%B0%D1%80%D0%B8" title="Деванагари">Српски / Srpski</a></li>
+					<li class="interwiki-sv"><a href="http://sv.wikipedia.org/wiki/Devan%C4%81gar%C4%AB" title="Devanāgarī">Svenska</a></li>
+					<li class="interwiki-ta"><a href="http://ta.wikipedia.org/wiki/%E0%AE%A4%E0%AF%87%E0%AE%B5%E0%AE%A8%E0%AE%BE%E0%AE%95%E0%AE%B0%E0%AE%BF" title="தேவநாகரி">தமிழ்</a></li>
+					<li class="interwiki-tg"><a href="http://tg.wikipedia.org/wiki/%D0%94%D0%B5%D0%B2%D0%B0%D0%BD%D0%B0%D0%B3%D0%B0%D1%80%D3%A3" title="Деванагарӣ">Тоҷикӣ</a></li>
+					<li class="interwiki-th"><a href="http://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B1%E0%B8%81%E0%B8%A9%E0%B8%A3%E0%B9%80%E0%B8%97%E0%B8%A7%E0%B8%99%E0%B8%B2%E0%B8%84%E0%B8%A3%E0%B8%B5" title="อักษรเทวนาครี">ไทย</a></li>
+					<li class="interwiki-tl"><a href="http://tl.wikipedia.org/wiki/Devan%C4%81gar%C4%AB" title="Devanāgarī">Tagalog</a></li>
+					<li class="interwiki-tr"><a href="http://tr.wikipedia.org/wiki/Devanagari" title="Devanagari">Türkçe</a></li>
+					<li class="interwiki-uk"><a href="http://uk.wikipedia.org/wiki/%D0%94%D0%B5%D0%B2%D0%B0%D0%BD%D0%B0%D0%B3%D0%B0%D1%80%D1%96" title="Деванагарі">Українська</a></li>
+					<li class="interwiki-zh"><a href="http://zh.wikipedia.org/wiki/%E5%A4%A9%E5%9F%8E%E6%96%87" title="天城文">中文</a></li>
+				</ul>
+	</div>
+</div>
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+											<ul id="footer-info">
+																	<li id="footer-info-lastmod"> अन्तिम परिवर्तन ०९:३९, २० फ़रवरी २०११।</li>
+																							<li id="footer-info-copyright">यह सामग्री <a href="http://creativecommons.org/licenses/by-sa/3.0/">क्रियेटिव कॉमन्स ऍट्रीब्यूशन/शेयर-अलाइक लाइसेंस</a> के तहत उपलब्ध है;
+अन्य शर्ते लागू हो सकती हैं।
+विस्तार से जानकारी हेतु देखें <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">उपयोग की शर्तें</a></li>
+															</ul>
+															<ul id="footer-places">
+																	<li id="footer-places-privacy"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%97%E0%A5%8B%E0%A4%AA%E0%A4%A8%E0%A5%80%E0%A4%AF%E0%A4%A4%E0%A4%BE_%E0%A4%A8%E0%A5%80%E0%A4%A4%E0%A4%BF" title="विकिपीडिया:गोपनीयता नीति">गोपनीयता नीति</a></li>
+																							<li id="footer-places-about"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE_%E0%A4%95%E0%A5%87_%E0%A4%AC%E0%A4%BE%E0%A4%B0%E0%A5%87_%E0%A4%AE%E0%A5%87%E0%A4%82" title="विकिपीडिया:विकिपीडिया के बारे में">विकिपीडिया के बारे में</a></li>
+																							<li id="footer-places-disclaimer"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%B8%E0%A4%BE%E0%A4%A7%E0%A4%BE%E0%A4%B0%E0%A4%A3_%E0%A4%85%E0%A4%B8%E0%A5%8D%E0%A4%B5%E0%A5%80%E0%A4%95%E0%A4%B0%E0%A4%A3" title="विकिपीडिया:साधारण अस्वीकरण">अस्वीकरण</a></li>
+															</ul>
+											<ul id="footer-icons" class="noprint">
+					<li id="footer-copyrightico">
+						<a href="http://wikimediafoundation.org/"><img src="/images/wikimedia-button.png" width="88" height="31" alt="Wikimedia Foundation"/></a>
+					</li>
+					<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="http://bits.wikimedia.org/skins-1.17/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		
+<script src="http://bits.wikimedia.org/hi.wikipedia.org/load.php?debug=false&amp;lang=hi&amp;modules=startup&amp;only=scripts&amp;skin=vector" type="text/javascript"></script>
+<script type="text/javascript">if ( window.mediaWiki ) {
+	mediaWiki.config.set({"wgCanonicalNamespace": "", "wgCanonicalSpecialPageName": false, "wgNamespaceNumber": 0, "wgPageName": "देवनागरी", "wgTitle": "देवनागरी", "wgAction": "view", "wgArticleId": 58, "wgIsArticle": true, "wgUserName": null, "wgUserGroups": ["*"], "wgCurRevisionId": 921699, "wgCategories": ["लिपि", "भाषाविज्ञान", "भाषा-विज्ञान", "देवनागरी", "हिन्दी"], "wgBreakFrames": false, "wgRestrictionEdit": [], "wgRestrictionMove": [], "wgSearchNamespaces": [0], "wgFlaggedRevsParams": {"tags": {"status": {"levels": 1, "quality": 2, "pristine": 3}}}, "wgStableRevisionId": null, "wgRevContents": {"error": "Unable to get content.", "waiting": "Waiting for content"}, "wgCollapsibleNavBucketTest": false, "wgCollapsibleNavForceNewVersion": false, "Geo": {"city": "", "country": ""}, "wgNoticeProject": "wikipedia"});
+}
+</script>
+<script type="text/javascript">if ( window.mediaWiki ) {
+	mediaWiki.loader.load(["mediawiki.legacy.wikibits", "mediawiki.util", "mediawiki.legacy.ajax", "mediawiki.legacy.mwsuggest", "ext.vector.collapsibleNav", "ext.vector.collapsibleTabs", "ext.vector.editWarning", "ext.vector.simpleSearch"]);
+	mediaWiki.loader.go();
+}
+</script>
+
+<script src="/w/index.php?title=%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7:BannerController&amp;cache=/cn.js&amp;301-2" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/hi.wikipedia.org/load.php?debug=false&amp;lang=hi&amp;modules=site&amp;only=scripts&amp;skin=vector&amp;version=20110115T162906Z" type="text/javascript"></script>
+<script type="text/javascript">if ( window.mediaWiki ) {
+	mediaWiki.user.options.set({"ccmeonemails":0,"cols":80,"contextchars":50,"contextlines":5,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":1,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":4,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":0,"watchdeletion":0,"watchlistdays":"3","watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"flaggedrevssimpleui":1,"flaggedrevsstable":false,"flaggedrevseditdiffs":true,"flaggedrevsviewdiffs":false,"vector-simplesearch":1,"useeditwarning":1,"vector-collapsiblenav":1,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"variant":"hi","language":"hi","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":false,"searchNs101":false});
+	mediaWiki.loader.state({"user.options":"ready"});
+	
+	
+	/* cache key: hiwiki:resourceloader:filter:minify-js:3:2093de60e71f95c193ebda7c7bddb5fa */
+}
+</script><script type="text/javascript" src="http://geoiplookup.wikimedia.org/"></script>		<!-- fixalpha -->
+		<script type="text/javascript"> if ( window.isMSIE55 ) fixalpha(); </script>
+		<!-- /fixalpha -->
+		<!-- Served by srv243 in 0.064 secs. -->			</body>
+</html>

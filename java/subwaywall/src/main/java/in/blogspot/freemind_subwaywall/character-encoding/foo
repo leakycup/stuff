@@ -1,0 +1,20 @@
+dandaAsString: ‡•§
+dandaCodeAsString: ।
+dandaCodeAsChar: ।
+index of danda (char) in dandaAsString: -1
+index of danda (char) in dandaCodeAsString: 0
+index of danda (int) in dandaAsString: -1
+index of danda (int) in dandaCodeAsString: 0
+index of question-mark (char) in dandaAsString: -1
+index of question-mark (char) in dandaCodeAsString: -1
+index of question-mark code (char) in dandaAsString: -1
+index of question-mark code (char) in dandaCodeAsString: -1
+codepoints for dandaAsString: 
+8225, 8226, 167, 
+codepoints for dandaCodeAsString: 
+2404, 
+codepoints for dandaAsCharArray: 
+2404, 
+found danda in dandaAsCharArray
+dandaAsString contains eos character? false
+dandaCodeAsString contains eos character? true

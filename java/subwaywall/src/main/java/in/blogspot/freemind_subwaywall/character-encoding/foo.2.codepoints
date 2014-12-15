@@ -1,0 +1,11 @@
+9	0x9	BASIC_LATIN	<Whitespace>	09 
+32	0x20	BASIC_LATIN	<Whitespace>	20 
+32	0x20	BASIC_LATIN	<Whitespace>	20 
+10	0xa	BASIC_LATIN	<Whitespace>	0a 
+10	0xa	BASIC_LATIN	<Whitespace>	0a 
+==============
+SUMMARY
+==============
+Java chars: 5
+Unicode codepoints: 5
+Graphemes: 5

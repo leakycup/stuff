@@ -1,0 +1,224 @@
+import java.nio.charset.Charset;
+import java.util.SortedMap;
+import java.io.InputStream;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.io.BufferedReader;
+import java.io.OutputStream;
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
+import java.io.BufferedWriter;
+import java.io.UnsupportedEncodingException;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import org.apache.commons.cli.Options;
+import org.apache.commons.cli.Option;
+import org.apache.commons.cli.CommandLine;
+import org.apache.commons.cli.CommandLineParser;
+import org.apache.commons.cli.PosixParser;
+import org.apache.commons.cli.ParseException;
+import org.apache.commons.cli.HelpFormatter;
+
+class EncodingTest {
+    private static String infile;
+    private static String outfile;
+    private static String incoding;
+    private static String outcoding;
+    private static String normalization;
+    private static final String codepoints = "CODEPOINTS";
+    private static final String defaultStr = "DEFAULT";
+    private static String defaultencoding;
+    private static final int BUFLEN = 512;
+    private static boolean inCodepointsFlag = false;
+    private static boolean outCodepointsFlag = false;
+
+    public static void main (String[] args) throws Exception
+    {
+        Options opt = configureOptions();
+
+        try {
+            CommandLineParser parser = new PosixParser();
+            CommandLine cmd = parser.parse(opt, args);
+            if (cmd.hasOption(Opts.HELP.s)) {
+                printHelp(opt);
+                return;
+            }
+            infile = cmd.getOptionValue(Opts.INFILE.s);
+            incoding = cmd.getOptionValue(Opts.INCODE.s);
+            outfile = cmd.getOptionValue(Opts.OUTFILE.s);
+            outcoding = cmd.getOptionValue(Opts.OUTCODE.s);
+            defaultencoding = Charset.defaultCharset().name();
+            if (incoding.equals(defaultencoding)) {
+                incoding = defaultencoding;
+            }
+            if (incoding.equals(codepoints)) {
+                incoding = defaultencoding;
+                inCodepointsFlag = true;
+            }
+            if (outcoding.equals(defaultencoding)) {
+                outcoding = defaultencoding;
+            }
+            if (outcoding.equals(codepoints)) {
+                outcoding = defaultencoding;
+                outCodepointsFlag = true;
+            }
+            if (cmd.hasOption(Opts.NORMALIZE.s)) {
+                normalization = cmd.getOptionValue(Opts.NORMALIZE.s);
+            }
+        } catch (ParseException e) {
+            printHelp(opt);
+            return;
+        }
+
+        try {
+            BufferedReader in = new BufferedReader(new InputStreamReader(
+                                                   new FileInputStream(infile),
+                                                   incoding));
+            BufferedWriter out = new BufferedWriter(new OutputStreamWriter(
+                                                    new FileOutputStream(outfile),
+                                                    outcoding));
+            char buf[] = new char[BUFLEN];
+            int len;
+            while ((len = readFromInputFile(in, buf)) != -1) {
+                if (outCodepointsFlag) {
+                    int idx;
+                    for (idx = 0; idx < len; idx++) {
+                        int codepoint = Character.codePointAt(buf, idx);
+                        //out.write(buf[idx]);
+                        //out.write('\t');
+                        out.write(Integer.toString(codepoint));
+                        //out.write('\t');
+                        //out.write(Integer.toHexString(codepoint));
+                        out.write('\n');
+                    }
+                } else {
+                    out.write(buf, 0, len);
+                }
+            }
+            out.close();
+            in.close();
+        } catch (FileNotFoundException e) {
+            System.err.println(e.toString());
+            return;
+        } catch (UnsupportedEncodingException e) {
+            System.err.println(e.toString());
+            System.err.println("Supported encodings are:");
+            for (String encname : Charset.availableCharsets().keySet()) {
+                System.err.println(encname);
+            }
+            System.err.println(codepoints);
+            System.err.println(defaultStr + " (" + defaultencoding + ")");
+            return;
+        //} catch (Exception e) {
+            //e.printStackTrace();
+            //return;
+        }
+    }
+
+    static int readFromInputFile (BufferedReader in, char[] buf)
+        throws IOException, IndexOutOfBoundsException
+    {
+        int ret = 0;
+        String intStr = null;
+
+        try {
+            if (inCodepointsFlag) {
+                if ((intStr = in.readLine()) != null) {
+                    Integer integerObj = Integer.valueOf(intStr);
+                    //if (integerObj == null) {
+                        //System.err.println("null integer object found for " + intStr);
+                        //return (0);
+                    //}
+                    long unsignedIntVal = integerObj.longValue();
+                    ret = Character.toChars((int)unsignedIntVal, buf, 0);
+                } else {
+                    ret = -1;
+                }
+            } else {
+                ret = in.read(buf, 0, BUFLEN);
+            }
+        } catch (IllegalArgumentException e) {
+            System.err.println(e.toString());
+            return (0);
+        }
+
+        return (ret);
+    }
+
+    static void printHelp(Options opt)
+    {
+        HelpFormatter someObject = new HelpFormatter();
+        someObject.printHelp("java EncodingTest", opt, true);
+    }
+
+    private enum Opts {
+        INFILE("i", "infile", "input text file", true, true, "input-file"),
+        OUTFILE("o", "outfile", "text file where output is written", true, true,
+                "output-file"),
+        INCODE("j", "incode", "encoding for infile", true, true, "input-encoding"),
+        OUTCODE("k", "outcode", "encoding for outfile", true, true,
+                "output-encoding"),
+        NORMALIZE("z", "normalize", "normalization needed", true, false,
+                  "normalization-form"),
+        HELP("h", "help", "print this message and exit", false, false);
+
+        String s; // short option
+        String l; // long option
+        String h; // help message
+        boolean hasArgs; // if the option has arguments
+        boolean mandatory; // if the option is mandatory
+        String argName; // a name given to the argument, if the option needs one
+
+        Opts(String s, String l, String h, boolean hasArgs, boolean mandatory)
+        {
+            this.s = s;
+            this.l = l;
+            this.h = h;
+            this.hasArgs = hasArgs;
+            this.mandatory = mandatory;
+        }
+
+        Opts(String s, String l, String h, boolean hasArgs, boolean mandatory,
+             String argName)
+        {
+            this(s, l, h, hasArgs, mandatory);
+            this.argName = argName;
+        }
+    }
+
+    private static Options configureOptions()
+    {
+        Option infileOpt = new Option(Opts.INFILE.s, Opts.INFILE.l,
+                                      Opts.INFILE.hasArgs, Opts.INFILE.h);
+        infileOpt.setRequired(Opts.INFILE.mandatory);
+        infileOpt.setArgName(Opts.INFILE.argName);
+        Option outfileOpt = new Option(Opts.OUTFILE.s, Opts.OUTFILE.l,
+                                       Opts.OUTFILE.hasArgs, Opts.OUTFILE.h);
+        outfileOpt.setRequired(Opts.OUTFILE.mandatory);
+        outfileOpt.setArgName(Opts.OUTFILE.argName);
+        Option incodingOpt = new Option(Opts.INCODE.s, Opts.INCODE.l,
+                                        Opts.INCODE.hasArgs, Opts.INCODE.h);
+        incodingOpt.setRequired(Opts.INCODE.mandatory);
+        incodingOpt.setArgName(Opts.INCODE.argName);
+        Option outcodingOpt = new Option(Opts.OUTCODE.s, Opts.OUTCODE.l,
+                                         Opts.OUTCODE.hasArgs, Opts.OUTCODE.h);
+        outcodingOpt.setRequired(Opts.OUTCODE.mandatory);
+        outcodingOpt.setArgName(Opts.OUTCODE.argName);
+        Option normalizeOpt = new Option(Opts.NORMALIZE.s, Opts.NORMALIZE.l,
+                                         Opts.NORMALIZE.hasArgs, Opts.NORMALIZE.h);
+        normalizeOpt.setArgName(Opts.NORMALIZE.argName);
+        Option help = new Option(Opts.HELP.s, Opts.HELP.l, Opts.HELP.hasArgs,
+                                 Opts.HELP.h);
+
+        Options opt = new Options();
+        opt.addOption(infileOpt);
+        opt.addOption(outfileOpt);
+        opt.addOption(incodingOpt);
+        opt.addOption(outcodingOpt);
+        opt.addOption(normalizeOpt);
+        opt.addOption(help);
+
+        return opt;
+    }
+}

@@ -1,0 +1,541 @@
+HTTP/1.0 200 OK
+Date: Thu, 17 Feb 2011 06:27:05 GMT
+Server: Apache
+Cache-Control: private, s-maxage=0, max-age=0, must-revalidate
+Content-Language: hi
+Vary: Accept-Encoding,Cookie
+Last-Modified: Thu, 27 Jan 2011 05:24:24 GMT
+Content-Length: 84094
+Content-Type: text/html; charset=UTF-8
+Age: 339676
+X-Cache: HIT from sq75.wikimedia.org
+X-Cache-Lookup: HIT from sq75.wikimedia.org:3128
+X-Cache: MISS from sq59.wikimedia.org
+X-Cache-Lookup: MISS from sq59.wikimedia.org:80
+Connection: keep-alive
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="hi" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>बांग्ला भाषा - विकिपीडिया</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="generator" content="MediaWiki 1.17wmf1" />
+<link rel="alternate" type="application/x-wiki" title="संपादित करें" href="/w/index.php?title=%E0%A4%AC%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B2%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE&amp;action=edit" />
+<link rel="edit" title="संपादित करें" href="/w/index.php?title=%E0%A4%AC%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B2%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE&amp;action=edit" />
+<link rel="apple-touch-icon" href="http://hi.wikipedia.org/apple-touch-icon.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="विकिपीडिया (hi)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://hi.wikipedia.org/w/api.php?action=rsd" />
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="विकिपीडिया की अणु फ़ीड" href="/w/index.php?title=%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/hi.wikipedia.org/load.php?debug=false&amp;lang=hi&amp;modules=mediawiki.legacy.commonPrint%7Cmediawiki.legacy.shared%7Cskins.vector&amp;only=styles&amp;skin=vector" type="text/css" media="all" />
+<style type="text/css" media="all">a.new,#quickbar a.new{color:#ba0000}</style><meta name="ResourceLoaderDynamicStyles" content="" /><link rel="stylesheet" href="http://bits.wikimedia.org/hi.wikipedia.org/load.php?debug=false&amp;lang=hi&amp;modules=site&amp;only=styles&amp;skin=vector&amp;version=20110115T162906Z" type="text/css" media="all" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/hi.wikipedia.org/load.php?debug=false&amp;lang=hi&amp;modules=user&amp;only=styles&amp;skin=vector&amp;version=19700101T000001Z" type="text/css" media="all" />
+
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins-1.17/vector/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr ns-0 ns-subject page-बांग्ला_भाषा skin-vector">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- sitenotice -->
+			<div id="siteNotice"><!-- centralNotice loads here --><script type="text/javascript">
+/* <![CDATA[ */
+document.writeln("\x3cdiv id=\"localNotice\"\x3e\x3ctable align=\"center\" style=\"text-align: center; font-size: 100%;\"\x3e\n\n\x3ctr\x3e\n\x3ctd\x3e\x3cdiv style=\"position:relative;width:136px;height:25px;z-index:2;overflow:hidden;vertical-align:middle;\"\x3e\x3cdiv class=\"nodeco\" style=\"position:absolute;font-size:25px;overflow:hidden;line-height:25px;letter-spacing:136px;\"\x3e\x3ca href=\"/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:Devanagari_Help\" title=\"विकिपीडिया:Devanagari Help\"\x3e\x3cspan title=\"विकिपीडिया:Devanagari Help\" style=\"text-decoration:none;\"\x3e\x26nbsp; \x26nbsp;\x3c/span\x3e\x3c/a\x3e\x3c/div\x3e\x3ca href=\"/wiki/%E0%A4%9A%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0:Devnagari-help-image.png\" class=\"image\" title=\"विकिपीडिया:Devanagari Help\"\x3e\x3cimg alt=\"विकिपीडिया:Devanagari Help\" src=\"http://upload.wikimedia.org/wikipedia/hi/thumb/a/a6/Devnagari-help-image.png/136px-Devnagari-help-image.png\" width=\"136\" height=\"14\" /\x3e\x3c/a\x3e\x3c/div\x3e\n\x3c/td\x3e\n\x3ctd\x3e\n\x3c/td\x3e\n\x3ctd\x3e\x3ca href=\"/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80_%E0%A4%AE%E0%A5%87%E0%A4%82_%E0%A4%95%E0%A5%88%E0%A4%B8%E0%A5%87_%E0%A4%9F%E0%A4%BE%E0%A4%87%E0%A4%AA_%E0%A4%95%E0%A4%B0%E0%A5%87%E0%A4%82\" title=\"विकिपीडिया:देवनागरी में कैसे टाइप करें\" class=\"mw-redirect\"\x3eदेवनागरी में लिखने के लिए सहायता\x3c/a\x3e\n\x3c/td\x3e\x3c/tr\x3e\x3c/table\x3e\n\x3ctable align=\"center\" style=\"text-align: center; font-size: 70%;\"\x3e\n\n\x3ctr\x3e\n\x3ctd\x3e\x3cdiv style=\"font-size:120%;border:none;margin: 0;padding:.1em;color:green\"\x3e\x3ca href=\"/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%85%E0%A4%95%E0%A5%8D%E0%A4%B8%E0%A4%B0_%E0%A4%AA%E0%A5%82%E0%A4%9B%E0%A5%87_%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A5%87_%E0%A4%B5%E0%A4%BE%E0%A4%B2%E0%A5%87_%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B6%E0%A5%8D%E0%A4%A8\" title=\"विकिपीडिया:अक्सर पूछे जाने वाले प्रश्न\"\x3e(अक्सर पूछे जाने वाले प्रश्न)\x3c/a\x3e\x3c/div\x3e\n\x3c/td\x3e\x3c/tr\x3e\x3c/table\x3e\n\x3c/div\x3e");
+/* ]]> */
+</script></div>
+			<!-- /sitenotice -->
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">बांग्ला भाषा</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+				<!-- tagline -->
+				<div id="siteSub">विकिपीडिया, एक मुक्त ज्ञानकोष से</div>
+				<!-- /tagline -->
+				<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav">
+					यहाँ जाएँ: <a href="#mw-head">भ्रमण</a>,
+					<a href="#p-search">खोज</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodytext -->
+				<table class="infobox" style="width: 22em; text-align: left; font-size: 88%; line-height: 1.5em">
+<tr>
+<th colspan="3" style="text-align: center; font-size: 125%; font-weight: bold; color: black; background-color: white">भाषा का नाम</th>
+</tr>
+<tr>
+<th>बोली जाती है</th>
+<td>—</td>
+</tr>
+<tr>
+<th>क्षेत्र</th>
+<td colspan="2">—</td>
+</tr>
+<tr>
+<th>कुल&#160;बोलने वाले</th>
+<td colspan="2">—</td>
+</tr>
+<tr>
+<th><a href="http://en.wikipedia.org/wiki/Language_family" class="extiw" title="en:Language family">भाषा परिवार</a></th>
+<td colspan="2" style="text-align:left; line-height:100%;">—
+<ul style="line-height:100%; margin-left:15px;padding-left:0">
+<li>{{{name}}}</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th colspan="3" style="text-align: center; color: black; background-color: white">भाषा कूट</th>
+</tr>
+<tr>
+<th><a href="http://en.wikipedia.org/wiki/ISO_639-1" class="extiw" title="en:ISO 639-1">ISO 639-1</a></th>
+<td colspan="2"><i>None</i></td>
+</tr>
+<tr>
+<th><a href="http://en.wikipedia.org/wiki/ISO_639-2" class="extiw" title="en:ISO 639-2">ISO 639-2</a></th>
+<td colspan="2"><tt>–</tt>टन्कण</td>
+</tr>
+<tr>
+<th><a href="http://en.wikipedia.org/wiki/ISO_639-3" class="extiw" title="en:ISO 639-3">ISO 639-3</a></th>
+<td colspan="2">–</td>
+</tr>
+<tr>
+<td colspan="3" class="boilerplate metadata" style="line-height:10pt; padding:0.5em;"><small><b>Note</b>: This page may contain <a href="/w/index.php?title=%E0%A4%B8%E0%A4%B9%E0%A4%BE%E0%A4%AF%E0%A4%A4%E0%A4%BE:IPA&amp;action=edit&amp;redlink=1" class="new" title="सहायता:IPA (पृष्ठ मौजूद नहीं है)">IPA</a> phonetic symbols in <a href="/w/index.php?title=Unicode&amp;action=edit&amp;redlink=1" class="new" title="Unicode (पृष्ठ मौजूद नहीं है)">Unicode</a>.</small></td>
+</tr>
+</table>
+<p><b>बांग्ला भाषा</b> (बंगला लिपि में&#160;: বাংলা ভাষা / <i>बाङ्ला</i>), <a href="/wiki/%E0%A4%AC%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B2%E0%A4%BE%E0%A4%A6%E0%A5%87%E0%A4%B6">बांग्लादेश</a> और <a href="/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4">भारत</a> के <a href="/wiki/%E0%A4%AA%E0%A4%B6%E0%A5%8D%E0%A4%9A%E0%A4%BF%E0%A4%AE_%E0%A4%AC%E0%A4%82%E0%A4%97%E0%A4%BE%E0%A4%B2">पश्चिम बंगाल</a> <a href="/wiki/%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%A8%E0%A5%8D%E0%A4%A4" class="mw-redirect" title="प्रान्त">प्रान्त</a> में बोली जानेवाली एक प्रमुख <a href="/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">भाषा</a> है। <a href="/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE%E0%A4%88_%E0%A4%AA%E0%A4%B0%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%B0" class="mw-redirect" title="भाषाई परिवार">भाषाई परिवार</a> की दृष्टि से यह <a href="/wiki/%E0%A4%B9%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%A6_%E0%A4%AF%E0%A5%82%E0%A4%B0%E0%A5%8B%E0%A4%AA%E0%A5%80%E0%A4%AF" title="हिन्द यूरोपीय" class="mw-redirect">हिन्द यूरोपीय भाषा परिवार</a> का सदस्य है। इस परिवार की अन्य प्रमुख भाषाओं में <a href="/wiki/%E0%A4%B9%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%80">हिन्दी</a>, <a href="/wiki/%E0%A4%A8%E0%A5%87%E0%A4%AA%E0%A4%BE%E0%A4%B2%E0%A5%80" class="mw-redirect" title="नेपाली">नेपाली</a>, <a href="/wiki/%E0%A4%AA%E0%A4%82%E0%A4%9C%E0%A4%BE%E0%A4%AC%E0%A5%80" class="mw-redirect" title="पंजाबी">पंजाबी</a>, <a href="/wiki/%E0%A4%97%E0%A5%81%E0%A4%9C%E0%A4%B0%E0%A4%BE%E0%A4%A4%E0%A5%80" class="mw-redirect" title="गुजराती">गुजराती</a>, <a href="/wiki/%E0%A4%85%E0%A4%B8%E0%A4%AE%E0%A4%BF%E0%A4%AF%E0%A4%BE">असमिया</a>, <a href="/wiki/%E0%A4%89%E0%A4%A1%E0%A4%BC%E0%A4%BF%E0%A4%AF%E0%A4%BE" class="mw-redirect" title="उड़िया">उड़िया</a>, <a href="/wiki/%E0%A4%AE%E0%A5%88%E0%A4%A5%E0%A4%BF%E0%A4%B2%E0%A5%80">मैथिली</a> इत्यादी भाषाएँ हैं। बांग्ला बोलनेवालों की सँख्या लगभग 207 मिलियन है और यह विश्व की चौथी सबसे बड़ी भाषा है। इसके बोलने वाले <a href="/wiki/%E0%A4%AC%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B2%E0%A4%BE%E0%A4%A6%E0%A5%87%E0%A4%B6">बांग्लादेश</a> और <a href="/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4">भारत</a> के अलावा विश्व के बहुत से अन्य देशों में भी फैले हैं।</p>
+<table id="toc" class="toc">
+<tr>
+<td>
+<div id="toctitle">
+<h2>अनुक्रम</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#.E0.A4.89.E0.A4.A6.E0.A5.8D.E0.A4.AD.E0.A4.B5"><span class="tocnumber">१</span> <span class="toctext">उद्भव</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#.E0.A4.AC.E0.A4.81.E0.A4.97.E0.A4.B2.E0.A4.BE_.E0.A4.B2.E0.A4.BF.E0.A4.AA.E0.A4.BF"><span class="tocnumber">२</span> <span class="toctext">बँगला लिपि</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#.E0.A4.AC.E0.A4.BE.E0.A4.82.E0.A4.97.E0.A5.8D.E0.A4.B2.E0.A4.BE_.E0.A4.B8.E0.A4.BE.E0.A4.B9.E0.A4.BF.E0.A4.A4.E0.A5.8D.E0.A4.AF"><span class="tocnumber">३</span> <span class="toctext">बांग्ला साहित्य</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#.E0.A4.AC.E0.A4.BE.E0.A4.B9.E0.A4.B0.E0.A5.80_.E0.A4.95.E0.A4.A1.E0.A4.BC.E0.A4.BF.E0.A4.AF.E0.A4.BE.E0.A4.81"><span class="tocnumber">४</span> <span class="toctext">बाहरी कड़ियाँ</span></a></li>
+</ul>
+</td>
+</tr>
+</table>
+<h2><span class="editsection">[<a href="/w/index.php?title=%E0%A4%AC%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B2%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE&amp;action=edit&amp;section=1" title="विभाग संपादन: उद्भव">संपादित करें</a>]</span> <span class="mw-headline" id=".E0.A4.89.E0.A4.A6.E0.A5.8D.E0.A4.AD.E0.A4.B5">उद्भव</span></h2>
+<p>भारत की अन्य प्रादेशिक भाषाओं की तरह बँगला भाषा का भी उत्पत्तिकाल सन् 1,000 ई. के आस पास माना जा सकता है। <a href="/wiki/%E0%A4%85%E0%A4%AA%E0%A4%AD%E0%A5%8D%E0%A4%B0%E0%A4%82%E0%A4%B6">अपभ्रंश</a> से या मगध की भाषा से पृथक् रूप ग्रहण करने के बाद से ही उसमें गीतों और पदों की रचना होने लगी थी। जैसे-जैसे वह जनता के भावों और विचारों को अभिव्यक्त करने का साधन बनती गई, उसमें विविध रचनाओं, काव्यग्रंथों तथा दर्शन, धर्म आदि विषय कृतियों का समावेश होता गया, यहाँ तक कि आज भारतीय भाषाओं में उसे यथेष्ट ऊँचा स्थान प्राप्त हो गया है।</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=%E0%A4%AC%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B2%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE&amp;action=edit&amp;section=2" title="विभाग संपादन: बँगला लिपि">संपादित करें</a>]</span> <span class="mw-headline" id=".E0.A4.AC.E0.A4.81.E0.A4.97.E0.A4.B2.E0.A4.BE_.E0.A4.B2.E0.A4.BF.E0.A4.AA.E0.A4.BF">बँगला लिपि</span></h2>
+<div class="rellink relarticle mainarticle"><i>मुख्य लेख&#160;: <a href="/wiki/%E0%A4%AC%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B2%E0%A4%BE_%E0%A4%B2%E0%A4%BF%E0%A4%AA%E0%A4%BF">बांग्ला लिपि</a></i></div>
+<p>बँगला लिपि <a href="/wiki/%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80" title="देवनागरी">नागरी लिपि</a> से कुछ कुछ भिन्न है किन्तु दोनों में बहुत अधिक साम्य भी है। हिंदी की तरह उसमें भी 14 स्वर तथा 33 व्यंजन हैं। बँगला में "व" का उच्चारण प्राय: "ब" की तरह (कभी कभी "उ" की तरह या "भ" की तरह) किया जाता है और आत्मा, लक्ष्मी, महाशय आदि शब्द आत्ताँ, लक्खी, मोशाय जैसे उच्चरित होते हैं।</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=%E0%A4%AC%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B2%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE&amp;action=edit&amp;section=3" title="विभाग संपादन: बांग्ला साहित्य">संपादित करें</a>]</span> <span class="mw-headline" id=".E0.A4.AC.E0.A4.BE.E0.A4.82.E0.A4.97.E0.A5.8D.E0.A4.B2.E0.A4.BE_.E0.A4.B8.E0.A4.BE.E0.A4.B9.E0.A4.BF.E0.A4.A4.E0.A5.8D.E0.A4.AF">बांग्ला साहित्य</span></h2>
+<p>बांग्ला साहित्य अत्यन्त समृद्ध है। बांग्ला साहित्य के विस्तृत विवेचन के लिये <b><a href="/wiki/%E0%A4%AC%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B2%E0%A4%BE_%E0%A4%B8%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%AF">बांग्ला साहित्य</a></b> देखें।</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=%E0%A4%AC%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B2%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE&amp;action=edit&amp;section=4" title="विभाग संपादन: बाहरी कड़ियाँ">संपादित करें</a>]</span> <span class="mw-headline" id=".E0.A4.AC.E0.A4.BE.E0.A4.B9.E0.A4.B0.E0.A5.80_.E0.A4.95.E0.A4.A1.E0.A4.BC.E0.A4.BF.E0.A4.AF.E0.A4.BE.E0.A4.81">बाहरी कड़ियाँ</span></h2>
+<ul>
+<li><a href="http://www.abasar.net/Bharatkosh.htm" class="external text" rel="nofollow">संक्षिप्त भारतकोश</a> (बंग्ला भाषा का ज्ञानकोश)</li>
+<li><a href="http://www.abasar.net/ub/Ubharatkosh.htm" class="external text" rel="nofollow">भारतकोश</a> (यूनिकोड बांग्ला में)</li>
+<li><a href="http://www.banglapedia.org/httpdocs/bangla/index.htm" class="external text" rel="nofollow">बांग्लापेडिया</a></li>
+<li><a href="http://www.ciil-ebooks.net/html/bbjbengali/coverpage.html" class="external text" rel="nofollow">बंगला भाषा ज्योति</a> (हिन्दी माध्यम से बोलचाल की बंगला भाषा सीखने की उत्तम सामग्री)</li>
+<li><a href="http://hi.wiktionary.org/wiki/बंग्ला-हिन्दी_शब्दकोश" class="external text" rel="nofollow">बंग्ला-हिन्दी शब्दकोश</a></li>
+<li><a href="http://www.bangladictionary.org/" class="external text" rel="nofollow">बंगला शब्दकोश</a></li>
+<li><a href="http://1000dictionaries.com/bengali_dictionaries_1.php" class="external text" rel="nofollow">BENGALI DICTIONARIES at 1000_Dictionaries_Dot_Com</a></li>
+<li><a href="http://www.banglaacademy.org.bd/" class="external text" rel="nofollow">बांग्ला एकादमी</a></li>
+<li><a href="http://www.itu.dk/people/pfw/bengali/index.html" class="external text" rel="nofollow">A Short Introduction to Bengali</a> by Poul Williams</li>
+<li><a href="http://www.bengali-dictionary.com/index.html" class="external text" rel="nofollow">A Bilingual Dictionary of Words &amp; Phrases (English-Bengali</a> -This is a bilingual (English-Bengali or Bangla) dictionary of words and phrases with audio pronunciations and illustrations. List of Bangla words can be copied from here.</li>
+</ul>
+<p><br clear="all" /></p>
+<center>
+<table id="toc" style="margin: 0 2em 0 2em;">
+<tr>
+<th style="background:#ccf" align="center" width="100%"><a href="/w/index.php?title=%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%8D%E0%A4%B5_%E0%A4%95%E0%A5%80_%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%AE%E0%A5%81%E0%A4%96_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE%E0%A4%8F%E0%A4%81&amp;action=edit&amp;redlink=1" class="new" title="विश्व की प्रमुख भाषाएँ (पृष्ठ मौजूद नहीं है)">विश्व की प्रमुख भाषाएँ</a></th>
+<th><a href="/wiki/%E0%A4%9A%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0:Earth.jpg" class="image" title="पृथ्वी"><img alt="पृथ्वी" src="http://upload.wikimedia.org/wikipedia/hi/thumb/3/36/Earth.jpg/30px-Earth.jpg" width="30" height="29" /></a></th>
+</tr>
+<tr>
+<td align="center" colspan="2"><a href="/wiki/%E0%A4%AE%E0%A4%82%E0%A4%A6%E0%A4%BE%E0%A4%B0%E0%A4%BF%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" class="mw-redirect" title="मंदारिन भाषा">मंदारिन भाषा</a> | <a href="/wiki/%E0%A4%95%E0%A5%88%E0%A4%82%E0%A4%9F%E0%A5%8B%E0%A4%B0%E0%A4%BF%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">कैंटोरिन भाषा</a> | <a href="/wiki/%E0%A4%B5%E0%A5%81%E0%A4%B5_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">वुव भाषा</a> | <a href="/wiki/%E0%A4%AE%E0%A4%BF%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">मिन भाषा</a> | <a href="/wiki/%E0%A4%B9%E0%A5%8B%E0%A4%95%E0%A5%8D%E0%A4%95%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">होक्का भाषा</a> | <a href="/wiki/%E0%A4%85%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%9C%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">अंग्रेजी भाषा</a> | <a href="/wiki/%E0%A4%B9%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%A6%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" class="mw-redirect" title="हिन्दी भाषा">हिन्दी भाषा</a> | <a href="/wiki/%E0%A4%B0%E0%A5%82%E0%A4%B8%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">रूसी भाषा</a> | <a href="/wiki/%E0%A4%85%E0%A4%B0%E0%A4%AC%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">अरबी भाषा</a> | <a href="/wiki/%E0%A4%AC%E0%A4%82%E0%A4%97%E0%A4%BE%E0%A4%B2%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" class="mw-redirect" title="बंगाली भाषा">बंगाली भाषा</a> | <a href="/wiki/%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A5%8D%E0%A4%A4%E0%A4%97%E0%A4%BE%E0%A4%B2%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">पुर्तगाली भाषा</a> | <a href="/wiki/%E0%A4%9C%E0%A4%BE%E0%A4%AA%E0%A4%BE%E0%A4%A8%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">जापानी भाषा</a> | <a href="/wiki/%E0%A4%AB%E0%A4%BC%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%82%E0%A4%B8%E0%A5%80%E0%A4%B8%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" class="mw-redirect" title="फ़्रांसीसी भाषा">फ़्रांसीसी भाषा</a> | <a href="/wiki/%E0%A4%9C%E0%A4%B0%E0%A5%8D%E0%A4%AE%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">जर्मन भाषा</a> | <a href="/wiki/%E0%A4%89%E0%A4%B0%E0%A5%8D%E0%A4%A6%E0%A5%82_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">उर्दू भाषा</a> | <a href="/wiki/%E0%A4%AA%E0%A4%82%E0%A4%9C%E0%A4%BE%E0%A4%AC%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">पंजाबी भाषा</a> | <a href="/wiki/%E0%A4%95%E0%A5%8B%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE%E0%A4%88_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">कोरियाई भाषा</a> | <a href="/wiki/%E0%A4%A4%E0%A5%87%E0%A4%B2%E0%A5%81%E0%A4%97%E0%A5%82_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">तेलुगू भाषा</a> | <a href="/wiki/%E0%A4%87%E0%A4%9F%E0%A4%BE%E0%A4%B2%E0%A4%BF%E0%A4%AF%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">इटालियन भाषा</a> | <a href="/wiki/%E0%A4%A4%E0%A4%AE%E0%A4%BF%E0%A4%B2_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">तमिल भाषा</a> | <a href="/wiki/%E0%A4%AE%E0%A4%B0%E0%A4%BE%E0%A4%A0%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">मराठी भाषा</a> | <a href="/wiki/%E0%A4%9C%E0%A4%B5%E0%A4%BE%E0%A4%A8%E0%A5%80%E0%A4%9C_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">जवानीज भाषा</a> | <a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%AF%E0%A4%A4%E0%A4%A8%E0%A4%BE%E0%A4%AE%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">वियतनामी भाषा</a> | <a href="/wiki/%E0%A4%A4%E0%A5%81%E0%A4%B0%E0%A5%8D%E0%A4%95%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">तुर्की भाषा</a> | <a href="/wiki/%E0%A4%A5%E0%A4%BE%E0%A4%88_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">थाई भाषा</a> | <a href="/wiki/%E0%A4%89%E0%A4%95%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%A8%E0%A4%BF%E0%A4%AF%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">उक्रेनियन भाषा</a> | <a href="/w/index.php?title=%E0%A4%B8%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%B2%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE&amp;action=edit&amp;redlink=1" class="new" title="स्वाहिली भाषा (पृष्ठ मौजूद नहीं है)">स्वाहिली भाषा</a> | <a href="/wiki/%E0%A4%AA%E0%A5%8B%E0%A4%B2%E0%A4%BF%E0%A4%B6_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">पोलिश भाषा</a> | <a href="/wiki/%E0%A4%95%E0%A4%A8%E0%A5%8D%E0%A4%A8%E0%A4%A1%E0%A4%BC_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">कन्नड़ भाषा</a> | <a href="/wiki/%E0%A4%97%E0%A5%81%E0%A4%9C%E0%A4%B0%E0%A4%BE%E0%A4%A4%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">गुजराती भाषा</a> | <a href="/wiki/%E0%A4%AE%E0%A4%B2%E0%A4%AF%E0%A4%BE%E0%A4%B2%E0%A4%AE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">मलयालम भाषा</a> | <a href="/wiki/%E0%A4%9F%E0%A4%BE%E0%A4%97%E0%A4%BE%E0%A4%B2%E0%A5%8B%E0%A4%97_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">टागालोग भाषा</a> | <a href="/wiki/%E0%A4%AB%E0%A4%BC%E0%A4%BE%E0%A4%B0%E0%A4%B8%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">फ़ारसी भाषा</a> | <a href="/wiki/%E0%A4%B9%E0%A5%8C%E0%A4%B8%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">हौसा भाषा</a> | <a href="/wiki/%E0%A4%AC%E0%A4%B0%E0%A5%8D%E0%A4%AE%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">बर्मी भाषा</a> | <a href="/wiki/%E0%A4%89%E0%A4%A1%E0%A4%BC%E0%A4%BF%E0%A4%AF%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" class="mw-redirect" title="उड़िया भाषा">उड़िया भाषा</a> | <a href="/wiki/%E0%A4%B8%E0%A5%82%E0%A4%A1%E0%A4%BE%E0%A4%A8%E0%A5%80%E0%A4%9C_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">सूडानीज भाषा</a> | <a href="/wiki/%E0%A4%B0%E0%A5%8B%E0%A4%AE%E0%A4%BE%E0%A4%A8%E0%A4%BF%E0%A4%AF%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" class="mw-redirect" title="रोमानियन भाषा">रोमानियन भाषा</a> | <a href="/wiki/%E0%A4%AA%E0%A4%B6%E0%A5%8D%E0%A4%A4%E0%A5%8B_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">पश्तो भाषा</a> | <a href="/wiki/%E0%A4%A1%E0%A4%9A-%E0%A4%AB%E0%A5%8D%E0%A4%B2%E0%A5%87%E0%A4%AE%E0%A4%BF%E0%A4%B6_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">डच-फ्लेमिश भाषा</a> | <a href="/wiki/%E0%A4%B8%E0%A4%B0%E0%A5%8D%E0%A4%AC%E0%A5%80_%E0%A4%95%E0%A5%8D%E0%A4%B0%E0%A5%8B%E0%A4%8F%E0%A4%B6%E0%A4%BF%E0%A4%AF%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">सर्बी क्रोएशियन भाषा</a> | <a href="/wiki/%E0%A4%85%E0%A4%B8%E0%A4%AE%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" class="mw-redirect" title="असमी भाषा">असमी भाषा</a> | <a href="/wiki/%E0%A4%AF%E0%A5%8B%E0%A4%8A%E0%A4%AC%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">योऊबा भाषा</a> | <a href="/wiki/%E0%A4%B8%E0%A4%BF%E0%A4%82%E0%A4%A7%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" class="mw-redirect" title="सिंधी भाषा">सिंधी भाषा</a> | <a href="/wiki/%E0%A4%87%E0%A4%AC%E0%A5%8B_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">इबो भाषा</a> | <a href="/wiki/%E0%A4%85%E0%A4%AE%E0%A5%8D%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A4%BF%E0%A4%95_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">अम्हारिक भाषा</a> | <a href="/wiki/%E0%A4%B9%E0%A4%82%E0%A4%97%E0%A5%87%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" class="mw-redirect" title="हंगेरियन भाषा">हंगेरियन भाषा</a> | <a href="/wiki/%E0%A4%85%E0%A4%9C%E0%A5%87%E0%A4%B0%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">अजेरी भाषा</a> | <a href="/wiki/%E0%A4%A8%E0%A5%87%E0%A4%AA%E0%A4%BE%E0%A4%B2%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">नेपाली भाषा</a> | <a href="/wiki/%E0%A4%9A%E0%A5%87%E0%A4%95_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">चेक भाषा</a> | <a href="/wiki/%E0%A4%B8%E0%A4%BF%E0%A4%82%E0%A4%B9%E0%A4%B2%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">सिंहली भाषा</a> | <a href="/wiki/%E0%A4%B8%E0%A5%87%E0%A4%AC%E0%A5%81%E0%A4%86%E0%A4%A8%E0%A5%8B_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">सेबुआनो भाषा</a> | <a href="/wiki/%E0%A4%AB%E0%A5%81%E0%A4%B2%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">फुला भाषा</a> | <a href="/wiki/%E0%A4%89%E0%A4%9C%E0%A4%AC%E0%A5%87%E0%A4%95_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" class="mw-redirect" title="उजबेक भाषा">उजबेक भाषा</a> | <a href="/wiki/%E0%A4%AE%E0%A4%B2%E0%A4%BE%E0%A4%97%E0%A4%BE%E0%A4%B8%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">मलागासी भाषा</a> | <a href="/wiki/%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%95_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" class="mw-redirect" title="ग्रीक भाषा">ग्रीक भाषा</a> | <a href="/wiki/%E0%A4%85%E0%A4%AB%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%95%E0%A4%BE%E0%A4%82%E0%A4%B8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">अफ्रीकांस भाषा</a> | <a href="/wiki/%E0%A4%95%E0%A5%81%E0%A4%B0%E0%A5%8D%E0%A4%A6%E0%A4%BF%E0%A4%B6_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">कुर्दिश भाषा</a> | <a href="/wiki/%E0%A4%97%E0%A4%BE%E0%A4%B2%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">गाला भाषा</a> | <a href="/wiki/%E0%A4%AE%E0%A4%A6%E0%A5%81%E0%A4%B0%E0%A5%80%E0%A4%B8%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">मदुरीसी भाषा</a> | <a href="/wiki/%E0%A4%AC%E0%A4%BE%E0%A4%87%E0%A4%B2%E0%A5%8B%E0%A4%B0%E0%A4%B6%E0%A4%BF%E0%A4%AF%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" title="बाइलोरशियन भाषा">बाइलोरशियन भाषा</a> | <a href="/wiki/%E0%A4%95%E0%A5%88%E0%A4%9F%E0%A4%B2%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">कैटलन भाषा</a> | <a href="/wiki/%E0%A4%A8%E0%A4%BF%E0%A4%AF%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">नियांगा भाषा</a> | <a href="/wiki/%E0%A4%93%E0%A4%B0%E0%A5%8B%E0%A4%AE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">ओरोम भाषा</a> | <a href="/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%B5%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%B6_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">स्वीडिश भाषा</a> | <a href="/wiki/%E0%A4%AC%E0%A5%81%E0%A4%B2%E0%A5%8D%E0%A4%97%E0%A4%BE%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">बुल्गारियन भाषा</a> | <a href="/wiki/%E0%A4%AE%E0%A4%B2%E0%A4%BF%E0%A4%A8%E0%A5%8D%E0%A4%95%E0%A5%87_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">मलिन्के भाषा</a> | <a href="/w/index.php?title=%E0%A4%95%E0%A4%9C%E0%A4%BE%E0%A4%95_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE&amp;action=edit&amp;redlink=1" class="new" title="कजाक भाषा (पृष्ठ मौजूद नहीं है)">कजाक भाषा</a> | <a href="/wiki/%E0%A4%B0%E0%A5%82%E0%A4%B5%E0%A4%BE%E0%A4%A8%E0%A5%8D%E0%A4%A1%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">रूवान्डा भाषा</a> | <a href="/wiki/%E0%A4%95%E0%A5%81%E0%A4%8F%E0%A4%9A%E0%A5%81%E0%A4%86_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">कुएचुआ भाषा</a> | <a href="/wiki/%E0%A4%B6%E0%A5%8B%E0%A4%A8%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" title="शोना भाषा">शोना भाषा</a> | <a href="/wiki/%E0%A4%A4%E0%A4%A4%E0%A4%BE%E0%A4%B0_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">ततार भाषा</a> | <a href="/wiki/%E0%A4%96%E0%A5%8D%E0%A4%AE%E0%A5%87%E0%A4%B0_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">ख्मेर भाषा</a> | <a href="/wiki/%E0%A4%9C%E0%A5%81%E0%A4%B2%E0%A5%82_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">जुलू भाषा</a> | <a href="/wiki/%E0%A4%89%E0%A4%87%E0%A4%97%E0%A5%81%E0%A4%B0_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">उइगुर भाषा</a> | <a href="/wiki/%E0%A4%B8%E0%A5%8B%E0%A4%AE%E0%A4%BE%E0%A4%B2%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">सोमाली भाषा</a> | <a href="/wiki/%E0%A4%B2%E0%A4%BF%E0%A4%82%E0%A4%97%E0%A4%BE%E0%A4%B2%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">लिंगाला भाषा</a> | <a href="/wiki/%E0%A4%A4%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%88-%E0%A4%AB%E0%A4%BE%E0%A4%A8%E0%A5%8D%E0%A4%9F%E0%A5%87_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">त्वाई-फान्टे भाषा</a> | <a href="/wiki/%E0%A4%87%E0%A4%B2%E0%A5%8B%E0%A4%95%E0%A4%BE%E0%A4%A8%E0%A5%8B_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">इलोकानो भाषा</a> | <a href="/wiki/%E0%A4%9C%E0%A5%8B%E0%A4%B6%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">जोशा भाषा</a> | <a href="/wiki/%E0%A4%AE%E0%A4%BF%E0%A4%A8%E0%A4%BE%E0%A4%A8_%E0%A4%95%E0%A4%AC%E0%A4%BE%E0%A4%8A_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">मिनान कबाऊ भाषा</a> | <a href="/wiki/%E0%A4%AF%E0%A5%80_(%E0%A4%B2%E0%A5%8B%E0%A4%B2%E0%A5%8B)_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">यी (लोलो) भाषा</a> | <a href="/wiki/%E0%A4%AB%E0%A4%BF%E0%A4%A8%E0%A4%BF%E0%A4%B6_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">फिनिश भाषा</a> | <a href="/wiki/%E0%A4%AC%E0%A5%8B%E0%A4%B2%E0%A5%8B%E0%A4%AB_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">बोलोफ भाषा</a> | <a href="/wiki/%E0%A4%B0%E0%A5%82%E0%A4%82%E0%A4%A1%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">रूंडी भाषा</a> | <a href="/wiki/%E0%A4%A8%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A5%87%E0%A4%9C%E0%A4%BF%E0%A4%AF%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">नर्वेजियन भाषा</a> | <a href="/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%B2%E0%A5%8B%E0%A4%B5%E0%A4%BE%E0%A4%95_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">स्लोवाक भाषा</a> | <a href="/wiki/%E0%A4%86%E0%A4%B0%E0%A5%8D%E0%A4%AE%E0%A5%87%E0%A4%A8%E0%A4%BF%E0%A4%AF%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">आर्मेनियन भाषा</a> | <a href="/wiki/%E0%A4%A4%E0%A4%BF%E0%A4%AC%E0%A5%8D%E0%A4%AC%E0%A4%A4%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">तिब्बती भाषा</a> | <a href="/wiki/%E0%A4%B8%E0%A4%82%E0%A4%A5%E0%A4%BE%E0%A4%B2%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">संथाली भाषा</a> | <a href="/wiki/%E0%A4%85%E0%A4%B2%E0%A5%8D%E0%A4%AC%E0%A5%87%E0%A4%A8%E0%A4%BF%E0%A4%AF%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">अल्बेनियन भाषा</a> | <a href="/wiki/%E0%A4%AE%E0%A4%BF%E0%A4%AF%E0%A4%BE%E0%A4%93_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">मियाओ भाषा</a> | <a href="/wiki/%E0%A4%AE%E0%A4%82%E0%A4%97%E0%A5%8B%E0%A4%B2%E0%A4%BF%E0%A4%AF%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" title="मंगोलियन भाषा">मंगोलियन भाषा</a> | <a href="/wiki/%E0%A4%95%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AF%E0%A5%82_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">किकियू भाषा</a> | <a href="/wiki/%E0%A4%9C%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%9C%E0%A4%BF%E0%A4%AF%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">जार्जियन भाषा</a> | <a href="/wiki/%E0%A4%B9%E0%A4%BF%E0%A4%AC%E0%A5%8D%E0%A4%B0%E0%A5%82_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" class="mw-redirect" title="हिब्रू भाषा">हिब्रू भाषा</a> | <a href="/wiki/%E0%A4%AE%E0%A5%8B%E0%A4%B0%E0%A5%87_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">मोरे भाषा</a> | <a href="/wiki/%E0%A4%B2%E0%A4%BE%E0%A4%93_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">लाओ भाषा</a> | <a href="/wiki/%E0%A4%A8%E0%A4%BF%E0%A4%AF%E0%A4%BE%E0%A4%A8%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">नियाना भाषा</a> | <a href="/wiki/%E0%A4%97%E0%A5%81%E0%A4%86%E0%A4%B0%E0%A4%BE%E0%A4%A8%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">गुआरानी भाषा</a> | <a href="/wiki/%E0%A4%AC%E0%A4%9F%E0%A4%95_%E0%A4%A4%E0%A5%8B%E0%A4%AC%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">बटक तोबा भाषा</a> <a href="/wiki/%E0%A4%95%E0%A4%A8%E0%A5%82%E0%A4%B0%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">कनूरी भाषा</a> | <a href="/wiki/%E0%A4%9F%E0%A4%BF%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%A8%E0%A4%BF%E0%A4%AF%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">टिग्रीनिया भाषा</a> | <a href="/wiki/%E0%A4%AC%E0%A4%BE%E0%A4%87%E0%A4%95%E0%A5%8B%E0%A4%B2_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">बाइकोल भाषा</a> | <a href="/wiki/%E0%A4%AC%E0%A4%B2%E0%A5%82%E0%A4%9A%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" class="mw-redirect" title="बलूची भाषा">बलूची भाषा</a> | <a href="/wiki/%E0%A4%85%E0%A4%9A%E0%A4%BE%E0%A4%87%E0%A4%A8%E0%A5%80%E0%A4%9C_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">अचाइनीज भाषा</a> | <a href="/wiki/%E0%A4%AC%E0%A5%81%E0%A4%82%E0%A4%A1%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">बुंडा भाषा</a> <a href="/wiki/%E0%A4%AC%E0%A4%BE%E0%A4%B2%E0%A4%BE%E0%A4%A8%E0%A5%80%E0%A4%9C_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">बालानीज भाषा</a> | <a href="/wiki/%E0%A4%AE%E0%A4%95%E0%A5%81%E0%A4%86_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">मकुआ भाषा</a> | <a href="/wiki/%E0%A4%95%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8B_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">कांगो भाषा</a> <a href="/wiki/%E0%A4%AC%E0%A4%BF%E0%A4%B2%E0%A4%BF_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">बिलि भाषा</a> | <a href="/wiki/%E0%A4%9F%E0%A4%B0%E0%A5%8D%E0%A4%AA%E0%A4%AE%E0%A5%88%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">टर्पमैन भाषा</a> | <a href="/wiki/%E0%A4%8F%E0%A4%AC%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">एबी भाषा</a> | <a href="/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%A8%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">स्वाना भाषा</a> | <a href="/wiki/%E0%A4%B6%E0%A4%BE%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">शान भाषा</a> | <a href="/wiki/%E0%A4%95%E0%A4%AE%E0%A5%8D%E0%A4%AC%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">कम्बा भाषा</a> | <a href="/wiki/%E0%A4%B2%E0%A5%81%E0%A4%93_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">लुओ भाषा</a> | <a href="/wiki/%E0%A4%B2%E0%A5%88%E0%A4%9F%E0%A4%A8%E0%A4%BF%E0%A4%AF%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">लैटनियन भाषा</a> | <a href="/wiki/%E0%A4%B8%E0%A5%8D%E0%A4%B2%E0%A5%8B%E0%A4%B5%E0%A5%87%E0%A4%A8%E0%A4%BF%E0%A4%AF%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">स्लोवेनियन भाषा</a> <a href="/wiki/%E0%A4%9A%E0%A5%81%E0%A4%B5%E0%A4%BE%E0%A4%B6_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">चुवाश भाषा</a> | <a href="/wiki/%E0%A4%97%E0%A5%8B%E0%A4%82%E0%A4%A1%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">गोंडी भाषा</a> | <a href="/wiki/%E0%A4%AC%E0%A5%87%E0%A4%AE%E0%A5%8D%E0%A4%AC%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">बेम्बा भाषा</a> | <a href="/wiki/%E0%A4%AE%E0%A5%87%E0%A4%B8%E0%A4%BF%E0%A4%A1%E0%A5%8B%E0%A4%A8%E0%A4%BF%E0%A4%AF%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">मेसिडोनियन भाषा</a> | <a href="/wiki/%E0%A4%95%E0%A4%BF%E0%A4%B0%E0%A4%97%E0%A4%BF%E0%A4%9C_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">किरगिज भाषा</a> | <a href="/wiki/%E0%A4%9F%E0%A5%81%E0%A4%B2%E0%A5%82_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" class="mw-redirect" title="टुलू भाषा">टुलू भाषा</a> | <a href="/wiki/%E0%A4%AE%E0%A5%87%E0%A4%82%E0%A4%A1%E0%A5%87_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">मेंडे भाषा</a> | <a href="/wiki/%E0%A4%AE%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%A1%E0%A4%B5%E0%A4%BF%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">मार्डविन भाषा</a> | <a href="/wiki/%E0%A4%95%E0%A4%B0%E0%A5%87%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">करेन भाषा</a> <a href="/wiki/%E0%A4%B8%E0%A4%BF%E0%A4%A1%E0%A4%BE%E0%A4%AE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">सिडाम भाषा</a> | <a href="/wiki/%E0%A4%8F%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%8B%E0%A4%A8%E0%A4%BF%E0%A4%AF%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" class="mw-redirect" title="एस्तोनियन भाषा">एस्तोनियन भाषा</a> | <a href="/wiki/%E0%A4%AC%E0%A4%BE%E0%A4%B6%E0%A5%8D%E0%A4%95%E0%A4%BF%E0%A4%B0_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">बाश्किर भाषा</a> | <a href="/wiki/%E0%A4%AB%E0%A5%8B%E0%A4%A8_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">फोन भाषा</a></td>
+</tr>
+</table>
+</center>
+<p><span id="interwiki-sv-fa"></span></p>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 1594/1000000
+Post-expand include size: 7549/2048000 bytes
+Template argument size: 251/2048000 bytes
+Expensive parser function count: 0/500
+-->
+
+<!-- Saved in parser cache with key hiwiki:pcache:idhash:2271-0!*!0!!hi!4 and timestamp 20110217062705 -->
+<div class="printfooter">
+"<a href="http://hi.wikipedia.org/wiki/%E0%A4%AC%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B2%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE">http://hi.wikipedia.org/wiki/%E0%A4%AC%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B2%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE</a>" से लिया गया</div>
+				<!-- /bodytext -->
+								<!-- catlinks -->
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7:Categories" title="विशेष:Categories">श्रेणियाँ</a>: <span dir='ltr'><a href="/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%A3%E0%A5%80:%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%8D%E0%A4%B5_%E0%A4%95%E0%A5%80_%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%AE%E0%A5%81%E0%A4%96_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE%E0%A4%8F%E0%A4%82" title="श्रेणी:विश्व की प्रमुख भाषाएं">विश्व की प्रमुख भाषाएं</a></span> | <span dir='ltr'><a href="/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%A3%E0%A5%80:%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4%E0%A5%80%E0%A4%AF_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE%E0%A4%8F%E0%A4%81" title="श्रेणी:भारतीय भाषाएँ">भारतीय भाषाएँ</a></span></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>वैयक्तिक औज़ार</h5>
+	<ul>
+					<li  id="pt-login"><a href="/w/index.php?title=%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7:UserLogin&amp;returnto=%E0%A4%AC%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B2%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" title="आपसे सत्रारंभ करने की गुज़ारिश है; लेकिन यह लाज़मी नहीं है [o]" accesskey="o">सदस्य प्रवेश करें / नया खाता बनाएँ</a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>नामस्थान</h5>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/%E0%A4%AC%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B2%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE"  title="सामग्री वाला पन्ना देखें [c]" accesskey="c">लेख</a></span></li>
+					<li  id="ca-talk"><span><a href="/wiki/%E0%A4%B5%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%A4%E0%A4%BE:%E0%A4%AC%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B2%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE"  title="सामग्री पन्ने के बारे में वार्तालाप [t]" accesskey="t">संवाद</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu emptyPortlet">
+		<h5><span>संस्करण</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>दर्शाव</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="/wiki/%E0%A4%AC%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B2%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" >पढ़ें</a></span></li>
+					<li id="ca-edit"><span><a href="/w/index.php?title=%E0%A4%AC%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B2%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE&amp;action=edit"  title="आप यह पन्ना बदल सकते हैं।&#10;कृपया बदलाव संजोने से पहले झलक देखें। [e]" accesskey="e">संपादन</a></span></li>
+					<li id="ca-history" class="collapsible "><span><a href="/w/index.php?title=%E0%A4%AC%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B2%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE&amp;action=history"  title="इस पन्ने के पुराने अवतरण [h]" accesskey="h">इतिहास देखें</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>क्रियाएँ</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">खोजें</label></h5>
+	<form action="/w/index.php" id="searchform">
+		<input type='hidden' name="title" value="विशेष:Search"/>
+				<div id="simpleSearch">
+						<input id="searchInput" name="search" type="text"  title="इस विकि में खोजें [f]" accesskey="f"  value="" />
+						<button id="searchButton" type='submit' name='button'  title="इस वाक्यांश को पन्नों में खोजें"><img src="http://bits.wikimedia.org/skins-1.17/vector/images/search-ltr.png?301-1" alt="खोजें" /></button>
+					</div>
+			</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(http://upload.wikimedia.org/wikipedia/hi/b/bc/Wiki.png);" href="/wiki/%E0%A4%AE%E0%A5%81%E0%A4%96%E0%A4%AA%E0%A5%83%E0%A4%B7%E0%A5%8D%E0%A4%A0"  title="मुखपृष्ठ"></a></div>
+				<!-- /logo -->
+				
+<!-- परिभ्रमण -->
+<div class="portal" id='p-.E0.A4.AA.E0.A4.B0.E0.A4.BF.E0.A4.AD.E0.A5.8D.E0.A4.B0.E0.A4.AE.E0.A4.A3'>
+	<h5>परिभ्रमण</h5>
+	<div class="body">
+				<ul>
+					<li id="n-.E0.A4.AE.E0.A5.81.E0.A4.96.E0.A4.AA.E0.A5.83.E0.A4.B7.E0.A5.8D.E0.A4.A0"><a href="/wiki/%E0%A4%AE%E0%A5%81%E0%A4%96%E0%A4%AA%E0%A5%83%E0%A4%B7%E0%A5%8D%E0%A4%A0">मुखपृष्ठ</a></li>
+					<li id="n-.E0.A4.9A.E0.A5.8C.E0.A4.AA.E0.A4.BE.E0.A4.B2"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%9A%E0%A5%8C%E0%A4%AA%E0%A4%BE%E0%A4%B2">चौपाल</a></li>
+					<li id="n-recentchanges"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7:RecentChanges" title="विकि में हाल में हुए बदलावों की फ़ेरहिस्त [r]" accesskey="r">हाल में हुए परिवर्तन</a></li>
+					<li id="n-portal"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%B8%E0%A4%AE%E0%A4%BE%E0%A4%9C_%E0%A4%AE%E0%A5%81%E0%A4%96%E0%A4%AA%E0%A5%83%E0%A4%B7%E0%A5%8D%E0%A4%A0" title="परियोजना के बारे में, आप क्या कर सकतें हैं, मदद कहाँ से लें">समाज मुखपृष्ठ</a></li>
+					<li id="n-.E0.A4.A6.E0.A5.82.E0.A4.A4.E0.A4.BE.E0.A4.B5.E0.A4.BE.E0.A4.B8"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%A6%E0%A5%82%E0%A4%A4%E0%A4%BE%E0%A4%B5%E0%A4%BE%E0%A4%B8">दूतावास</a></li>
+					<li id="n-.E0.A4.B8.E0.A4.BE.E0.A4.B9.E0.A4.BF.E0.A4.A4.E0.A5.8D.E0.A4.AF-.E0.A4.A6.E0.A4.B0.E0.A5.8D.E0.A4.B6.E0.A4.A8"><a href="/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%A3%E0%A5%80:%E0%A4%B8%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%AF">साहित्य दर्शन</a></li>
+					<li id="n-.E0.A4.A8.E0.A4.BF.E0.A4.B0.E0.A5.8D.E0.A4.B5.E0.A4.BE.E0.A4.9A.E0.A4.BF.E0.A4.A4-.E0.A4.B5.E0.A4.BF.E0.A4.B7.E0.A4.AF.E0.A4.B5.E0.A4.B8.E0.A5.8D.E0.A4.A4.E0.A5.81"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%A8%E0%A4%BF%E0%A4%B0%E0%A5%8D%E0%A4%B5%E0%A4%BE%E0%A4%9A%E0%A4%BF%E0%A4%A4_%E0%A4%B5%E0%A4%BF%E0%A4%B7%E0%A4%AF_%E0%A4%B5%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%81">निर्वाचित विषयवस्तु</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /परिभ्रमण -->
+
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- सहायता -->
+<div class="portal" id='p-.E0.A4.B8.E0.A4.B9.E0.A4.BE.E0.A4.AF.E0.A4.A4.E0.A4.BE'>
+	<h5>सहायता</h5>
+	<div class="body">
+				<ul>
+					<li id="n-.E0.A4.85.E0.A4.95.E0.A5.8D.E0.A4.B8.E0.A4.B0-.E0.A4.AA.E0.A5.82.E0.A4.9B.E0.A5.87-.E0.A4.9C.E0.A4.BE.E0.A4.A8.E0.A5.87-.E0.A4.B5.E0.A4.BE.E0.A4.B2.E0.A5.87-.E0.A4.AA.E0.A5.8D.E0.A4.B0.E0.A4.B6.E0.A5.8D.E0.A4.A8"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%85%E0%A4%95%E0%A5%8D%E0%A4%B8%E0%A4%B0_%E0%A4%AA%E0%A5%82%E0%A4%9B%E0%A5%87_%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A5%87_%E0%A4%B5%E0%A4%BE%E0%A4%B2%E0%A5%87_%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B6%E0%A5%8D%E0%A4%A8">अक्सर पूछे जाने वाले प्रश्न</a></li>
+					<li id="n-.E0.A4.A6.E0.A5.87.E0.A4.B5.E0.A4.A8.E0.A4.BE.E0.A4.97.E0.A4.B0.E0.A5.80-.E0.A4.95.E0.A5.88.E0.A4.B8.E0.A5.87-.E0.A4.9F.E0.A4.BE.E0.A4.87.E0.A4.AA-.E0.A4.95.E0.A4.B0.E0.A5.87.E0.A4.82"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%A6%E0%A5%87%E0%A4%B5%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%B0%E0%A5%80_%E0%A4%AE%E0%A5%87%E0%A4%82_%E0%A4%95%E0%A5%88%E0%A4%B8%E0%A5%87_%E0%A4%9F%E0%A4%BE%E0%A4%87%E0%A4%AA_%E0%A4%95%E0%A4%B0%E0%A5%87%E0%A4%82">देवनागरी कैसे टाइप करें</a></li>
+					<li id="n-.E0.A4.A8.E0.A4.AF.E0.A4.BE-.E0.A4.AA.E0.A4.A8.E0.A5.8D.E0.A4.A8.E0.A4.BE-.E0.A4.95.E0.A5.88.E0.A4.B8.E0.A5.87-.E0.A4.AC.E0.A4.A8.E0.A4.BE.E0.A4.8F.E0.A4.82"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%A8%E0%A4%AF%E0%A4%BE_%E0%A4%AA%E0%A4%A8%E0%A5%8D%E0%A4%A8%E0%A4%BE_%E0%A4%95%E0%A5%88%E0%A4%B8%E0%A5%87_%E0%A4%86%E0%A4%B0%E0%A4%AE%E0%A5%8D%E0%A4%AD_%E0%A4%95%E0%A4%B0%E0%A5%87%E0%A4%82">नया पन्ना कैसे बनाएं</a></li>
+					<li id="n-.E0.A4.85.E0.A4.9A.E0.A5.8D.E0.A4.9B.E0.A5.87-.E0.A4.B2.E0.A5.87.E0.A4.96.E0.A4.A8-.E0.A4.B9.E0.A5.87.E0.A4.A4.E0.A5.81-.E0.A4.B8.E0.A5.81.E0.A4.9D.E0.A4.BE.E0.A4.B5"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%85%E0%A4%9A%E0%A5%8D%E0%A4%9B%E0%A5%87_%E0%A4%B2%E0%A5%87%E0%A4%96_%E0%A4%B2%E0%A4%BF%E0%A4%96%E0%A4%A8%E0%A5%87_%E0%A4%95%E0%A5%87_%E0%A4%B8%E0%A5%81%E0%A4%9D%E0%A4%BE%E0%A4%B5">अच्छे लेखन हेतु सुझाव</a></li>
+					<li id="n-.E0.A4.B8.E0.A4.B9.E0.A4.BE.E0.A4.AF.E0.A4.95-.E0.A4.95.E0.A4.A1.E0.A4.BC.E0.A4.BF.E0.A4.AF.E0.A4.BE.E0.A4.81"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%B8%E0%A4%B9%E0%A4%BE%E0%A4%AF%E0%A4%A4%E0%A4%BE">सहायक कड़ियाँ</a></li>
+					<li id="n-.E0.A4.B5.E0.A4.BF.E0.A4.95.E0.A4.BF-.E0.A4.A8.E0.A5.80.E0.A4.A4.E0.A4.BF.E0.A4.AF.E0.A4.BE.E0.A4.81"><a href="/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%A3%E0%A5%80:%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%A8%E0%A5%80%E0%A4%A4%E0%A4%BF%E0%A4%AF%E0%A4%BE%E0%A4%81">विकि नीतियाँ</a></li>
+					<li id="n-.E0.A4.A4.E0.A5.8D.E0.A4.B5.E0.A4.B0.E0.A4.BF.E0.A4.A4.E0.A4.B5.E0.A4.BE.E0.A4.B0.E0.A5.8D.E0.A4.A4.E0.A4.BE"><a href="http://webchat.freenode.net?channels=HindiWiki&amp;uio=Mj10cnVlJjQ9dHJ1ZSY5PXRydWUmMTI9dHJ1ZQ81">त्वरितवार्ता</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /सहायता -->
+
+<!-- योगदान -->
+<div class="portal" id='p-.E0.A4.AF.E0.A5.8B.E0.A4.97.E0.A4.A6.E0.A4.BE.E0.A4.A8'>
+	<h5>योगदान</h5>
+	<div class="body">
+				<ul>
+					<li id="n-.E0.A4.AA.E0.A5.8D.E0.A4.B0.E0.A4.AF.E0.A5.8B.E0.A4.97.E0.A4.AA.E0.A5.83.E0.A4.B7.E0.A5.8D.E0.A4.A0"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%AF%E0%A5%8B%E0%A4%97%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A4%B2">प्रयोगपृष्ठ</a></li>
+					<li id="n-.E0.A4.85.E0.A4.A8.E0.A5.81.E0.A4.B5.E0.A4.BE.E0.A4.A6-.E0.A4.B9.E0.A5.87.E0.A4.A4.E0.A5.81-.E0.A4.B2.E0.A5.87.E0.A4.96"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%85%E0%A4%A8%E0%A5%81%E0%A4%B5%E0%A4%BE%E0%A4%A6_%E0%A4%B9%E0%A5%87%E0%A4%A4%E0%A5%81_%E0%A4%B2%E0%A5%87%E0%A4%96">अनुवाद हेतु लेख</a></li>
+					<li id="n-sitesupport"><a href="http://wikimediafoundation.org/wiki/Fundraising" title="हमें सहायता दें">दान</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /योगदान -->
+
+<!-- विविध पन्ने -->
+<div class="portal" id='p-.E0.A4.B5.E0.A4.BF.E0.A4.B5.E0.A4.BF.E0.A4.A7_.E0.A4.AA.E0.A4.A8.E0.A5.8D.E0.A4.A8.E0.A5.87'>
+	<h5>विविध पन्ने</h5>
+	<div class="body">
+				<ul>
+					<li id="n-.E0.A4.A8.E0.A4.AF.E0.A5.87-.E0.A4.AA.E0.A4.A8.E0.A5.8D.E0.A4.A8.E0.A5.87"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7:NewPages">नये पन्ने</a></li>
+					<li id="n-.E0.A4.B2.E0.A4.AE.E0.A5.8D.E0.A4.AC.E0.A4.BF.E0.A4.A4-.E0.A4.B8.E0.A4.82.E0.A4.AA.E0.A4.BE.E0.A4.A6.E0.A4.A8"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7:%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%BE%E0%A4%A8%E0%A5%87%E0%A4%A6%E0%A5%87%E0%A4%96%E0%A5%87%E0%A4%82%E0%A4%B9%E0%A5%81%E0%A4%8F%E0%A4%AA%E0%A4%A8%E0%A5%8D%E0%A4%A8%E0%A5%87">लम्बित संपादन</a></li>
+					<li id="n-.E0.A4.A6.E0.A5.81.E0.A4.B0.E0.A5.81.E0.A4.AA.E0.A4.AF.E0.A5.8B.E0.A4.97-.E0.A4.9B.E0.A4.A8.E0.A4.BF.E0.A4.A4-.E0.A4.AA.E0.A5.83.E0.A4.B7.E0.A5.8D.E0.A4.A0"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7:AbuseLog">दुरुपयोग छनित पृष्ठ</a></li>
+					<li id="n-.E0.A4.B6.E0.A4.AC.E0.A5.8D.E0.A4.A6-.E0.A4.96.E0.A5.8B.E0.A4.9C"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7:PrefixIndex">शब्द खोज</a></li>
+					<li id="n-.E0.A4.B9.E0.A4.9F.E0.A4.BE.E0.A4.A8.E0.A5.87-.E0.A4.AF.E0.A5.8B.E0.A4.97.E0.A5.8D.E0.A4.AF-.E0.A4.AA.E0.A5.83.E0.A4.B7.E0.A5.8D.E0.A4.A0"><a href="/wiki/%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%A3%E0%A5%80:%E0%A4%B6%E0%A5%80%E0%A4%98%E0%A5%8D%E0%A4%B0_%E0%A4%B9%E0%A4%9F%E0%A4%BE%E0%A4%A8%E0%A5%87_%E0%A4%AF%E0%A5%8B%E0%A4%97%E0%A5%8D%E0%A4%AF_%E0%A4%AA%E0%A5%83%E0%A4%B7%E0%A5%8D%E0%A4%A0">हटाने योग्य पृष्ठ</a></li>
+					<li id="n-.E0.A4.B5.E0.A4.BF.E0.A4.B6.E0.A5.87.E0.A4.B7.E0.A4.BE.E0.A4.A7.E0.A4.BF.E0.A4.95.E0.A4.BE.E0.A4.B0-.E0.A4.A8.E0.A4.BF.E0.A4.B5.E0.A5.87.E0.A4.A6.E0.A4.A8"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7%E0%A4%BE%E0%A4%A7%E0%A4%BF%E0%A4%95%E0%A4%BE%E0%A4%B0_%E0%A4%A8%E0%A4%BF%E0%A4%B5%E0%A5%87%E0%A4%A6%E0%A4%A8">विशेषाधिकार निवेदन</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /विविध पन्ने -->
+
+<!-- TOOLBOX -->
+<div class="portal" id="p-tb">
+	<h5>उपकरण</h5>
+	<div class="body">
+		<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7:WhatLinksHere/%E0%A4%AC%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B2%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" title="यहाँ का हवाला देने वाले सभी विकि पन्नों की सूची [j]" accesskey="j">यहाँ क्या जुड़ता है</a></li>
+						<li id="t-recentchangeslinked"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7:RecentChangesLinked/%E0%A4%AC%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B2%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" title="यहां जुडे हुए सभी पन्नोंमें हुए हाल के बदलाव [k]" accesskey="k">पन्ने से जुडे बदलाव</a></li>
+																																										<li id="t-specialpages"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7:SpecialPages" title="सभी खास पन्नोंकी सूची [q]" accesskey="q">विशेष पन्ने</a></li>
+									<li id="t-print"><a href="/w/index.php?title=%E0%A4%AC%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B2%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE&amp;printable=yes" rel="alternate" title="इस पन्नेका छपानेलायक अवतरण [p]" accesskey="p">प्रिन्ट करने लायक</a></li>
+						<li id="t-permalink"><a href="/w/index.php?title=%E0%A4%AC%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B2%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE&amp;oldid=908581" title="पन्ने के इस संस्करण की स्थायी कड़ी">स्थायी कड़ी</a></li>
+				<li id="t-cite"><a href="/w/index.php?title=%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7:Cite&amp;page=%E0%A4%AC%E0%A4%BE%E0%A4%82%E0%A4%97%E0%A5%8D%E0%A4%B2%E0%A4%BE_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE&amp;id=908581" title="Information on how to cite this page">यह लेख उद्धृत करें</a></li>		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- भारतीय विकिपीडिया -->
+<div class="portal" id='p-.E0.A4.AD.E0.A4.BE.E0.A4.B0.E0.A4.A4.E0.A5.80.E0.A4.AF_.E0.A4.B5.E0.A4.BF.E0.A4.95.E0.A4.BF.E0.A4.AA.E0.A5.80.E0.A4.A1.E0.A4.BF.E0.A4.AF.E0.A4.BE'>
+	<h5>भारतीय विकिपीडिया</h5>
+	<div class="body">
+				<ul>
+					<li id="n-.E0.A4.A8.E0.A5.87.E0.A4.AA.E0.A4.BE.E0.A4.B2.E0.A5.80"><a href="http://www.ne.wikipedia.org">नेपाली</a></li>
+					<li id="n-.E0.A4.A8.E0.A5.87.E0.A4.AA.E0.A4.BE.E0.A4.B2-.E0.A4.AD.E0.A4.BE.E0.A4.B7.E0.A4.BE"><a href="http://www.new.wikipedia.org">नेपाल भाषा</a></li>
+					<li id="n-.E0.A4.AC.E0.A4.82.E0.A4.97.E0.A4.BE.E0.A4.B2.E0.A5.80"><a href="http://www.bn.wikipedia.org">बंगाली</a></li>
+					<li id="n-.E0.A4.AE.E0.A4.B0.E0.A4.BE.E0.A4.A0.E0.A5.80"><a href="http://www.mr.wikipedia.org">मराठी</a></li>
+					<li id="n-.E0.A4.97.E0.A5.81.E0.A4.9C.E0.A4.B0.E0.A4.BE.E0.A4.A4.E0.A5.80"><a href="http://www.gu.wikipedia.org">गुजराती</a></li>
+					<li id="n-.E0.A4.B8.E0.A4.BF.E0.A4.82.E0.A4.B9.E0.A4.B2"><a href="http://www.si.wikipedia.org">सिंहल</a></li>
+					<li id="n-.E0.A4.93.E0.A4.A1.E0.A4.BC.E0.A4.BF.E0.A4.AF.E0.A4.BE"><a href="http://www.or.wikipedia.org">ओड़िया</a></li>
+					<li id="n-.E0.A4.AC.E0.A4.B0.E0.A5.8D.E0.A4.AE.E0.A5.80"><a href="http://www.my.wikipedia.org">बर्मी</a></li>
+					<li id="n-.E0.A4.AD.E0.A5.8B.E0.A4.9C.E0.A4.AA.E0.A5.81.E0.A4.B0.E0.A5.80"><a href="http://www.bh.wikipedia.org">भोजपुरी</a></li>
+					<li id="n-.E0.A4.89.E0.A4.B0.E0.A5.8D.E0.A4.A6.E0.A5.81"><a href="http://www.ur.wikipedia.org">उर्दु</a></li>
+					<li id="n-.E0.A4.AE.E0.A4.A3.E0.A4.BF.E0.A4.AA.E0.A5.81.E0.A4.B0.E0.A5.80"><a href="http://www.bpy.wikipedia.org">मणिपुरी</a></li>
+					<li id="n-.E0.A4.85.E0.A4.B8.E0.A4.AE.E0.A5.80"><a href="http://www.as.wikipedia.org">असमी</a></li>
+					<li id="n-.E0.A4.95.E0.A4.A8.E0.A5.8D.E0.A4.A8.E0.A4.A1.E0.A4.BC"><a href="http://www.kn.wikipedia.org">कन्नड़</a></li>
+					<li id="n-.E0.A4.AA.E0.A4.82.E0.A4.9C.E0.A4.BE.E0.A4.AC.E0.A5.80"><a href="http://www.pa.wikipedia.org">पंजाबी</a></li>
+					<li id="n-.E0.A4.B8.E0.A4.82.E0.A4.B8.E0.A5.8D.E0.A4.95.E0.A5.83.E0.A4.A4"><a href="http://www.sa.wikipedia.org">संस्कृत</a></li>
+					<li id="n-.E0.A4.AE.E0.A4.B2.E0.A4.AF.E0.A4.BE.E0.A4.B2.E0.A4.AE"><a href="http://www.ml.wikipedia.org">मलयालम</a></li>
+					<li id="n-.E0.A4.A4.E0.A4.AE.E0.A4.BF.E0.A4.B2"><a href="http://www.ta.wikipedia.org">तमिल</a></li>
+					<li id="n-.E0.A4.A4.E0.A5.87.E0.A4.B2.E0.A4.97.E0.A5.81"><a href="http://www.te.wikipedia.org">तेलगु</a></li>
+					<li id="n-.E0.A4.AA.E0.A4.BE.E0.A4.B2.E0.A5.80"><a href="http://www.pi.wikipedia.org">पाली</a></li>
+					<li id="n-.E0.A4.95.E0.A4.B6.E0.A5.8D.E0.A4.AE.E0.A5.80.E0.A4.B0.E0.A5.80"><a href="http://www.ks.wikipedia.org">कश्मीरी</a></li>
+					<li id="n-.E0.A4.B8.E0.A4.BF.E0.A4.A8.E0.A5.8D.E0.A4.A7.E0.A5.80"><a href="http://www.sd.wikipedia.org">सिन्धी</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /भारतीय विकिपीडिया -->
+
+<!-- LANGUAGES -->
+<div class="portal" id="p-lang">
+	<h5>अन्य भाषाएँ</h5>
+	<div class="body">
+		<ul>
+					<li class="interwiki-ace"><a href="http://ace.wikipedia.org/wiki/Benggali_Barat" title="Benggali Barat">Acèh</a></li>
+					<li class="interwiki-an"><a href="http://an.wikipedia.org/wiki/Bengal%C3%AD" title="Bengalí">Aragonés</a></li>
+					<li class="interwiki-ang"><a href="http://ang.wikipedia.org/wiki/Bengalisc_spr%C7%A3c" title="Bengalisc sprǣc">Ænglisc</a></li>
+					<li class="interwiki-ar"><a href="http://ar.wikipedia.org/wiki/%D9%84%D8%BA%D8%A9_%D8%A8%D9%86%D8%BA%D8%A7%D9%84%D9%8A%D8%A9" title="لغة بنغالية">العربية</a></li>
+					<li class="interwiki-ast"><a href="http://ast.wikipedia.org/wiki/Bengal%C3%AD" title="Bengalí">Asturianu</a></li>
+					<li class="interwiki-az"><a href="http://az.wikipedia.org/wiki/Benqal_dili" title="Benqal dili">Azərbaycanca</a></li>
+					<li class="interwiki-bat-smg"><a href="http://bat-smg.wikipedia.org/wiki/Bengalu_kalba" title="Bengalu kalba">Žemaitėška</a></li>
+					<li class="interwiki-bcl"><a href="http://bcl.wikipedia.org/wiki/Bengali" title="Bengali">Bikol Central</a></li>
+					<li class="interwiki-be"><a href="http://be.wikipedia.org/wiki/%D0%91%D0%B5%D0%BD%D0%B3%D0%B0%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D0%BC%D0%BE%D0%B2%D0%B0" title="Бенгальская мова">Беларуская</a></li>
+					<li class="interwiki-be-x-old"><a href="http://be-x-old.wikipedia.org/wiki/%D0%91%D1%8D%D0%BD%D0%B3%D0%B0%D0%BB%D1%8C%D1%81%D0%BA%D0%B0%D1%8F_%D0%BC%D0%BE%D0%B2%D0%B0" title="Бэнгальская мова">‪Беларуская (тарашкевіца)‬</a></li>
+					<li class="interwiki-bg"><a href="http://bg.wikipedia.org/wiki/%D0%91%D0%B5%D0%BD%D0%B3%D0%B0%D0%BB%D1%81%D0%BA%D0%B8_%D0%B5%D0%B7%D0%B8%D0%BA" title="Бенгалски език">Български</a></li>
+					<li class="interwiki-bn"><a href="http://bn.wikipedia.org/wiki/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE_%E0%A6%AD%E0%A6%BE%E0%A6%B7%E0%A6%BE" title="বাংলা ভাষা">বাংলা</a></li>
+					<li class="interwiki-bpy"><a href="http://bpy.wikipedia.org/wiki/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE_%E0%A6%A0%E0%A6%BE%E0%A6%B0" title="বাংলা ঠার">ইমার ঠার/বিষ্ণুপ্রিয়া মণিপুরী</a></li>
+					<li class="interwiki-br"><a href="http://br.wikipedia.org/wiki/Banglaeg" title="Banglaeg">Brezhoneg</a></li>
+					<li class="interwiki-bs"><a href="http://bs.wikipedia.org/wiki/Bangla" title="Bangla">Bosanski</a></li>
+					<li class="interwiki-ca"><a href="http://ca.wikipedia.org/wiki/Bengal%C3%AD" title="Bengalí">Català</a></li>
+					<li class="interwiki-cs"><a href="http://cs.wikipedia.org/wiki/Beng%C3%A1l%C5%A1tina" title="Bengálština">Česky</a></li>
+					<li class="interwiki-cy"><a href="http://cy.wikipedia.org/wiki/Bengaleg" title="Bengaleg">Cymraeg</a></li>
+					<li class="interwiki-da"><a href="http://da.wikipedia.org/wiki/Bengali" title="Bengali">Dansk</a></li>
+					<li class="interwiki-de"><a href="http://de.wikipedia.org/wiki/Bengalische_Sprache" title="Bengalische Sprache">Deutsch</a></li>
+					<li class="interwiki-dv"><a href="http://dv.wikipedia.org/wiki/%DE%84%DE%AC%DE%82%DE%B0%DE%8E%DE%A7%DE%8D%DE%A9" title="ބެންގާލީ">ދިވެހިބަސް</a></li>
+					<li class="interwiki-el"><a href="http://el.wikipedia.org/wiki/%CE%9C%CF%80%CE%B5%CE%BD%CE%B3%CE%BA%CE%AC%CE%BB%CE%B9_%CE%B3%CE%BB%CF%8E%CF%83%CF%83%CE%B1" title="Μπενγκάλι γλώσσα">Ελληνικά</a></li>
+					<li class="interwiki-en"><a href="http://en.wikipedia.org/wiki/Bengali_language" title="Bengali language">English</a></li>
+					<li class="interwiki-eo"><a href="http://eo.wikipedia.org/wiki/Bengala_lingvo" title="Bengala lingvo">Esperanto</a></li>
+					<li class="interwiki-es"><a href="http://es.wikipedia.org/wiki/Idioma_bengal%C3%AD" title="Idioma bengalí">Español</a></li>
+					<li class="interwiki-et"><a href="http://et.wikipedia.org/wiki/Bengali_keel" title="Bengali keel">Eesti</a></li>
+					<li class="interwiki-eu"><a href="http://eu.wikipedia.org/wiki/Bengalera" title="Bengalera">Euskara</a></li>
+					<li class="interwiki-fa"><a href="http://fa.wikipedia.org/wiki/%D8%B2%D8%A8%D8%A7%D9%86_%D8%A8%D9%86%DA%AF%D8%A7%D9%84%DB%8C" title="زبان بنگالی">فارسی</a></li>
+					<li class="interwiki-fi"><a href="http://fi.wikipedia.org/wiki/Bengalin_kieli" title="Bengalin kieli">Suomi</a></li>
+					<li class="interwiki-fo"><a href="http://fo.wikipedia.org/wiki/Bengalskt_m%C3%A1l" title="Bengalskt mál">Føroyskt</a></li>
+					<li class="interwiki-fr"><a href="http://fr.wikipedia.org/wiki/Bengali" title="Bengali">Français</a></li>
+					<li class="interwiki-gan"><a href="http://gan.wikipedia.org/wiki/%E5%AD%9F%E5%8A%A0%E6%8B%89%E8%AA%9E" title="孟加拉語">贛語</a></li>
+					<li class="interwiki-gl"><a href="http://gl.wikipedia.org/wiki/Lingua_bengal%C3%AD" title="Lingua bengalí">Galego</a></li>
+					<li class="interwiki-gu"><a href="http://gu.wikipedia.org/wiki/%E0%AA%AC%E0%AA%82%E0%AA%97%E0%AA%BE%E0%AA%B3%E0%AB%80_%E0%AA%AD%E0%AA%BE%E0%AA%B7%E0%AA%BE" title="બંગાળી ભાષા">ગુજરાતી</a></li>
+					<li class="interwiki-he"><a href="http://he.wikipedia.org/wiki/%D7%91%D7%A0%D7%92%D7%9C%D7%99%D7%AA" title="בנגלית">עברית</a></li>
+					<li class="interwiki-hif"><a href="http://hif.wikipedia.org/wiki/Bengali_bhasa" title="Bengali bhasa">Fiji Hindi</a></li>
+					<li class="interwiki-hr"><a href="http://hr.wikipedia.org/wiki/Bengalski_jezik" title="Bengalski jezik">Hrvatski</a></li>
+					<li class="interwiki-hsb"><a href="http://hsb.wikipedia.org/wiki/Bengal%C5%A1%C4%87ina" title="Bengalšćina">Hornjoserbsce</a></li>
+					<li class="interwiki-hu"><a href="http://hu.wikipedia.org/wiki/Beng%C3%A1li_nyelv" title="Bengáli nyelv">Magyar</a></li>
+					<li class="interwiki-id"><a href="http://id.wikipedia.org/wiki/Bahasa_Bengali" title="Bahasa Bengali">Bahasa Indonesia</a></li>
+					<li class="interwiki-io"><a href="http://io.wikipedia.org/wiki/Bengali_linguo" title="Bengali linguo">Ido</a></li>
+					<li class="interwiki-is"><a href="http://is.wikipedia.org/wiki/Bengalska" title="Bengalska">Íslenska</a></li>
+					<li class="interwiki-it"><a href="http://it.wikipedia.org/wiki/Lingua_bengalese" title="Lingua bengalese">Italiano</a></li>
+					<li class="interwiki-ja"><a href="http://ja.wikipedia.org/wiki/%E3%83%99%E3%83%B3%E3%82%AC%E3%83%AB%E8%AA%9E" title="ベンガル語">日本語</a></li>
+					<li class="interwiki-ka"><a href="http://ka.wikipedia.org/wiki/%E1%83%91%E1%83%94%E1%83%9C%E1%83%92%E1%83%90%E1%83%9A%E1%83%A3%E1%83%A0%E1%83%98_%E1%83%94%E1%83%9C%E1%83%90" title="ბენგალური ენა">ქართული</a></li>
+					<li class="interwiki-kg"><a href="http://kg.wikipedia.org/wiki/Kibang%27la" title="Kibang'la">Kongo</a></li>
+					<li class="interwiki-kn"><a href="http://kn.wikipedia.org/wiki/%E0%B2%AC%E0%B2%82%E0%B2%97%E0%B2%BE%E0%B2%B3%E0%B2%BF_%E0%B2%AD%E0%B2%BE%E0%B2%B7%E0%B3%86" title="ಬಂಗಾಳಿ ಭಾಷೆ">ಕನ್ನಡ</a></li>
+					<li class="interwiki-ko"><a href="http://ko.wikipedia.org/wiki/%EB%B2%B5%EA%B3%A8%EC%96%B4" title="벵골어">한국어</a></li>
+					<li class="interwiki-krc"><a href="http://krc.wikipedia.org/wiki/%D0%91%D0%B5%D0%BD%D0%B3%D0%B0%D0%BB_%D1%82%D0%B8%D0%BB" title="Бенгал тил">Къарачай-Малкъар</a></li>
+					<li class="interwiki-kw"><a href="http://kw.wikipedia.org/wiki/Bengalek" title="Bengalek">Kernowek</a></li>
+					<li class="interwiki-la"><a href="http://la.wikipedia.org/wiki/Lingua_Bengalica" title="Lingua Bengalica">Latina</a></li>
+					<li class="interwiki-lij"><a href="http://lij.wikipedia.org/wiki/Lengua_bengali" title="Lengua bengali">Líguru</a></li>
+					<li class="interwiki-lmo"><a href="http://lmo.wikipedia.org/wiki/Lengua_bengalesa" title="Lengua bengalesa">Lumbaart</a></li>
+					<li class="interwiki-lt"><a href="http://lt.wikipedia.org/wiki/Bengal%C5%B3_kalba" title="Bengalų kalba">Lietuvių</a></li>
+					<li class="interwiki-lv"><a href="http://lv.wikipedia.org/wiki/Beng%C4%81%C4%BCu_valoda" title="Bengāļu valoda">Latviešu</a></li>
+					<li class="interwiki-mg"><a href="http://mg.wikipedia.org/wiki/Fiteny_bengali" title="Fiteny bengali">Malagasy</a></li>
+					<li class="interwiki-mk"><a href="http://mk.wikipedia.org/wiki/%D0%91%D0%B5%D0%BD%D0%B3%D0%B0%D0%BB%D1%81%D0%BA%D0%B8_%D1%98%D0%B0%D0%B7%D0%B8%D0%BA" title="Бенгалски јазик">Македонски</a></li>
+					<li class="interwiki-ml"><a href="http://ml.wikipedia.org/wiki/%E0%B4%AC%E0%B4%82%E0%B4%97%E0%B4%BE%E0%B4%B3%E0%B4%BF" title="ബംഗാളി">മലയാളം</a></li>
+					<li class="interwiki-mr"><a href="http://mr.wikipedia.org/wiki/%E0%A4%AC%E0%A4%82%E0%A4%97%E0%A4%BE%E0%A4%B2%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" title="बंगाली भाषा">मराठी</a></li>
+					<li class="interwiki-ms"><a href="http://ms.wikipedia.org/wiki/Bahasa_Bengali" title="Bahasa Bengali">Bahasa Melayu</a></li>
+					<li class="interwiki-new"><a href="http://new.wikipedia.org/wiki/%E0%A4%AC%E0%A4%82%E0%A4%97%E0%A4%BE%E0%A4%B2%E0%A5%80_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" title="बंगाली भाषा">नेपाल भाषा</a></li>
+					<li class="interwiki-nl"><a href="http://nl.wikipedia.org/wiki/Bengaals" title="Bengaals">Nederlands</a></li>
+					<li class="interwiki-nn"><a href="http://nn.wikipedia.org/wiki/Bengali" title="Bengali">‪Norsk (nynorsk)‬</a></li>
+					<li class="interwiki-no"><a href="http://no.wikipedia.org/wiki/Bengali" title="Bengali">‪Norsk (bokmål)‬</a></li>
+					<li class="interwiki-oc"><a href="http://oc.wikipedia.org/wiki/Bengalin_(lenga)" title="Bengalin (lenga)">Occitan</a></li>
+					<li class="interwiki-or"><a href="http://or.wikipedia.org/wiki/%E0%AC%AC%E0%AC%BE%E0%AC%82%E0%AC%B2%E0%AC%BE_%E0%AC%AD%E0%AC%BE%E0%AC%B7%E0%AC%BE" title="ବାଂଲା ଭାଷା">ଓଡ଼ିଆ</a></li>
+					<li class="interwiki-os"><a href="http://os.wikipedia.org/wiki/%D0%91%D0%B5%D0%BD%D0%B3%D0%B0%D0%B9%D0%BB%D0%B0%D0%B3_%C3%A6%D0%B2%D0%B7%D0%B0%D0%B3" title="Бенгайлаг æвзаг">Иронау</a></li>
+					<li class="interwiki-pl"><a href="http://pl.wikipedia.org/wiki/J%C4%99zyk_bengalski" title="Język bengalski">Polski</a></li>
+					<li class="interwiki-pnb"><a href="http://pnb.wikipedia.org/wiki/%D8%A8%D9%86%DA%AF%D8%A7%D9%84%DB%8C" title="بنگالی">پنجابی</a></li>
+					<li class="interwiki-pt"><a href="http://pt.wikipedia.org/wiki/L%C3%ADngua_bengali" title="Língua bengali">Português</a></li>
+					<li class="interwiki-qu"><a href="http://qu.wikipedia.org/wiki/Banla_simi" title="Banla simi">Runa Simi</a></li>
+					<li class="interwiki-ro"><a href="http://ro.wikipedia.org/wiki/Limba_bengalez%C4%83" title="Limba bengaleză">Română</a></li>
+					<li class="interwiki-roa-tara"><a href="http://roa-tara.wikipedia.org/wiki/L%C3%A8nga_bengalese" title="Lènga bengalese">Tarandíne</a></li>
+					<li class="interwiki-ru"><a href="http://ru.wikipedia.org/wiki/%D0%91%D0%B5%D0%BD%D0%B3%D0%B0%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA" title="Бенгальский язык">Русский</a></li>
+					<li class="interwiki-rue"><a href="http://rue.wikipedia.org/wiki/%D0%91%D0%B5%D0%BD%D2%91%D0%B0%D0%BB%D1%8C%D1%81%D0%BA%D1%8B%D0%B9_%D1%8F%D0%B7%D1%8B%D0%BA" title="Бенґальскый язык">Русиньскый</a></li>
+					<li class="interwiki-sa"><a href="http://sa.wikipedia.org/wiki/%E0%A4%B5%E0%A4%99%E0%A5%8D%E0%A4%97_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE" title="वङ्ग भाषा">संस्कृत</a></li>
+					<li class="interwiki-sco"><a href="http://sco.wikipedia.org/wiki/Bengali_leid" title="Bengali leid">Scots</a></li>
+					<li class="interwiki-se"><a href="http://se.wikipedia.org/wiki/Bengalgiella" title="Bengalgiella">Sámegiella</a></li>
+					<li class="interwiki-sh"><a href="http://sh.wikipedia.org/wiki/Bengalski_jezik" title="Bengalski jezik">Srpskohrvatski / Српскохрватски</a></li>
+					<li class="interwiki-simple"><a href="http://simple.wikipedia.org/wiki/Bengali_language" title="Bengali language">Simple English</a></li>
+					<li class="interwiki-sk"><a href="http://sk.wikipedia.org/wiki/Beng%C3%A1l%C4%8Dina" title="Bengálčina">Slovenčina</a></li>
+					<li class="interwiki-sl"><a href="http://sl.wikipedia.org/wiki/Bengal%C5%A1%C4%8Dina" title="Bengalščina">Slovenščina</a></li>
+					<li class="interwiki-sq"><a href="http://sq.wikipedia.org/wiki/Gjuha_bengali" title="Gjuha bengali">Shqip</a></li>
+					<li class="interwiki-sr"><a href="http://sr.wikipedia.org/wiki/%D0%91%D0%B5%D0%BD%D0%B3%D0%B0%D0%BB%D1%81%D0%BA%D0%B8_%D1%98%D0%B5%D0%B7%D0%B8%D0%BA" title="Бенгалски језик">Српски / Srpski</a></li>
+					<li class="interwiki-sv"><a href="http://sv.wikipedia.org/wiki/Bengali" title="Bengali">Svenska</a></li>
+					<li class="interwiki-sw"><a href="http://sw.wikipedia.org/wiki/Kibengali" title="Kibengali">Kiswahili</a></li>
+					<li class="interwiki-ta"><a href="http://ta.wikipedia.org/wiki/%E0%AE%B5%E0%AE%99%E0%AF%8D%E0%AE%95%E0%AE%BE%E0%AE%B3_%E0%AE%AE%E0%AF%8A%E0%AE%B4%E0%AE%BF" title="வங்காள மொழி">தமிழ்</a></li>
+					<li class="interwiki-te"><a href="http://te.wikipedia.org/wiki/%E0%B0%AC%E0%B0%82%E0%B0%97%E0%B1%8D%E0%B0%B2%E0%B0%BE_%E0%B0%AD%E0%B0%BE%E0%B0%B7" title="బంగ్లా భాష">తెలుగు</a></li>
+					<li class="interwiki-tg"><a href="http://tg.wikipedia.org/wiki/%D0%97%D0%B0%D0%B1%D0%BE%D0%BD%D0%B8_%D0%B1%D0%B0%D0%BD%D0%B3%D0%BE%D0%BB%D3%A3" title="Забони банголӣ">Тоҷикӣ</a></li>
+					<li class="interwiki-th"><a href="http://th.wikipedia.org/wiki/%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2%E0%B9%80%E0%B8%9A%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A5%E0%B8%B5" title="ภาษาเบงกาลี">ไทย</a></li>
+					<li class="interwiki-tr"><a href="http://tr.wikipedia.org/wiki/Bengalce" title="Bengalce">Türkçe</a></li>
+					<li class="interwiki-ug"><a href="http://ug.wikipedia.org/wiki/%D8%A8%DB%90%D9%86%DA%AF%D8%A7%D9%84_%D8%AA%D9%89%D9%84%D9%89" title="بېنگال تىلى">ئۇيغۇرچە / Uyghurche‎</a></li>
+					<li class="interwiki-uk"><a href="http://uk.wikipedia.org/wiki/%D0%91%D0%B5%D0%BD%D0%B3%D0%B0%D0%BB%D1%8C%D1%81%D1%8C%D0%BA%D0%B0_%D0%BC%D0%BE%D0%B2%D0%B0" title="Бенгальська мова">Українська</a></li>
+					<li class="interwiki-ur"><a href="http://ur.wikipedia.org/wiki/%D8%A8%D9%86%DA%AF%D9%84%DB%81" title="بنگلہ">اردو</a></li>
+					<li class="interwiki-vi"><a href="http://vi.wikipedia.org/wiki/Ti%E1%BA%BFng_Bengal" title="Tiếng Bengal">Tiếng Việt</a></li>
+					<li class="interwiki-war"><a href="http://war.wikipedia.org/wiki/Binengali" title="Binengali">Winaray</a></li>
+					<li class="interwiki-xal"><a href="http://xal.wikipedia.org/wiki/%D0%91%D0%B5%D0%BD%D0%B3%D0%B0%D0%BB%D0%BC%D1%83%D0%B4%D0%B8%D0%BD_%D0%BA%D0%B5%D0%BB%D0%BD" title="Бенгалмудин келн">Хальмг</a></li>
+					<li class="interwiki-yo"><a href="http://yo.wikipedia.org/wiki/%C3%88d%C3%A8_B%E1%BA%B9%CC%80ng%C3%A1l%C3%AC" title="Èdè Bẹ̀ngálì">Yorùbá</a></li>
+					<li class="interwiki-zh"><a href="http://zh.wikipedia.org/wiki/%E5%AD%9F%E5%8A%A0%E6%8B%89%E8%AF%AD" title="孟加拉语">中文</a></li>
+				</ul>
+	</div>
+</div>
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+											<ul id="footer-info">
+																	<li id="footer-info-lastmod"> अन्तिम परिवर्तन ०५:२४, २७ जनवरी २०११।</li>
+																							<li id="footer-info-copyright">यह सामग्री <a href="http://creativecommons.org/licenses/by-sa/3.0/">क्रियेटिव कॉमन्स ऍट्रीब्यूशन/शेयर-अलाइक लाइसेंस</a> के तहत उपलब्ध है;
+अन्य शर्ते लागू हो सकती हैं।
+विस्तार से जानकारी हेतु देखें <a href="http://wikimediafoundation.org/wiki/Terms_of_Use">उपयोग की शर्तें</a></li>
+															</ul>
+															<ul id="footer-places">
+																	<li id="footer-places-privacy"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%97%E0%A5%8B%E0%A4%AA%E0%A4%A8%E0%A5%80%E0%A4%AF%E0%A4%A4%E0%A4%BE_%E0%A4%A8%E0%A5%80%E0%A4%A4%E0%A4%BF" title="विकिपीडिया:गोपनीयता नीति">गोपनीयता नीति</a></li>
+																							<li id="footer-places-about"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE_%E0%A4%95%E0%A5%87_%E0%A4%AC%E0%A4%BE%E0%A4%B0%E0%A5%87_%E0%A4%AE%E0%A5%87%E0%A4%82" title="विकिपीडिया:विकिपीडिया के बारे में">विकिपीडिया के बारे में</a></li>
+																							<li id="footer-places-disclaimer"><a href="/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%B8%E0%A4%BE%E0%A4%A7%E0%A4%BE%E0%A4%B0%E0%A4%A3_%E0%A4%85%E0%A4%B8%E0%A5%8D%E0%A4%B5%E0%A5%80%E0%A4%95%E0%A4%B0%E0%A4%A3" title="विकिपीडिया:साधारण अस्वीकरण">अस्वीकरण</a></li>
+															</ul>
+											<ul id="footer-icons" class="noprint">
+					<li id="footer-copyrightico">
+						<a href="http://wikimediafoundation.org/"><img src="/images/wikimedia-button.png" width="88" height="31" alt="Wikimedia Foundation"/></a>
+					</li>
+					<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="http://bits.wikimedia.org/skins-1.17/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		
+<script src="http://bits.wikimedia.org/hi.wikipedia.org/load.php?debug=false&amp;lang=hi&amp;modules=startup&amp;only=scripts&amp;skin=vector" type="text/javascript"></script>
+<script type="text/javascript">if ( window.mediaWiki ) {
+	mediaWiki.config.set({"wgCanonicalNamespace": "", "wgCanonicalSpecialPageName": false, "wgNamespaceNumber": 0, "wgPageName": "बांग्ला_भाषा", "wgTitle": "बांग्ला भाषा", "wgAction": "view", "wgArticleId": 2271, "wgIsArticle": true, "wgUserName": null, "wgUserGroups": ["*"], "wgCurRevisionId": 908581, "wgCategories": ["विश्व की प्रमुख भाषाएं", "भारतीय भाषाएँ"], "wgBreakFrames": false, "wgRestrictionEdit": [], "wgRestrictionMove": [], "wgSearchNamespaces": [0], "wgFlaggedRevsParams": {"tags": {"status": {"levels": 1, "quality": 2, "pristine": 3}}}, "wgStableRevisionId": null, "wgRevContents": {"error": "Unable to get content.", "waiting": "Waiting for content"}, "wgCollapsibleNavBucketTest": false, "wgCollapsibleNavForceNewVersion": false, "Geo": {"city": "", "country": ""}, "wgNoticeProject": "wikipedia"});
+}
+</script>
+<script type="text/javascript">if ( window.mediaWiki ) {
+	mediaWiki.loader.load(["mediawiki.legacy.wikibits", "mediawiki.util", "mediawiki.legacy.ajax", "mediawiki.legacy.mwsuggest", "ext.vector.collapsibleNav", "ext.vector.collapsibleTabs", "ext.vector.editWarning", "ext.vector.simpleSearch"]);
+	mediaWiki.loader.go();
+}
+</script>
+
+<script src="/w/index.php?title=%E0%A4%B5%E0%A4%BF%E0%A4%B6%E0%A5%87%E0%A4%B7:BannerController&amp;cache=/cn.js&amp;301-1" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/hi.wikipedia.org/load.php?debug=false&amp;lang=hi&amp;modules=site&amp;only=scripts&amp;skin=vector&amp;version=20110115T162906Z" type="text/javascript"></script>
+<script type="text/javascript">if ( window.mediaWiki ) {
+	mediaWiki.user.options.set({"ccmeonemails":0,"cols":80,"contextchars":50,"contextlines":5,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":1,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":4,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":0,"watchdeletion":0,"watchlistdays":"3","watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"flaggedrevssimpleui":1,"flaggedrevsstable":false,"flaggedrevseditdiffs":true,"flaggedrevsviewdiffs":false,"vector-simplesearch":1,"useeditwarning":1,"vector-collapsiblenav":1,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"variant":"hi","language":"hi","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":false,"searchNs101":false});
+	mediaWiki.loader.state({"user.options":"ready"});
+}
+</script><script type="text/javascript" src="http://geoiplookup.wikimedia.org/"></script>		<!-- fixalpha -->
+		<script type="text/javascript"> if ( window.isMSIE55 ) fixalpha(); </script>
+		<!-- /fixalpha -->
+		<!-- Served by srv202 in 0.505 secs. -->			</body>
+</html>

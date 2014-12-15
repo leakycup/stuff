@@ -1,0 +1,353 @@
+HTTP/1.0 200 OK
+Date: Mon, 21 Feb 2011 04:22:07 GMT
+Server: Apache
+Cache-Control: private, s-maxage=0, max-age=0, must-revalidate
+Content-Language: zh
+Vary: Accept-Encoding,Cookie,Accept-Language
+Last-Modified: Thu, 17 Feb 2011 23:59:22 GMT
+Content-Length: 26675
+Content-Type: text/html; charset=UTF-8
+Age: 512
+X-Cache: HIT from sq65.wikimedia.org
+X-Cache-Lookup: HIT from sq65.wikimedia.org:3128
+X-Cache: MISS from sq71.wikimedia.org
+X-Cache-Lookup: MISS from sq71.wikimedia.org:80
+Connection: keep-alive
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="zh" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>区域设置 - 维基百科，自由的百科全书</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="generator" content="MediaWiki 1.17wmf1" />
+<link rel="alternate" type="application/x-wiki" title="编辑本页" href="/w/index.php?title=%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE&amp;action=edit" />
+<link rel="edit" title="编辑本页" href="/w/index.php?title=%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE&amp;action=edit" />
+<link rel="apple-touch-icon" href="http://zh.wikipedia.org/apple-touch-icon.png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (zh)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://zh.wikipedia.org/w/api.php?action=rsd" />
+<link rel="alternate" hreflang="zh" href="/zh/%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE" />
+<link rel="alternate" hreflang="zh-hans" href="/zh-hans/%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE" />
+<link rel="alternate" hreflang="zh-hant" href="/zh-hant/%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE" />
+<link rel="alternate" hreflang="zh-cn" href="/zh-cn/%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE" />
+<link rel="alternate" hreflang="zh-hk" href="/zh-hk/%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE" />
+<link rel="alternate" hreflang="zh-sg" href="/zh-sg/%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE" />
+<link rel="alternate" hreflang="zh-tw" href="/zh-tw/%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE" />
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Wikipedia的Atom订阅" href="/w/index.php?title=Special:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9&amp;feed=atom" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/zh.wikipedia.org/load.php?debug=false&amp;lang=zh&amp;modules=mediawiki.legacy.commonPrint%7Cmediawiki.legacy.shared%7Cskins.vector&amp;only=styles&amp;skin=vector" type="text/css" media="all" />
+<meta name="ResourceLoaderDynamicStyles" content="" /><link rel="stylesheet" href="http://bits.wikimedia.org/zh.wikipedia.org/load.php?debug=false&amp;lang=zh&amp;modules=site&amp;only=styles&amp;skin=vector&amp;version=20110220T111726Z" type="text/css" media="all" />
+<style type="text/css" media="all">a.new,#quickbar a.new{color:#ba0000}
+
+/* cache key: zhwiki:resourceloader:filter:minify-css:3:f2a9127573a22335c2a9102b208c73e7 */</style><link rel="stylesheet" href="http://bits.wikimedia.org/zh.wikipedia.org/load.php?debug=false&amp;lang=zh&amp;modules=user&amp;only=styles&amp;skin=vector&amp;version=19700101T000001Z" type="text/css" media="all" />
+
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins-1.17/vector/csshover.min.htc")}</style><![endif]--></head>
+<body class="mediawiki ltr ns-0 ns-subject page-区域设置 skin-vector">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- sitenotice -->
+			<div id="siteNotice"><!-- centralNotice loads here --><script type="text/javascript">
+/* <![CDATA[ */
+document.writeln("\x3cdiv id=\"localNotice\"\x3e\x3c/div\x3e");
+/* ]]> */
+</script></div>
+			<!-- /sitenotice -->
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading">区域设置</h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+				<!-- tagline -->
+				<div id="siteSub">维基百科，自由的百科全书</div>
+				<!-- /tagline -->
+				<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav">
+					跳转到： <a href="#mw-head">导航</a>,
+					<a href="#p-search">搜索</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodytext -->
+				<p><span style="display: none;"><a href="#skip_noteTA">跳过字词转换说明</a></span></p>
+<div class="NavFrame collapsed noprint nohandheld metadata" style="z-index: 1; margin: 0 0.5em 0.5em auto; top: -1.2em; position: relative; background-color: transparent; border: none;">
+<div class="uncollapse toggleHotspot" style="position: absolute; right:0; background-color: transparent; padding: 0; width: 4em;" title="本頁使用了標題或全文手工轉換，單擊檢視"><span style="font-family:微软雅黑,Arial Unicode MS,黑体;"><span style="padding:1px 3px; background: slategray; color:white;">汉</span><span style="padding:1px 3px; background: sienna; color:white;">漢</span></span><span class="toggleShow" style="color:black;">▼</span><span class="toggleHide" style="color:black;">▲</span></div>
+<div class="NavContent" style="position: absolute; display: none; right: 0; top: 1.5em; border: 1px gray solid; background-color: lightyellow; padding: 0.3em; z-index: 100; width: 650px; font-size: 90%; background-color: #f0f2f0; color: black;">
+<div style="background: #FFEA88; background-color: #4d4d4d; color: #ffffff;">为了阅读方便，本文使用<a href="/wiki/Help:%E4%B8%AD%E6%96%87%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91%E7%9A%84%E7%B9%81%E7%AE%80%E5%A4%84%E7%90%86#.E6.8E.A7.E5.88.B6.E8.87.AA.E5.8A.A8.E8.BD.AC.E6.8D.A2.E7.9A.84.E4.BB.A3.E7.A2.BC" title="Help:中文维基百科的繁简处理" class="mw-redirect"><span style="color:#ffffff; font-weight:bold;">全文手工轉換</span></a>。转换内容：</div>
+<div style="padding: 3px">
+<p>本文采用<a href="/wiki/Portal:%E7%94%B5%E8%84%91%E5%92%8C%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF" title="Portal:电脑和信息技术" class="mw-redirect"><span style="color: #333333; font-weight: bold;">电脑和信息技术</span></a>组全文转换 <span class="editlink noprint plainlinksneverexpand">[<a href="/wiki/Template:CGroup/IT/temp" title="Template:CGroup/IT/temp">查看</a>] • [<a href="http://zh.wikipedia.org/w/index.php?title=Template:CGroup/IT/temp&amp;action=edit" class="external text" rel="nofollow">编辑</a>] • [<a href="http://philip-bot.appspot.com/autoconvert?group=IT" class="external text" rel="nofollow">强制刷新</a>]</span></p>
+<p>以下為本條目單獨的全文轉換，請從本頁面進行編輯：</p>
+<ol>
+<li><b><span class="lanLabel">大陆：区域设置；台灣：地區設定；</span></b> 当前用字模式下显示为→<b>区域设置</b></li>
+<li><b><span class="lanLabel">大陆：用户；台灣：使用者；</span></b> 当前用字模式下显示为→<b>用户</b></li>
+<li><b><span class="lanLabel">大陆：文件；台灣：檔案；</span></b> 当前用字模式下显示为→<b>文件</b></li>
+</ol>
+</div>
+<div class="NavFrame collapsed" style="background-color: transparent; border: none; margin:0; padding:0;">
+<div class="NavHead" style="background-color: #FFEA88; font-weight: normal; height: 1.5em; text-align: left; background-color: #4d4d4d; color: #ffffff;"><a href="/wiki/Help:%E4%B8%AD%E6%96%87%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91%E7%9A%84%E7%B9%81%E7%AE%80%E3%80%81%E5%9C%B0%E5%8C%BA%E8%AF%8D%E5%A4%84%E7%90%86" title="Help:中文维基百科的繁简、地区词处理"><span style="color: #333333; font-weight: bold;">字詞轉換</span></a>说明<span class="NavToggle"><span class="toggleShow">顯示↓</span><span class="toggleHide">關閉↑</span></span></div>
+<div class="NavContent">
+<p>字詞轉換是中文维基的一項自動轉換，目的是通過计算机程序自動消除繁简、地区词等不同<b>用字模式</b>的差異，以達到閱讀方便。字詞轉換包括全局轉換和手動轉換，本說明所使用的标题转换和全文转换技術，都屬於手動轉換。</p>
+<p>如果您想对我们的字词转换系统提出一些改进建议，或者提交应用面更广的转换（<a href="/wiki/%E4%B8%AD%E6%96%87%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91">中文维基百科</a>全站乃至<a href="/wiki/MediaWiki">MediaWiki</a>软件），或者报告转换系统的错误，请前往<a href="/wiki/Wikipedia:%E5%AD%97%E8%AF%8D%E8%BD%AC%E6%8D%A2%E8%AF%B7%E6%B1%82%E6%88%96%E5%80%99%E9%80%89">Wikipedia:字词转换请求或候选</a>发表您的意见。</p>
+</div>
+</div>
+</div>
+</div>
+<p><span id="_skip_noteTA"></span></p>
+<p><b>区域设置</b>（locale）是表达程序用户地区方面的软件设定。不同系统、平台、与软件有不同的区域设置处理方式和不同的设置范围，但是一般区域设置最少也会包括语言和地区。操作系统的区域设置通常比较复杂。Windows的区域设置大致如下：小数点符号、单位制、通货符号、日期写法、日历类型、文字排序。</p>
+<p>区域设置的主要目标是让用户选择最适合他自己的设定。比如用以上的Windows作比喻：在控制面板的区域和语言选择中，用户可以选择自己的排序方法，当浏览文件时，系统会使用「用户选择的排序」来排列文件。</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE&amp;action=edit&amp;section=1" title="编辑段落：实际落实">编辑</a>]</span> <span class="mw-headline" id=".E5.AE.9E.E9.99.85.E8.90.BD.E5.AE.9E">实际落实</span></h2>
+<p>计算机中一套定义用户的语言、国家和用于定义用户希望在其用户界面上看到的各种可以改变的选择的参数集合。通常一个区域设置标识符至少包括一个语言标识符和一个区域标识符。</p>
+<p>在<a href="/wiki/UNIX">UNIX</a>和<a href="/wiki/Windows" class="mw-redirect" title="Windows">Windows</a>中，区域设置的控制是不同的。在UNIX下，通常通过环境变量来控制区域设置。这些环境变量包括：LC_ALL, LC_CTYPE, LC_TIME, 等等。你可以通过改变这些环境变量来控制你的程序或者命令所表现出来的区域设置，前提是这些程序或者命令必须是已经被国际化的和本地化的。在Windows下，你可以通过改变控制面板上的“语言/区域”中的区域的值来设定Windows的当前用户的区域设置。</p>
+<h2><span class="editsection">[<a href="/w/index.php?title=%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE&amp;action=edit&amp;section=2" title="编辑段落：参见">编辑</a>]</span> <span class="mw-headline" id=".E5.8F.82.E8.A7.81">参见</span></h2>
+<ul>
+<li><a href="/wiki/%E5%9B%BD%E9%99%85%E5%8C%96%E4%B8%8E%E6%9C%AC%E5%9C%B0%E5%8C%96">国际化与本地化</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 689/1000000
+Post-expand include size: 793955/2048000 bytes
+Template argument size: 955/2048000 bytes
+Expensive parser function count: 11/500
+-->
+
+<!-- Saved in parser cache with key zhwiki:pcache:idhash:416950-0!*!0!!zh!*!zh and timestamp 20110221035529 -->
+<div class="printfooter">
+来自“<a href="http://zh.wikipedia.org/wiki/%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE">http://zh.wikipedia.org/wiki/%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE</a>”</div>
+				<!-- /bodytext -->
+								<!-- catlinks -->
+				<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/Special:%E9%A1%B5%E9%9D%A2%E5%88%86%E7%B1%BB" title="Special:页面分类">1个分类</a>: <span dir='ltr'><a href="/wiki/Category:%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1" title="Category:程序设计">程序设计</a></span></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<!-- header -->
+		<div id="mw-head" class="noprint">
+			
+<!-- 0 -->
+<div id="p-personal" class="">
+	<h5>个人工具</h5>
+	<ul>
+					<li  id="pt-login"><a href="/w/index.php?title=Special:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95&amp;returnto=%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE" title="建议你登录，尽管并非必须。 [o]" accesskey="o">登录／创建账户</a></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+			<div id="left-navigation">
+				
+<!-- 0 -->
+<div id="p-namespaces" class="vectorTabs">
+	<h5>名字空间</h5>
+	<ul>
+					<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE"  title="查看页面内容 [c]" accesskey="c">条目</a></span></li>
+					<li  id="ca-talk" class="new"><span><a href="/w/index.php?title=Talk:%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE&amp;action=edit&amp;redlink=1"  title="关于条目正文的讨论 [t]" accesskey="t">讨论</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" class="vectorMenu">
+			<h4>
+									不转换																																					</h4>
+		<h5><span>变换</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+							<li id="ca-0" class="selected"><a href="/zh/%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE" >不转换</a></li>
+							<li id="ca-1"><a href="/zh-hans/%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE" >简体</a></li>
+							<li id="ca-2"><a href="/zh-hant/%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE" >繁體</a></li>
+							<li id="ca-3"><a href="/zh-cn/%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE" >大陆简体</a></li>
+							<li id="ca-4"><a href="/zh-hk/%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE" >港澳繁體</a></li>
+							<li id="ca-5"><a href="/zh-sg/%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE" >马新简体</a></li>
+							<li id="ca-6"><a href="/zh-tw/%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE" >台灣正體</a></li>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+			</div>
+			<div id="right-navigation">
+				
+<!-- 0 -->
+<div id="p-views" class="vectorTabs">
+	<h5>查看</h5>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="/wiki/%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE" >阅读</a></span></li>
+					<li id="ca-edit"><span><a href="/w/index.php?title=%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE&amp;action=edit"  title="你可编辑此页，请在保存前先预览一下。 [e]" accesskey="e">编辑</a></span></li>
+					<li id="ca-history" class="collapsible "><span><a href="/w/index.php?title=%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE&amp;action=history"  title="本页面的早前版本。 [h]" accesskey="h">查看历史</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" class="vectorMenu emptyPortlet">
+	<h5><span>动作</span><a href="#"></a></h5>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search">
+	<h5><label for="searchInput">搜索</label></h5>
+	<form action="/w/index.php" id="searchform">
+		<input type='hidden' name="title" value="Special:搜索"/>
+				<div id="simpleSearch">
+						<input id="searchInput" name="search" type="text"  title="搜索维基百科 [f]" accesskey="f"  value="" />
+						<button id="searchButton" type='submit' name='button'  title="搜索该文字的页面"><img src="http://bits.wikimedia.org/skins-1.17/vector/images/search-ltr.png?301-2" alt="搜索" /></button>
+					</div>
+			</form>
+</div>
+
+<!-- /2 -->
+			</div>
+		</div>
+		<!-- /header -->
+		<!-- panel -->
+			<div id="mw-panel" class="noprint">
+				<!-- logo -->
+					<div id="p-logo"><a style="background-image: url(http://upload.wikimedia.org/wikipedia/commons/0/0a/Wikipedia-logo-v2-zh.png);" href="/wiki/Wikipedia:%E9%A6%96%E9%A1%B5"  title="首页"></a></div>
+				<!-- /logo -->
+				
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- navigation -->
+<div class="portal" id='p-navigation'>
+	<h5>导航</h5>
+	<div class="body">
+				<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Wikipedia:%E9%A6%96%E9%A1%B5" title="访问首页 [z]" accesskey="z">首页</a></li>
+					<li id="n-indexpage"><a href="/wiki/Wikipedia:%E5%88%86%E9%A1%9E%E7%B4%A2%E5%BC%95">分類索引</a></li>
+					<li id="n-Featured_content"><a href="/wiki/Portal:%E7%89%B9%E8%89%B2%E5%85%A7%E5%AE%B9">特色内容</a></li>
+					<li id="n-currentevents"><a href="/wiki/Portal:%E6%96%B0%E8%81%9E%E5%8B%95%E6%85%8B" title="提供当前新闻事件的背景资料">新闻动态</a></li>
+					<li id="n-recentchanges"><a href="/wiki/Special:%E6%9C%80%E8%BF%91%E6%9B%B4%E6%94%B9" title="列出维基百科中的最近修改 [r]" accesskey="r">最近更改</a></li>
+					<li id="n-randompage"><a href="/wiki/Special:%E9%9A%8F%E6%9C%BA%E9%A1%B5%E9%9D%A2" title="随机载入一个页面 [x]" accesskey="x">随机条目</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- help -->
+<div class="portal" id='p-help'>
+	<h5>帮助</h5>
+	<div class="body">
+				<ul>
+					<li id="n-help"><a href="/wiki/Help:%E7%9B%AE%E5%BD%95" title="寻求帮助">帮助</a></li>
+					<li id="n-portal"><a href="/wiki/Wikipedia:%E7%A4%BE%E5%8C%BA%E4%B8%BB%E9%A1%B5" title="关于本计划、你可以做什么、应该如何做">社区入口</a></li>
+					<li id="n-policy"><a href="/wiki/Wikipedia:%E6%96%B9%E9%87%9D%E8%88%87%E6%8C%87%E5%BC%95">方针与指引</a></li>
+					<li id="n-villagepump"><a href="/wiki/Wikipedia:%E4%BA%92%E5%8A%A9%E5%AE%A2%E6%A0%88">互助客栈</a></li>
+					<li id="n-Information_desk"><a href="/wiki/Wikipedia:%E8%A9%A2%E5%95%8F%E8%99%95">询问处</a></li>
+					<li id="n-conversion"><a href="/wiki/Wikipedia:%E5%AD%97%E8%AF%8D%E8%BD%AC%E6%8D%A2%E8%AF%B7%E6%B1%82%E6%88%96%E5%80%99%E9%80%89">字词转换</a></li>
+					<li id="n-IRC"><a href="/wiki/Wikipedia:IRC%E8%81%8A%E5%A4%A9%E9%A2%91%E9%81%93">IRC即时聊天</a></li>
+					<li id="n-contact"><a href="/wiki/Wikipedia:%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC">联系我们</a></li>
+					<li id="n-about"><a href="/wiki/Wikipedia:%E5%85%B3%E4%BA%8E">关于维基百科</a></li>
+					<li id="n-sitesupport"><a href="http://wikimediafoundation.org/wiki/Special:Landingcheck?landing_page=WMFJA085&amp;language=zh&amp;utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=20101204SB002" title="如果您在維基百科受益良多，您可以考慮資助我們">资助维基百科</a></li>
+				</ul>
+			</div>
+</div>
+
+<!-- /help -->
+
+<!-- TOOLBOX -->
+<div class="portal" id="p-tb">
+	<h5>工具</h5>
+	<div class="body">
+		<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:%E9%93%BE%E5%85%A5%E9%A1%B5%E9%9D%A2/%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE" title="列出所有与本页相链的页面 [j]" accesskey="j">链入页面</a></li>
+						<li id="t-recentchangeslinked"><a href="/wiki/Special:%E9%93%BE%E5%87%BA%E6%9B%B4%E6%94%B9/%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE" title="页面链出所有页面的更改 [k]" accesskey="k">链出更改</a></li>
+																																					<li id="t-upload"><a href="/wiki/Project:%E4%B8%8A%E4%BC%A0" title="上传图像或多媒体文件 [u]" accesskey="u">上传文件</a></li>
+											<li id="t-specialpages"><a href="/wiki/Special:%E7%89%B9%E6%AE%8A%E9%A1%B5%E9%9D%A2" title="全部特殊页面的列表 [q]" accesskey="q">特殊页面</a></li>
+									<li id="t-print"><a href="/w/index.php?title=%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE&amp;printable=yes" rel="alternate" title="这个页面的可打印版本 [p]" accesskey="p">打印页面</a></li>
+						<li id="t-permalink"><a href="/w/index.php?title=%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE&amp;oldid=15203925" title="这个页面修订版本的永久链接">永久链接</a></li>
+				<li id="t-cite"><a href="/w/index.php?title=Special:%E5%BC%95%E7%94%A8&amp;page=%E5%8C%BA%E5%9F%9F%E8%AE%BE%E7%BD%AE&amp;id=15203925" title="关于如何引用此页的资讯">引用此文</a></li>		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- LANGUAGES -->
+<div class="portal" id="p-lang">
+	<h5>其他语言</h5>
+	<div class="body">
+		<ul>
+					<li class="interwiki-cs"><a href="http://cs.wikipedia.org/wiki/Locale" title="Locale">Česky</a></li>
+					<li class="interwiki-de"><a href="http://de.wikipedia.org/wiki/Locale" title="Locale">Deutsch</a></li>
+					<li class="interwiki-en"><a href="http://en.wikipedia.org/wiki/Locale" title="Locale">English</a></li>
+					<li class="interwiki-es"><a href="http://es.wikipedia.org/wiki/Locale" title="Locale">Español</a></li>
+					<li class="interwiki-fr"><a href="http://fr.wikipedia.org/wiki/Param%C3%A8tres_r%C3%A9gionaux" title="Paramètres régionaux">Français</a></li>
+					<li class="interwiki-ko"><a href="http://ko.wikipedia.org/wiki/%EB%A1%9C%EC%BC%80%EC%9D%BC" title="로케일">한국어</a></li>
+					<li class="interwiki-pl"><a href="http://pl.wikipedia.org/wiki/Locale" title="Locale">Polski</a></li>
+					<li class="interwiki-pt"><a href="http://pt.wikipedia.org/wiki/Locale" title="Locale">Português</a></li>
+					<li class="interwiki-ru"><a href="http://ru.wikipedia.org/wiki/%D0%9B%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C" title="Локаль">Русский</a></li>
+					<li class="interwiki-uk"><a href="http://uk.wikipedia.org/wiki/%D0%9B%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C" title="Локаль">Українська</a></li>
+				</ul>
+	</div>
+</div>
+
+<!-- /LANGUAGES -->
+			</div>
+		<!-- /panel -->
+		<!-- footer -->
+		<div id="footer">
+											<ul id="footer-info">
+																	<li id="footer-info-lastmod"> 本页面最后修订于2010年12月18日 (星期六) 03:08。</li>
+																							<li id="footer-info-copyright">本站的全部文字在<a href="/wiki/Wikipedia:CC-by-sa-3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" title="Wikipedia:CC-by-sa-3.0协议文本">知识共享 署名-相同方式共享 3.0协议</a><a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.zh" style="display:none;"></a>之条款下提供，附加条款亦可能应用。（请参阅<a href="http://wikimediafoundation.org/wiki/Terms_of_Use">使用条款</a>）<br />
+Wikipedia&reg;和维基百科标志是<a href="http://wikimediafoundation.org">维基媒体基金会</a>的注册商标；维基&trade;是维基媒体基金会的商标。<br />维基媒体基金会是在美国佛罗里达州登记的501(c)(3)<a href="http://wikimediafoundation.org/wiki/%E8%B5%84%E5%8A%A9%E7%9A%84%E5%85%8D%E7%A8%8E%E6%94%BF%E7%AD%96">免税</a>、非营利、慈善机构。<br /></li>
+															</ul>
+															<ul id="footer-places">
+																	<li id="footer-places-privacy"><a href="http://wikimediafoundation.org/wiki/%E9%9A%90%E7%A7%81%E6%94%BF%E7%AD%96" title="wikimedia:隐私政策">隐私政策</a></li>
+																							<li id="footer-places-about"><a href="/wiki/Wikipedia:%E5%85%B3%E4%BA%8E" title="Wikipedia:关于">关于维基百科</a></li>
+																							<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E" title="Wikipedia:免责声明">免责声明</a></li>
+															</ul>
+											<ul id="footer-icons" class="noprint">
+					<li id="footer-copyrightico">
+						<a href="http://wikimediafoundation.org/"><img src="/images/wikimedia-button.png" width="88" height="31" alt="Wikimedia Foundation"/></a>
+					</li>
+					<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="http://bits.wikimedia.org/skins-1.17/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		
+<script src="http://bits.wikimedia.org/zh.wikipedia.org/load.php?debug=false&amp;lang=zh&amp;modules=startup&amp;only=scripts&amp;skin=vector" type="text/javascript"></script>
+<script type="text/javascript">if ( window.mediaWiki ) {
+	mediaWiki.config.set({"wgCanonicalNamespace": "", "wgCanonicalSpecialPageName": false, "wgNamespaceNumber": 0, "wgPageName": "区域设置", "wgTitle": "区域设置", "wgAction": "view", "wgArticleId": 416950, "wgIsArticle": true, "wgUserName": null, "wgUserGroups": ["*"], "wgCurRevisionId": 15203925, "wgCategories": ["程序设计"], "wgBreakFrames": false, "wgUserVariant": "zh", "wgRestrictionEdit": [], "wgRestrictionMove": [], "wgSearchNamespaces": [0], "wgCollapsibleNavBucketTest": false, "wgCollapsibleNavForceNewVersion": false, "Geo": {"city": "", "country": ""}, "wgNoticeProject": "wikipedia"});
+}
+</script>
+<script type="text/javascript">if ( window.mediaWiki ) {
+	mediaWiki.loader.load(["mediawiki.legacy.wikibits", "mediawiki.util", "mediawiki.legacy.ajax", "mediawiki.legacy.mwsuggest", "ext.vector.collapsibleNav", "ext.vector.collapsibleTabs", "ext.vector.editWarning", "ext.vector.simpleSearch"]);
+	mediaWiki.loader.go();
+}
+</script>
+
+<script src="/w/index.php?title=Special:BannerController&amp;cache=/cn.js&amp;301-2" type="text/javascript"></script>
+<script src="http://bits.wikimedia.org/zh.wikipedia.org/load.php?debug=false&amp;lang=zh&amp;modules=site&amp;only=scripts&amp;skin=vector&amp;version=20110220T111726Z" type="text/javascript"></script>
+<script type="text/javascript">if ( window.mediaWiki ) {
+	mediaWiki.user.options.set({"ccmeonemails":0,"cols":80,"contextchars":50,"contextlines":5,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":1,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":4,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":1,"watchdefault":0,"watchdeletion":0,"watchlistdays":"3","watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"vector-simplesearch":1,"useeditwarning":1,"vector-collapsiblenav":1,"usebetatoolbar":1,"usebetatoolbar-cgd":1,"variant":"zh","language":"zh","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs100":false,"searchNs101":false});
+	mediaWiki.loader.state({"user.options":"ready"});
+	
+	
+	/* cache key: zhwiki:resourceloader:filter:minify-js:3:75d3b753daa24f90784857b3d31b305f */
+}
+</script><script type="text/javascript" src="http://geoiplookup.wikimedia.org/"></script>		<!-- fixalpha -->
+		<script type="text/javascript"> if ( window.isMSIE55 ) fixalpha(); </script>
+		<!-- /fixalpha -->
+		<!-- Served by srv288 in 1.255 secs. -->			</body>
+</html>
