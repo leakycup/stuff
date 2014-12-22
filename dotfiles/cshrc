@@ -2,7 +2,7 @@
 set filec
 set autolist
 set symlinks=ignore
-#set prompt="${HOST}:%/>"
+set prompt="${HOST}:%/>"
 if ($?prompt) then
         bash -c 'echo -ne "\033]0;${USER}@${HOSTNAME}\007"'
 endif
