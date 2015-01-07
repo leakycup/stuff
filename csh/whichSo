@@ -7,6 +7,9 @@
 # to LD_LIBRARY_PATH.
 
 set sofile = ""
+if ($?LD_LIBRARY_PATH == 0) then
+    setenv LD_LIBRARY_PATH ""
+endif
 
 foreach arg ($*)
     if (`expr $arg : -I`) then
