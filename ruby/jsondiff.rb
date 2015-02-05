@@ -2,10 +2,6 @@
 
 require 'json'
 
-if __FILE__ == $0
-    file1 = ARGV[0]
-    file2 = ARGV[1]
-
     def diffHash(json1, json2, file1, file2, parentKey)
         json1.each_key { |key|
             if (!json2.has_key?(key))
@@ -66,6 +62,10 @@ if __FILE__ == $0
 
         return error
     end
+
+if __FILE__ == $0
+    file1 = ARGV[0]
+    file2 = ARGV[1]
 
     content1 = IO.read(file1, :encoding => 'UTF-8')
     json1 = JSON.parse(content1)
