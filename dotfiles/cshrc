@@ -25,5 +25,9 @@ alias cp 'cp -i'
 alias mv 'mv -i'
 alias rm 'rm -i'
 
+#for jumping between words : ESC+left and ESC+right
+bindkey ^[^[[D vi-word-back
+bindkey ^[^[[C vi-word-fwd
+
 #git auto-complete at command line
 source ~/bin/git-completion.tcsh
