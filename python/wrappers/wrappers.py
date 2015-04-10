@@ -16,3 +16,14 @@ def dont_call(func):
   def dont_call_func(*args, **kwargs):
     print "skipping : %s" % func.__name__
   return dont_call_func
+
+class Holi(object):
+  def __init__(self, first, second = "none"):
+    self.first = first
+    self.second = second
+
+  def __call__(self, func):
+    def print_colors_and_call(*args, **kwargs):
+      print "first: " + self.first + ", second: " + self.second
+      return func(*args, **kwargs)
+    return print_colors_and_call
