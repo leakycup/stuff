@@ -27,3 +27,26 @@ class Holi(object):
       print "first: " + self.first + ", second: " + self.second
       return func(*args, **kwargs)
     return print_colors_and_call
+
+class GeneralExecutor(object):
+  def __init__(self, message = ""):
+    self.message = message
+
+  def execute(self):
+    print self.message
+    start = datetime.utcnow()
+    self.execute_func()
+    end = datetime.utcnow()
+    elapsed_time = end - start
+    print "elapsed time: %s" % elapsed_time
+
+  def execute_func(self):
+    raise NotImplementedError()
+
+def timeit(func):
+  class WrapperExecutor(GeneralExecutor):
+    def execute_func(self):
+      #return func(self, *self.args, **self.kargs)
+      return func()
+  print "from timeit(): " + str(type(WrapperExecutor))
+  return WrapperExecutor
