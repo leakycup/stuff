@@ -26,6 +26,12 @@ def ivebeentimed():
 # a decorator that returns a class rather than a method
   print "I've been timed"
 
+@timeit
+def ivebeentimed_with_message(message = ""):
+# a decorator that returns a class rather than a method
+# passing argument to decorator
+  print "I've been timed with message: " + message
+
 def main():
   ivebeencalled()
   ivenotbeencalled()
@@ -39,6 +45,9 @@ def main():
   wrapper_object2 = wrapper_class("hi") # represents an instance of WrapperExecutor
   print "from main(): wrapper_object2 is " + str(type(wrapper_object2))
   wrapper_object2.execute()
+  wrapper_object3 = ivebeentimed_with_message(message = "hello world") # represents an instance of WrapperExecutor. the named argument message is passed on to WrapperExecutor.__init__(). however, WrapperExecutor.execute_func() does not pass the argument down to the wrapped function.
+  print "from main(): wrapper_object3 is " + str(type(wrapper_object3))
+  wrapper_object3.execute()
 
 if __name__ == "__main__":
   main()
