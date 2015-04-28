@@ -1,5 +1,9 @@
 from datetime import *
 
+'''
+see http://hangar.runway7.net/python/decorators-and-wrappers : a good tutorial on python wrappers/decorators
+'''
+
 def print_func_name(func):
   def print_name_and_call(*args, **kwargs):
     print "calling function: %s" % func.__name__
