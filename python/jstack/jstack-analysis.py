@@ -11,16 +11,18 @@ component_count = defaultdict(int)
 runnable = False
 prev = None
 for line in f:
+  line = line.strip()
   if not line:
     runnable = False
+    continue
   if 'java.lang.Thread.State: RUNNABLE' in line:
     runnable = True
+    continue
   if runnable:
     element = line.replace('at ', '')
     element_count[element] += 1
     if 'org.apache.solr.handler.component.SearchHandler.handleRequestBody' in element:
       component_count[prev] += 1
-    #prev = element.replace('[.].*(.*)', '')
     prev = re.sub('[.][^.(]*[(].*[)]$', '', element)
 
 print '---------- stack element count --------------'
