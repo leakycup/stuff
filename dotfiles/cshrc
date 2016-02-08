@@ -28,6 +28,8 @@ alias rm 'rm -i'
 #for jumping between words : ESC+left and ESC+right
 bindkey ^[^[[D vi-word-back
 bindkey ^[^[[C vi-word-fwd
+#for searching shell history using ctrl-R
+bindkey "^R" i-search-back
 
 #git auto-complete at command line
 source ~/bin/git-completion.tcsh
