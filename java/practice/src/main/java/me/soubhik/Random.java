@@ -12,7 +12,7 @@ import java.util.Map;
  * Created by soubhik on 7/3/16.
  */
 public class Random {
-    //TODO: random number generator, reservoir sampling, entropy
+    //TODO: reservoir sampling, entropy
     public static class Interval {
         double start; //inclusive
         double end; //exclusive
@@ -116,14 +116,14 @@ public class Random {
         }
     }
 
-    public static class Distribution {
-        Map<Integer, Integer> frequencies;
+    public static class Distribution<T> {
+        Map<T, Integer> frequencies;
 
         public Distribution() {
-            frequencies = new HashMap<Integer, Integer>();
+            frequencies = new HashMap<T, Integer>();
         }
 
-        public void add(Integer datum) {
+        public void add(T datum) {
             if (!frequencies.containsKey(datum)) {
                 frequencies.put(datum, 0);
             }
@@ -131,15 +131,15 @@ public class Random {
             frequencies.put(datum, oldFrequency+1);
         }
 
-        public Map<Integer, Double> probabilities() {
+        public Map<T, Double> probabilities() {
             int totalFrequency = 0;
             for (int frequency: frequencies.values()) {
                 totalFrequency += frequency;
             }
 
-            Map<Integer, Double> probabilityDistribution = new HashMap<Integer, Double>();
-            for (Map.Entry<Integer, Integer> entry: frequencies.entrySet()) {
-                int datum = entry.getKey();
+            Map<T, Double> probabilityDistribution = new HashMap<T, Double>();
+            for (Map.Entry<T, Integer> entry: frequencies.entrySet()) {
+                T datum = entry.getKey();
                 int frequency = entry.getValue();
                 double probability = ((double)frequency)/((double)totalFrequency);
                 probabilityDistribution.put(datum, probability);
@@ -149,10 +149,10 @@ public class Random {
         }
 
         public void print() {
-            Map<Integer, Double> probabilityDistribution = probabilities();
+            Map<T, Double> probabilityDistribution = probabilities();
 
-            for (Map.Entry<Integer, Integer> entry: frequencies.entrySet()) {
-                int datum = entry.getKey();
+            for (Map.Entry<T, Integer> entry: frequencies.entrySet()) {
+                T datum = entry.getKey();
                 int frequency = entry.getValue();
                 double probability = probabilityDistribution.get(datum);
                 System.out.println(datum + ":" + frequency + " (" + probability + ")");
@@ -180,15 +180,52 @@ public class Random {
         for (int i = 0; i < indices.length; i++) {
             indices[i] = randomGenerator.next();
         }
+        //sbh: debug
+        /*
+        System.out.print("original indices: ");
+        for (int index: indices) {
+            System.out.print(index + ", ");
+        }
+        System.out.print("\n");
+        */
+        //sbh: end debug
 
         int currentIndex = 0;
+        int restartIndex = currentIndex + 1;
         T currentElement = elements.get(currentIndex);
-        for (int i = 0; i < indices.length - 1; i++) {
+        for (int i = 0; i < indices.length; i++) {
             int newIndex = indices[currentIndex];
+            indices[currentIndex] = -1; //mark visited
             T displaced = elements.get(newIndex);
             elements.set(newIndex, currentElement);
+
+            //sbh: debug
+            /*
+            System.out.println("sbh: currentIndex: " + currentIndex + ", newIndex: " + newIndex +
+                    ", currentElement: " + currentElement + ", displaced: " + displaced);
+            System.out.print("elements: ");
+            for (T e: elements) {
+                System.out.print(e + ", ");
+            }
+            System.out.print("\n");
+            System.out.print("indices: ");
+            for (int index: indices) {
+                System.out.print(index + ", ");
+            }
+            System.out.print("\n");
+            */
+            //sbh: end debug
+
             currentElement = displaced;
             currentIndex = newIndex;
+            while ((restartIndex < indices.length) && (indices[currentIndex] < 0)) {
+                currentIndex = restartIndex;
+                currentElement = elements.get(currentIndex);
+                restartIndex++;
+            }
+            if (currentIndex >= indices.length) {
+                break;
+            }
         }
     }
 
@@ -207,7 +244,7 @@ public class Random {
 
     private static void randomTest(int lower, int upper) {
         RandomInt randomInt = new RandomInt(lower, upper);
-        Distribution distribution = new Distribution();
+        Distribution distribution = new Distribution<Integer>();
         System.out.println("Random integers from " + lower + " to " + upper);
         System.out.println("===============================================");
         for (int i = 0; i < 20; i++) {
@@ -221,7 +258,7 @@ public class Random {
 
     private static void randomTest2(int lower, int upper) {
         RandomInt randomInt = new RandomInt(lower, upper);
-        Distribution distribution = new Distribution();
+        Distribution distribution = new Distribution<Integer>();
         System.out.println("Random integers from " + lower + " to " + upper + " using RandomInt");
         System.out.println("===============================================");
         for (int i = 0; i < 20; i++) {
@@ -235,7 +272,7 @@ public class Random {
         System.out.println("Random integers from " + lower + " to " + upper + " using DiscreteRandom");
         System.out.println("===============================================");
         DiscreteRandom discreteRandom = new DiscreteRandom(distribution);
-        Distribution distribution2 = new Distribution();
+        Distribution distribution2 = new Distribution<Integer>();
         for (int i = 0; i < 20; i++) {
             int datum = discreteRandom.next();
             distribution2.add(datum);
@@ -247,7 +284,7 @@ public class Random {
 
     private static void randomTest3(int lower, int upper) {
         RandomIntWithoutReplacement randomInt = new RandomIntWithoutReplacement(lower, upper);
-        Distribution distribution = new Distribution();
+        Distribution distribution = new Distribution<Integer>();
         System.out.println("Random integers from " + lower + " to " + upper + " using RandomIntWithoutReplacement");
         System.out.println("===============================================");
         for (int i = 0; i < 20; i++) {
@@ -264,38 +301,54 @@ public class Random {
     private static void randomTest4(List<String> population, int size) {
         Collection<String> sample = sample(population, size);
 
+        Distribution populationDistribution = new Distribution<String>();
         System.out.print("Population: ");
         for (String s: population) {
             System.out.print(s + " ");
+            populationDistribution.add(s);
         }
         System.out.print("\n");
+        System.out.println("Population distribution: ");
+        populationDistribution.print();
 
+        Distribution sampleDistribution = new Distribution<String>();
         System.out.print("Sample: ");
         for (String s: sample) {
             System.out.print(s + " ");
+            sampleDistribution.add(s);
         }
         System.out.print("\n");
+        System.out.println("Sample distribution: ");
+        sampleDistribution.print();
     }
 
     private static void randomTest5(List<Integer> elements) {
+        Distribution<Integer> distribution = new Distribution<Integer>();
         System.out.print("Original array: ");
         for (Integer e: elements) {
             System.out.print(e + ", ");
+            distribution.add(e);
         }
         System.out.print("\n");
+        System.out.println("original distribution:");
+        distribution.print();
 
         randomSort(elements);
+        distribution = new Distribution<Integer>();
         System.out.print("Random sorted array: ");
         for (Integer e: elements) {
             System.out.print(e + ", ");
+            distribution.add(e);
         }
         System.out.print("\n");
+        System.out.println("distribution after sort:");
+        distribution.print();
     }
 
     public static void main(String[] args) {
         int k = 2;
         RandomInt randomInt = new RandomInt(k);
-        Distribution distribution = new Distribution();
+        Distribution distribution = new Distribution<Integer>();
         System.out.println("Random integers from 0 to " + k);
         System.out.println("===========================================");
         for (int i = 0; i < 20; i++) {
@@ -327,6 +380,11 @@ public class Random {
         System.out.println("===========================================");
         List<Integer> elements =
                 Arrays.asList(new Integer[] {1, 3, 4, 6, 8, 10, 13, 10, 10, 14, 19, 6, 22, 6, 3, 3, 3, 3, 28, 6});
+        randomTest5(elements);
+        randomTest5(elements);
+        randomTest5(elements);
+
+        elements = Arrays.asList(new Integer[] {1, 2, 3, 4});
         randomTest5(elements);
         randomTest5(elements);
         randomTest5(elements);
