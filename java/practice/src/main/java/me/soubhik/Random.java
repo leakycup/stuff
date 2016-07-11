@@ -1,8 +1,11 @@
 package me.soubhik;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -81,6 +84,10 @@ public class Random {
         private final int[] numbers;
         private int numbersAvailable;
 
+        public RandomIntWithoutReplacement(int upper) {
+            this(0, upper);
+        }
+
         public RandomIntWithoutReplacement(int lower, int upper) {
             int range = upper - lower;
             this.lower = lower;
@@ -153,6 +160,38 @@ public class Random {
         }
     }
 
+    public static <T> Collection<T> sample(List<T> population, int sampleSize) {
+        assert (sampleSize < population.size());
+        assert (sampleSize > 0);
+
+        List<T> sample = new ArrayList<T>(sampleSize);
+        RandomIntWithoutReplacement randomGenerator = new RandomIntWithoutReplacement(population.size());
+        for (int i = 0; i < sampleSize; i++) {
+            int randomIndex = randomGenerator.next();
+            sample.add(population.get(randomIndex));
+        }
+
+        return sample;
+    }
+
+    public static <T> void randomSort(List<T> elements) {
+        int[] indices = new int[elements.size()];
+        RandomIntWithoutReplacement randomGenerator = new RandomIntWithoutReplacement(elements.size());
+        for (int i = 0; i < indices.length; i++) {
+            indices[i] = randomGenerator.next();
+        }
+
+        int currentIndex = 0;
+        T currentElement = elements.get(currentIndex);
+        for (int i = 0; i < indices.length - 1; i++) {
+            int newIndex = indices[currentIndex];
+            T displaced = elements.get(newIndex);
+            elements.set(newIndex, currentElement);
+            currentElement = displaced;
+            currentIndex = newIndex;
+        }
+    }
+
     private static <T> int findInterval(ArrayList<? extends Comparable<? super T>> intervals, T key) {
         int index = Collections.binarySearch(intervals, key);
 
@@ -222,6 +261,37 @@ public class Random {
         distribution.print();
     }
 
+    private static void randomTest4(List<String> population, int size) {
+        Collection<String> sample = sample(population, size);
+
+        System.out.print("Population: ");
+        for (String s: population) {
+            System.out.print(s + " ");
+        }
+        System.out.print("\n");
+
+        System.out.print("Sample: ");
+        for (String s: sample) {
+            System.out.print(s + " ");
+        }
+        System.out.print("\n");
+    }
+
+    private static void randomTest5(List<Integer> elements) {
+        System.out.print("Original array: ");
+        for (Integer e: elements) {
+            System.out.print(e + ", ");
+        }
+        System.out.print("\n");
+
+        randomSort(elements);
+        System.out.print("Random sorted array: ");
+        for (Integer e: elements) {
+            System.out.print(e + ", ");
+        }
+        System.out.print("\n");
+    }
+
     public static void main(String[] args) {
         int k = 2;
         RandomInt randomInt = new RandomInt(k);
@@ -244,5 +314,21 @@ public class Random {
 
         randomTest3(0, 2);
         randomTest3(6, 10);
+
+        System.out.println("Random sampling test");
+        System.out.println("===========================================");
+        List<String> population =
+                Arrays.asList("horse dog bat elephant dog dog cat dog tiger deer fox dog bat cat cow".split(" "));
+        randomTest4(population, 5);
+        randomTest4(population, 5);
+        randomTest4(population, 5);
+
+        System.out.println("Random sort test");
+        System.out.println("===========================================");
+        List<Integer> elements =
+                Arrays.asList(new Integer[] {1, 3, 4, 6, 8, 10, 13, 10, 10, 14, 19, 6, 22, 6, 3, 3, 3, 3, 28, 6});
+        randomTest5(elements);
+        randomTest5(elements);
+        randomTest5(elements);
     }
 }
