@@ -1,5 +1,7 @@
 package me.soubhik;
 
+import org.apache.commons.lang3.tuple.ImmutablePair;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -229,6 +231,152 @@ public class Random {
         }
     }
 
+    public static <T> double selfInformation(Distribution<T> distribution, T datum) {
+        return selfInformation(distribution.probabilities(), datum);
+    }
+
+    public static <T> double selfInformation(Map<T, Double> probabilities, T datum) {
+        assert probabilities.containsKey(datum);
+
+        double p = probabilities.get(datum);
+        return -log2(p);
+    }
+
+    public static double entropy(Distribution<?> distribution) {
+        return entropy(distribution.probabilities());
+    }
+
+    public static double entropy(Map<?, Double> probabilities) {
+        double e = 0d;
+        for (double p: probabilities.values()) {
+            e += p * log2(p);
+        }
+
+        return -e;
+    }
+
+    public static <T> double pmi(Distribution<T> xDistribution,
+                                 Distribution<T> yDistribution,
+                                 Distribution<ImmutablePair<T, T>> xyDistribution,
+                                 T x, T y) {
+        return pmi(xDistribution.probabilities(), yDistribution.probabilities(), xyDistribution.probabilities(), x, y);
+    }
+
+    public static <T> double pmi(Map<T, Double> xProbabilities,
+                                 Map<T, Double> yProbabilities,
+                                 Map<ImmutablePair<T, T>, Double> xyProbabilities,
+                                 T x, T y) {
+        double selfX = selfInformation(xProbabilities, x);
+        double selfY = selfInformation(yProbabilities, y);
+        double selfXY = selfInformation(xyProbabilities, new ImmutablePair<T, T>(x, y));
+
+        return (selfX + selfY - selfXY);
+    }
+
+    public static <T> double normalizedPMI(Distribution<T> xDistribution,
+                                           Distribution<T> yDistribution,
+                                           Distribution<ImmutablePair<T, T>> xyDistribution,
+                                           T x, T y) {
+        return normalizedPMI(xDistribution.probabilities(),
+                yDistribution.probabilities(),
+                xyDistribution.probabilities(), x, y);
+    }
+
+    public static <T> double normalizedPMI(Map<T, Double> xProbabilities,
+                                           Map<T, Double> yProbabilities,
+                                           Map<ImmutablePair<T, T>, Double> xyProbabilities,
+                                           T x, T y) {
+        double pxy = xyProbabilities.get(new ImmutablePair<T, T>(x, y));
+
+        return (-pmi(xProbabilities, yProbabilities, xyProbabilities, x, y) / log2(pxy));
+    }
+
+    public static <T> double mutualInformation(Distribution<T> xDistribution,
+                                               Distribution<T> yDistribution,
+                                               Distribution<ImmutablePair<T, T>> xyDistribution) {
+        return mutualInformation(xDistribution.probabilities(),
+                yDistribution.probabilities(),
+                xyDistribution.probabilities());
+    }
+
+    public static <T> double mutualInformation(Map<T, Double> xProbabilities,
+                                               Map<T, Double> yProbabilities,
+                                               Map<ImmutablePair<T, T>, Double> xyProbabilities) {
+        double mi = 0d;
+
+        for (T x: xProbabilities.keySet()) {
+            for (T y: yProbabilities.keySet()) {
+                double pmiXY = pmi(xProbabilities, yProbabilities, xyProbabilities, x, y);
+                double pXY = xyProbabilities.get(new ImmutablePair<T, T>(x, y));
+                mi += pmiXY * pXY;
+            }
+        }
+
+        return mi;
+    }
+
+    public static <T> double crossEntropy(Distribution<T> xDistribution, Distribution<T> yDistribution) {
+        return crossEntropy(xDistribution.probabilities(), yDistribution.probabilities());
+    }
+
+    public static <T> double crossEntropy(Map<T, Double> xProbabilities, Map<T, Double> yProbabilities) {
+        double ce = 0d;
+
+        for (T x: xProbabilities.keySet()) {
+            double px = xProbabilities.get(x);
+            double py;
+            if (yProbabilities.containsKey(x)) {
+                py = yProbabilities.get(x);
+                ce += px * log2(py);
+            } else {
+                py = 0d;
+                assert (px == 0);
+                ce += 0d; //as x-->0, x*log(x)-->0
+            }
+        }
+
+        return -ce;
+    }
+
+    public static <T> double klDivergence(Distribution<T> xDistribution, Distribution<T> yDistribution) {
+        return klDivergence(xDistribution.probabilities(), yDistribution.probabilities());
+    }
+
+    public static <T> double klDivergence(Map<T, Double> xProbabilities, Map<T, Double> yProbabilities) {
+        double ceXY = crossEntropy(xProbabilities, yProbabilities);
+        double eX = entropy(xProbabilities);
+
+        return (ceXY - eX);
+    }
+
+    public static <T> double jsDivergence(Distribution<T> xDistribution, Distribution<T> yDistribution) {
+        return jsDivergence(xDistribution.probabilities(), yDistribution.probabilities());
+    }
+
+    public static <T> double jsDivergence(Map<T, Double> xProbabilities, Map<T, Double> yProbabilities) {
+        Map<T, Double> zProbabilities = new HashMap<T, Double>(xProbabilities);
+
+        for (T y: yProbabilities.keySet()) {
+            if (!zProbabilities.containsKey(y)) {
+                zProbabilities.put(y, 0d);
+            }
+            double pz = zProbabilities.get(y);
+            pz += yProbabilities.get(y);
+            zProbabilities.put(y, pz);
+        }
+
+        for (T z: zProbabilities.keySet()) {
+            double pz = zProbabilities.get(z);
+            pz /= 2d;
+            zProbabilities.put(z, pz);
+        }
+
+        double klXZ = klDivergence(xProbabilities, zProbabilities);
+        double klYZ = klDivergence(yProbabilities, zProbabilities);
+
+        return (klXZ + klYZ)/2d;
+    }
+
     private static <T> int findInterval(ArrayList<? extends Comparable<? super T>> intervals, T key) {
         int index = Collections.binarySearch(intervals, key);
 
@@ -240,6 +388,10 @@ public class Random {
         int insertionPoint = -(index + 1);
 
         return (insertionPoint - 1);
+    }
+
+    private static double log2(double number) {
+        return Math.log(number) / Math.log(2.0d);
     }
 
     private static void randomTest(int lower, int upper) {
@@ -345,6 +497,60 @@ public class Random {
         distribution.print();
     }
 
+    private static void randomTest6(Distribution<Integer> d1, Distribution<Integer> d2) {
+        //double mi = mutualInformation(d1, d2);
+        double crossEntropy12 = crossEntropy(d1, d2);
+        double crossEntropy21 = crossEntropy(d2, d1);
+        double kld12 = klDivergence(d1, d2);
+        double kld21 = klDivergence(d2, d1);
+        double jsd = jsDivergence(d1, d2);
+
+        System.out.println("Distribution similarity:");
+        System.out.println("=======================================");
+        System.out.println("distribution#1: entropy: " + entropy(d1));
+        d1.print();
+        System.out.println("distribution#2: entropy: " + entropy(d2));
+        d2.print();
+        //System.out.println("mutual information: " + mi + ", jsd: " + jsd + ", kld: " + kld);
+        System.out.println("jsd: " + jsd +
+                ", kld12: " + kld12 + ", kld21: " + kld21 +
+                ", crossEntropy12: " + crossEntropy12 + ", crossEntropy21: " + crossEntropy21);
+    }
+
+    private static Distribution<Integer> buildDistribution(int[] data, int[] frequencies) {
+        Distribution<Integer> d = new Distribution<Integer>();
+
+        for (int i=0; i < data.length; i++) {
+            int frequency = frequencies[i];
+            for (int j=0; j < frequency; j++) {
+                d.add(data[i]);
+            }
+        }
+
+        return d;
+    }
+
+    private static Distribution<ImmutablePair<Integer, Integer>> buildJointDistribution(int[] data,
+                                                                                        int[] frequencies1,
+                                                                                        int[] frequencies2) {
+        Distribution<ImmutablePair<Integer, Integer>> d = new Distribution<ImmutablePair<Integer, Integer>>();
+
+        for (int i=0; i < data.length; i++) {
+            for (int j=0; j < data.length; j++) {
+                ImmutablePair<Integer, Integer> datum = new ImmutablePair<Integer, Integer>(data[i], data[j]);
+                int f1 = frequencies1[i];
+                int f2 = frequencies2[j];
+                int minFrequency = Math.min(f1, f2);
+                int f = new RandomInt(minFrequency+1).next();
+                for (int k=0; k < f; k++) {
+                    d.add(datum);
+                }
+            }
+        }
+
+        return d;
+    }
+
     public static void main(String[] args) {
         int k = 2;
         RandomInt randomInt = new RandomInt(k);
@@ -388,5 +594,45 @@ public class Random {
         randomTest5(elements);
         randomTest5(elements);
         randomTest5(elements);
+
+        int[] data = new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+        int[] f1 = new int[] {2, 4, 8, 3, 2, 1, 2, 2, 3, 2};
+        Distribution<Integer> d1 = buildDistribution(data, f1);
+        randomTest6(d1, d1);
+
+        int[] f2 = new int[] {2, 3, 2, 2, 1, 2, 3, 8, 4, 2};
+        Distribution<Integer> d2 = buildDistribution(data, f2);
+        randomTest6(d1, d2);
+
+        int[] f3 = new int[] {2, 3, 6, 3, 2, 1, 2, 2, 2, 2};
+        Distribution<Integer> d3 = buildDistribution(data, f3);
+        randomTest6(d1, d3);
+
+        int[] f4 = new int[] {2, 2, 2, 2, 2, 2, 2, 2, 2, 2};
+        Distribution<Integer> d4 = buildDistribution(data, f4);
+        randomTest6(d1, d4);
+
+        int[] f5 = new int[] {2, 3, 2, 2, 1, 2, 3, 16, 4, 2};
+        Distribution<Integer> d5 = buildDistribution(data, f5);
+        randomTest6(d1, d5);
+
+        int[] f6 = new int[]{1, 1, 1, 1, 1, 1, 1, 1, 1, 100};
+        Distribution<Integer> d6 = buildDistribution(data, f6);
+
+        int[] f7 = new int[]{100, 1, 1, 1, 1, 1, 1, 1, 1, 1};
+        Distribution<Integer> d7 = buildDistribution(data, f7);
+
+        randomTest6(d6, d7);
+
+        int[] f8 = new int[]{1, 1, 1, 1, 1, 100, 100, 100, 100, 100};
+        Distribution<Integer> d8 = buildDistribution(data, f8);
+
+        int[] f9 = new int[]{100, 100, 100, 100, 100, 1, 1, 1, 1, 1};
+        Distribution<Integer> d9 = buildDistribution(data, f9);
+
+        Distribution<ImmutablePair<Integer, Integer>> d12 = buildJointDistribution(data, f1, f2);
+
+        randomTest6(d8, d9);
     }
 }
