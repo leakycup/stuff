@@ -1,6 +1,7 @@
 package me.soubhik;
 
 import org.apache.commons.lang3.tuple.ImmutablePair;
+import org.apache.commons.lang3.tuple.Pair;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -255,59 +256,59 @@ public class Random {
         return -e;
     }
 
-    public static <T> double pmi(Distribution<T> xDistribution,
-                                 Distribution<T> yDistribution,
-                                 Distribution<ImmutablePair<T, T>> xyDistribution,
-                                 T x, T y) {
+    public static <U, V> double pmi(Distribution<U> xDistribution,
+                                 Distribution<V> yDistribution,
+                                 Distribution<ImmutablePair<U, V>> xyDistribution,
+                                 U x, V y) {
         return pmi(xDistribution.probabilities(), yDistribution.probabilities(), xyDistribution.probabilities(), x, y);
     }
 
-    public static <T> double pmi(Map<T, Double> xProbabilities,
-                                 Map<T, Double> yProbabilities,
-                                 Map<ImmutablePair<T, T>, Double> xyProbabilities,
-                                 T x, T y) {
+    public static <U, V> double pmi(Map<U, Double> xProbabilities,
+                                 Map<V, Double> yProbabilities,
+                                 Map<ImmutablePair<U, V>, Double> xyProbabilities,
+                                 U x, V y) {
         double selfX = selfInformation(xProbabilities, x);
         double selfY = selfInformation(yProbabilities, y);
-        double selfXY = selfInformation(xyProbabilities, new ImmutablePair<T, T>(x, y));
+        double selfXY = selfInformation(xyProbabilities, new ImmutablePair<U, V>(x, y));
 
         return (selfX + selfY - selfXY);
     }
 
-    public static <T> double normalizedPMI(Distribution<T> xDistribution,
-                                           Distribution<T> yDistribution,
-                                           Distribution<ImmutablePair<T, T>> xyDistribution,
-                                           T x, T y) {
+    public static <U, V> double normalizedPMI(Distribution<U> xDistribution,
+                                           Distribution<V> yDistribution,
+                                           Distribution<ImmutablePair<U, V>> xyDistribution,
+                                           U x, V y) {
         return normalizedPMI(xDistribution.probabilities(),
                 yDistribution.probabilities(),
                 xyDistribution.probabilities(), x, y);
     }
 
-    public static <T> double normalizedPMI(Map<T, Double> xProbabilities,
-                                           Map<T, Double> yProbabilities,
-                                           Map<ImmutablePair<T, T>, Double> xyProbabilities,
-                                           T x, T y) {
-        double pxy = xyProbabilities.get(new ImmutablePair<T, T>(x, y));
+    public static <U, V> double normalizedPMI(Map<U, Double> xProbabilities,
+                                           Map<V, Double> yProbabilities,
+                                           Map<ImmutablePair<U, V>, Double> xyProbabilities,
+                                           U x, V y) {
+        double pxy = xyProbabilities.get(new ImmutablePair<U, V>(x, y));
 
         return (-pmi(xProbabilities, yProbabilities, xyProbabilities, x, y) / log2(pxy));
     }
 
-    public static <T> double mutualInformation(Distribution<T> xDistribution,
-                                               Distribution<T> yDistribution,
-                                               Distribution<ImmutablePair<T, T>> xyDistribution) {
+    public static <U, V> double mutualInformation(Distribution<U> xDistribution,
+                                               Distribution<V> yDistribution,
+                                               Distribution<ImmutablePair<U, V>> xyDistribution) {
         return mutualInformation(xDistribution.probabilities(),
                 yDistribution.probabilities(),
                 xyDistribution.probabilities());
     }
 
-    public static <T> double mutualInformation(Map<T, Double> xProbabilities,
-                                               Map<T, Double> yProbabilities,
-                                               Map<ImmutablePair<T, T>, Double> xyProbabilities) {
+    public static <U, V> double mutualInformation(Map<U, Double> xProbabilities,
+                                               Map<V, Double> yProbabilities,
+                                               Map<ImmutablePair<U, V>, Double> xyProbabilities) {
         double mi = 0d;
 
-        for (T x: xProbabilities.keySet()) {
-            for (T y: yProbabilities.keySet()) {
+        for (U x: xProbabilities.keySet()) {
+            for (V y: yProbabilities.keySet()) {
                 double pmiXY = pmi(xProbabilities, yProbabilities, xyProbabilities, x, y);
-                double pXY = xyProbabilities.get(new ImmutablePair<T, T>(x, y));
+                double pXY = xyProbabilities.get(new ImmutablePair<U, V>(x, y));
                 mi += pmiXY * pXY;
             }
         }
@@ -498,7 +499,6 @@ public class Random {
     }
 
     private static void randomTest6(Distribution<Integer> d1, Distribution<Integer> d2) {
-        //double mi = mutualInformation(d1, d2);
         double crossEntropy12 = crossEntropy(d1, d2);
         double crossEntropy21 = crossEntropy(d2, d1);
         double kld12 = klDivergence(d1, d2);
@@ -511,14 +511,51 @@ public class Random {
         d1.print();
         System.out.println("distribution#2: entropy: " + entropy(d2));
         d2.print();
-        //System.out.println("mutual information: " + mi + ", jsd: " + jsd + ", kld: " + kld);
         System.out.println("jsd: " + jsd +
                 ", kld12: " + kld12 + ", kld21: " + kld21 +
                 ", crossEntropy12: " + crossEntropy12 + ", crossEntropy21: " + crossEntropy21);
     }
 
-    private static Distribution<Integer> buildDistribution(int[] data, int[] frequencies) {
-        Distribution<Integer> d = new Distribution<Integer>();
+    private static <T> void randomTest7(ImmutablePair<T, T>[] data, int[] frequencies) {
+        Distribution<ImmutablePair<T, T>> jointDistribution = buildDistribution(data, frequencies);
+        Distribution<ImmutablePair<T, T>> productDistribution = buildProductDistribution(data, frequencies);
+        Pair<Distribution<T>, Distribution<T>> distributionPair = marginalize(data, frequencies);
+        Distribution<T> d1 = distributionPair.getLeft();
+        Distribution<T> d2 = distributionPair.getRight();
+
+        double jsd = jsDivergence(d1, d2);
+        double mi = mutualInformation(d1, d2, jointDistribution);
+        double kldJointToProduct = klDivergence(jointDistribution, productDistribution);
+
+        System.out.println("Distribution similarity:");
+        System.out.println("=======================================");
+        System.out.println("distribution#1: entropy: " + entropy(d1));
+        d1.print();
+        System.out.println("--------------------");
+        System.out.println("distribution#2: entropy: " + entropy(d2));
+        d2.print();
+        System.out.println("--------------------");
+        System.out.println("joint distribution: entropy: " + entropy(jointDistribution));
+        jointDistribution.print();
+        System.out.println("--------------------");
+        System.out.println("product distribution: entropy: " + entropy(productDistribution));
+        productDistribution.print();
+        System.out.println("--------------------");
+
+        System.out.println("jsd: " + jsd + ", mutual information: " + mi + ", kldJointToProduct: " + kldJointToProduct);
+
+        System.out.println("PMI");
+        System.out.println("====================");
+        for (ImmutablePair<T, T> pair: data) {
+            T left = pair.left;
+            T right = pair.right;
+            double pmi = pmi(d1, d2, jointDistribution, left, right);
+            System.out.println("(" + left + ", " + right + "): " + pmi);
+        }
+    }
+
+    private static <T> Distribution<T> buildDistribution(T[] data, int[] frequencies) {
+        Distribution<T> d = new Distribution<T>();
 
         for (int i=0; i < data.length; i++) {
             int frequency = frequencies[i];
@@ -530,25 +567,78 @@ public class Random {
         return d;
     }
 
-    private static Distribution<ImmutablePair<Integer, Integer>> buildJointDistribution(int[] data,
-                                                                                        int[] frequencies1,
-                                                                                        int[] frequencies2) {
-        Distribution<ImmutablePair<Integer, Integer>> d = new Distribution<ImmutablePair<Integer, Integer>>();
+    private static <T> Distribution<T> buildDistribution(Map<T, Integer> frequencies) {
+        Object[] data = new Object[frequencies.keySet().size()];
+        int[] frequenciesArray = new int[frequencies.values().size()];
+        int i = 0;
+        for (Map.Entry<T, Integer> entry: frequencies.entrySet()) {
+            data[i] = entry.getKey();
+            frequenciesArray[i] = entry.getValue();
+            i++;
+        }
+        Distribution<T> distribution = buildDistribution((T[])data, frequenciesArray);
 
-        for (int i=0; i < data.length; i++) {
-            for (int j=0; j < data.length; j++) {
-                ImmutablePair<Integer, Integer> datum = new ImmutablePair<Integer, Integer>(data[i], data[j]);
-                int f1 = frequencies1[i];
-                int f2 = frequencies2[j];
-                int minFrequency = Math.min(f1, f2);
-                int f = new RandomInt(minFrequency+1).next();
-                for (int k=0; k < f; k++) {
-                    d.add(datum);
-                }
+        return distribution;
+    }
+
+    private static <U, V> Pair<Distribution<U>, Distribution<V>> marginalize(ImmutablePair<U, V>[] data,
+                                                                             int[] frequencies) {
+        Pair<Map<U, Integer>, Map<V, Integer>> frequenciesPair = marginalizeFrequencies(data, frequencies);
+        Map<U, Integer> leftFrequencies = frequenciesPair.getLeft();
+        Map<V, Integer> rightFrequencies = frequenciesPair.getRight();
+
+        Distribution<U> leftDistribution = buildDistribution(leftFrequencies);
+        Distribution<V> rightDistribution = buildDistribution(rightFrequencies);
+
+        return new ImmutablePair<Distribution<U>, Distribution<V>>(leftDistribution, rightDistribution);
+    }
+
+    private static <U, V> Pair<Map<U, Integer>, Map<V, Integer>> marginalizeFrequencies(ImmutablePair<U, V>[] data,
+                                                                                        int[] frequencies) {
+        assert (data.length == frequencies.length);
+
+        Map<U, Integer> leftFrequencies = new HashMap<U, Integer>();
+        Map<V, Integer> rightFrequencies = new HashMap<V, Integer>();
+
+        for (int i = 0; i < data.length; i++) {
+            U left = data[i].left;
+            V right = data[i].right;
+            int f = frequencies[i];
+
+            if (!leftFrequencies.containsKey(left)) {
+                leftFrequencies.put(left, 0);
             }
+            leftFrequencies.put(left, leftFrequencies.get(left) + f);
+
+            if (!rightFrequencies.containsKey(right)) {
+                rightFrequencies.put(right, 0);
+            }
+            rightFrequencies.put(right, rightFrequencies.get(right) + f);
         }
 
-        return d;
+        return new ImmutablePair<Map<U, Integer>, Map<V, Integer>>(leftFrequencies, rightFrequencies);
+    }
+
+    private static <U, V> Distribution<ImmutablePair<U, V>> buildProductDistribution(ImmutablePair<U, V>[] data,
+                                                                                     int[] frequencies) {
+        assert (data.length == frequencies.length);
+
+        Pair<Map<U, Integer>, Map<V, Integer>> frequenciesPair = marginalizeFrequencies(data, frequencies);
+        Map<U, Integer> leftFrequencies = frequenciesPair.getLeft();
+        Map<V, Integer> rightFrequencies = frequenciesPair.getRight();
+
+        int[] productFrequencies = new int[frequencies.length];
+        for (int i=0; i<productFrequencies.length; i++) {
+            ImmutablePair<U, V> pair = data[i];
+            U left = pair.left;
+            V right = pair.right;
+            int leftFrequency = leftFrequencies.get(left);
+            int rightFrequency = rightFrequencies.get(right);
+            int productFrequency = leftFrequency * rightFrequency;
+            productFrequencies[i] = productFrequency;
+        }
+
+        return buildDistribution(data, productFrequencies);
     }
 
     public static void main(String[] args) {
@@ -595,7 +685,7 @@ public class Random {
         randomTest5(elements);
         randomTest5(elements);
 
-        int[] data = new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        Integer[] data = new Integer[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
         int[] f1 = new int[] {2, 4, 8, 3, 2, 1, 2, 2, 3, 2};
         Distribution<Integer> d1 = buildDistribution(data, f1);
@@ -631,8 +721,21 @@ public class Random {
         int[] f9 = new int[]{100, 100, 100, 100, 100, 1, 1, 1, 1, 1};
         Distribution<Integer> d9 = buildDistribution(data, f9);
 
-        Distribution<ImmutablePair<Integer, Integer>> d12 = buildJointDistribution(data, f1, f2);
-
         randomTest6(d8, d9);
+
+        ImmutablePair<String, String>[] pairs = new ImmutablePair[10];
+        pairs[0] = new ImmutablePair<String, String>("elephant", "pig");
+        pairs[1] = new ImmutablePair<String, String>("elephant", "hadoop");
+        pairs[2] = new ImmutablePair<String, String>("elephant", "hive");
+        pairs[3] = new ImmutablePair<String, String>("elephant", "mahout");
+        pairs[4] = new ImmutablePair<String, String>("elephant", "python");
+        pairs[5] = new ImmutablePair<String, String>("bee", "pig");
+        pairs[6] = new ImmutablePair<String, String>("bee", "hadoop");
+        pairs[7] = new ImmutablePair<String, String>("bee", "hive");
+        pairs[8] = new ImmutablePair<String, String>("bee", "mahout");
+        pairs[9] = new ImmutablePair<String, String>("bee", "python");
+        int[] pairCounts = new int[] {20, 15, 3, 10, 5, 18, 2, 16, 1, 1};
+
+        randomTest7(pairs, pairCounts);
     }
 }
