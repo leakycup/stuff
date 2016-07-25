@@ -13,7 +13,7 @@ set end = `echo "$start + $num_lines - 1" | bc`
 touch "$outputfile"
 foreach url ("`head -n $end $urlfile | tail -n $num_lines`")
   echo "$urlprefix$url" >> "$outputfile"
-  curl -s -S "$urlprefix$url" >>& "$outputfile"
+  curl -g -s -S "$urlprefix$url" >>& "$outputfile"
   set rand = `echo foo | awk 'BEGIN { srand() } {print rand() }'`
   if (`echo "$rand < 0.5" | bc`) then
     sleep "$sleep"
