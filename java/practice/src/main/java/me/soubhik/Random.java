@@ -586,7 +586,7 @@ public class Random {
         double ce21 = crossEntropy(outputDistribution, inputDistribution);
 
         System.out.println("Input vs output distributions: jsd: " + jsd + ", kld12: " + kld12 + ", kld21: " + kld21 +
-                            ", cross-entropy12: " + ce12 + "cross-entropy21: " + ce21);
+                            ", cross-entropy12: " + ce12 + ", cross-entropy21: " + ce21);
     }
 
     private static <T> Distribution<T> buildDistribution(T[] data, int[] frequencies) {
