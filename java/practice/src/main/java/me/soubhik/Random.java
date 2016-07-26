@@ -16,11 +16,6 @@ import java.util.Map;
  */
 public class Random {
     //TODO: reservoir sampling, entropy
-    public static class Interval {
-        double start; //inclusive
-        double end; //exclusive
-        double probability; //>= 0 and < 1
-    }
 
     public static class RandomInt {
         private final ArrayList<Double> intervals;
