@@ -17,6 +17,9 @@ import java.util.Map;
 public class Random {
     //TODO: reservoir sampling, entropy
 
+    /*
+     * generate a random number between lower and (upper-1) with uniform probability
+     */
     public static class RandomInt {
         private final ArrayList<Double> intervals;
         private final int lower;
@@ -46,21 +49,24 @@ public class Random {
         }
     }
 
-    public static class DiscreteRandom {
+    /*
+     * generate discrete random values (of type T) from the given distribution
+     */
+    public static class DiscreteRandom<T> {
         private final ArrayList<Double> intervals;
-        private final Map<Integer, Integer> intervalToDatum;
+        private final Map<Integer, T> intervalToDatum;
 
         public DiscreteRandom(Distribution distribution) {
-            Map<Integer, Double> probabilities = distribution.probabilities();
+            Map<T, Double> probabilities = distribution.probabilities();
             int numIntervals = probabilities.keySet().size();
 
             this.intervals = new ArrayList<Double>(numIntervals);
-            this.intervalToDatum = new HashMap<Integer, Integer>(numIntervals);
+            this.intervalToDatum = new HashMap<Integer, T>(numIntervals);
 
             int idx = 0;
             double intervalStart = 0.0d;
-            for (Map.Entry<Integer, Double> entry: probabilities.entrySet()) {
-                int datum = entry.getKey();
+            for (Map.Entry<T, Double> entry: probabilities.entrySet()) {
+                T datum = entry.getKey();
                 intervalToDatum.put(idx, datum);
                 idx++;
 
@@ -70,13 +76,17 @@ public class Random {
             }
         }
 
-        public int next() {
+        public T next() {
             double random = Math.random();
             int interval = findInterval(intervals, random);
             return intervalToDatum.get(interval);
         }
     }
 
+    /*
+     * generate distinct random integers between lower and (upper-1) such that the probability
+     * of each number is same.
+     */
     public static class RandomIntWithoutReplacement {
         private final int lower, upper;
         private final int[] numbers;
@@ -419,7 +429,7 @@ public class Random {
 
         System.out.println("Random integers from " + lower + " to " + upper + " using DiscreteRandom");
         System.out.println("===============================================");
-        DiscreteRandom discreteRandom = new DiscreteRandom(distribution);
+        DiscreteRandom<Integer> discreteRandom = new DiscreteRandom<Integer>(distribution);
         Distribution distribution2 = new Distribution<Integer>();
         for (int i = 0; i < 20; i++) {
             int datum = discreteRandom.next();
@@ -547,6 +557,36 @@ public class Random {
             double pmi = pmi(d1, d2, jointDistribution, left, right);
             System.out.println("(" + left + ", " + right + "): " + pmi);
         }
+    }
+
+    private static void randomTest8(String[] data, int[] counts, int n) {
+        assert (data.length == counts.length);
+
+        Distribution<String> inputDistribution = buildDistribution(data, counts);
+        DiscreteRandom<String> randomStringer = new DiscreteRandom<String>(inputDistribution);
+        System.out.println("Input string distribution");
+        System.out.println("=======================");
+        inputDistribution.print();
+        Distribution<String> outputDistribution = new Distribution<String>();
+        System.out.println("Drawing " + n + " strings from the given distribution");
+        System.out.println("--------------------");
+        for (int i = 0; i < n; i++) {
+            String s = randomStringer.next();
+            outputDistribution.add(s);
+            System.out.println(s);
+        }
+        System.out.println("Output string distribution");
+        System.out.println("--------------------");
+        outputDistribution.print();
+
+        double jsd = jsDivergence(inputDistribution, outputDistribution);
+        double kld12 = klDivergence(inputDistribution, outputDistribution);
+        double kld21 = klDivergence(outputDistribution, inputDistribution);
+        double ce12 = crossEntropy(inputDistribution, outputDistribution);
+        double ce21 = crossEntropy(outputDistribution, inputDistribution);
+
+        System.out.println("Input vs output distributions: jsd: " + jsd + ", kld12: " + kld12 + ", kld21: " + kld21 +
+                            ", cross-entropy12: " + ce12 + "cross-entropy21: " + ce21);
     }
 
     private static <T> Distribution<T> buildDistribution(T[] data, int[] frequencies) {
@@ -732,5 +772,10 @@ public class Random {
         int[] pairCounts = new int[] {20, 15, 3, 10, 5, 18, 2, 16, 1, 1};
 
         randomTest7(pairs, pairCounts);
+
+        String[] stringData = new String[] {"pink horse", "red dolphin", "black", "white coral", "purple boot",
+                                            "yellow", "mauve", "crimson leaves", "blue fish", "silver"};
+        int[] stringCounts = new int[] {32, 5, 6, 66, 5, 40, 44, 20, 6, 10};
+        randomTest8(stringData, stringCounts, 10000);
     }
 }
