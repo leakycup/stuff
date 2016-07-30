@@ -15,7 +15,7 @@ import java.util.Map;
  * Created by soubhik on 7/3/16.
  */
 public class Random {
-    //TODO: reservoir sampling, entropy
+    //TODO: reservoir sampling
 
     /*
      * generate a random number between lower and (upper-1) with uniform probability
