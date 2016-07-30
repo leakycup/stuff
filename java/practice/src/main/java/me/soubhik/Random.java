@@ -20,15 +20,15 @@ public class Random {
     /*
      * generate a random number between lower and (upper-1) with uniform probability
      */
-    public static class RandomInt {
+    public static class UniformRandomInt {
         private final ArrayList<Double> intervals;
         private final int lower;
 
-        public RandomInt(int n) {
+        public UniformRandomInt(int n) {
             this(0, n);
         }
 
-        public RandomInt(int lower, int upper) {
+        public UniformRandomInt(int lower, int upper) {
             assert (upper > lower);
 
             int range = upper - lower;
@@ -112,7 +112,7 @@ public class Random {
                 return (upper);
             }
 
-            RandomInt randomInt = new RandomInt(numbersAvailable); //O(numbersAvailable)
+            UniformRandomInt randomInt = new UniformRandomInt(numbersAvailable); //O(numbersAvailable)
             int nextRandomIndex = randomInt.next(); //O(log(numbersAvailable))
             int nextRandom = numbers[nextRandomIndex];
             if (nextRandomIndex < (numbersAvailable - 1)) {
@@ -165,6 +165,26 @@ public class Random {
                 double probability = probabilityDistribution.get(datum);
                 System.out.println(datum + ":" + frequency + " (" + probability + ")");
             }
+        }
+    }
+
+    public static class RandomString {
+        private static final String[] characters = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789".split("");
+        private final UniformRandomInt randomInt;
+
+        public RandomString() {
+            this.randomInt = new UniformRandomInt(1, characters.length); //1st char is "". ignore.
+        }
+
+        String next(int len) {
+            StringBuilder builder = new StringBuilder();
+
+            for (int i = 0; i < len; i++) {
+                int index = randomInt.next();
+                builder.append(characters[index]);
+            }
+
+            return builder.toString();
         }
     }
 
@@ -401,7 +421,7 @@ public class Random {
     }
 
     private static void randomTest(int lower, int upper) {
-        RandomInt randomInt = new RandomInt(lower, upper);
+        UniformRandomInt randomInt = new UniformRandomInt(lower, upper);
         Distribution distribution = new Distribution<Integer>();
         System.out.println("Random integers from " + lower + " to " + upper);
         System.out.println("===============================================");
@@ -415,9 +435,9 @@ public class Random {
     }
 
     private static void randomTest2(int lower, int upper) {
-        RandomInt randomInt = new RandomInt(lower, upper);
+        UniformRandomInt randomInt = new UniformRandomInt(lower, upper);
         Distribution distribution = new Distribution<Integer>();
-        System.out.println("Random integers from " + lower + " to " + upper + " using RandomInt");
+        System.out.println("Random integers from " + lower + " to " + upper + " using UniformRandomInt");
         System.out.println("===============================================");
         for (int i = 0; i < 20; i++) {
             int datum = randomInt.next();
@@ -589,6 +609,26 @@ public class Random {
                             ", cross-entropy12: " + ce12 + ", cross-entropy21: " + ce21);
     }
 
+    private static void randomTest9() {
+        System.out.println("Random strings test");
+        System.out.println("====================================");
+
+        RandomString randomString = new RandomString();
+        for (int i = 0; i < 10; i++) {
+            String s = randomString.next(5);
+            assert (s.length() == 5);
+            System.out.println(s);
+        }
+
+        String s = randomString.next(8);
+        assert (s.length() == 8);
+        System.out.println(s);
+
+        s = randomString.next(50);
+        assert (s.length() == 50);
+        System.out.println(s);
+    }
+
     private static <T> Distribution<T> buildDistribution(T[] data, int[] frequencies) {
         Distribution<T> d = new Distribution<T>();
 
@@ -678,7 +718,7 @@ public class Random {
 
     public static void main(String[] args) {
         int k = 2;
-        RandomInt randomInt = new RandomInt(k);
+        UniformRandomInt randomInt = new UniformRandomInt(k);
         Distribution distribution = new Distribution<Integer>();
         System.out.println("Random integers from 0 to " + k);
         System.out.println("===========================================");
@@ -777,5 +817,7 @@ public class Random {
                                             "yellow", "mauve", "crimson leaves", "blue fish", "silver"};
         int[] stringCounts = new int[] {32, 5, 6, 66, 5, 40, 44, 20, 6, 10};
         randomTest8(stringData, stringCounts, 10000);
+
+        randomTest9();
     }
 }
