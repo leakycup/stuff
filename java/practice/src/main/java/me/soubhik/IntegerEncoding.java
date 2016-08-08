@@ -58,7 +58,7 @@ public class IntegerEncoding {
 
     //see https://en.wikipedia.org/wiki/Variable-length_quantity
     //also, Lucene VInt type : http://lucene.apache.org/core/3_6_2/fileformats.html
-    //base can be any integer in (0, 128]
+    //base can be any integer in (1, 128]
     public static class VLQ implements IntegerCode {
         private static final byte MASK = (byte)(1 << 7);
         private static final int DEFAULT_BASE = 128;
@@ -70,7 +70,7 @@ public class IntegerEncoding {
         }
 
         public VLQ(int base) {
-            assert (base > 0);
+            assert (base > 1);
             assert (base <= DEFAULT_BASE);
 
             this.base = base;
@@ -331,8 +331,60 @@ public class IntegerEncoding {
         subtractionTest(306, 56, coder);
     }
 
+    private static void test2(IntegerCode coder) {
+        //encode and int, then decode
+        int[] values = new int[] {0, 1, 2, 8, 127, 128, 137};
+        System.out.println("encode decode test");
+        System.out.println("================================");
+        encodeDecodeTest(values, coder);
+
+        //add two integers
+        System.out.println("addition test");
+        System.out.println("================================");
+        additionTest(0, 0, coder);
+        additionTest(0, 1, coder);
+        additionTest(1, 0, coder);
+        additionTest(1, 1, coder);
+        additionTest(4, 3, coder);
+        additionTest(6, 9, coder);
+        additionTest(12, 56, coder);
+        additionTest(120, 10, coder);
+        additionTest(10, 120, coder);
+        additionTest(120, 0, coder);
+        additionTest(120, 130, coder);
+        additionTest(127, 1, coder);
+
+        //subtract two integers
+        System.out.println("subtraction test");
+        System.out.println("================================");
+        subtractionTest(0, 0, coder);
+        subtractionTest(1, 0, coder);
+        subtractionTest(1, 1, coder);
+        subtractionTest(12, 0, coder);
+        subtractionTest(12, 1, coder);
+        subtractionTest(12, 12, coder);
+        subtractionTest(12, 8, coder);
+        subtractionTest(2097152, 2097152, coder);
+        subtractionTest(2097152, 2097102, coder);
+        subtractionTest(306, 160, coder);
+        subtractionTest(306, 288, coder);
+        subtractionTest(306, 56, coder);
+    }
+
     public static void main(String[] args) {
         IntegerCode vlqCoder = new VLQ();
+        System.out.println("Testing VLQ base 128 (default base)");
+        System.out.println("================================================");
         test1(vlqCoder);
+
+        System.out.println("Testing VLQ base 10");
+        System.out.println("================================================");
+        IntegerCode vlqCoderBase10 = new VLQ(10);
+        test1(vlqCoderBase10);
+
+        System.out.println("Testing VLQ base 2");
+        System.out.println("================================================");
+        IntegerCode vlqCoderBase2 = new VLQ(2);
+        test2(vlqCoderBase2);
     }
 }
