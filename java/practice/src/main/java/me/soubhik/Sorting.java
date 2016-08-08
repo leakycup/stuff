@@ -47,7 +47,7 @@ public class Sorting {
             return new Pair<Integer>(-1, -1); //pivot does not exist
         }
 
-        int l = 0;
+        int l = 0; //bug: rhs should be low
         int h = 0;
         while (h <= n) {
             if (elements[h].compareTo(pivot) < 0) {
@@ -89,8 +89,8 @@ public class Sorting {
         int pivotIndex = randomInt(low, high);
         T pivot = elements[pivotIndex];
         Pair<Integer> partitionIndex = dutchNationalFlagPartition(elements, pivot, low, high);
-        quickSort(elements, low, partitionIndex.first);
-        quickSort(elements, partitionIndex.second, high);
+        quickSort(elements, low, partitionIndex.first); //bug: partitionIndex.first is inclusive
+        quickSort(elements, partitionIndex.second, high); //bug: partitionIndex.second is exclusive
     }
 
     public static void radixSort() {
