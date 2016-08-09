@@ -217,18 +217,19 @@ public class IntegerEncoding {
 
         public byte[] sub(byte[] x, int xStart, int xEnd, byte[] y, int yStart, int yEnd) {
             assert (xEnd > xStart);
+
+            byte paddingByte = MASK;
+            int newYStart = yStart;
+            for (; newYStart < yEnd - 1; newYStart++) {
+                if (y[newYStart] != paddingByte) {
+                    break;
+                }
+            }
+            yStart = newYStart;
             assert (yEnd > yStart);
 
             int xLen = xEnd  - xStart;
             int yLen = yEnd - yStart;
-            byte paddingByte = MASK;
-            for (int i = yStart; i < yEnd - 1; i++) {
-                if (y[i] != paddingByte) {
-                    break;
-                }
-                yLen--;
-            }
-            assert (yLen >= 1);
             assert (xLen >= yLen);
 
             int maxLength = xLen;
