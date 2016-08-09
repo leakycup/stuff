@@ -106,7 +106,7 @@ public class BinaryTreeTraversals {
                 elements.set(currentIndex, parent);
 
                 currentIndex = parantIndex;
-                current = parent;
+                current = parent; //bug?
                 parantIndex = (currentIndex - 1) / 2;
                 if (parantIndex < 0) {
                     break;
