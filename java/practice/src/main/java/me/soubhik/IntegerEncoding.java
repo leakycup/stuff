@@ -1,6 +1,7 @@
 package me.soubhik;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
 
@@ -14,6 +15,8 @@ public class IntegerEncoding {
         public int decode(byte[] code);
         public byte[] add(byte[] a, byte[] b);
         public byte[] sub(byte[] a, byte[] b);
+        public byte[] mult(byte[] a, byte[] b);
+        public boolean isValid(byte[] a);
 
         default public String toBinaryString(byte[] code) {
             StringBuilder builder = new StringBuilder();
@@ -115,38 +118,81 @@ public class IntegerEncoding {
         }
 
         @Override
+        public boolean isValid(byte[] x) {
+            for (int i = 0; i < x.length - 1; i++) {
+                byte b = x[i];
+                if ((b & MASK) == 0) {
+                    return false;
+                }
+
+                b &= ~MASK;
+                if ((b >= base) || (b < 0)) {
+                    return false;
+                }
+            }
+
+            if ((x[x.length - 1] >= base) || (x[x.length - 1] < 0))  {
+                return false;
+            }
+
+            return true;
+        }
+
+        @Override
         public byte[] add(byte[] x, byte[] y) {
-            int maxLen, minLen;
+            return add(x, 0, x.length, y, 0, y.length);
+        }
+
+        private byte[] add(byte[] x, int xStart, int xEnd, byte[] y, int yStart, int yEnd) {
+            assert (xEnd > xStart);
+            assert (yEnd > yStart);
+
+            int xLen = xEnd  - xStart;
+            int yLen = yEnd - yStart;
+
+            int maxLen, minLen, maxArrayStart;
             byte[] maxArray;
-            if (x.length >= y.length) {
-                maxLen = x.length;
-                minLen = y.length;
+            if (xLen >= yLen) {
+                maxLen = xLen;
+                minLen = yLen;
                 maxArray = x;
+                maxArrayStart = xStart;
             } else {
-                maxLen = y.length;
-                minLen = x.length;
+                maxLen = yLen;
+                minLen = xLen;
                 maxArray = y;
+                maxArrayStart = yStart;
             }
 
             ArrayList<Byte> result = new ArrayList<>(maxLen + 1);
             int carry = 0;
             int idx = 0;
             for (; idx < minLen; idx++) {
-                int xIdx = x.length - 1 - idx;
-                int yIdx = y.length - 1 - idx;
+                int xIdx = xStart + xLen - 1 - idx;
+                int yIdx = yStart + yLen - 1 - idx;
                 byte a = (byte)(x[xIdx] & (~MASK));
                 byte b = (byte)(y[yIdx] & (~MASK));
-                byte sum = (byte)(a + b + carry);
-                carry = (sum < 0) ? 1: 0;
-                result.add(sum);
+                int sum = a + b + carry;
+                if (sum >= base) {
+                    sum -= base;
+                    carry = 1;
+                } else {
+                    carry = 0;
+                }
+                result.add((byte)sum);
             }
 
-            for (; idx < maxArray.length; idx++) {
-                int bIdx = maxArray.length - 1 - idx;
+            for (; idx < maxLen; idx++) {
+                int bIdx = maxArrayStart + maxLen - 1 - idx;
                 byte b = (byte)(maxArray[bIdx] & (~MASK));
-                byte sum = (byte)(b + carry);
-                carry = (sum < 0) ? 1: 0;
-                result.add(sum);
+                int sum = b + carry;
+                if (sum >= base) {
+                    sum -= base;
+                    carry = 1;
+                } else {
+                    carry = 0;
+                }
+                result.add((byte)sum);
             }
 
             int resultLen = maxLen;
@@ -156,16 +202,37 @@ public class IntegerEncoding {
             }
 
             byte[] sum = toByteArray(result, resultLen);
-            sum[0] = (byte)(sum[0] | MASK);
-            sum[sum.length-1] = (byte)(sum[sum.length-1] & (~MASK));
+            for (int i = 0; i < sum.length - 1; i++) {
+                sum[i] |= MASK;
+            }
+            sum[sum.length-1] &= ~MASK;
 
             return sum;
         }
 
         @Override
         public byte[] sub(byte[] x, byte[] y) {
-            int maxLength = x.length;
-            int minLength = y.length;
+            return sub(x, 0, x.length, y, 0, y.length);
+        }
+
+        public byte[] sub(byte[] x, int xStart, int xEnd, byte[] y, int yStart, int yEnd) {
+            assert (xEnd > xStart);
+            assert (yEnd > yStart);
+
+            int xLen = xEnd  - xStart;
+            int yLen = yEnd - yStart;
+            byte paddingByte = MASK;
+            for (int i = yStart; i < yEnd - 1; i++) {
+                if (y[i] != paddingByte) {
+                    break;
+                }
+                yLen--;
+            }
+            assert (yLen >= 1);
+            assert (xLen >= yLen);
+
+            int maxLength = xLen;
+            int minLength = yLen;
             byte[] maxArray = x;
 
             ArrayList<Byte> result = new ArrayList<>(maxLength);
@@ -173,8 +240,8 @@ public class IntegerEncoding {
             int borrow = 0;
             int idx = 0;
             for (; idx < minLength; idx++) {
-                int xIdx = x.length - 1 - idx;
-                int yIdx = y.length - 1 - idx;
+                int xIdx = xStart + xLen - 1 - idx;
+                int yIdx = yStart + yLen - 1 - idx;
                 byte xValue = (byte)(x[xIdx] & (~MASK));
                 byte yValue = (byte)(y[yIdx] & (~MASK));
                 int nextBorrow = 0;
@@ -191,7 +258,7 @@ public class IntegerEncoding {
             }
 
             for (; idx < maxLength; idx++) {
-                int xIdx = x.length - 1 - idx;
+                int xIdx = xStart + xLen - 1 - idx;
                 byte xValue = (byte)(maxArray[xIdx] & (~MASK));
                 int nextBorrow = 0;
                 if (xValue < borrow) {
@@ -208,10 +275,56 @@ public class IntegerEncoding {
 
             byte[] resultBytes = toByteArray(result, resultLen);
             for (int i = 0; i < resultBytes.length - 1; i++) {
-                resultBytes[i] = (byte)(resultBytes[i] | MASK);
+                resultBytes[i] |= MASK;
             }
 
             return resultBytes;
+        }
+
+        @Override
+        public byte[] mult(byte[] x, byte[] y) {
+            if (x.length > y.length) {
+                y = paddLeft(y, x.length - y.length);
+            } else if (x.length < y.length) {
+                x = paddLeft(x, y.length - x.length);
+            }
+            return unpaddLeft(multKaratsuba(x, 0, x.length, y, 0, y.length));
+        }
+
+        //fast multiplication using Karatsuba algorithm: https://en.wikipedia.org/wiki/Karatsuba_algorithm
+        private byte[] multKaratsuba(byte[] x, int xStart, int xEnd, byte[] y, int yStart, int yEnd) {
+            assert (xEnd > xStart);
+            assert (yEnd > yStart);
+
+            int xLen = xEnd - xStart;
+            int yLen = yEnd - yStart;
+            assert (xLen == yLen);
+
+            if (xLen == 1) {
+                return multByte(x[xStart], y[yStart]);
+            }
+
+            byte[] z2 = multKaratsuba(x, xStart, xStart + xLen/2, y, yStart, yStart + yLen/2);
+            byte[] z0 = multKaratsuba(x, xStart + xLen/2, xEnd, y, yStart + yLen/2, yEnd);
+
+            byte[] x0plusx1 = add(x, xStart, xStart + xLen / 2, x, xStart + xLen / 2, xEnd);
+            byte[] y0plusy1 = add(y, yStart, yStart + yLen/2, y, yStart + yLen/2, yEnd);
+            if (x0plusx1.length > y0plusy1.length) {
+                y0plusy1 = paddLeft(y0plusy1, x0plusx1.length - y0plusy1.length);
+            } else if (x0plusx1.length < y0plusy1.length) {
+                x0plusx1 = paddLeft(x0plusx1, y0plusy1.length - x0plusx1.length);
+            }
+            byte[] z1 = multKaratsuba(x0plusx1, 0, x0plusx1.length, y0plusy1, 0, y0plusy1.length);
+            z1 = sub(z1, z2);
+            z1 = sub(z1, z0);
+
+            int ceilingOfLenBy2 = (xLen + 1)/2;
+            z2 = multByBasePowerN(z2, 2*ceilingOfLenBy2);
+            z1 = multByBasePowerN(z1, ceilingOfLenBy2);
+            byte[] result = add(z1, z2);
+            result = add(result, z0);
+
+            return result;
         }
 
         //shift and add multiplication: https://en.wikipedia.org/wiki/Multiplication_algorithm
@@ -230,6 +343,53 @@ public class IntegerEncoding {
             }
 
             return encode(tempResult);
+        }
+
+        private byte[] multByBasePowerN(byte[] x, int n) {
+            assert (n >= 0);
+
+            if (n == 0) {
+                return x;
+            }
+
+            byte[] result = new byte[x.length + n];
+            System.arraycopy(x, 0, result, 0, x.length);
+            byte paddingByte = MASK;
+            Arrays.fill(result, x.length, result.length, paddingByte);
+            result[x.length - 1] |= MASK;
+            result[result.length - 1] &= ~MASK;
+
+            return result;
+        }
+
+        private byte[] paddLeft(byte[] original, int n) {
+            byte[] padded = new byte[original.length + n];
+            byte paddingByte = MASK;
+            Arrays.fill(padded, 0, n, paddingByte);
+            System.arraycopy(original, 0, padded, n, original.length);
+
+            return padded;
+        }
+
+        private byte[] unpaddLeft(byte[] original) {
+            int numPaddingBytes = 0;
+            byte padddingByte = MASK;
+            for (int i = 0; i < original.length - 1; i++) {
+                if (original[i] != padddingByte) {
+                    break;
+                }
+                numPaddingBytes++;
+            }
+
+            if (numPaddingBytes == 0) {
+                return original;
+            }
+
+            int unpaddedLength = original.length - numPaddingBytes;
+            byte[] unpadded = new byte[unpaddedLength];
+            System.arraycopy(original, numPaddingBytes, unpadded, 0, unpaddedLength);
+
+            return unpadded;
         }
     }
 
@@ -270,6 +430,7 @@ public class IntegerEncoding {
 
         System.out.println("a: " + a + ", b: " + b + ", expected sum: " + sum + ", actual sum: " + actualSum +
                         ", code: " + coder.toBinaryString(sumCode));
+        assert (coder.isValid(sumCode));
         assert (sum == actualSum);
     }
 
@@ -285,7 +446,24 @@ public class IntegerEncoding {
 
         System.out.println("a: " + a + ", b: " + b + ", expected sub: " + sub + ", actual sub: " + actualSub +
                 ", code: " + coder.toBinaryString(subCode));
+        assert (coder.isValid(subCode));
         assert (sub == actualSub);
+    }
+
+    private static void multiplicationTest(int a, int b, IntegerCode coder) {
+        assert (a >= 0);
+        assert (b >= 0);
+
+        int expected = a*b;
+        byte[] aBytes = coder.encode(a);
+        byte[] bBytes = coder.encode(b);
+        byte[] actualBytes = coder.mult(aBytes, bBytes);
+        int actual = coder.decode(actualBytes);
+
+        System.out.println("a: " + a + ", b: " + b + ", expected mult: " + expected + ", actual mult: " + actual +
+                ", code: " + coder.toBinaryString(actualBytes));
+        assert (coder.isValid(actualBytes));
+        assert (expected == actual);
     }
 
     private static void test1(IntegerCode coder) {
@@ -329,6 +507,23 @@ public class IntegerEncoding {
         subtractionTest(306, 160, coder);
         subtractionTest(306, 288, coder);
         subtractionTest(306, 56, coder);
+
+        //multiply two integers
+        System.out.println("multiplication test");
+        System.out.println("================================");
+        multiplicationTest(1, 1, coder);
+        multiplicationTest(1, 0, coder);
+        multiplicationTest(0, 1, coder);
+        multiplicationTest(0, 0, coder);
+        multiplicationTest(27, 0, coder);
+        multiplicationTest(27, 1, coder);
+        multiplicationTest(27, 2, coder);
+        multiplicationTest(27, 3, coder);
+        multiplicationTest(27, 5, coder);
+        multiplicationTest(27, 127, coder);
+        multiplicationTest(27, 128, coder);
+        multiplicationTest(136, 3, coder);
+        multiplicationTest(136, 129, coder);
     }
 
     private static void test2(IntegerCode coder) {
@@ -369,6 +564,19 @@ public class IntegerEncoding {
         subtractionTest(306, 160, coder);
         subtractionTest(306, 288, coder);
         subtractionTest(306, 56, coder);
+
+        //multiply two integers
+        System.out.println("multiplication test");
+        System.out.println("================================");
+        multiplicationTest(1, 1, coder);
+        multiplicationTest(1, 0, coder);
+        multiplicationTest(0, 1, coder);
+        multiplicationTest(0, 0, coder);
+        multiplicationTest(27, 0, coder);
+        multiplicationTest(27, 1, coder);
+        multiplicationTest(27, 2, coder);
+        multiplicationTest(27, 3, coder);
+        multiplicationTest(27, 5, coder);
     }
 
     public static void main(String[] args) {
