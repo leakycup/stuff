@@ -3,6 +3,7 @@ package me.soubhik;
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.apache.commons.lang3.tuple.Pair;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -57,7 +58,7 @@ public class Random {
         private final Map<Integer, T> intervalToDatum;
 
         public DiscreteRandom(Distribution distribution) {
-            Map<T, Double> probabilities = distribution.probabilities();
+            Map<T, Double> probabilities = distribution.probabilitiesDoublePrecision();
             int numIntervals = probabilities.keySet().size();
 
             this.intervals = new ArrayList<Double>(numIntervals);
@@ -132,24 +133,38 @@ public class Random {
         }
 
         public void add(T datum) {
+            add(datum, 1);
+        }
+
+        public void add(T datum, int frequency) {
             if (!frequencies.containsKey(datum)) {
                 frequencies.put(datum, 0);
             }
             int oldFrequency = frequencies.get(datum);
-            frequencies.put(datum, oldFrequency+1);
+            frequencies.put(datum, oldFrequency+frequency);
         }
 
-        public Map<T, Double> probabilities() {
+        public Map<T, BigDecimal> probabilities() {
+            return probabilitiesBigDecimal();
+        }
+
+        public Map<T, BigDecimal> probabilitiesBigDecimal() {
+            return null;
+        }
+
+        public Map<T, Double> probabilitiesDoublePrecision() {
             int totalFrequency = 0;
             for (int frequency: frequencies.values()) {
                 totalFrequency += frequency;
             }
 
             Map<T, Double> probabilityDistribution = new HashMap<T, Double>();
+            double cumulativeProbabilities = 0.0d;
             for (Map.Entry<T, Integer> entry: frequencies.entrySet()) {
                 T datum = entry.getKey();
                 int frequency = entry.getValue();
                 double probability = ((double)frequency)/((double)totalFrequency);
+                cumulativeProbabilities += probability;
                 probabilityDistribution.put(datum, probability);
             }
 
@@ -157,7 +172,7 @@ public class Random {
         }
 
         public void print() {
-            Map<T, Double> probabilityDistribution = probabilities();
+            Map<T, Double> probabilityDistribution = probabilitiesDoublePrecision();
 
             for (Map.Entry<T, Integer> entry: frequencies.entrySet()) {
                 T datum = entry.getKey();
@@ -258,7 +273,7 @@ public class Random {
     }
 
     public static <T> double selfInformation(Distribution<T> distribution, T datum) {
-        return selfInformation(distribution.probabilities(), datum);
+        return selfInformation(distribution.probabilitiesDoublePrecision(), datum);
     }
 
     public static <T> double selfInformation(Map<T, Double> probabilities, T datum) {
@@ -269,7 +284,7 @@ public class Random {
     }
 
     public static double entropy(Distribution<?> distribution) {
-        return entropy(distribution.probabilities());
+        return entropy(distribution.probabilitiesDoublePrecision());
     }
 
     public static double entropy(Map<?, Double> probabilities) {
@@ -285,7 +300,7 @@ public class Random {
                                  Distribution<V> yDistribution,
                                  Distribution<ImmutablePair<U, V>> xyDistribution,
                                  U x, V y) {
-        return pmi(xDistribution.probabilities(), yDistribution.probabilities(), xyDistribution.probabilities(), x, y);
+        return pmi(xDistribution.probabilitiesDoublePrecision(), yDistribution.probabilitiesDoublePrecision(), xyDistribution.probabilitiesDoublePrecision(), x, y);
     }
 
     public static <U, V> double pmi(Map<U, Double> xProbabilities,
@@ -303,9 +318,9 @@ public class Random {
                                            Distribution<V> yDistribution,
                                            Distribution<ImmutablePair<U, V>> xyDistribution,
                                            U x, V y) {
-        return normalizedPMI(xDistribution.probabilities(),
-                yDistribution.probabilities(),
-                xyDistribution.probabilities(), x, y);
+        return normalizedPMI(xDistribution.probabilitiesDoublePrecision(),
+                yDistribution.probabilitiesDoublePrecision(),
+                xyDistribution.probabilitiesDoublePrecision(), x, y);
     }
 
     public static <U, V> double normalizedPMI(Map<U, Double> xProbabilities,
@@ -320,9 +335,9 @@ public class Random {
     public static <U, V> double mutualInformation(Distribution<U> xDistribution,
                                                Distribution<V> yDistribution,
                                                Distribution<ImmutablePair<U, V>> xyDistribution) {
-        return mutualInformation(xDistribution.probabilities(),
-                yDistribution.probabilities(),
-                xyDistribution.probabilities());
+        return mutualInformation(xDistribution.probabilitiesDoublePrecision(),
+                yDistribution.probabilitiesDoublePrecision(),
+                xyDistribution.probabilitiesDoublePrecision());
     }
 
     public static <U, V> double mutualInformation(Map<U, Double> xProbabilities,
@@ -342,7 +357,7 @@ public class Random {
     }
 
     public static <T> double crossEntropy(Distribution<T> xDistribution, Distribution<T> yDistribution) {
-        return crossEntropy(xDistribution.probabilities(), yDistribution.probabilities());
+        return crossEntropy(xDistribution.probabilitiesDoublePrecision(), yDistribution.probabilitiesDoublePrecision());
     }
 
     public static <T> double crossEntropy(Map<T, Double> xProbabilities, Map<T, Double> yProbabilities) {
@@ -365,7 +380,7 @@ public class Random {
     }
 
     public static <T> double klDivergence(Distribution<T> xDistribution, Distribution<T> yDistribution) {
-        return klDivergence(xDistribution.probabilities(), yDistribution.probabilities());
+        return klDivergence(xDistribution.probabilitiesDoublePrecision(), yDistribution.probabilitiesDoublePrecision());
     }
 
     public static <T> double klDivergence(Map<T, Double> xProbabilities, Map<T, Double> yProbabilities) {
@@ -376,7 +391,7 @@ public class Random {
     }
 
     public static <T> double jsDivergence(Distribution<T> xDistribution, Distribution<T> yDistribution) {
-        return jsDivergence(xDistribution.probabilities(), yDistribution.probabilities());
+        return jsDivergence(xDistribution.probabilitiesDoublePrecision(), yDistribution.probabilitiesDoublePrecision());
     }
 
     public static <T> double jsDivergence(Map<T, Double> xProbabilities, Map<T, Double> yProbabilities) {
@@ -629,20 +644,18 @@ public class Random {
         System.out.println(s);
     }
 
-    private static <T> Distribution<T> buildDistribution(T[] data, int[] frequencies) {
+    public static <T> Distribution<T> buildDistribution(T[] data, int[] frequencies) {
         Distribution<T> d = new Distribution<T>();
 
         for (int i=0; i < data.length; i++) {
             int frequency = frequencies[i];
-            for (int j=0; j < frequency; j++) {
-                d.add(data[i]);
-            }
+            d.add(data[i], frequency);
         }
 
         return d;
     }
 
-    private static <T> Distribution<T> buildDistribution(Map<T, Integer> frequencies) {
+    public static <T> Distribution<T> buildDistribution(Map<T, Integer> frequencies) {
         Object[] data = new Object[frequencies.keySet().size()];
         int[] frequenciesArray = new int[frequencies.values().size()];
         int i = 0;

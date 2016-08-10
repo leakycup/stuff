@@ -467,6 +467,23 @@ public class IntegerEncoding {
         assert (expected == actual);
     }
 
+    public static void entropyTest(Random.Distribution<Integer> distribution, int sampleSize, IntegerCode coder) {
+        Random.DiscreteRandom<Integer> random = new Random.DiscreteRandom<>(distribution);
+        int totalBytes = 0;
+        for (int i = 0; i < sampleSize; i++) {
+            int x = random.next();
+            byte[] code = coder.encode(x);
+            assert (coder.isValid(code));
+            assert (x == coder.decode(code));
+            totalBytes += code.length;
+        }
+
+        double averageBits = (double)totalBytes*8/(double)sampleSize;
+        double entropy = Random.entropy(distribution);
+        System.out.println("entropy: " + entropy + ", average bits per code: " + averageBits +
+                ", sample size: " + sampleSize);
+    }
+
     private static void test1(IntegerCode coder) {
         //encode and int, then decode
         int[] values = new int[] {0, 1, 2, 8, 127, 128, 137, 146, 160, 288, 306, 56, 250,
@@ -525,6 +542,63 @@ public class IntegerEncoding {
         multiplicationTest(27, 128, coder);
         multiplicationTest(136, 3, coder);
         multiplicationTest(136, 129, coder);
+
+        //average bits per code
+        System.out.println("entropy test");
+        System.out.println("================================");
+        Integer[] data = new Integer[100000];
+        for (int i = 0; i < data.length; i++) {
+            data[i] = i;
+        }
+        int[] counts = new int[data.length];
+        //uniform distribution
+        System.out.println("uniform probability distribution");
+        System.out.println("-----------------------------------");
+        Arrays.fill(counts, 5);
+        entropyTest(Random.buildDistribution(data, counts), 500, coder);
+        entropyTest(Random.buildDistribution(data, counts), 1000, coder);
+        entropyTest(Random.buildDistribution(data, counts), 2000, coder);
+        //monotonic increasing: linear
+        System.out.println("monotonic increasing probability (linear)");
+        System.out.println("-----------------------------------");
+        for (int i = 0; i < counts.length; i++) {
+            counts[i] = i+1;
+        }
+        //the following tests are throwing crazy numbers: entropy==95.77, average bits per code==22.5.
+        // the reason this is happening is because, the cumulative frequency of the distribution is adding up to
+        // 1 at about 37000. so, a sum of 37000 very small (between 10^(-8) and 10^(-3)), mutually exclusive,
+        // non-exhaustive probabilities represented as Java double type, is > 1. this is probably due to
+        // approximations in floating point arithmetic. as a result of this problem, the DiscreteRandom generator
+        // used to generate the sample from the distribution only generates numbers <= 37000. thus, the average
+        // bits per code calculated from the sample is much smaller than the entropy of the distribution.
+        // possible solution is to use BigDecimal to represent the probabilities. or, use a hierarchy of DiscreteRandom
+        // generators, one to select a range, next one to select a subrange and so on, till we have a generator that
+        // can handle the range of doubles without encountering the arithmetic approximation problem.
+        // references:
+        // http://stackoverflow.com/questions/14217636/java-sum-of-all-double-does-not-return-expected-result
+        // http://stackoverflow.com/questions/15625556/java-adding-and-subtracting-doubles-are-giving-strange-results (http://stackoverflow.com/a/15625600)
+        // http://stackoverflow.com/questions/322749/retain-precision-with-double-in-java (http://stackoverflow.com/a/322875)
+        entropyTest(Random.buildDistribution(data, counts), 500, coder);
+        entropyTest(Random.buildDistribution(data, counts), 1000, coder);
+        entropyTest(Random.buildDistribution(data, counts), 2000, coder);
+        //monotonic increasing: quadratic
+        System.out.println("monotonic increasing probability (quadratic)");
+        System.out.println("-----------------------------------");
+        for (int i = 0; i < counts.length; i++) {
+            counts[i] = (i+1)*(i+1);
+        }
+        entropyTest(Random.buildDistribution(data, counts), 500, coder);
+        entropyTest(Random.buildDistribution(data, counts), 1000, coder);
+        entropyTest(Random.buildDistribution(data, counts), 2000, coder);
+        //monotonic decreasing: linear
+        System.out.println("monotonic decreasing probability (linear)");
+        System.out.println("-----------------------------------");
+        for (int i = 0; i < counts.length; i++) {
+            counts[i] = counts.length - i;
+        }
+        entropyTest(Random.buildDistribution(data, counts), 500, coder);
+        entropyTest(Random.buildDistribution(data, counts), 1000, coder);
+        entropyTest(Random.buildDistribution(data, counts), 2000, coder);
     }
 
     private static void test2(IntegerCode coder) {
