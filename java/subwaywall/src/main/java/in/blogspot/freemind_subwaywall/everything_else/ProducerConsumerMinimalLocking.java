@@ -81,7 +81,9 @@ public class ProducerConsumerMinimalLocking {
                             }
                         }
                         this.itemList = message.itemList;
-                        this.idx = message.idx;
+                        this.idx = message.idx + 1;
+                        System.out.println("Producer: " + id + ", buffer full. swapped with consumer: " + consumerIdx +
+                                ". new buffer size: " + idx);
                     }
                 }
 
@@ -129,7 +131,7 @@ public class ProducerConsumerMinimalLocking {
             this.generator = new Random();
             this.id = id;
             this.itemList = new int[itemListSize];
-            this.idx = 0;
+            this.idx = -1;
             this.itemsConsumed = 0;
             this.message = new Message(id);
         }
@@ -145,7 +147,7 @@ public class ProducerConsumerMinimalLocking {
                 }
 
                 //if itemList is empty, pick a random producer and exchange itemList with it
-                while (idx == 0) {
+                while (idx < 0) {
                     int producerIdx = random.nextInt(numProducers);
                     Producer producer = producerList.get(producerIdx);
                     message.itemList = this.itemList;
@@ -162,11 +164,14 @@ public class ProducerConsumerMinimalLocking {
                         }
                     }
                     this.itemList = message.itemList;
-                    this.idx = message.idx;
+                    this.idx = message.idx - 1;
+                    System.out.println("Consumer: " + id + ", buffer empty. swapped with producer: " + producerIdx +
+                            ". new buffer size: " + idx+1);
                 }
 
                 //consume an item
                 int item = itemList[idx];
+                idx--;
                 itemsConsumed++;
                 System.out.println("Consumer: " + id + ", index: " + idx + ", item: " + item +
                         ", total items cconsumed: " + itemsConsumed);
