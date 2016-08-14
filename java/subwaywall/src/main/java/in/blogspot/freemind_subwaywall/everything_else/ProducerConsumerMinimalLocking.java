@@ -18,7 +18,7 @@ public class ProducerConsumerMinimalLocking {
 
     private static class Message {
         int[] itemList;
-        int idx;
+        int numItems;
         int senderId;
         boolean replied;
 
@@ -42,14 +42,14 @@ public class ProducerConsumerMinimalLocking {
         private final int id;
         private final Message message;
         private int[] itemList; //this is actually a bounded stack (LIFO)
-        private int idx;
+        private int numItems;
         private int itemsProduced;
 
         Producer(int id, int itemListSize) {
             this.generator = new Random();
             this.id = id;
             this.itemList = new int[itemListSize];
-            this.idx = 0;
+            this.numItems = 0;
             this.itemsProduced = 0;
             this.message = new Message(id);
         }
@@ -57,7 +57,8 @@ public class ProducerConsumerMinimalLocking {
         public void run() {
             while (keepRunning.get()) {
                 //sleep to control producer's rate
-                long sleep = generator.nextInt(MAX_SLEEP);
+                //long sleep = generator.nextInt(MAX_SLEEP);
+                long sleep = 0;
                 try {
                     Thread.sleep(sleep);
                 } catch (InterruptedException e) {
@@ -65,11 +66,11 @@ public class ProducerConsumerMinimalLocking {
                 }
 
                 //if itemList is full, find a random consumer and exchange itemList with it
-                while (idx == itemList.length) {
+                while (numItems == itemList.length) {
                     int consumerIdx = random.nextInt(numConsumers);
                     Consumer consumer = consumerList.get(consumerIdx);
                     message.itemList = this.itemList;
-                    message.idx = this.idx;
+                    message.numItems = this.numItems;
                     message.replied = false;
                     synchronized (consumer) {
                         producerToConsumerMessages[consumerIdx].set(message);
@@ -81,29 +82,29 @@ public class ProducerConsumerMinimalLocking {
                             }
                         }
                         this.itemList = message.itemList;
-                        this.idx = message.idx + 1;
+                        this.numItems = message.numItems;
                         System.out.println("Producer: " + id + ", buffer full. swapped with consumer: " + consumerIdx +
-                                ". new buffer size: " + idx);
+                                ". new buffer size: " + numItems);
                     }
                 }
 
                 //produce an item and put it in itemList
                 int item = generator.nextInt();
-                itemList[idx] = item;
-                idx++;
+                itemList[numItems] = item;
+                numItems++;
                 itemsProduced++;
-                System.out.println("Producer: " + id + ", index: " + idx + ", item: " + item +
+                System.out.println("Producer: " + id + ", index: " + numItems + ", item: " + item +
                         ", total items produced: " + itemsProduced);
 
                 //process a possible incoming message from a consumer
                 Message incoming = consumerToProducerMessages[this.id].get();
                 if (incoming != null) {
                     int[] incomingItemList = incoming.itemList;
-                    int incomingIdx = incoming.idx;
+                    int incomingNumItems = incoming.numItems;
                     incoming.itemList = this.itemList;
-                    incoming.idx = this.idx;
+                    incoming.numItems = this.numItems;
                     this.itemList = incomingItemList;
-                    this.idx = incomingIdx;
+                    this.numItems = incomingNumItems;
                     incoming.replied = true;
                     synchronized (this){
                         consumerToProducerMessages[this.id].set(null);
@@ -124,14 +125,14 @@ public class ProducerConsumerMinimalLocking {
         private final int id;
         private final Message message;
         private int[] itemList; //this is actually a bounded stack (LIFO)
-        private int idx;
+        private int numItems;
         private int itemsConsumed;
 
         Consumer(int id, int itemListSize) {
             this.generator = new Random();
             this.id = id;
             this.itemList = new int[itemListSize];
-            this.idx = -1;
+            this.numItems = 0;
             this.itemsConsumed = 0;
             this.message = new Message(id);
         }
@@ -139,7 +140,8 @@ public class ProducerConsumerMinimalLocking {
         public void run() {
             while (keepRunning.get()) {
                 //sleep to control consumer's rate
-                long sleep = generator.nextInt(MAX_SLEEP);
+                //long sleep = generator.nextInt(MAX_SLEEP);
+                long sleep = 0;
                 try {
                     Thread.sleep(sleep);
                 } catch (InterruptedException e) {
@@ -147,11 +149,11 @@ public class ProducerConsumerMinimalLocking {
                 }
 
                 //if itemList is empty, pick a random producer and exchange itemList with it
-                while (idx < 0) {
+                while (numItems == 0) {
                     int producerIdx = random.nextInt(numProducers);
                     Producer producer = producerList.get(producerIdx);
                     message.itemList = this.itemList;
-                    message.idx = this.idx;
+                    message.numItems = this.numItems;
                     message.replied = false;
                     synchronized (producer) {
                         consumerToProducerMessages[producerIdx].set(message);
@@ -164,25 +166,27 @@ public class ProducerConsumerMinimalLocking {
                         }
                     }
                     this.itemList = message.itemList;
-                    this.idx = message.idx - 1;
+                    this.numItems = message.numItems;
                     System.out.println("Consumer: " + id + ", buffer empty. swapped with producer: " + producerIdx +
-                            ". new buffer size: " + idx+1);
+                            ". new buffer size: " + numItems);
                 }
 
                 //consume an item
-                int item = itemList[idx];
-                idx--;
+                numItems--;
+                int item = itemList[numItems];
                 itemsConsumed++;
-                System.out.println("Consumer: " + id + ", index: " + idx + ", item: " + item +
-                        ", total items cconsumed: " + itemsConsumed);
+                System.out.println("Consumer: " + id + ", index: " + numItems + ", item: " + item +
+                        ", total items consumed: " + itemsConsumed);
 
                 //process an incoming message from a producer, if there's one
                 Message incoming = producerToConsumerMessages[this.id].get();
                 if (incoming != null) {
                     int[] incomingItemList = incoming.itemList;
-                    int incomingIdx = incoming.idx;
+                    int incomingNumItems = incoming.numItems;
                     incoming.itemList = this.itemList;
-                    incoming.idx = this.idx;
+                    incoming.numItems = this.numItems;
+                    this.itemList = incomingItemList;
+                    this.numItems = incomingNumItems;
                     incoming.replied = true;
                     synchronized (this) {
                         producerToConsumerMessages[this.id].set(null);
@@ -285,7 +289,8 @@ public class ProducerConsumerMinimalLocking {
         int noProducers = Integer.parseInt(args[1]);
         int noConsumers = Integer.parseInt(args[2]);
 
-        ProducerConsumer producerConsumer = new ProducerConsumer(maxItems, noProducers, noConsumers);
+        ProducerConsumerMinimalLocking producerConsumer =
+                new ProducerConsumerMinimalLocking(maxItems, noProducers, noConsumers);
         producerConsumer.start();
         try {
             Thread.sleep(RUNTIME);
