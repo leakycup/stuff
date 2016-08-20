@@ -31,34 +31,6 @@ public class IntegerEncoding {
         }
     }
 
-    /*
-    public static interface Digitiser<T> extends Iterator<Integer> {
-        public default void remove() {
-            throw new UnsupportedOperationException("Digitiser does not support remove()");
-        }
-    }
-
-    public static class IntDigitiser implements Digitiser<Integer> {
-        private final int number;
-        private int extractRemainder = 128;
-        private int extractByte = 1;
-
-        public IntDigitiser(int number) {
-            this.number = number;
-        }
-
-        @Override
-        public boolean hasNext() {
-            return false;
-        }
-
-        @Override
-        public Integer next() {
-            return -1;
-        }
-    }
-    */
-
     //see https://en.wikipedia.org/wiki/Variable-length_quantity
     //also, Lucene VInt type : http://lucene.apache.org/core/3_6_2/fileformats.html
     //base can be any integer in (1, 128]
