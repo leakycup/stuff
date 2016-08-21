@@ -1,8 +1,9 @@
 package me.soubhik;
 
+import org.apache.commons.lang3.StringUtils;
+
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Iterator;
 
 /**
@@ -17,6 +18,7 @@ public class IntegerEncoding {
         public byte[] sub(byte[] a, byte[] b);
         public byte[] mult(byte[] a, byte[] b);
         public boolean isValid(byte[] a);
+        public byte[] fromDecimalString(String decimalString);
 
         default public String toBinaryString(byte[] code) {
             StringBuilder builder = new StringBuilder();
@@ -28,6 +30,23 @@ public class IntegerEncoding {
             }
 
             return builder.toString().trim();
+        }
+
+        default public byte[] fromBinaryString(String byteString) {
+            assert (StringUtils.isNotBlank(byteString));
+
+            String[] byteStringArray = byteString.split(" ");
+            byte[] code = new byte[byteStringArray.length];
+
+            int idx = 0;
+            for (String aByte: byteStringArray) {
+                byte b = (byte)(Integer.parseInt(aByte, 2) & 0x000000ff);
+                code[idx] = b;
+                idx++;
+            }
+            assert (isValid(code));
+
+            return code;
         }
     }
 
@@ -53,15 +72,17 @@ public class IntegerEncoding {
 
         @Override
         public byte[] encode(int x) {
+            assert (x >= 0);
+
             if (x == 0) {
                 return new byte[] {0};
             }
 
-            int extractRemainder = base;
-            int extractByte = 1;
+            long extractRemainder = base;
+            long extractByte = 1;
             ArrayList<Byte> bytes = new ArrayList<Byte>();
             while (x >= extractByte) {
-                int remainder = x % extractRemainder;
+                int remainder = (int)(x % extractRemainder);
                 byte b = (byte)(remainder / extractByte);
                 bytes.add(b);
                 extractByte *= base;
@@ -74,6 +95,49 @@ public class IntegerEncoding {
             }
 
             return result;
+        }
+
+        @Override
+        public byte[] fromDecimalString(String decimalString) {
+            assert (StringUtils.isNotBlank(decimalString));
+
+            final byte[] tenToThePower9 = encode(1000000000);
+
+            byte[] code = encode(0);
+            byte[] multiplier = encode(1);
+            int end = decimalString.length();
+            int start = end - 9;
+            while (start >= 0) {
+                String digitsToConvert = decimalString.substring(start, end);
+                int digitsAsInt;
+                try {
+                    digitsAsInt = Integer.parseInt(digitsToConvert);
+                } catch (NumberFormatException e) {
+                    return null;
+                }
+                byte[] digitsAsCode = encode(digitsAsInt);
+                digitsAsCode = mult(digitsAsCode, multiplier);
+                code = add(digitsAsCode, code);
+
+                multiplier = mult(multiplier, tenToThePower9);
+                end = start;
+                start -= 9;
+            }
+
+            if (end > 0) {
+                String digitsToConvert = decimalString.substring(0, end);
+                int digitsAsInt;
+                try {
+                    digitsAsInt = Integer.parseInt(digitsToConvert);
+                } catch (NumberFormatException e) {
+                    return null;
+                }
+                byte[] digitsAsCode = encode(digitsAsInt);
+                digitsAsCode = mult(digitsAsCode, multiplier);
+                code = add(digitsAsCode, code);
+            }
+
+            return code;
         }
 
         @Override
@@ -385,13 +449,29 @@ public class IntegerEncoding {
             byte[] code = coder.encode(v);
             int actual = coder.decode(code);
             System.out.println("expected: " + v + ", actual: " + actual + ", code: " + coder.toBinaryString(code));
+            assert (coder.isValid(code));
+            assert (v == actual);
+        }
+
+        for (int v: values) {
+            String stringValue = String.valueOf(v);
+            byte[] code = coder.fromDecimalString(stringValue);
+            int actual = coder.decode(code);
+            System.out.println("expected: " + v + ", actual: " + actual + ", code: " + coder.toBinaryString(code));
+            assert (coder.isValid(code));
             assert (v == actual);
         }
     }
 
+    private static void encodeDecodeTest(String[] values, IntegerCode coder) {
+        for (String v: values) {
+            byte[] code = coder.fromBinaryString(v);
+            String actual = coder.toBinaryString(code);
+            assert (actual.equals(v));
+        }
+    }
+
     private static void additionTest(int a, int b, IntegerCode coder) {
-        assert (a >= 0);
-        assert (b >= 0);
         int sum = a + b;
         assert (sum >= a);
         assert (sum >= b);
@@ -408,9 +488,6 @@ public class IntegerEncoding {
     }
 
     private static void subtractionTest(int a, int b, IntegerCode coder) {
-        assert (a >= 0);
-        assert (b <= a);
-
         int sub = a - b;
         byte[] aCode = coder.encode(a);
         byte[] bCode = coder.encode(b);
@@ -424,9 +501,6 @@ public class IntegerEncoding {
     }
 
     private static void multiplicationTest(int a, int b, IntegerCode coder) {
-        assert (a >= 0);
-        assert (b >= 0);
-
         int expected = a*b;
         byte[] aBytes = coder.encode(a);
         byte[] bBytes = coder.encode(b);
@@ -456,11 +530,76 @@ public class IntegerEncoding {
                 ", sample size: " + sampleSize);
     }
 
+    private static void largeIntegerTest(IntegerCode coder) {
+        int a = Integer.MAX_VALUE;
+        byte[] aCode = coder.encode(a);
+        byte[] aPlusOne = coder.add(aCode, coder.encode(2));
+        byte[] aPlusOneMinusOne = coder.sub(aPlusOne, coder.encode(2));
+        int backToA = coder.decode(aPlusOneMinusOne);
+        assert (coder.isValid(aCode));
+        assert (coder.isValid(aPlusOne));
+        assert (coder.isValid(aPlusOneMinusOne));
+        assert (a == backToA);
+
+        int b = 5;
+        byte[] bCode = coder.encode(b);
+        byte[] largeProduct = coder.mult(aCode, bCode);
+        byte[] remainder = largeProduct;
+        for (int i = 0; i < b; i++) {
+            remainder = coder.sub(remainder, aCode);
+        }
+        assert (coder.isValid(bCode));
+        assert (coder.isValid(largeProduct));
+        assert (coder.isValid(remainder));
+        assert (coder.decode(remainder) == 0);
+
+        //test largeProduct == (a-c)*b + c*b
+        int c = 5000;
+        byte[] cCode = coder.encode(c);
+        byte[] aMinusC = coder.sub(aCode, cCode);
+        byte[] aMinusCTimeB = coder.mult(aMinusC, bCode);
+        byte[] cTimesB = coder.mult(bCode, cCode);
+        byte[] backToLargeProduct = coder.add(aMinusCTimeB, cTimesB);
+        assert (coder.isValid(cCode));
+        assert (coder.isValid(aMinusC));
+        assert (coder.isValid(aMinusCTimeB));
+        assert (coder.isValid(cTimesB));
+        assert (coder.isValid(backToLargeProduct));
+        assert (coder.toBinaryString(largeProduct).equals(coder.toBinaryString(backToLargeProduct)));
+
+        byte[] longMax = coder.fromDecimalString("9223372036854775807");
+        byte[] twiceLongMax = coder.mult(longMax, coder.encode(2));
+        byte[] backToLongMax = coder.sub(twiceLongMax, longMax);
+        assert (coder.isValid(longMax));
+        assert (coder.isValid(twiceLongMax));
+        assert (coder.isValid(backToLongMax));
+        assert (Arrays.equals(longMax, backToLongMax));
+
+        byte[] veryLarge1 = coder.fromDecimalString("308956793729479789865799938561048");
+        byte[] veryLarge2 = coder.fromDecimalString("19087456278490294783900464");
+        byte[] expected = coder.fromDecimalString("308956812816936068356094722461512");
+        byte[] actual = coder.add(veryLarge1, veryLarge2);
+        assert (coder.isValid(veryLarge1));
+        assert (coder.isValid(veryLarge2));
+        assert (coder.isValid(expected));
+        assert (coder.isValid(actual));
+        assert (Arrays.equals(expected, actual));
+        assert (Arrays.equals(veryLarge2, coder.sub(actual, veryLarge1)));
+
+        actual = coder.mult(coder.encode(5), veryLarge1);
+        expected = coder.fromDecimalString("1544783968647398949328999692805240");
+        assert (coder.isValid(actual));
+        assert (coder.isValid(expected));
+        assert (Arrays.equals(actual, expected));
+
+        System.out.println("all large integer tests pass");
+    }
+
     private static void test1(IntegerCode coder) {
         //encode and int, then decode
         int[] values = new int[] {0, 1, 2, 8, 127, 128, 137, 146, 160, 288, 306, 56, 250,
                                     16383, 16385, 2097152, 6789989, 80000000};
-        System.out.println("encode decode test");
+        System.out.println("encode decode test (integers)");
         System.out.println("================================");
         encodeDecodeTest(values, coder);
 
@@ -571,6 +710,11 @@ public class IntegerEncoding {
         entropyTest(Random.buildDistribution(data, counts), 500, coder);
         entropyTest(Random.buildDistribution(data, counts), 1000, coder);
         entropyTest(Random.buildDistribution(data, counts), 2000, coder);
+
+        //test integers > Integer.MAX_VALUE
+        System.out.println("large integer test");
+        System.out.println("================================");
+        largeIntegerTest(coder);
     }
 
     private static void test2(IntegerCode coder) {
@@ -624,6 +768,11 @@ public class IntegerEncoding {
         multiplicationTest(27, 2, coder);
         multiplicationTest(27, 3, coder);
         multiplicationTest(27, 5, coder);
+
+        //test integers > Integer.MAX_VALUE
+        System.out.println("large integer test");
+        System.out.println("================================");
+        largeIntegerTest(coder);
     }
 
     public static void main(String[] args) {
@@ -631,6 +780,19 @@ public class IntegerEncoding {
         System.out.println("Testing VLQ base 128 (default base)");
         System.out.println("================================================");
         test1(vlqCoder);
+        String[] stringValues = new String[] {
+                "00000000",
+                "00001010",
+                "10001010 00110010",
+                "10001010 11110111 00110010",
+                "10011010 11111111 10110011 10101100 10110011 11111111 10101011 01000000",
+                "10011010 11111111 10110011 10101100 10110011 11111111 11101000 10101011 01000000",
+                "10011010 10000111 11111111 10110011 10101100 10110011 11111111 11101000 10101011 01000000",
+        };
+        System.out.println("encode decode test (strings)");
+        System.out.println("================================");
+        encodeDecodeTest(stringValues, vlqCoder);
+
 
         System.out.println("Testing VLQ base 10");
         System.out.println("================================================");
