@@ -28,7 +28,7 @@ public class ProducerConsumerLockFree {
         private final AtomicReference<Integer> tail;
 
         private static class DebugInfo {
-            static final int DEBUG_INFO_LENGTH = 100;
+            static final int DEBUG_INFO_LENGTH = 15;
             int index = 0;
             String[] debugList = new String[DEBUG_INFO_LENGTH];
 
@@ -39,7 +39,8 @@ public class ProducerConsumerLockFree {
 
             void print() {
                 long tid = Thread.currentThread().getId();
-                for (String s: debugList) {
+                for (int i = index; i < (index + DEBUG_INFO_LENGTH); i++) {
+                    String s = debugList[i%DEBUG_INFO_LENGTH];
                     if (s != null) {
                         System.err.println(tid + ": " + s);
                     }
@@ -84,6 +85,7 @@ public class ProducerConsumerLockFree {
                 currentTail = tail.get();
                 nextTail = (currentTail + 1) % size;
             }
+            debugInfo.get().add("insert(): currentTail: " + currentTail + " nextTail: " + nextTail);
 
             //at this point, a race between two producers is not possible. however, it is possible that a
             //single producer and a single consumer thread attempts to access the same slot in buffer.
@@ -98,27 +100,44 @@ public class ProducerConsumerLockFree {
             //caveat: a producer can be interrupted or can otherwise die while waiting. however, since it has already
             //reserved the slot buffer[currentTail], no other producer can insert an item in this slot till the buffer
             //wraps around. so a consumer waiting for this slot to fill up may wait longer than expected.
+            //
+            // the current implementation works with the following 2 assumptions / claims:
+            // 1. when we're here, a race between two producers is impossible. this is wrong. while one producer is
+            // is in wait(), another producer can wrap the buffer around and come to this slot. in this case, it fails
+            // to CAS the watch, falls in the else block and keeps trying to CAS in a tight loop. both the producers
+            // (in fact, it may be more than 2 producers) can be in this state till a consumer visits this slot and
+            // empties it.
+            // 2. if a producer is waiting, the queue must be full and consumers are not waiting. this also turned out
+            // to be wrong in multipleProducerMultipleConsumerTest(). the test gets stuck as producers and consumers
+            // end up waiting on different slots (producers waiting for consumers to empty their slots, consumers
+            // waiting for the producers to fill up their slots).
             if (watches.compareAndSet(currentTail, Boolean.FALSE, Boolean.TRUE)) {
                 if (buffer.compareAndSet(currentTail, null, item)) {
                     watches.set(currentTail, Boolean.FALSE);
+                    debugInfo.get().add("insert(): currentTail: " + currentTail + " inserted: " + item);
                 } else {
+                    debugInfo.get().add("insert(): currentTail: " + currentTail + " slot full.");
                     Boolean watch = watches.get(currentTail);
                     synchronized (watch) {
+                        debugInfo.get().add("insert(): currentTail: " + currentTail + " locked watch.");
                         while (!buffer.compareAndSet(currentTail, null, item)) {
+                            debugInfo.get().add("insert(): waiting: index: " + currentTail + " value: " + item);
                             watch.wait();
+                            debugInfo.get().add("insert(): finished waiting: index: " + currentTail + " value: " + item);
                         }
                     }
                     watches.set(currentTail, Boolean.FALSE);
                 }
             } else {
+                debugInfo.get().add("insert(): currentTail: " + currentTail + " lost CAS to consumer.");
                 while (!buffer.compareAndSet(currentTail, null, item));
+                debugInfo.get().add("insert(): currentTail: " + currentTail + " inserted item after losing CAS.");
                 Boolean watch = watches.get(currentTail);
                 synchronized (watch) {
+                    debugInfo.get().add("insert(): currentTail: " + currentTail + " locked watch for notify.");
                     watch.notify();
                 }
             }
-
-            debugInfo.get().add("insert(): index: " + currentTail + " value: " + item);
         }
 
         public T remove() throws InterruptedException {
@@ -128,6 +147,7 @@ public class ProducerConsumerLockFree {
                 currentHead = head.get();
                 nextHead = (currentHead + 1) % size;
             }
+            debugInfo.get().add("remove(): currentHead: " + currentHead + " nextHead: " + nextHead);
 
             //caveat: a consumer can be interrupted or can otherwise die while waiting. however, since it has already
             //reserved the slot buffer[currentTail], no other consumer can remove an item from this slot till the buffer
@@ -137,29 +157,34 @@ public class ProducerConsumerLockFree {
                 if (item != null) {
                     buffer.set(currentHead, null);
                     watches.set(currentHead, Boolean.FALSE);
-                    debugInfo.get().add("remove()#1: index: " + currentHead + " value: " + item);
+                    debugInfo.get().add("remove(): currentHead: " + currentHead + " removed item.");
                     return item;
                 } else {
+                    debugInfo.get().add("remove(): currentHead: " + currentHead + " slot empty.");
                     Boolean watch = watches.get(currentHead);
                     synchronized (watch) {
+                        debugInfo.get().add("remove(): currentHead: " + currentHead + " locked watch.");
                         while ((item = buffer.get(currentHead)) == null) {
+                            debugInfo.get().add("remove(): waiting: index: " + currentHead + " value: " + item);
                             watch.wait();
+                            debugInfo.get().add("remove(): finished waiting: index: " + currentHead + " value: " + item);
                         }
                     }
                     buffer.set(currentHead, null);
                     watches.set(currentHead, Boolean.FALSE);
-                    debugInfo.get().add("remove()#2: index: " + currentHead + " value: " + item);
                     return item;
                 }
             } else {
                 T item;
+                debugInfo.get().add("remove(): currentHead: " + currentHead + " lost CAS to producer.");
                 while ((item = buffer.get(currentHead)) == null);
+                debugInfo.get().add("remove(): currentHead: " + currentHead + " removed item after losing CAS.");
                 Boolean watch = watches.get(currentHead);
                 synchronized (watch) {
+                    debugInfo.get().add("remove(): currentHead: " + currentHead + " locked watch for notify.");
                     watch.notify();
                 }
 
-                debugInfo.get().add("remove()#3: index: " + currentHead + " value: " + item);
                 return item;
             }
         }
@@ -220,17 +245,17 @@ public class ProducerConsumerLockFree {
                     break;
                 }
             }
-            System.err.println("produced " + items + " integers from " + start + " to " + (next-1));
-            printDebug();
+            printDebug(items);
         }
 
         public void lazyStop() {
             this.stopNow.set(true);
         }
 
-        private void printDebug() {
+        private void printDebug(int items) {
             long tid = getId();
-            System.err.println("Producer: " + id + ", thread Id: " + tid);
+            System.err.println("Producer: " + id + ", thread Id: " + tid +
+                    " produced " + items + " integers from " + start + " to " + (next-1));
             fifo.printDebug();
             System.err.println(threadInfo(tid));
         }
@@ -279,8 +304,7 @@ public class ProducerConsumerLockFree {
                 items++;
                 System.err.println("consumed n: " + n);
             }
-            System.err.println("consumed " + items + " items");
-            printDebug();
+            printDebug(items);
         }
 
         public void lazyStop() {
@@ -292,25 +316,138 @@ public class ProducerConsumerLockFree {
             return numbers.iterator();
         }
 
-        private void printDebug() {
+        private void printDebug(int items) {
             long tid = getId();
-            System.err.println("Consumer: " + id + ", thread Id: " + tid);
+            System.err.println("Consumer: " + id + ", thread Id: " + tid + " consumed " + items + " items");
             fifo.printDebug();
             System.err.println(threadInfo(tid));
         }
     }
 
+    private static void multipleProducersMultipleConsumersTest(int[] starts, int[] ends, int[] producerSleeps,
+                                                               int[] consumerSleeps,
+                                                               LockFreeCircularFifo<Integer> fifo) {
+        assert (starts.length == ends.length);
+        assert (starts.length == producerSleeps.length);
+
+        final long MAX_RUN_TIME = 30000;
+
+        IntegerProducer[] producers = new IntegerProducer[starts.length];
+        for (int i = 0; i < starts.length; i++) {
+            producers[i] = new IntegerProducer(starts[i], ends[i], producerSleeps[i], fifo);
+        }
+
+        IntegerConsumer[] consumers = new IntegerConsumer[consumerSleeps.length];
+        for (int i = 0; i < consumerSleeps.length; i++) {
+            consumers[i] = new IntegerConsumer(consumerSleeps[i], fifo);
+        }
+
+        for (IntegerConsumer consumer: consumers) {
+            consumer.start();
+        }
+        for (IntegerProducer producer: producers) {
+            producer.start();
+        }
+
+        try {
+            for (IntegerProducer producer : producers) {
+                producer.join(MAX_RUN_TIME);
+            }
+            for (IntegerConsumer consumer: consumers) {
+                consumer.join(MAX_RUN_TIME);
+            }
+        } catch (InterruptedException e) {
+            System.err.println("abrupt end of MPMC test!");
+        }
+
+        long[] deadlockedIds = ManagementFactory.getThreadMXBean().findDeadlockedThreads();
+        if (deadlockedIds != null) {
+            System.err.println("MPMC Test: Deadlocked threads found: " + deadlockedIds.length);
+            for (long id: deadlockedIds) {
+                System.err.println(ManagementFactory.getThreadMXBean().getThreadInfo(id));
+            }
+        } else {
+            System.err.println("MPMC Test: No deadlocked threads found");
+        }
+
+        for (IntegerProducer producer : producers) {
+            if (producer.isAlive()) {
+                producer.interrupt();
+            }
+        }
+        for (IntegerConsumer consumer: consumers) {
+            if (consumer.isAlive()) {
+                consumer.interrupt();
+            }
+        }
+
+        List<Integer>[] items = new List[producers.length];
+        for (int i = 0; i < producers.length; i++) {
+            items[i] = new ArrayList<>();
+        }
+
+        for (IntegerConsumer consumer: consumers) {
+            List<Integer>[] consumedItems = new List[producers.length];
+            Iterator<Integer> results = consumer.iterator();
+            while (results.hasNext()) {
+                int r = results.next();
+                int p = -1;
+                for (int i = 0; i < producers.length; i++) {
+                    if ((r >= starts[i]) && (r < ends[i])) {
+                        p = i;
+                        break;
+                    }
+                }
+                assert (p != -1);
+                if (consumedItems[p] == null) {
+                    consumedItems[p] = new ArrayList<>();
+                    consumedItems[p].add(r);
+                    continue;
+                }
+                int last = consumedItems[p].get(consumedItems[p].size() - 1);
+                assert (r > last);
+            }
+            for (int i = 0; i < producers.length; i++) {
+                items[i].addAll(consumedItems[i]);
+            }
+        }
+
+        for (int i = 0; i < producers.length; i++) {
+            int start = starts[i];
+            int end = ends[i];
+            int numItems = end - start;
+            assert (numItems == items[i].size());
+            Collections.sort(items[i]);
+            for (int j = 0; j < numItems; j++) {
+                int item = items[i].get(j);
+                assert (item == (start + j));
+            }
+        }
+    }
+
     private static void singleProducerSingleConsumerTest(int start, int end, int producerSleep, int consumerSleep,
                                                          LockFreeCircularFifo<Integer> fifo) {
+        final long MAX_RUN_TIME = 30000;
+
         IntegerProducer producer = new IntegerProducer(start, end, producerSleep, fifo);
         IntegerConsumer consumer = new IntegerConsumer(consumerSleep, fifo);
         consumer.start();
         producer.start();
         try {
-            producer.join();
+            producer.join(MAX_RUN_TIME);
             Thread.sleep(20);
         } catch (InterruptedException e) {
             System.out.println("Test lock free circular fifo (multi-threaded) ended abruptly!!");
+        }
+
+        long[] deadlockedIds = ManagementFactory.getThreadMXBean().findDeadlockedThreads();
+        if (deadlockedIds != null) {
+            System.err.println("SPSC Test: Deadlocked threads found: " + deadlockedIds.length);
+            for (long id: deadlockedIds) {
+                System.err.println(ManagementFactory.getThreadMXBean().getThreadInfo(id));
+            }
+        } else {
+            System.err.println("SPSC Test: No deadlocked threads found");
         }
         consumer.interrupt();
         Iterator<Integer> results = consumer.iterator();
@@ -372,6 +509,21 @@ public class ProducerConsumerLockFree {
         System.out.println("----------------------------------------------------------");
         fifo = new LockFreeCircularFifo<>(5);
         singleProducerSingleConsumerTest(2, 7, 10, 10, fifo);
+
+        System.out.println("multipleProducerMultipleConsumerTest# 1");
+        System.out.println("----------------------------------------------------------");
+        fifo = new LockFreeCircularFifo<>(100);
+        int[] starts = new int[] {0, 200000};
+        int[] ends = new int[] {200000, 400000};
+        int[] producerSleeps = new int[] {10, 10};
+        int[] consumerSleeps = new int[] {5, 5, 5};
+        /*
+        int[] starts = new int[] {0, 200000, 400000, 600000, 800000};
+        int[] ends = new int[] {200000, 400000, 600000, 800000, 1000000};
+        int[] producerSleeps = new int[] {10, 10, 10, 10, 10};
+        int[] consumerSleeps = new int[] {5, 5, 5};
+        */
+        multipleProducersMultipleConsumersTest(starts, ends, producerSleeps, consumerSleeps, fifo);
     }
 
     private static void testAtomicReferenceToMutableObject() {
