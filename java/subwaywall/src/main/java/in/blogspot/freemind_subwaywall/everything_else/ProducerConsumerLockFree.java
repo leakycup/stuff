@@ -16,16 +16,12 @@ public class ProducerConsumerLockFree {
      * 4. circular FIFO is implemented over a fixed sized buffer. no memory allocation during insert/remove.
      */
     public static class LockFreeCircularFifo<T> {
+        private static final int maxTries = 10;
+
         private final AtomicReferenceArray<T> buffer;
-        private final AtomicReferenceArray<Boolean> watches;
         private final int size;
-        // atomic reference to immutable objects seems to be the only sane way to use the Atomic* types in Java.
-        // since the object being referred to is immutable, a reference check is sufficient to determine
-        // if it has changed. ABA problem can still happen if two different objects end up with same reference (at
-        // different times). however, this is going to be rare. on the other hand, AtomicInteger can easily cause ABA
-        // problem if the indexes wrap around the buffer.
-        private final AtomicReference<Integer> head;
-        private final AtomicReference<Integer> tail;
+        private final AtomicInteger head;
+        private final AtomicInteger tail;
 
         private static class DebugInfo {
             static final int DEBUG_INFO_LENGTH = 15;
@@ -55,13 +51,9 @@ public class ProducerConsumerLockFree {
             assert (size > 0);
 
             this.buffer = new AtomicReferenceArray<T>(size);
-            this.watches = new AtomicReferenceArray<Boolean>(size);
-            for (int i = 0; i < size; i++) {
-                watches.set(i, Boolean.FALSE);
-            }
             this.size = size;
-            this.head = new AtomicReference<>(new Integer(0));
-            this.tail = new AtomicReference<>(new Integer(0));
+            this.head = new AtomicInteger(0);
+            this.tail = new AtomicInteger(0);
             this.debugInfo = new ThreadLocal<DebugInfo>() {
                 @Override
                 protected DebugInfo initialValue() {
@@ -70,128 +62,48 @@ public class ProducerConsumerLockFree {
             };
         }
 
-        public void insert(T item) throws InterruptedException {
+        public boolean insert(T item) throws InterruptedException {
             assert (item != null);
 
-            //reserve a slot in buffer[currentTail]. by advancing the tail index, we ensure that
+            //reserve a slot in buffer[currentTail]. by advancing the tail index, we hope to ensure that
             //no other producer thread tries to insert into buffer[currentTail].
-            //the chance of an ABA problem is same as that of two different Integer objects
-            //having the same reference. this is much better than the chance of an AtomicInteger having same
-            //value after wrapping over the buffer. hence we choose AtomicReference<Integer> rather than AtomicInteger
-            //for tail.
-            Integer currentTail = tail.get();
-            int nextTail = (currentTail + 1) % size;
-            while (!tail.compareAndSet(currentTail, nextTail)) {
-                currentTail = tail.get();
-                nextTail = (currentTail + 1) % size;
-            }
-            debugInfo.get().add("insert(): currentTail: " + currentTail + " nextTail: " + nextTail);
+            Integer currentTail = tail.getAndIncrement();
 
-            //at this point, a race between two producers is not possible. however, it is possible that a
-            //single producer and a single consumer thread attempts to access the same slot in buffer.
-            //watch is used to synchronize between the single producer and single consumer threads so that
-            //they both don't wait for each other. the thread that succeeds in CAS gets the right to wait() while
-            //the other thread busy waits in a loop. e.g. if a producer succeeds in CAS and finds buffer[currentTail]
-            //is full, it calls wait(), waiting for a consumer to consume the item and wake it up. on the other hand,
-            //if it fails to CAS (implying, a consumer is already in action), it busy waits till buffer[currentTail]
-            //is empty. the busy wait should be short since a consumer is already working on buffer[currentTail].
-            //finally, the producer needs to wake up a consumer that is possibly waiting for an item to be available
-            //in buffer[currentTail].
-            //caveat: a producer can be interrupted or can otherwise die while waiting. however, since it has already
-            //reserved the slot buffer[currentTail], no other producer can insert an item in this slot till the buffer
-            //wraps around. so a consumer waiting for this slot to fill up may wait longer than expected.
-            //
-            // the current implementation works with the following 2 assumptions / claims:
-            // 1. when we're here, a race between two producers is impossible. this is wrong. while one producer is
-            // is in wait(), another producer can wrap the buffer around and come to this slot. in this case, it fails
-            // to CAS the watch, falls in the else block and keeps trying to CAS in a tight loop. both the producers
-            // (in fact, it may be more than 2 producers) can be in this state till a consumer visits this slot and
-            // empties it.
-            // 2. if a producer is waiting, the queue must be full and consumers are not waiting. this also turned out
-            // to be wrong in multipleProducerMultipleConsumerTest(). the test gets stuck as producers and consumers
-            // end up waiting on different slots (producers waiting for consumers to empty their slots, consumers
-            // waiting for the producers to fill up their slots).
-            if (watches.compareAndSet(currentTail, Boolean.FALSE, Boolean.TRUE)) {
-                if (buffer.compareAndSet(currentTail, null, item)) {
-                    watches.set(currentTail, Boolean.FALSE);
-                    debugInfo.get().add("insert(): currentTail: " + currentTail + " inserted: " + item);
-                } else {
-                    debugInfo.get().add("insert(): currentTail: " + currentTail + " slot full.");
-                    Boolean watch = watches.get(currentTail);
-                    synchronized (watch) {
-                        debugInfo.get().add("insert(): currentTail: " + currentTail + " locked watch.");
-                        while (!buffer.compareAndSet(currentTail, null, item)) {
-                            debugInfo.get().add("insert(): waiting: index: " + currentTail + " value: " + item);
-                            watch.wait();
-                            debugInfo.get().add("insert(): finished waiting: index: " + currentTail + " value: " + item);
-                        }
-                    }
-                    watches.set(currentTail, Boolean.FALSE);
-                }
-            } else {
-                debugInfo.get().add("insert(): currentTail: " + currentTail + " lost CAS to consumer.");
-                while (!buffer.compareAndSet(currentTail, null, item));
-                debugInfo.get().add("insert(): currentTail: " + currentTail + " inserted item after losing CAS.");
-                Boolean watch = watches.get(currentTail);
-                synchronized (watch) {
-                    debugInfo.get().add("insert(): currentTail: " + currentTail + " locked watch for notify.");
-                    watch.notify();
+            for (int i = 0; i < maxTries; i++) {
+                if (buffer.compareAndSet(currentTail%size, null, item)) {
+                    debugInfo.get().add("insert(): currentTail: " + currentTail + " item: " + item + " SUCCESS");
+                    return true;
                 }
             }
+            tail.getAndDecrement();
+            debugInfo.get().add("insert(): currentTail: " + currentTail + " item: " + item + " FAILED");
+
+            return false;
         }
 
         public T remove() throws InterruptedException {
-            Integer currentHead = head.get();
-            int nextHead = (currentHead + 1) % size;
-            while (!head.compareAndSet(currentHead, nextHead)) {
-                currentHead = head.get();
-                nextHead = (currentHead + 1) % size;
-            }
-            debugInfo.get().add("remove(): currentHead: " + currentHead + " nextHead: " + nextHead);
+            Integer currentHead = head.getAndIncrement();
 
-            //caveat: a consumer can be interrupted or can otherwise die while waiting. however, since it has already
-            //reserved the slot buffer[currentTail], no other consumer can remove an item from this slot till the buffer
-            //wraps around. this means the item in this slot may be consumed late and out of insertion order.
-            if (watches.compareAndSet(currentHead, Boolean.FALSE, Boolean.TRUE)) {
-                T item = buffer.get(currentHead);
-                if (item != null) {
-                    buffer.set(currentHead, null);
-                    watches.set(currentHead, Boolean.FALSE);
-                    debugInfo.get().add("remove(): currentHead: " + currentHead + " removed item.");
-                    return item;
-                } else {
-                    debugInfo.get().add("remove(): currentHead: " + currentHead + " slot empty.");
-                    Boolean watch = watches.get(currentHead);
-                    synchronized (watch) {
-                        debugInfo.get().add("remove(): currentHead: " + currentHead + " locked watch.");
-                        while ((item = buffer.get(currentHead)) == null) {
-                            debugInfo.get().add("remove(): waiting: index: " + currentHead + " value: " + item);
-                            watch.wait();
-                            debugInfo.get().add("remove(): finished waiting: index: " + currentHead + " value: " + item);
-                        }
-                    }
-                    buffer.set(currentHead, null);
-                    watches.set(currentHead, Boolean.FALSE);
+            for (int i = 0; i < maxTries; i++) {
+                T item = buffer.get(currentHead%size);
+                if ((item != null) && buffer.compareAndSet(currentHead%size, item, null)) {
+                    debugInfo.get().add("remove(): currentHead: " + currentHead + " item: " + item);
                     return item;
                 }
-            } else {
-                T item;
-                debugInfo.get().add("remove(): currentHead: " + currentHead + " lost CAS to producer.");
-                while ((item = buffer.get(currentHead)) == null);
-                debugInfo.get().add("remove(): currentHead: " + currentHead + " removed item after losing CAS.");
-                Boolean watch = watches.get(currentHead);
-                synchronized (watch) {
-                    debugInfo.get().add("remove(): currentHead: " + currentHead + " locked watch for notify.");
-                    watch.notify();
-                }
-
-                return item;
             }
+            head.getAndDecrement();
+            debugInfo.get().add("remove(): currentHead: " + currentHead + " item: " + null);
+
+            return null;
         }
 
         public void printDebug() {
             debugInfo.get().print();
         }
+    }
+
+    private static long cpuTime(long id) {
+        return (ManagementFactory.getThreadMXBean().getThreadCpuTime(id));
     }
 
     private static ThreadInfo threadInfo(long id) {
@@ -234,11 +146,18 @@ public class ProducerConsumerLockFree {
                     }
                 }
 
+                boolean success;
                 try {
-                    fifo.insert(next);
+                    success = fifo.insert(next);
                 } catch (InterruptedException e) {
                     break;
                 }
+                if (!success) {
+                    continue;
+                }
+
+                System.out.println("produced n: " + next);
+
                 items++;
                 next++;
                 if (next >= end) {
@@ -255,7 +174,8 @@ public class ProducerConsumerLockFree {
         private void printDebug(int items) {
             long tid = getId();
             System.err.println("Producer: " + id + ", thread Id: " + tid +
-                    " produced " + items + " integers from " + start + " to " + (next-1));
+                    " produced " + items + " integers from " + start + " to " + (next-1) +
+                    " cpuTime: " + cpuTime(tid));
             fifo.printDebug();
             System.err.println(threadInfo(tid));
         }
@@ -293,16 +213,19 @@ public class ProducerConsumerLockFree {
                     }
                 }
 
-                int n;
+                Integer n;
                 try {
                     n = fifo.remove();
                 } catch (InterruptedException e) {
                     break;
                 }
+                if (n == null) {
+                    continue;
+                }
                 numbers.add(n);
 
                 items++;
-                System.err.println("consumed n: " + n);
+                System.out.println("consumed n: " + n);
             }
             printDebug(items);
         }
@@ -318,7 +241,8 @@ public class ProducerConsumerLockFree {
 
         private void printDebug(int items) {
             long tid = getId();
-            System.err.println("Consumer: " + id + ", thread Id: " + tid + " consumed " + items + " items");
+            System.err.println("Consumer: " + id + ", thread Id: " + tid + " consumed " + items + " items" +
+                                " cpuTime: " + cpuTime(tid));
             fifo.printDebug();
             System.err.println(threadInfo(tid));
         }
