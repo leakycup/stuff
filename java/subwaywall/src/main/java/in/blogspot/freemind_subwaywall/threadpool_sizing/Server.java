@@ -1,3 +1,5 @@
+package in.blogspot.freemind_subwaywall.threadpool_sizing;
+
 import java.lang.Thread;
 import java.lang.ThreadGroup;
 import java.lang.InterruptedException;
@@ -5,10 +7,7 @@ import java.lang.Runtime;
 
 import java.lang.reflect.Array;
 
-import java.util.List;
-import java.util.Map;
 import java.util.Arrays;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Date;
 import java.util.concurrent.Executors;
@@ -212,7 +211,7 @@ public class Server {
     static private int globalCapacity;
     static private int loadBalanceFactor;
 
-    private static class ManagementThread implements HttpHandler {
+    private static class ManagementHandler implements HttpHandler {
         private static String contextPath = "/threadpooltest/management/";
         private static String GETLOAD = "getload";
         private static String BUSY = "busy";
@@ -221,7 +220,7 @@ public class Server {
 
         ThreadPool pool;
 
-        public ManagementThread(HttpServer server, ThreadPool pool) {
+        public ManagementHandler(HttpServer server, ThreadPool pool) {
             this.pool = pool;
             server.createContext(contextPath, this);
             globalBusy = this.pool.getBusy();
@@ -280,10 +279,10 @@ public class Server {
         }
     }
 
-    private static class RequestThread implements HttpHandler {
+    private static class RequestHandler implements HttpHandler {
         private static String contextPath = "/threadpooltest/";
 
-        public RequestThread(HttpServer server) {
+        public RequestHandler(HttpServer server) {
             server.createContext(contextPath, this);
         }
 
@@ -445,10 +444,10 @@ public class Server {
         Thread mainThread = Thread.currentThread();
         HttpServer server = createHttpServer(host);
         server.setExecutor(Executors.newFixedThreadPool(NUM_REQUEST_THREADS));
-        RequestThread requester = new RequestThread(server);
+        RequestHandler requester = new RequestHandler(server);
         ResponseThread responder = new ResponseThread();
         ThreadPool pool = new ThreadPool(INITIAL_CAPACITY, MAX_CAPACITY);
-        ManagementThread manager = new ManagementThread(server, pool);
+        ManagementHandler manager = new ManagementHandler(server, pool);
         responder.start();
         server.start();
         System.out.println("main: server IP address and port " +
