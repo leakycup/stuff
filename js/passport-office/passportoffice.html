@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="startTestGlobalFCFS()">Passport Office (Global FCFS)</button> 
+<div id="globalFCFS.input">Input: </div>
+<p><output id="globalFCFS.result">Applicants: </output></p>
+<div id="globalFCFS.result1">Document verification done: </div>
+<div id="globalFCFS.result2">Police verification done: </div>
+<div id="globalFCFS.result3">Biometric verification done: </div>
+<div id="globalFCFS.summary">Summary: </div>
+<br><br><br><br><br><br>
+
+<button onclick="startTestStageFCFS()">Passport Office (Per Stage FCFS)</button> 
+<div id="stageFCFS.input">Input: </div>
+<p><output id="stageFCFS.result">Applicants: </output></p>
+<div id="stageFCFS.result1">Document verification done: </div>
+<div id="stageFCFS.result2">Police verification done: </div>
+<div id="stageFCFS.result3">Biometric verification done: </div>
+<div id="stageFCFS.summary">Summary: </div>
+<br><br><br><br><br><br>
+
+<button onclick="startTestRandom()">Passport Office (Random)</button> 
+<div id="random.input">Input: </div>
+<p><output id="random.result">Applicants: </output></p>
+<div id="random.result1">Document verification done: </div>
+<div id="random.result2">Police verification done: </div>
+<div id="random.result3">Biometric verification done: </div>
+<div id="random.summary">Summary: </div>
+<br><br><br><br><br><br>
+
+<!--
+ see https://github.com/adamhooper/js-priority-queue
+-->
+<script src="priority-queue.js"></script>
+<script>
+
+class Applicant {
+	constructor(id) {
+		this.id = id;
+		this.start = Date.now();
+		this.endDocumentVerification = 0;
+		this.endPoliceVerification = 0;
+		this.endBiometricVerification = 0;
+		this.key = 0;
+	}
+}
+
+function globalFCFSKey(applicant) {
+	return applicant.id;
+}
+
+function stageFCFSKey(applicant) {
+	return Date.now();
+}
+
+function randomKey(applicant) {
+	return Math.floor(Math.random()*1000);
+}
+
+class UniformRandom {
+	constructor(low, high) {
+		this.low = low;
+		this.range = high - low + 1;
+		this.multiplier = this.range*10;
+	}
+
+	nextRandom() {
+		var r = Math.floor(Math.random()*this.multiplier); //an integer in [0, (high - low + 1)*10);
+		var result = (r%this.range) + this.low;
+		return result;
+	}
+}
+
+class CombinedRandom {
+	constructor(percent, random1, random2) {
+		this.percent = percent;
+		this.random1 = random1;
+		this.random2 = random2;
+	}
+
+	nextRandom() {
+		var r = Math.floor(Math.random()*100); //an integer in [0, 100)
+		if (r < this.percent) {
+			return this.random1.nextRandom();
+		} else {
+			return this.random2.nextRandom();
+		}
+	}
+}
+
+class RealMinuteToSimulationMs {
+	constructor(random, simulationFactor) {
+		this.random = random;
+		this.multiplier = (60*1000)/simulationFactor;
+	}
+
+	nextRandom() {
+		return (this.random.nextRandom() * this.multiplier);
+	}
+}
+
+function floatDivision(x, y) {
+	return Math.round((x*10000.0) / y) / 10000;
+}
+
+function appendToInnerHTML(key, value) {
+    var innerHTML = document.getElementById(key).innerHTML;
+    innerHTML += value;
+    document.getElementById(key).innerHTML = innerHTML;
+}
+
+class PassportOffice {
+    constructor(name, numDocumentVerificationAgents, numPoliceVerificationAgents, numBiometricVerificationAgents, scriptFile, keyMaker, docTimeout, policeTimeout, biometricTimeout) {
+    	this.name = name;
+    	this.documentVerificationWorkers = PassportOffice.createWorkers(numDocumentVerificationAgents, scriptFile);
+    	this.policeVerificationWorkers = PassportOffice.createWorkers(numPoliceVerificationAgents, scriptFile);
+    	this.biometricVerificationWorkers = PassportOffice.createWorkers(numBiometricVerificationAgents, scriptFile);
+
+	this.documentVerificationQueue = new PriorityQueue({comparator: function(a, b) {return a.key - b.key;}});
+	this.policeVerificationQueue = new PriorityQueue({comparator: function(a, b) {return a.key - b.key;}});
+	this.biometricVerificationQueue = new PriorityQueue({comparator: function(a, b) {return a.key - b.key;}});
+
+	//timeouts are in ms of simulation time.
+	this.docTimeout = docTimeout;
+	this.policeTimeout = policeTimeout;
+	this.biometricTimeout = biometricTimeout;
+
+	this.applicants = [];
+	this.keyMaker = keyMaker;
+
+	this.addListeners();
+	this.startTime = 0;
+    }
+
+    addListeners() {
+	var _this = this;
+
+	for (var i = 0; i < this.biometricVerificationWorkers.length; i++) {
+		var u = this.biometricVerificationWorkers[i];
+		u.addEventListener("message", function(e) {
+					var id = e.data;
+					var applicant = _this.applicants[id];
+					console.assert(applicant.id == id, {"message":"applicant.id != id", "applicant.id": applicant.id, "id": id});
+					console.assert(applicant.endBiometricVerification == 0, {"message": "spurious biometric worker message", "id": id, "endTime": applicant.endBiometricVerification});
+					applicant.endBiometricVerification = Date.now();
+					var timeTaken = applicant.endBiometricVerification - applicant.endPoliceVerification;
+					appendToInnerHTML(_this.name + "." + "result3", " " + id + "," + timeTaken);
+					_this.biometricVerificationWorkers.push(u);
+					_this.schedule(_this.biometricVerificationQueue, _this.biometricVerificationWorkers, _this.biometricTimeout);
+				}, false);
+	}
+
+	for (var i = 0; i < this.policeVerificationWorkers.length; i++) {
+		var v = this.policeVerificationWorkers[i];
+		v.addEventListener("message", function(e) {
+					var id = e.data;
+					var applicant = _this.applicants[id];
+					console.assert(applicant.id == id, {"message":"applicant.id != id", "applicant.id": applicant.id, "id": id});
+					console.assert(applicant.endPoliceVerification == 0, {"message": "spurious police worker message", "id": id, "endTime": applicant.endPoliceVerification});
+					applicant.endPoliceVerification = Date.now();
+					var timeTaken = applicant.endPoliceVerification - applicant.endDocumentVerification;
+					appendToInnerHTML(_this.name + "." + "result2", " " + id + "," + timeTaken);
+					_this.policeVerificationWorkers.push(v);
+					_this.schedule(_this.policeVerificationQueue, _this.policeVerificationWorkers, _this.policeTimeout);
+					applicant.key = _this.keyMaker(applicant);
+					_this.biometricVerificationQueue.queue(applicant);
+					_this.schedule(_this.biometricVerificationQueue, _this.biometricVerificationWorkers, _this.biometricTimeout);
+				}, false);
+	}
+
+	for (var i = 0; i < this.documentVerificationWorkers.length; i++) {
+		var w = this.documentVerificationWorkers[i];
+		w.addEventListener("message", function(e) {
+					var id = e.data;
+					var applicant = _this.applicants[id];
+					console.assert(applicant.id == id, {"message":"applicant.id != id", "applicant.id": applicant.id, "id": id});
+					console.assert(applicant.endDocumentVerification == 0, {"message": "spurious document worker message", "id": id, "endTime": applicant.endDocumentVerification});
+					applicant.endDocumentVerification = Date.now();
+					var timeTaken = applicant.endDocumentVerification - applicant.start;
+					appendToInnerHTML(_this.name + "." + "result1", " " + id + "," + timeTaken);
+					_this.documentVerificationWorkers.push(w);
+					_this.schedule(_this.documentVerificationQueue, _this.documentVerificationWorkers, _this.docTimeout);
+					applicant.key = _this.keyMaker(applicant);
+					_this.policeVerificationQueue.queue(applicant);
+					_this.schedule(_this.policeVerificationQueue, _this.policeVerificationWorkers, _this.policeTimeout);
+				}, false);
+	}
+    }
+
+    static createWorkers(numWorkers, scriptFile) {
+    	var workers = [];
+    	for (var i = 0; i < numWorkers; i++) {
+    		var w = new Worker(scriptFile);
+    		workers.push(w);
+    	}
+
+	return workers;
+    }
+
+    submit(n) {
+	    if (this.startTime == 0) {
+		    this.startTime = Date.now();
+	    }
+
+	    for (var i = 0; i < n; i++) {
+		    var id = this.applicants.length;
+		    var applicant = new Applicant(id);
+		    applicant.key = this.keyMaker(applicant);
+		    this.applicants.push(applicant);
+		    this.documentVerificationQueue.queue(applicant);
+		    appendToInnerHTML(this.name + "." + "result", " " + id);
+	    }
+	    this.schedule(this.documentVerificationQueue, this.documentVerificationWorkers, this.docTimeout);
+    }
+
+    schedule(workQueue, workers, timeOut) {
+	    while ((workQueue.length > 0) && (workers.length > 0)) {
+		    var applicant = workQueue.dequeue();
+		    var worker = workers.shift();
+		    var data = [applicant.id, timeOut.nextRandom()];
+		    worker.postMessage(data);
+	    }
+    }
+
+    summary() {
+	    var totalLatency = 0;
+	    var totalApplicants = 0;
+	    var endTime = 0;
+	    for (var i = 0; i < this.applicants.length; i++) {
+		    var applicant = this.applicants[i];
+		    if (applicant.endBiometricVerification == 0) {
+			    continue;
+		    }
+		    if (applicant.endBiometricVerification > endTime) {
+			    endTime = applicant.endBiometricVerification;
+		    }
+		    var latency = applicant.endBiometricVerification - applicant.start;
+		    totalLatency += latency;
+		    totalApplicants++;
+	    }
+	    var totalDuration = endTime - this.startTime;
+	    var throughput = floatDivision(totalApplicants, totalDuration);
+	    var averageLatency = floatDivision(totalLatency, totalApplicants);
+	    appendToInnerHTML(this.name + "." + "summary", "Duration (ms): " + totalDuration + " Total applicants: " + totalApplicants + " throughput (applicants/ms): " + throughput + " totalLatency (ms): " + totalLatency + " average latency (ms): " + averageLatency);
+    }
+
+    terminateWorkers(workers) {
+	    for (var i = 0; i < workers.length; i++) {
+		    var worker = workers.shift();
+		    worker.terminate();
+	    }
+    }
+
+    terminate() {
+	    this.terminateWorkers(this.documentVerificationWorkers);
+	    this.terminateWorkers(this.policeVerificationWorkers);
+	    this.terminateWorkers(this.biometricVerificationWorkers);
+    }
+}
+
+function startTestGlobalFCFS() {
+	startTest("globalFCFS", globalFCFSKey);
+}
+
+function startTestStageFCFS() {
+	startTest("stageFCFS", stageFCFSKey);
+}
+
+function startTestRandom() {
+	startTest("random", randomKey);
+}
+
+function startTest(name, keyMaker) {
+    if(typeof(Worker) === "undefined") {
+        document.getElementById("result").innerHTML = "Sorry! No Web Worker support.";
+    return;
+    }
+    var numDocumentVerificationAgents = prompt("Numbeer of agents for document verification:");
+    var numPoliceVerificationAgents = prompt("Numbeer of agents for police verification:");
+    var numBiometricVerificationAgents = prompt("Numbeer of agents for biometric verification:");
+    var applicantsPerHour = prompt("Applicants visiting per hour:");
+    appendToInnerHTML(name + "." + "input",
+		    "* Document verification agents: " + numDocumentVerificationAgents + "<br>" +
+		    "* Police verification agents: " + numPoliceVerificationAgents + "<br>" +
+		    "* Biometric verification agents: " + numBiometricVerificationAgents + "<br>" +
+		    "* Applicants per hour: " + applicantsPerHour + "<br>" +
+    	    	    "Simulating 1 hour of real time with 1 second"
+    );
+    var simulationFactor = 3600; // 1 sec of simulation time == 1 hour of real time.
+    var docTimeout = new RealMinuteToSimulationMs(new UniformRandom(5, 15), simulationFactor);
+    var noRecordTimeout = new RealMinuteToSimulationMs(new UniformRandom(1, 2), simulationFactor);
+    var withRecordTimeout = new RealMinuteToSimulationMs(new UniformRandom(25, 30), simulationFactor);
+    var policeTimeout = new CombinedRandom(10, withRecordTimeout, noRecordTimeout);
+    var biometricTimeout = new RealMinuteToSimulationMs(new UniformRandom(5, 7), simulationFactor);
+    var passportOffice = new PassportOffice(name, numDocumentVerificationAgents, numPoliceVerificationAgents, numBiometricVerificationAgents, "worker.js", keyMaker, docTimeout, policeTimeout, biometricTimeout);
+    var periodicSubmit = new PeriodicSubmit(passportOffice, 9, applicantsPerHour);
+    periodicSubmit.submit();
+}
+
+function endTest(passportOffice) {
+    passportOffice.terminate();
+    passportOffice.summary();
+}
+
+class PeriodicSubmit {
+	constructor(passportOffice, totalHours, applicantsPerHour) {
+		this.passportOffice = passportOffice;
+		this.totalHours = totalHours;
+		this.applicantsPerHour = applicantsPerHour;
+		this.hours = 0;
+	}
+
+	submit() {
+		var _this = this;
+		if (this.hours < this.totalHours) {
+			this.hours++;
+			this.passportOffice.submit(this.applicantsPerHour);
+			setTimeout(function() {_this.submit();}, 1000);
+		} else {
+			setTimeout(function() {endTest(_this.passportOffice);}, 2000);
+		}
+	}
+}
+
+</script>
+
+</body>
+</html>
+
