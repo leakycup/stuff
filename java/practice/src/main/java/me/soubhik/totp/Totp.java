@@ -45,9 +45,22 @@ public class Totp {
         mac.init(key);
     }
 
-    public int code() {
+    public int currentCode() {
+        return (pastCode(0));
+    }
+
+    public int futureCode(int steps) {
+        return (pastCode(-steps));
+    }
+
+    public int pastCode(int steps) {
         long now = System.currentTimeMillis();
         long count = (now - epoch) / step;
+        count -= steps;
+        return (code(count));
+    }
+
+    public int code(long count) {
         byte[] codeBytes = mac.doFinal(longToBytes(count));
         int offset = codeBytes[codeBytes.length - 1] & 0x1f; //sha-256 code is 32 bytes
         int codeInt = bytesToPositiveInt(codeBytes, offset);
@@ -159,23 +172,33 @@ public class Totp {
         }
     }
 
-    private static void testTotp(Totp totp, long smallDelay, long longDelay) {
-        int code = totp.code();
+    private static void testTotp(Totp totp, long step) {
+        long smallDelay = 1;
+        long longDelay = step*2;
+        int code = totp.currentCode();
+
         testSleep(smallDelay);
-        int newCode = totp.code();
+        int newCode = totp.currentCode();
         assert (code == newCode);
+
         testSleep(longDelay);
-        newCode = totp.code();
+        newCode = totp.currentCode();
         assert (code != newCode);
+
+        code = totp.currentCode();
+        int futureCode = totp.futureCode(1);
+        testSleep(step);
+        newCode = totp.currentCode();
+        assert (newCode == futureCode);
+        newCode = totp.pastCode(1);
+        assert (code == newCode);
     }
 
     public static void main(String[] args) {
-        testBytesDecoders();
-        testByteEncoders();
-
         String testSecret = "MzI4dTkzMnVmbm9ma2QgMTItPWAzMCAtMDFyIHBva3cgbHNkbXZsZHNtdmxzZG12a2xkZm52amtu";
 
         Totp totp;
+
         try {
             totp = new Totp(testSecret);
         } catch (Exception e){
@@ -183,7 +206,15 @@ public class Totp {
             e.printStackTrace();
             return;
         }
-        testTotp(totp, 1, 40000);
+
+        //for demo
+        System.out.println(totp.currentCode());
+        for (int i = 0; i < 3; i++) {
+            testSleep(30000);
+            System.out.println(totp.currentCode());
+        }
+
+        testTotp(totp, 30000);
 
         try {
             totp = new Totp(testSecret, 100000, 5000);
@@ -192,6 +223,9 @@ public class Totp {
             e.printStackTrace();
             return;
         }
-        testTotp(totp, 1, 10000);
+        testTotp(totp, 5000);
+
+        testBytesDecoders();
+        testByteEncoders();
     }
 }

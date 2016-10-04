@@ -247,7 +247,7 @@ public class UndertowApp {
         }
     }
 
-    static String getSingleValuedParam(Map<String, Deque<String>> parameters, String key) {
+    public static String getSingleValuedParam(Map<String, Deque<String>> parameters, String key) {
         String value = null;
 
         if (parameters.containsKey(key)) {
