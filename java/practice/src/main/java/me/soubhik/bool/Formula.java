@@ -269,6 +269,10 @@ public class Formula {
         testFormulaParsing("a | (!b & ((((c & d)))))", "(a | (!b & (c & d)))");
         testFormulaParsing("(a | b) & (a | (c & d & !(d | e & (f | (b & !(a | c))))))",
                 "((a | b) & (a | ((c & d) & !((d | e) & (f | (b & !(a | c)))))))");
+        testFormulaParsing("T", "T");
+        testFormulaParsing("F", "F");
+        testFormulaParsing("(T|F)", "(T | F)");
+        testFormulaParsing("a |F & !(b|T)", "((a | F) & !(b | T))");
         System.out.println("Formula parsing test passed.");
     }
 }

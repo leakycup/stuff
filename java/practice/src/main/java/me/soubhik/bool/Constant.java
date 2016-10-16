@@ -14,6 +14,7 @@ public class Constant implements Expression {
     }
 
     public void toInfix(StringBuilder builder) {
-        builder.append(value);
+        String stringValue = (value) ? "T" : "F";
+        builder.append(stringValue);
     }
 }
