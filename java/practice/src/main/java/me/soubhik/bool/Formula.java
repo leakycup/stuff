@@ -1,8 +1,5 @@
 package me.soubhik.bool;
 
-import me.soubhik.GeoDatabase.DataLoader;
-
-import java.text.ParseException;
 import java.util.EmptyStackException;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -296,6 +293,7 @@ public class Formula {
         testFormulaParsing("F", "F");
         testFormulaParsing("(T|F)", "(T | F)");
         testFormulaParsing("a |F & !(b|T)", "((a | F) & !(b | T))");
+        testFormulaParsing("(a  |    b)", "(a | b)");
         System.out.println("Formula parsing tests passed.");
 
         System.out.println("===================================");
@@ -314,6 +312,28 @@ public class Formula {
         testFormulaProperties("a & (b | c)", false, false, true);
         testFormulaProperties("!a & !b", false, false, true);
         testFormulaProperties(" (a & (!b | b)) | (!a & (!b | b))", true, false, true);
+        testFormulaProperties("(!a | (a & a))", true, false, true);
+        testFormulaProperties("(!a | a)", true, false, true);
+        testFormulaProperties("(!a | (b & !a))", false, false, true);
+        testFormulaProperties("(a | b) & (a | (c & d & !(d | e & (f | (b & !(a | c))))))", false, false, true);
+        testFormulaProperties("!((a & (!b | b)) | (!a & (!b | b)))", false, true, false);
+        testFormulaProperties("(a|b)|!(a|b)", true, false, true);
+        testFormulaProperties("(a|b)|(!a & !b)", true, false, true);
+        testFormulaProperties("(a & b) | (a | !b) | (c | T)", true, false, true);
+        testFormulaProperties("(a&b&c)|(c&d&e)|(e&f&a)", false, false, true);
+        testFormulaProperties("(a&b&c)|(c&d&!c)|(e&f&a)", false, false, true);
+        testFormulaProperties("(a&b&c)&(c&d&!c)&(e&f&a)", false, true, false);
+        testFormulaProperties("(a&b&!b)|(c&d&!c)|(e&!e&a)", false, true, false);
+        testFormulaProperties("(a&b&!b)|(c&d&!c)|!(e&!e&a)", true, false, true);
+        testFormulaProperties("(a|b|c)&(c|d|e)&(e|f|a)", false, false, true);
+        testFormulaProperties("(a|b|c)&(c|d|!c)&(e|f|a)", false, false, true);
+        testFormulaProperties("(a|b|c)|(c|d|!c)|(e|f|a)", true, false, true);
+        testFormulaProperties("(a|b|!b)&(c|d|!c)&(e|!e|a)", true, false, true);
+        testFormulaProperties("(a|b|!b)&(c|d|!c)&!(e|!e|a)", false, true, false);
+        testFormulaProperties("((!a | !b) & (!a | ((!c & (!d & a)) & !b))) | ((a & b) | (a & (c | (d | !a) | b)))",
+                true, false, true);
+        testFormulaProperties("((!a | !b) & (!a | ((!c & (!d & a)) & !b))) & ((a & b) | (a & (c | (d | !a) | b)))",
+                false, true, false);
         System.out.println("Formula properties tests passed.");
     }
 }
