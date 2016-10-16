@@ -31,6 +31,18 @@ public class Formula {
         System.out.println(this.toString());
     }
 
+    public boolean isTautology() {
+        return root.falseAssignments().isEmpty();
+    }
+
+    public boolean isContradiction() {
+        return root.truthAssignments().isEmpty();
+    }
+
+    public boolean isSatisfiable() {
+        return !isContradiction();
+    }
+
     public static class Builder {
         private static final char OP_OR = '|';
         private static final char OP_AND = '&';
@@ -235,7 +247,18 @@ public class Formula {
         //test manually. extra parenthesis in parsed output ok.
     }
 
+    private static void testFormulaProperties(String formula, boolean isTautology, boolean isContradiction,
+                                              boolean isSatisfiable) {
+        System.out.println(formula + ": tautology==" + isTautology + ", contradiction==" + isContradiction +
+                ", satisfiable==" + isSatisfiable);
+        Formula actual = new Formula.Builder(formula).build();
+        assert (actual.isTautology() == isTautology);
+        assert (actual.isContradiction() == isContradiction);
+        assert (actual.isSatisfiable() == isSatisfiable);
+    }
+
     public static void main(String[] args) {
+        System.out.println("===================================");
         System.out.println("Testing formula parsing.");
         System.out.println("===================================");
         testFormulaParsing("a", "a");
@@ -273,6 +296,24 @@ public class Formula {
         testFormulaParsing("F", "F");
         testFormulaParsing("(T|F)", "(T | F)");
         testFormulaParsing("a |F & !(b|T)", "((a | F) & !(b | T))");
-        System.out.println("Formula parsing test passed.");
+        System.out.println("Formula parsing tests passed.");
+
+        System.out.println("===================================");
+        System.out.println("Testing formula properties.");
+        System.out.println("===================================");
+        testFormulaProperties("T", true, false, true);
+        testFormulaProperties("F", false, true, false);
+        testFormulaProperties("T|F", true, false, true);
+        testFormulaProperties("T&F", false, true, false);
+        testFormulaProperties("!F", true, false, true);
+        testFormulaProperties("a", false, false, true);
+        testFormulaProperties("a|b", false, false, true);
+        testFormulaProperties("a|!a", true, false, true);
+        testFormulaProperties("a&!a", false, true, false);
+        testFormulaProperties("a & b", false, false, true);
+        testFormulaProperties("a & (b | c)", false, false, true);
+        testFormulaProperties("!a & !b", false, false, true);
+        testFormulaProperties(" (a & (!b | b)) | (!a & (!b | b))", true, false, true);
+        System.out.println("Formula properties tests passed.");
     }
 }
