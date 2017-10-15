@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Set;
 
 /**
@@ -19,6 +20,29 @@ public class RedundantConnectionII {
             Pair(T first, T second) {
                 this.first = first;
                 this.second = second;
+            }
+
+            @Override
+            public boolean equals(Object that) {
+                if (this == that) {
+                    return true;
+                }
+
+                if (that == null) {
+                    return false;
+                }
+
+                if (!(that instanceof Pair)) {
+                    return false;
+                }
+
+                Pair other = (Pair)that;
+                return (Objects.equals(this.first, other.first) && Objects.equals(this.second, other.second));
+            }
+
+            @Override
+            public int hashCode() {
+                return Objects.hash(first, second);
             }
         }
 
@@ -114,7 +138,7 @@ public class RedundantConnectionII {
         private void detectCycle(int[][] edges) {
             Set<Pair<Integer>> edgesInCycle = new HashSet<>();
             for (int i = 0; i < edges.length; i++) {
-                Pair<Integer> edge = new Pair(edges[i][0], edges[i][1]);
+                Pair<Integer> edge = new Pair<>(edges[i][0], edges[i][1]);
                 Set<Pair<Integer>> visitedEdges = new HashSet<>();
                 findEdgesInCycle(edge.first, edge, edgesInCycle, visitedEdges);
                 if (!edgesInCycle.isEmpty()) {
