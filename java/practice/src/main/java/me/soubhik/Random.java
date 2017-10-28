@@ -125,6 +125,53 @@ public class Random {
         }
     }
 
+    public static class RandomIntWithoutReplacementV2 {
+        private final int lower, upper;
+        private final int[] numbers;
+        private int numbersAvailable;
+        UniformRandomInt randomInt;
+
+        public RandomIntWithoutReplacementV2(int upper) {
+            this(0, upper);
+        }
+
+        public RandomIntWithoutReplacementV2(int lower, int upper) {
+            int range = upper - lower;
+            this.lower = lower;
+            this.upper = upper;
+            this.numbers = new int[range];
+            for (int i = 0; i < range; i++) {
+                numbers[i] = i;
+            }
+            this.numbersAvailable = range;
+            this.randomInt = new UniformRandomInt(range); //O(range)
+        }
+
+        public int next() {
+            if (numbersAvailable <= 0) {
+                return (upper);
+            }
+
+            int nextRandomIndex = randomInt.next(); //O(log(range))
+            //bug: modulo does not correctly generate a uniform random number generator
+            // for [0, numbersAvailable) if range is not a factor of numbersAvailable.
+            // e.g. range == 10, numbersAvailable == 3. then modulo maps Random(range) to Random(numbersAvailable)
+            // as follows:
+            // 0, 3, 6, 9 => 0
+            // 1, 4, 7 => 1
+            // 2, 5, 8 => 2
+            // thus, probability of 0 is > that of 1 or 2.
+            nextRandomIndex %= numbersAvailable;
+            int nextRandom = numbers[nextRandomIndex];
+            if (nextRandomIndex < (numbersAvailable - 1)) {
+                numbers[nextRandomIndex] = numbers[numbersAvailable - 1];
+            }
+            numbersAvailable--;
+
+            return nextRandom + lower;
+        }
+    }
+
     public static class Distribution<T> {
         Map<T, Integer> frequencies;
 
