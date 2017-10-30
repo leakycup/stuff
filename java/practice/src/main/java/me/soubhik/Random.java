@@ -452,9 +452,12 @@ public class Random {
 
         for (U x: xProbabilities.keySet()) {
             for (V y: yProbabilities.keySet()) {
-                double pmiXY = pmi(xProbabilities, yProbabilities, xyProbabilities, x, y);
-                double pXY = xyProbabilities.get(new ImmutablePair<U, V>(x, y));
-                mi += pmiXY * pXY;
+                ImmutablePair<U, V> xy = new ImmutablePair<U, V>(x, y);
+                if (xyProbabilities.containsKey(xy)) {
+                    double pmiXY = pmi(xProbabilities, yProbabilities, xyProbabilities, x, y);
+                    double pXY = xyProbabilities.get(xy);
+                    mi += pmiXY * pXY;
+                }
             }
         }
 
@@ -644,7 +647,7 @@ public class Random {
 
         assertDistributions(origDistribution, sortedDistribution);
 
-        randomSortV2(elements); //TODO: sbh: infinite loop
+        randomSortV2(elements);
         Distribution<Integer> sortedV2Distribution = new Distribution<>();
         System.out.print("Random sorted array: ");
         for (Integer e: elements) {
