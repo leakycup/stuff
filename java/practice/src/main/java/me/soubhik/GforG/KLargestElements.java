@@ -1,6 +1,8 @@
 package me.soubhik.GforG;
 
 import java.util.Arrays;
+import java.util.Comparator;
+import java.util.PriorityQueue;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -8,7 +10,11 @@ import java.util.Scanner;
  * Created by sb8 on 9/9/18.
  */
 public class KLargestElements {
-    private static class SolutionUsingQuickSort {
+    private static interface Solution {
+        public void printKLargestElements(int[] input, int k);
+    }
+
+    private static class SolutionUsingQuickSort implements Solution {
         private final Random random = new Random();
 
         private int selectIndex(int start, int end) {
@@ -129,10 +135,101 @@ public class KLargestElements {
             System.err.print(")\n");
         }
 
-        private void printKLargestElementsUsingQuickSort(int[] input, int k) {
-            quickSort(input);
+        public void printKLargestElements(int[] input, int k) {
+            quickSort(input); //O(n*log(n))
+
+            //O(k)
             for (int i = input.length-1; i >= input.length - k; i--) {
                 System.out.print(input[i]);
+                System.out.print(" ");
+            }
+            System.out.print("\n");
+        }
+    }
+
+    private static class SolutionUsingHeap implements Solution {
+        private void placeElement(int[] input, int index) {
+            int element = input[index];
+
+            int parent = (index - 1) / 2;
+            while (parent >= 0) {
+                if (input[parent] >= element) {
+                    break;
+                }
+                input[index] = input[parent];
+                input[parent] = element;
+                index = parent;
+                parent = (index - 1) / 2;
+            }
+        }
+
+        private boolean swapIfOutOfPlace(int[] heap, int parent, int child) {
+            if (heap[parent] < heap[child]) {
+                int parentValue = heap[parent];
+                heap[parent] = heap[child];
+                heap[child] = parentValue;
+
+                return true;
+            }
+
+            return false;
+        }
+
+        private int extractMax(int[] heap, int numElements) {
+            int max = heap[0];
+
+            int parentIndex = 0;
+            heap[parentIndex] = heap[numElements-1];
+            while (parentIndex < numElements) {
+                int lIndex = 2*parentIndex + 1;
+                int rIndex = 2*parentIndex + 2;
+
+                boolean swapped;
+                if (rIndex < numElements) {
+                    if (heap[lIndex] >= heap[rIndex]) {
+                        swapped = swapIfOutOfPlace(heap, parentIndex, lIndex);
+                        parentIndex = lIndex;
+                    } else {
+                        swapped = swapIfOutOfPlace(heap, parentIndex, rIndex);
+                        parentIndex = rIndex;
+                    }
+                } else if (lIndex < numElements) {
+                    swapped = swapIfOutOfPlace(heap, parentIndex, lIndex);
+                    parentIndex = lIndex;
+                } else {
+                    swapped = false;
+                }
+
+                if (!swapped) {
+                    break;
+                }
+            }
+
+            return max;
+        }
+
+        private int[] makeMaxHeap(int[] input) {
+            int[] heap = new int[input.length];
+
+            for (int i = 0; i < input.length; i++) {
+                heap[i] = input[i];
+                placeElement(heap, i);
+            }
+
+            return heap;
+        }
+
+        public void printKLargestElements(int[] input, int k) {
+            //O(n*log(n))
+            //it is possible to heapify an unordered array to a heap in-place in O(n) time. see BUILD-MAX-HEAP() in Cormen, 6.3
+            int[] heap = makeMaxHeap(input);
+            int numElements = input.length;
+
+            //O(k*log(n))
+            for (int i = 0; i < k; i++) {
+                int element = extractMax(heap, numElements); //O(log(n))
+                numElements--;
+                System.out.print(element);
                 System.out.print(" ");
             }
             System.out.print("\n");
@@ -174,6 +271,43 @@ public class KLargestElements {
         }
     }
 
+    private static void testHeap(int[] input) {
+        SolutionUsingHeap solution = new SolutionUsingHeap();
+
+        int[] heap = solution.makeMaxHeap(input);
+
+        PriorityQueue<Integer> priorityQueue = new PriorityQueue<>(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return -(o1.compareTo(o2));
+            }
+        });
+        for (int i: input) {
+            priorityQueue.add(i);
+        }
+
+        int numElements = input.length;
+        System.err.print("expected" + ": " + "actual" + ": " + "numElements" + ": ");
+        debugPrintHeap(heap, numElements);
+        System.err.print("\n");
+        while (!priorityQueue.isEmpty()) {
+            int expected = priorityQueue.remove();
+            int actual = solution.extractMax(heap, numElements);
+            System.err.print(expected + ": " + actual + ": " + numElements + ": ");
+            debugPrintHeap(heap, numElements-1);
+            System.err.print("\n");
+            assert (expected == actual);
+
+            numElements--;
+        }
+    }
+
+    private static void debugPrintHeap(int[] heap, int numElements) {
+        for (int i = 0; i < numElements; i++) {
+            System.err.print(" " + heap[i]);
+        }
+    }
+
     private static void testMain() {
         //test 1
         int[] input1 = {4, 2, 9, 12, 6};
@@ -211,9 +345,21 @@ public class KLargestElements {
         int[] input9 = {2, 2, 6, 4, 9, 3};
         testQuickSort(input9);
 
-        //test 8
-        //int[] input8 = {23, 5, 0};
-        //testPartition(input8, 0, 3, 2, 0);
+        //test 10
+        int[] input10 = {23, 5, 0};
+        testPartition(input10, 0, 3, 2, 0);
+
+        //test 11
+        int[] input11 = {4, 2, 9, 12, 6};
+        testHeap(input11);
+
+        //test 12
+        int[] input12 = {2, 2, 6, 4, 9, 3};
+        testHeap(input12);
+
+        //test 13
+        int[] input13 = {23, 5, 0};
+        testHeap(input13);
     }
 
     private static class Problem {
@@ -239,7 +385,7 @@ public class KLargestElements {
 
         SolutionUsingQuickSort solution = new SolutionUsingQuickSort();
         for (Problem problem: problems) {
-            solution.printKLargestElementsUsingQuickSort(problem.input, problem.k);
+            solution.printKLargestElements(problem.input, problem.k);
         }
     }
 
