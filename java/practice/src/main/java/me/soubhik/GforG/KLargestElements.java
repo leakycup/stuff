@@ -2,9 +2,13 @@ package me.soubhik.GforG;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.Deque;
+import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.PriorityQueue;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.Set;
 
 /**
  * Created by sb8 on 9/9/18.
@@ -236,6 +240,113 @@ public class KLargestElements {
         }
     }
 
+    private static class SolutionUsingBinarySearchTree implements Solution {
+        private static class Node {
+            int keyIndex = -1;
+            int parent = -1;
+            int left = -1;
+            int right = -1;
+            int nodeCount = 1; //number of nodes in the subtree rooted at the node
+        }
+
+        private void bstInsert(Node[] bst, int[] keys, int index, int numNodes) {
+            Node newNode = new Node();
+            newNode.keyIndex = index;
+            bst[numNodes] = newNode;
+
+            int parentIndex = 0;
+            int newKey = keys[index];
+            while (parentIndex < numNodes) {
+                Node parent = bst[parentIndex];
+                parent.nodeCount++;
+                int parentKey = keys[parent.keyIndex];
+                if (newKey > parentKey) {
+                    if (parent.left < 0) {
+                        parent.left = numNodes;
+                        newNode.parent = parentIndex;
+                        break;
+                    } else {
+                        parentIndex = parent.left;
+                    }
+                } else {
+                    if (parent.right < 0) {
+                        parent.right = numNodes;
+                        newNode.parent = parentIndex;
+                        break;
+                    } else {
+                        parentIndex = parent.right;
+                    }
+                }
+            }
+        }
+
+        private Node[] bstFromArray(int input[]) {
+            Node[] bst = new Node[input.length];
+
+            for (int i=0; i < input.length; i++) {
+                bstInsert(bst, input, i, i);
+            }
+
+            return bst;
+        }
+
+        private int[] topK(Node[] bst, int[] input, int k) {
+            int[] topK = new int[k];
+
+            Deque<Node> stack = new LinkedList<>();
+            Set<Node> visited = new HashSet<>();
+            stack.push(bst[0]);
+            int i = 0;
+            while (!stack.isEmpty() && (i < k)) {
+                Node node = stack.pop();
+
+                Node left = null;
+                if (node.left >= 0) {
+                    if (!visited.contains(bst[node.left])) {
+                        left = bst[node.left];
+                    }
+                }
+
+                if (left != null) {
+                    stack.push(node);
+                    stack.push(left);
+                    printDebug(node, input, topK, i);
+                    continue;
+                }
+
+                topK[i] = input[node.keyIndex];
+                i++;
+                visited.add(node);
+                printDebug(node, input, topK, i);
+
+                if (node.right >= 0) {
+                    Node right = bst[node.right];
+                    stack.push(right);
+                }
+            }
+
+            return topK;
+        }
+
+        private void printDebug(Node node, int[] input, int[] topK, int k) {
+            System.err.print(input[node.keyIndex] + ": ");
+            for (int i = 0; i < k; i++) {
+                System.err.print(topK[i] + " ");
+            }
+            System.err.print("\n");
+        }
+
+        public void printKLargestElements(int[] input, int k) {
+            Node[] bst = bstFromArray(input); //n*log(n)
+            int[] topK = topK(bst, input, k);
+            for (int i: topK) {
+                System.out.print(i);
+                System.out.print(" ");
+            }
+            System.out.print("\n");
+        }
+    }
+
     private static void testPartition(int[] input, int start, int end, int pivot, int expected) {
         SolutionUsingQuickSort test = new SolutionUsingQuickSort();
 
@@ -308,6 +419,20 @@ public class KLargestElements {
         }
     }
 
+    private static void testBst(int[] input, int k) {
+        SolutionUsingBinarySearchTree solution = new SolutionUsingBinarySearchTree();
+        SolutionUsingBinarySearchTree.Node[] bst = solution.bstFromArray(input);
+        int[] topK = solution.topK(bst, input, k);
+
+        Arrays.sort(input);
+        for (int i = 0; i < k; i++) {
+            int expected = input[input.length - i - 1];
+            int actual = topK[i];
+            System.err.println(expected + ": " + actual);
+            assert (expected == actual);
+        }
+    }
+
     private static void testMain() {
         //test 1
         int[] input1 = {4, 2, 9, 12, 6};
@@ -360,6 +485,26 @@ public class KLargestElements {
         //test 13
         int[] input13 = {23, 5, 0};
         testHeap(input13);
+
+        //test 14
+        int[] input14 = {4, 2, 9, 12, 6};
+        testBst(input14, 3);
+
+        //test 15
+        int[] input15 = {2, 2, 6, 4, 9, 3};
+        testBst(input15, 2);
+
+        //test 16
+        int[] input16 = {23, 5, 0};
+        testBst(input16, 3);
+
+        //test 17
+        int[] input17 = {12, 5, 787, 1, 23};
+        testBst(input17, 3);
+
+        //test 18
+        int[] input18 = {1, 23, 12, 9, 30, 2, 50};
+        testBst(input18, 5);
     }
 
     private static class Problem {
