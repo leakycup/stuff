@@ -1,5 +1,7 @@
 package me.soubhik.leetcode;
 
+import org.testng.Assert;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -8,7 +10,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.function.BinaryOperator;
-import org.testng.Assert;
 
 /**
  * Created by soubhik on 21-10-2017.

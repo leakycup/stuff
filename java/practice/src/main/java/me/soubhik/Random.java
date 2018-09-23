@@ -87,6 +87,19 @@ public class Random {
     /*
      * generate distinct random integers between lower and (upper-1) such that the probability
      * of each number is same.
+     * what is the probability that a given integer, n, has been generated after k draws?
+     * if n is not in the given range [lower, (upper-1)), the probability is 0.
+     * if k is >= range, where range = ((upper-1) - lower), then the probability is 1.
+     * otherwise, it is given by the following deduction.
+     * p[] is an array of probabilities such that p[i] represents the probability that n was generated in (i+1)-th draw.
+     * p[0] = 1/n
+     * p[1] = (n was not generated in 1st draw)*(n was generated in 2nd draw)
+      * = (1-p[0])*(1/(n-1))
+      * = (1 - 1/n)*(1/(n-1))
+      * = 1/n
+     * similarly, p[i] = 1/n, for all i in [0, k-1].
+     * so, the probability that n is generated in one of the k draws is
+     * sum(p[i]) for i in [0, (k-1)], is k/n.
      */
     public static class RandomIntWithoutReplacement {
         private final int lower, upper;
@@ -115,6 +128,53 @@ public class Random {
 
             UniformRandomInt randomInt = new UniformRandomInt(numbersAvailable); //O(numbersAvailable)
             int nextRandomIndex = randomInt.next(); //O(log(numbersAvailable))
+            int nextRandom = numbers[nextRandomIndex];
+            if (nextRandomIndex < (numbersAvailable - 1)) {
+                numbers[nextRandomIndex] = numbers[numbersAvailable - 1];
+            }
+            numbersAvailable--;
+
+            return nextRandom + lower;
+        }
+    }
+
+    public static class RandomIntWithoutReplacementV2 {
+        private final int lower, upper;
+        private final int[] numbers;
+        private int numbersAvailable;
+        UniformRandomInt randomInt;
+
+        public RandomIntWithoutReplacementV2(int upper) {
+            this(0, upper);
+        }
+
+        public RandomIntWithoutReplacementV2(int lower, int upper) {
+            int range = upper - lower;
+            this.lower = lower;
+            this.upper = upper;
+            this.numbers = new int[range];
+            for (int i = 0; i < range; i++) {
+                numbers[i] = i;
+            }
+            this.numbersAvailable = range;
+            this.randomInt = new UniformRandomInt(range); //O(range)
+        }
+
+        public int next() {
+            if (numbersAvailable <= 0) {
+                return (upper);
+            }
+
+            int nextRandomIndex = randomInt.next(); //O(log(range))
+            //bug: modulo does not correctly generate a uniform random number generator
+            // for [0, numbersAvailable) if range is not a factor of numbersAvailable.
+            // e.g. range == 10, numbersAvailable == 3. then modulo maps Random(range) to Random(numbersAvailable)
+            // as follows:
+            // 0, 3, 6, 9 => 0
+            // 1, 4, 7 => 1
+            // 2, 5, 8 => 2
+            // thus, probability of 0 is > that of 1 or 2.
+            nextRandomIndex %= numbersAvailable;
             int nextRandom = numbers[nextRandomIndex];
             if (nextRandomIndex < (numbersAvailable - 1)) {
                 numbers[nextRandomIndex] = numbers[numbersAvailable - 1];
@@ -270,6 +330,51 @@ public class Random {
                 break;
             }
         }
+
+        //for validation
+        for (int index: indices) {
+            assert (index == -1);
+        }
+    }
+
+    public static <T> void randomSortV2(List<T> elements) {
+        int[] indices = new int[elements.size()];
+        RandomIntWithoutReplacement randomGenerator = new RandomIntWithoutReplacement(elements.size());
+        for (int i = 0; i < indices.length; i++) {
+            indices[i] = randomGenerator.next();
+        }
+        //sbh: debug
+        /*
+        System.out.print("original indices: ");
+        for (int index: indices) {
+            System.out.print(index + ", ");
+        }
+        System.out.print("\n");
+        */
+        //sbh: end debug
+
+        int startIndex = 0;
+        while (startIndex < indices.length) {
+            int currentIndex = startIndex;
+            startIndex += 1;
+            T currentElement = elements.get(currentIndex);
+
+            while (indices[currentIndex] != -1) {
+                int newIndex = indices[currentIndex];
+                T displaced = elements.get(newIndex);
+
+                indices[currentIndex] = -1;
+                elements.set(newIndex, currentElement);
+
+                currentIndex = newIndex;
+                currentElement = displaced;
+            }
+        }
+
+        //for validation
+        for (int index: indices) {
+            assert (index == -1);
+        }
     }
 
     public static <T> double selfInformation(Distribution<T> distribution, T datum) {
@@ -347,9 +452,12 @@ public class Random {
 
         for (U x: xProbabilities.keySet()) {
             for (V y: yProbabilities.keySet()) {
-                double pmiXY = pmi(xProbabilities, yProbabilities, xyProbabilities, x, y);
-                double pXY = xyProbabilities.get(new ImmutablePair<U, V>(x, y));
-                mi += pmiXY * pXY;
+                ImmutablePair<U, V> xy = new ImmutablePair<U, V>(x, y);
+                if (xyProbabilities.containsKey(xy)) {
+                    double pmiXY = pmi(xProbabilities, yProbabilities, xyProbabilities, x, y);
+                    double pXY = xyProbabilities.get(xy);
+                    mi += pmiXY * pXY;
+                }
             }
         }
 
@@ -516,26 +624,52 @@ public class Random {
     }
 
     private static void randomTest5(List<Integer> elements) {
-        Distribution<Integer> distribution = new Distribution<Integer>();
+        Distribution<Integer> origDistribution = new Distribution<Integer>();
         System.out.print("Original array: ");
         for (Integer e: elements) {
             System.out.print(e + ", ");
-            distribution.add(e);
+            origDistribution.add(e);
         }
         System.out.print("\n");
         System.out.println("original distribution:");
-        distribution.print();
+        origDistribution.print();
 
         randomSort(elements);
-        distribution = new Distribution<Integer>();
+        Distribution<Integer> sortedDistribution = new Distribution<Integer>();
         System.out.print("Random sorted array: ");
         for (Integer e: elements) {
             System.out.print(e + ", ");
-            distribution.add(e);
+            sortedDistribution.add(e);
         }
         System.out.print("\n");
         System.out.println("distribution after sort:");
-        distribution.print();
+        sortedDistribution.print();
+
+        assertDistributions(origDistribution, sortedDistribution);
+
+        randomSortV2(elements);
+        Distribution<Integer> sortedV2Distribution = new Distribution<>();
+        System.out.print("Random sorted array: ");
+        for (Integer e: elements) {
+            System.out.print(e + ", ");
+            sortedV2Distribution.add(e);
+        }
+        System.out.print("\n");
+        System.out.println("distribution after sort:");
+        sortedV2Distribution.print();
+
+        assertDistributions(origDistribution, sortedV2Distribution);
+    }
+
+    private static void assertDistributions(Distribution<Integer> distribution1, Distribution<Integer> distribution2) {
+        //assert the frequency distributions are same
+        assert (distribution1.frequencies.keySet().size() == distribution2.frequencies.keySet().size());
+        for (Integer data: distribution1.frequencies.keySet()) {
+            int origFrequency = distribution1.frequencies.get(data);
+            assert (distribution2.frequencies.containsKey(data));
+            int sortedFrequency = distribution2.frequencies.get(data);
+            assert (origFrequency == sortedFrequency);
+        }
     }
 
     private static void randomTest6(Distribution<Integer> d1, Distribution<Integer> d2) {
@@ -762,8 +896,11 @@ public class Random {
 
         System.out.println("Random sort test");
         System.out.println("===========================================");
-        List<Integer> elements =
-                Arrays.asList(new Integer[] {1, 3, 4, 6, 8, 10, 13, 10, 10, 14, 19, 6, 22, 6, 3, 3, 3, 3, 28, 6});
+        List<Integer> elements = Arrays.asList(new Integer[] {1, 2, 3});
+        randomTest5(elements);
+        randomTest5(elements);
+
+        elements = Arrays.asList(new Integer[] {1, 3, 4, 6, 8, 10, 13, 10, 10, 14, 19, 6, 22, 6, 3, 3, 3, 3, 28, 6});
         randomTest5(elements);
         randomTest5(elements);
         randomTest5(elements);
@@ -773,6 +910,9 @@ public class Random {
         randomTest5(elements);
         randomTest5(elements);
 
+        elements = Arrays.asList(new Integer[] {1, 2, 3, 4});
+        randomTest5(elements);
+        randomTest5(elements);
         Integer[] data = new Integer[] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
         int[] f1 = new int[] {2, 4, 8, 3, 2, 1, 2, 2, 3, 2};
