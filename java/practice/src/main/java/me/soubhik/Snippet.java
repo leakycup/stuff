@@ -45,14 +45,22 @@ public class Snippet {
 
     public String getShortestOrdered(String query) {
         List<String> queryTokens = tokenize(query);
-        Candidate candidate = getShortestOrdered(words, queryTokens, 0, 0);
+        Candidate[][] memoizationArray = new Candidate[words.size()][queryTokens.size()];
+        Candidate candidate = getShortestOrdered(words, queryTokens, 0, 0, memoizationArray);
 
         return candidate.toString(words);
     }
 
-    public Candidate getShortestOrdered(List<String> textTokens, List<String> queryTokens, int textIndex, int queryIndex) {
+    //due to memoization, the main body of the function is executed at most once for each (textIndex, queryIndex) pair.
+    // 0 <= textIndex < words.size(); 0 <= queryIndex < queryTokens.size(). so this is O(words.size() * queryTokens.size())
+    public Candidate getShortestOrdered(List<String> textTokens, List<String> queryTokens, int textIndex, int queryIndex,
+                                        Candidate[][] memoizationArray) {
         if ((textIndex >= textTokens.size()) || (queryIndex >= queryTokens.size())) {
             return new Candidate();
+        }
+
+        if (memoizationArray[textIndex][queryIndex] != null) {
+            return memoizationArray[textIndex][queryIndex];
         }
 
         String currentTextToken = textTokens.get(textIndex);
@@ -61,25 +69,30 @@ public class Snippet {
             Candidate candidate = new Candidate();
             candidate.start = textIndex;
             candidate.end = textIndex;
+            memoizationArray[textIndex][queryIndex] = candidate;
             return candidate;
         }
 
         if (currentQueryToken.equals(currentTextToken)) {
-            Candidate candidate1 = getShortestOrdered(textTokens, queryTokens, textIndex+1, queryIndex+1);
+            Candidate candidate1 = getShortestOrdered(textTokens, queryTokens, textIndex+1, queryIndex+1, memoizationArray);
             int length1 = Integer.MAX_VALUE;
             if (candidate1.start >= 0) {
                 candidate1.start = textIndex;
                 length1 = candidate1.end - candidate1.start + 1;
             }
-            Candidate candidate2 = getShortestOrdered(textTokens, queryTokens, textIndex+1, queryIndex);
+            Candidate candidate2 = getShortestOrdered(textTokens, queryTokens, textIndex+1, queryIndex, memoizationArray);
             int length2 = (candidate2.start >= 0) ? (candidate2.end - candidate2.start + 1) : Integer.MAX_VALUE;
             if (length1 < length2) {
+                memoizationArray[textIndex][queryIndex] = candidate1;
                 return candidate1;
             } else {
+                memoizationArray[textIndex][queryIndex] = candidate2;
                 return candidate2;
             }
         } else {
-            return getShortestOrdered(textTokens, queryTokens, textIndex+1, queryIndex);
+            Candidate candidate = getShortestOrdered(textTokens, queryTokens, textIndex+1, queryIndex, memoizationArray);
+            memoizationArray[textIndex][queryIndex] = candidate;
+            return candidate;
         }
     }
 
