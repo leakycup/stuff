@@ -188,10 +188,14 @@ public class GraphAlgorithms {
         public Triple<Integer, Integer, Integer>[] mst() {
             NodeInfo current;
             while ((current = nodeInfoHeap.poll()) != null) {
+                current.visit();
                 int currentId = current.node.getId();
                 for (Integer neighborId: current.node.neighbors()) {
-                    int newDistance = current.node.getWeight(neighborId);
                     NodeInfo neighborNodeInfo = nodeInfoList.get(neighborId);
+                    if (neighborNodeInfo.visited) {
+                        continue;
+                    }
+                    int newDistance = current.node.getWeight(neighborId);
                     boolean updated = neighborNodeInfo.update(newDistance, currentId);
                     if (updated) {
                         nodeInfoHeap.remove(neighborNodeInfo);
