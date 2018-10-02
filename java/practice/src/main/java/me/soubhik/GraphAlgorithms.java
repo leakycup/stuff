@@ -77,11 +77,13 @@ public class GraphAlgorithms {
         private Node node;
         private int distance;
         private int predecessor;
+        private boolean visited;
 
         public NodeInfo(Node node) {
             this.node = node;
             this.distance = Integer.MAX_VALUE;
             this.predecessor = -1;
+            this.visited = false;
         }
 
         public boolean update(int distance, int predecessor) {
@@ -92,6 +94,10 @@ public class GraphAlgorithms {
             }
 
             return false;
+        }
+
+        public void visit() {
+            this.visited = true;
         }
 
         @Override
