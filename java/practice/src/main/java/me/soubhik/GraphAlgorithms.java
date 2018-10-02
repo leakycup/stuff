@@ -161,6 +161,57 @@ public class GraphAlgorithms {
         }
     }
 
+    public static class Prim {
+        PriorityQueue<NodeInfo> nodeInfoHeap;
+        List<NodeInfo> nodeInfoList;
+
+        public Prim(Graph graph, int source) {
+            this.nodeInfoHeap = new PriorityQueue<>();
+            this.nodeInfoList = new ArrayList<>();
+            for (Node node: graph.getAllNodes()) {
+                NodeInfo nodeInfo = new NodeInfo(node);
+                int id = node.getId();
+                if (id == source) {
+                    nodeInfo.update(0, -1);
+                }
+                nodeInfoHeap.add(nodeInfo);
+                nodeInfoList.add(id, nodeInfo);
+            }
+        }
+
+        public Triple<Integer, Integer, Integer>[] mst() {
+            NodeInfo current;
+            while ((current = nodeInfoHeap.poll()) != null) {
+                int currentId = current.node.getId();
+                for (Integer neighborId: current.node.neighbors()) {
+                    int newDistance = current.node.getWeight(neighborId);
+                    NodeInfo neighborNodeInfo = nodeInfoList.get(neighborId);
+                    boolean updated = neighborNodeInfo.update(newDistance, currentId);
+                    if (updated) {
+                        nodeInfoHeap.remove(neighborNodeInfo);
+                        nodeInfoHeap.add(neighborNodeInfo);
+                    }
+                }
+            }
+
+            Triple<Integer, Integer, Integer>[] edges = new Triple[nodeInfoList.size() - 1];
+            int i = 0;
+            for (NodeInfo nodeInfo: nodeInfoList) {
+                int left = nodeInfo.predecessor;
+                if (left < 0) {
+                    continue;
+                }
+                int right = nodeInfo.node.getId();
+                int weight = nodeInfo.node.getWeight(left);
+                Triple<Integer, Integer, Integer> edge = new ImmutableTriple<>(left, right, weight);
+                edges[i] = edge;
+                i++;
+            }
+
+            return edges;
+        }
+    }
+
     public static void printEdges(Triple<Integer, Integer, Integer>[] edges) {
         System.out.println("=====================Graph edges=======================");
         for (Triple<Integer, Integer, Integer> edge: edges) {
@@ -185,6 +236,18 @@ public class GraphAlgorithms {
             }
         }
         System.out.println("=====testDijkstra(): DONE =============");
+    }
+
+    public static void testPrim(int numNodes, Triple<Integer, Integer, Integer>[] edges) {
+        printEdges(edges);
+        Graph graph = new Graph(numNodes, edges);
+        for (int source=0; source < numNodes; source++) {
+            System.out.println("=====testPrim(): source=" + source + "=============");
+            Prim prim = new Prim(graph, source);
+            Triple<Integer, Integer, Integer>[] mstEdges = prim.mst();
+            printEdges(mstEdges);
+        }
+        System.out.println("=====testPrim(): DONE =============");
     }
 
     public static void main(String[] args) {
@@ -237,5 +300,11 @@ public class GraphAlgorithms {
         edges8[4] = new ImmutableTriple<>(0, 3, 5);
         edges8[5] = new ImmutableTriple<>(2, 0, 1);
         testDijkstra(4, edges8);
+
+        Triple<Integer, Integer, Integer>[] edges9 = new Triple[3];
+        edges9[0] = new ImmutableTriple<>(0, 1, 10);
+        edges9[1] = new ImmutableTriple<>(0, 2, 20);
+        edges9[2] = new ImmutableTriple<>(1, 2, 5);
+        testPrim(3, edges9);
     }
 }
