@@ -5,7 +5,10 @@ import org.apache.commons.lang3.tuple.Triple;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Deque;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
@@ -66,6 +69,28 @@ public class GraphAlgorithms {
 
         public Node getNode(int nodeId) {
             return nodes.get(nodeId);
+        }
+
+        public List<Integer> preorderWalk(int source) {
+            List<Integer> nodeList = new ArrayList<>(nodes.size());
+
+            Deque<Integer> nodeStack = new LinkedList<>();
+            nodeStack.push(source);
+            Set<Integer> visited = new HashSet<>();
+            while (!nodeStack.isEmpty()) {
+                int nodeId = nodeStack.pop();
+                if (visited.contains(nodeId)) {
+                    continue;
+                }
+                nodeList.add(nodeId);
+                visited.add(nodeId);
+                Node node = nodes.get(nodeId);
+                for (int neighborId: node.neighbors()) {
+                    nodeStack.push(neighborId);
+                }
+            }
+
+            return nodeList;
         }
 
         public Iterable<Node> getAllNodes() {
@@ -260,6 +285,20 @@ public class GraphAlgorithms {
         System.out.println("=====testPrim(): DONE =============");
     }
 
+    public static void testPreorderWalk(int numNodes, Triple<Integer, Integer, Integer>[] edges) {
+        printEdges(edges);
+        Graph graph = new Graph(numNodes, edges);
+        for (int source=0; source < numNodes; source++) {
+            System.out.println("=====testPreorderWalk(): source=" + source + "=============");
+            List<Integer> preorder = graph.preorderWalk(source);
+            for (int nodeId: preorder) {
+                System.out.print(nodeId + " ");
+            }
+            System.out.print("\n");
+        }
+        System.out.println("=====testPreorderWalk(): DONE =============");
+    }
+
     public static void main(String[] args) {
         Triple<Integer, Integer, Integer>[] edges1 = new Triple[3];
         edges1[0] = new ImmutableTriple<>(0, 1, 10);
@@ -352,5 +391,41 @@ public class GraphAlgorithms {
         edges13[4] = new ImmutableTriple<>(2, 3, 20);
         edges13[5] = new ImmutableTriple<>(1, 3, 12);
         testPrim(4, edges13);
+
+        Triple<Integer, Integer, Integer>[] edges14 = new Triple[0];
+        testPreorderWalk(1, edges14);
+
+        Triple<Integer, Integer, Integer>[] edges15 = new Triple[1];
+        edges15[0] = new ImmutableTriple<>(0, 1, 12);
+        testPreorderWalk(2, edges15);
+
+        Triple<Integer, Integer, Integer>[] edges16 = new Triple[2];
+        edges16[0] = new ImmutableTriple<>(0, 1, 12);
+        edges16[1] = new ImmutableTriple<>(1, 2, 14);
+        testPreorderWalk(3, edges16);
+
+        Triple<Integer, Integer, Integer>[] edges17 = new Triple[2];
+        edges17[0] = new ImmutableTriple<>(0, 1, 12);
+        edges17[1] = new ImmutableTriple<>(0, 2, 14);
+        testPreorderWalk(3, edges17);
+
+        Triple<Integer, Integer, Integer>[] edges18 = new Triple[3];
+        edges18[0] = new ImmutableTriple<>(0, 1, 12);
+        edges18[1] = new ImmutableTriple<>(0, 2, 14);
+        edges18[2] = new ImmutableTriple<>(1, 2, 10);
+        testPreorderWalk(3, edges18);
+
+        Triple<Integer, Integer, Integer>[] edges19 = new Triple[3];
+        edges19[0] = new ImmutableTriple<>(0, 1, 12);
+        edges19[1] = new ImmutableTriple<>(0, 2, 14);
+        edges19[2] = new ImmutableTriple<>(0, 3, 10);
+        testPreorderWalk(4, edges19);
+
+        Triple<Integer, Integer, Integer>[] edges20 = new Triple[4];
+        edges20[0] = new ImmutableTriple<>(0, 1, 12);
+        edges20[1] = new ImmutableTriple<>(0, 2, 14);
+        edges20[2] = new ImmutableTriple<>(0, 3, 10);
+        edges20[3] = new ImmutableTriple<>(1, 3, 12);
+        testPreorderWalk(4, edges20);
     }
 }
