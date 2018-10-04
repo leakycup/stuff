@@ -316,5 +316,41 @@ public class GraphAlgorithms {
         edges9[1] = new ImmutableTriple<>(0, 2, 20);
         edges9[2] = new ImmutableTriple<>(1, 2, 5);
         testPrim(3, edges9);
+
+        Triple<Integer, Integer, Integer>[] edges10 = new Triple[6];
+        edges10[0] = new ImmutableTriple<>(0, 1, 20);
+        edges10[1] = new ImmutableTriple<>(0, 2, 10);
+        edges10[2] = new ImmutableTriple<>(0, 3, 25);
+        edges10[3] = new ImmutableTriple<>(1, 2, 15);
+        edges10[4] = new ImmutableTriple<>(1, 3, 5);
+        edges10[5] = new ImmutableTriple<>(2, 3, 20);
+        testPrim(4, edges10);
+
+        Triple<Integer, Integer, Integer>[] edges11 = new Triple[6];
+        edges11[0] = new ImmutableTriple<>(0, 1, 20);
+        edges11[1] = new ImmutableTriple<>(0, 2, 10);
+        edges11[2] = new ImmutableTriple<>(1, 2, 15);
+        edges11[3] = new ImmutableTriple<>(0, 3, 25);
+        edges11[4] = new ImmutableTriple<>(2, 3, 20);
+        edges11[5] = new ImmutableTriple<>(1, 3, 5);
+        testPrim(4, edges11);
+
+        Triple<Integer, Integer, Integer>[] edges12 = new Triple[6];
+        edges12[0] = new ImmutableTriple<>(0, 1, 12);
+        edges12[1] = new ImmutableTriple<>(0, 2, 10);
+        edges12[2] = new ImmutableTriple<>(0, 3, 25);
+        edges12[3] = new ImmutableTriple<>(1, 2, 15);
+        edges12[4] = new ImmutableTriple<>(1, 3, 12);
+        edges12[5] = new ImmutableTriple<>(2, 3, 20);
+        testPrim(4, edges12);
+
+        Triple<Integer, Integer, Integer>[] edges13 = new Triple[6];
+        edges13[0] = new ImmutableTriple<>(0, 1, 12);
+        edges13[1] = new ImmutableTriple<>(0, 2, 10);
+        edges13[2] = new ImmutableTriple<>(1, 2, 15);
+        edges13[3] = new ImmutableTriple<>(0, 3, 25);
+        edges13[4] = new ImmutableTriple<>(2, 3, 20);
+        edges13[5] = new ImmutableTriple<>(1, 3, 12);
+        testPrim(4, edges13);
     }
 }
