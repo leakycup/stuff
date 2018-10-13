@@ -56,6 +56,8 @@ public class FindSmallestRange {
         return smallestArray;
     }
 
+    //O(k*k*n) solution.
+    //O(log(k)*k*n) solution: https://ide.geeksforgeeks.org/9fvR1pCeSN . uses priority queue during merging.
     private static Triple<Integer[], Integer, Integer> findSmallestRange(int[][] arrays, int n, int k) {
         Integer[] mergedArrays = new Integer[n*k];
         int[] sourceIndices = new int[k];
@@ -66,15 +68,15 @@ public class FindSmallestRange {
         Arrays.fill(sourceIndices, 0);
         Arrays.fill(startIndices, -1);
 
-        for (int i=0; i < mergedArrays.length; i++) {
-            int array = findArrayWithSmallestValue(arrays, sourceIndices);
+        for (int i=0; i < mergedArrays.length; i++) { //O(n*k)
+            int array = findArrayWithSmallestValue(arrays, sourceIndices); //O(k)
             mergedArrays[i] = arrays[array][sourceIndices[array]];
             destinationIndices[array] = i;
             sourceIndices[array]++;
             //we just visited an array. lets clear the corresponding bit of the mask
             mask &= ~(1 << array);
             if (mask == 0) {
-                startIndices[i] = findSmallestIndex(destinationIndices);
+                startIndices[i] = findSmallestIndex(destinationIndices); //O(k)
             }
         }
 
@@ -82,7 +84,7 @@ public class FindSmallestRange {
         int smallestLength = Integer.MAX_VALUE;
         int rangeStart = -1;
         int rangeEnd = -1;
-        for (int i=0; i < startIndices.length; i++) {
+        for (int i=0; i < startIndices.length; i++) { //O(n*k)
             int start = startIndices[i];
             if (start < 0) {
                 continue;
