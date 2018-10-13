@@ -7,6 +7,7 @@ import java.util.Arrays;
 
 /**
  * Created by sb8 on 10/9/18.
+ * from https://practice.geeksforgeeks.org/problems/minimum-platforms/0
  */
 public class MinimumPlatforms {
     public static class TestCase
