@@ -24,6 +24,7 @@ public class Random {
     public static class UniformRandomInt {
         private final ArrayList<Double> intervals;
         private final int lower;
+        private final int range;
 
         public UniformRandomInt(int n) {
             this(0, n);
@@ -32,7 +33,7 @@ public class Random {
         public UniformRandomInt(int lower, int upper) {
             assert (upper > lower);
 
-            int range = upper - lower;
+            this.range = upper - lower;
             this.intervals = new ArrayList<Double>(range);
             this.lower = lower;
 
@@ -45,8 +46,19 @@ public class Random {
         }
 
         public int next() {
+            return nextSimple();
+        }
+
+        public int nextIntervals() {
             double random = Math.random();
             return (int)findInterval(intervals, random) + lower;
+        }
+
+        public int nextSimple() {
+            double random = Math.random();
+            int randomInt = (int)Math.floor(random*range) + lower;
+
+            return randomInt;
         }
     }
 
@@ -126,8 +138,8 @@ public class Random {
                 return (upper);
             }
 
-            UniformRandomInt randomInt = new UniformRandomInt(numbersAvailable); //O(numbersAvailable)
-            int nextRandomIndex = randomInt.next(); //O(log(numbersAvailable))
+            UniformRandomInt randomInt = new UniformRandomInt(numbersAvailable); //O(numbersAvailable). can be O(1) is we don't worry about nextIntervals().
+            int nextRandomIndex = randomInt.nextSimple(); //O(1) since we're using nextSimple()
             int nextRandom = numbers[nextRandomIndex];
             if (nextRandomIndex < (numbersAvailable - 1)) {
                 numbers[nextRandomIndex] = numbers[numbersAvailable - 1];
@@ -543,18 +555,25 @@ public class Random {
         return Math.log(number) / Math.log(2.0d);
     }
 
-    private static void randomTest(int lower, int upper) {
+    private static void randomTest1(int lower, int upper) {
         UniformRandomInt randomInt = new UniformRandomInt(lower, upper);
-        Distribution distribution = new Distribution<Integer>();
+        Distribution distribution1 = new Distribution<Integer>();
+        Distribution distribution2 = new Distribution<Integer>();
         System.out.println("Random integers from " + lower + " to " + upper);
         System.out.println("===============================================");
-        for (int i = 0; i < 20; i++) {
-            int datum = randomInt.next();
-            distribution.add(datum);
-            System.out.print(datum + " ");
+        for (int i = 0; i < 1000; i++) {
+            //int datum = randomInt.next();
+            //distribution.add(datum);
+            //System.out.print(datum + " ");
+            int datum = randomInt.nextIntervals();
+            distribution1.add(datum);
+            datum = randomInt.nextSimple();
+            distribution2.add(datum);
         }
         System.out.print("\n");
-        distribution.print();
+        distribution1.print();
+        System.out.print("\n");
+        distribution2.print();
     }
 
     private static void randomTest2(int lower, int upper) {
@@ -562,7 +581,7 @@ public class Random {
         Distribution distribution = new Distribution<Integer>();
         System.out.println("Random integers from " + lower + " to " + upper + " using UniformRandomInt");
         System.out.println("===============================================");
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 100; i++) {
             int datum = randomInt.next();
             distribution.add(datum);
             System.out.print(datum + " ");
@@ -574,7 +593,7 @@ public class Random {
         System.out.println("===============================================");
         DiscreteRandom<Integer> discreteRandom = new DiscreteRandom<Integer>(distribution);
         Distribution distribution2 = new Distribution<Integer>();
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 100; i++) {
             int datum = discreteRandom.next();
             distribution2.add(datum);
             System.out.print(datum + " ");
@@ -866,19 +885,24 @@ public class Random {
     public static void main(String[] args) {
         int k = 2;
         UniformRandomInt randomInt = new UniformRandomInt(k);
-        Distribution distribution = new Distribution<Integer>();
+        Distribution distribution1 = new Distribution<Integer>();
+        Distribution distribution2 = new Distribution<Integer>();
         System.out.println("Random integers from 0 to " + k);
         System.out.println("===========================================");
-        for (int i = 0; i < 20; i++) {
-            int datum = randomInt.next();
-            distribution.add(datum);
-            System.out.print(datum + " ");
+        for (int i = 0; i < 100; i++) {
+            int datum = randomInt.nextIntervals();
+            distribution1.add(datum);
+            datum = randomInt.nextSimple();
+            distribution2.add(datum);
+            //System.out.print(datum + " ");
         }
         System.out.print("\n");
-        distribution.print();
+        distribution1.print();
+        System.out.print("\n");
+        distribution2.print();
 
-        randomTest(0, 3);
-        randomTest(4, 12);
+        randomTest1(0, 3);
+        randomTest1(4, 12);
 
         randomTest2(0, 2);
         randomTest2(6, 10);
