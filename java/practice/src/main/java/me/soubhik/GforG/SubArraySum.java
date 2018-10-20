@@ -7,6 +7,7 @@ import java.util.Arrays;
 
 /**
  * Created by sb8 on 10/20/18.
+ * from https://practice.geeksforgeeks.org/problems/four-elements/0
  */
 public class SubArraySum {
     private static class TestCase {
