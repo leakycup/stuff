@@ -37,6 +37,9 @@ if __name__ == "__main__":
     filtered = grouped_lines.join(filters).map(lambda (k, (v1, v2)): filter_words(v1, v2))
     filtered = filtered.filter(lambda x: len(x) > 1)
 
+    filtered_df = filtered.toDF()
+    filtered_df.explain(True)
+
 # for debugging
     #grouped_lines.flatMap(lambda (x, y): y).foreach(print)
     #filters.foreach(print)
