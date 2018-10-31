@@ -61,6 +61,31 @@ public class RottenOranges {
         return steps;
     }
 
+    private static void test1() {
+        int[][] oranges = new int[][] {{2, 1, 0, 2, 1}, {1, 0, 1, 2, 1}, {1, 0, 0, 2, 1}};
+        int r = 3;
+        int c = 5;
+        int expected = 2;
+        int actual = findMinTime(r, c, oranges);
+
+        assert (expected == actual);
+    }
+
+    private static void test2() {
+        int[][] oranges = new int[][] {{2, 1, 0, 2, 1}, {0, 0, 1, 2, 1}, {1, 0, 0, 2, 1}};
+        int r = 3;
+        int c = 5;
+        int expected = -1;
+        int actual = findMinTime(r, c, oranges);
+
+        assert (expected == actual);
+    }
+
+    private static void test() {
+        test1();
+        test2();
+    }
+
     public static class TestCase {
         int r;
         int c;
@@ -74,6 +99,8 @@ public class RottenOranges {
     }
 
     public static void main(String[] args) {
+        test();
+
         int numTestCases;
         TestCase[] testCases;
 
