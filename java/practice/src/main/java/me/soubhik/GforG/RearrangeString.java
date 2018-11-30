@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 
 /**
  * Created by soubhik on 15-11-2018.
+ * from https://practice.geeksforgeeks.org/problems/rearrange-a-string/0
  */
 public class RearrangeString {
     private static final int LETTERS = 26;
