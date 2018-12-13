@@ -1,15 +1,17 @@
 package me.soubhik;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by sb8 on 9/30/18.
  */
 public class Snippet {
     private static class Candidate {
-        int start;
-        int end;
+        int start; //inclusive
+        int end; //inclusive
 
         public Candidate() {
             this.start = -1;
@@ -96,6 +98,92 @@ public class Snippet {
         }
     }
 
+    public String getShortestUnordered(String query) {
+        List<String> queryTokens = tokenize(query);
+        if (queryTokens.isEmpty()) {
+            return "";
+        }
+
+        Map<String, Integer> tokenCount = new HashMap<>();
+        for (String token: queryTokens) {
+            tokenCount.put(token, 0);
+        }
+
+        //find the initial candidate snippet that starts at index 0
+        Candidate candidate = null;
+        int numUniqTokens = 0;
+        for (int i = 0; i < words.size(); i++) { //O(n)
+            String token = words.get(i);
+            if (!tokenCount.containsKey(token)) {
+                continue;
+            }
+            int count = tokenCount.get(token);
+            if (count == 0) {
+                numUniqTokens++;
+            }
+            count++;
+            tokenCount.put(token, count);
+            if (numUniqTokens == tokenCount.size()) {
+                candidate = new Candidate();
+                candidate.start = 0;
+                candidate.end = i;
+                break;
+            }
+        }
+
+        if (candidate == null) {
+            return "";
+        }
+
+        //try to find a shorter snippet
+        int start = candidate.start;
+        int end = candidate.end;
+        int minLength = end - start + 1;
+        boolean expanding = false;
+        while (end < words.size()) {
+            //each iteration of this loop increments either start or end
+            //range of values for start is [0, (n-m)] i.e. (n-m+1) distinct values.
+            //range of values for end is [(m-1), (n-1)] i.e. (n-m+1) distinct values.
+            //even if we iterate through all possible values of start and end, the number of iterations is
+            //going to be 2*(n-m+1). thus, this loop is O(n).
+            if (expanding) {
+                String endToken = words.get(end);
+                if (!tokenCount.containsKey(endToken)) {
+                    end++;
+                    continue;
+                }
+                int endTokenCount = tokenCount.get(endToken);
+                endTokenCount++;
+                tokenCount.put(endToken, endTokenCount);
+                expanding = false;
+            }
+            String token = words.get(start);
+            if (!tokenCount.containsKey(token)) {
+                start++;
+                continue;
+            }
+            int count = tokenCount.get(token);
+            if (count > 1) {
+                //shrink the snippet
+                count--;
+                tokenCount.put(token, count);
+                start++;
+            } else {
+                //expand the snippet
+                int length = end - start + 1;
+                if (length < minLength) {
+                    minLength = length;
+                    candidate.start = start;
+                    candidate.end = end;
+                }
+                end++;
+                expanding = true;
+            }
+        }
+
+        return candidate.toString(words);
+    }
+
     private static void testTokenize(String input, List<String> expected) {
         List<String> actual = tokenize(input);
         assert (expected.size() == actual.size());
@@ -130,7 +218,7 @@ public class Snippet {
         testTokenize(input6, expected6);
     }
 
-    public static void testShortestSnippets() {
+    public static void testShortestOrderedSnippets() {
         String text = "Made a flexible trip plan, booked a hotel at Hassan and set off. Hassan makes for the best 'base camp' because of its strategic central location to most of the temples and large choice of hotels. If you prefer staying in resorts or homestays instead, Chikmagalur (as a base camp) is a good choice too - but you probably need to cover a few extra kilometers.";
         Snippet snippet = new Snippet(text);
 
@@ -185,8 +273,48 @@ public class Snippet {
         assert (expected10.equals(actual10));
     }
 
+    private static void testShortestUnorderedSnippets(Snippet snippet, String query, String expected) {
+        String actual = snippet.getShortestUnordered(query);
+        assert (expected.equals(actual));
+    }
+
+    private static void testShortestUnorderedSnippets() {
+        testShortestUnorderedSnippets(new Snippet("a b c d e"), "a", "a");
+        testShortestUnorderedSnippets(new Snippet("a b c d e"), "a b", "a b");
+        testShortestUnorderedSnippets(new Snippet("a b c d e"), "a b d", "a b c d");
+        testShortestUnorderedSnippets(new Snippet("a b c d e"), "d a b", "a b c d");
+        testShortestUnorderedSnippets(new Snippet("a b c d e"), "d b a", "a b c d");
+        testShortestUnorderedSnippets(new Snippet("a b c d e"), "d a a b", "a b c d");
+        testShortestUnorderedSnippets(new Snippet("a b c d e"), "d a b b", "a b c d");
+        testShortestUnorderedSnippets(new Snippet("a b c d e"), "a b e", "a b c d e");
+        testShortestUnorderedSnippets(new Snippet("a b c d e"), "a c", "a b c");
+        testShortestUnorderedSnippets(new Snippet("a b c d e"), "c a", "a b c");
+        testShortestUnorderedSnippets(new Snippet("a b c d e"), "c", "c");
+        testShortestUnorderedSnippets(new Snippet("a b c d e"), "c c", "c");
+        testShortestUnorderedSnippets(new Snippet("a b c d e"), "c d", "c d");
+        testShortestUnorderedSnippets(new Snippet("a b c d e"), "c e", "c d e");
+        testShortestUnorderedSnippets(new Snippet("a b c d e"), "e", "e");
+        testShortestUnorderedSnippets(new Snippet("a b c d e"), "e b", "b c d e");
+        testShortestUnorderedSnippets(new Snippet("a b c d e"), "f", "");
+        testShortestUnorderedSnippets(new Snippet("a b c d e"), "b f", "");
+        testShortestUnorderedSnippets(new Snippet("a b c d e"), "b f c", "");
+        testShortestUnorderedSnippets(new Snippet("a b c d e"), "c b f", "");
+        testShortestUnorderedSnippets(new Snippet("a b c d e"), "f b c", "");
+        testShortestUnorderedSnippets(new Snippet("a a b c d e"), "a b d", "a b c d");
+        testShortestUnorderedSnippets(new Snippet("a b a b c d e"), "a b d", "a b c d");
+        testShortestUnorderedSnippets(new Snippet("a b b a c d e"), "a b d", "b a c d");
+        testShortestUnorderedSnippets(new Snippet("a b b a c d e d b a"), "b d", "d b");
+        testShortestUnorderedSnippets(new Snippet("a b b a c d e d c b a"), "b d", "d c b");
+        testShortestUnorderedSnippets(new Snippet("a b b a c d e b c d a"), "b d", "d e b");
+        testShortestUnorderedSnippets(new Snippet("a b b a c d e e b c d a"), "b d", "b c d");
+        testShortestUnorderedSnippets(new Snippet("a b c d e"), "", "");
+        testShortestUnorderedSnippets(new Snippet(""), "a b", "");
+        testShortestUnorderedSnippets(new Snippet(""), "", "");
+    }
+
     public static void main(String[] args) {
         tokenizerTests();
-        testShortestSnippets();
+        testShortestOrderedSnippets();
+        testShortestUnorderedSnippets();
     }
 }
