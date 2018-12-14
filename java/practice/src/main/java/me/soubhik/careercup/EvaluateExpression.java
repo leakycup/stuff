@@ -31,8 +31,13 @@ public class EvaluateExpression {
         }
     }
 
-    Map<Character, Integer> idToValue;
+    private final Map<Character, Integer> idToValue;
 
+    //precedence: usual (* and / higher than + and -)
+    //associativity: usual (left to right)
+    // assume: operands are single letters
+    // assume: integer arithmatic (no floating points)
+    // assume: expression contains operands, operators and spaces only.
     public EvaluateExpression(List<String> assignments) {
         this.idToValue = new HashMap<>();
         for (String assignment: assignments) {
@@ -97,14 +102,14 @@ public class EvaluateExpression {
         Set<Character> operatorsToEvaluate = new HashSet<>();
         operatorsToEvaluate.add('/');
         operatorsToEvaluate.add('*');
-        head = evaluate(head, operatorsToEvaluate);
+        head = evaluateLeftToRight(head, operatorsToEvaluate);
 
-        //evaluare all + and -
+        //evaluate all + and -
         operatorsToEvaluate.remove('/');
         operatorsToEvaluate.remove('*');
         operatorsToEvaluate.add('+');
         operatorsToEvaluate.add('-');
-        head = evaluate(head, operatorsToEvaluate);
+        head = evaluateLeftToRight(head, operatorsToEvaluate);
 
         return ((Operand)head).value;
     }
@@ -126,7 +131,7 @@ public class EvaluateExpression {
         return value;
     }
 
-    private Node evaluate(Node head, Set<Character> operatorsToEvaluate) {
+    private Node evaluateLeftToRight(Node head, Set<Character> operatorsToEvaluate) {
         for (Node node = head; node != null; node = node.right) {
             if (!(node instanceof Operator)) {
                 continue;
