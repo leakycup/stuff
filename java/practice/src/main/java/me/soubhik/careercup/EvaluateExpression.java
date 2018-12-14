@@ -158,6 +158,16 @@ public class EvaluateExpression {
         assert (actual == expected);
     }
 
+    private static void negativeTest(EvaluateExpression evaluator, String expression) {
+        try {
+            evaluator.parseExpression(expression);
+        } catch (IllegalArgumentException e) {
+            return; //success
+        }
+
+        assert (false); //fail
+    }
+
     private static void test() {
         List<String> assignments = Arrays.asList("a = 3", "b=8", " c =5", "d = 6 ");
         EvaluateExpression evaluator = new EvaluateExpression(assignments);
@@ -180,6 +190,14 @@ public class EvaluateExpression {
         test(evaluator, "c -a ", 2);
         test(evaluator, " c-a", 2);
         test(evaluator, " c -   a", 2);
+
+        negativeTest(evaluator, "");
+        negativeTest(evaluator, " ");
+        negativeTest(evaluator, " x ");
+        negativeTest(evaluator, "a + * b");
+        negativeTest(evaluator, "a + x");
+        negativeTest(evaluator, "a + b * c /");
+        negativeTest(evaluator, "-a + b * c");
     }
 
     public static void main(String[] args) {
