@@ -203,6 +203,15 @@ public class EvaluateExpression {
         negativeTest(evaluator, "a + x");
         negativeTest(evaluator, "a + b * c /");
         negativeTest(evaluator, "-a + b * c");
+
+        EvaluateExpression evaluator2 = new EvaluateExpression(Arrays.asList("a=1", "b=2", "c=2"));
+        test(evaluator2, "a*b + a*c + b*c", 8);
+        test(evaluator2, "a*c - b/c + c*c", 5);
+
+        EvaluateExpression evaluator3 = new EvaluateExpression(Arrays.asList("g=2", "p=3", "t=1", "w=2"));
+        test(evaluator3, "g + p*t - w*p", -1);
+        test(evaluator3, "t - g + t - w", -2);
+        negativeTest(evaluator3, "e + t*t -m");
     }
 
     public static void main(String[] args) {
