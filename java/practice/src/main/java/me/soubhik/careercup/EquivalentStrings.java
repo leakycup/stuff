@@ -8,6 +8,7 @@ import java.util.Set;
 
 /**
  * Created by soubhik on 15-12-2018.
+ * from https://www.careercup.com/question?id=5222410521935872
  */
 public class EquivalentStrings {
     //o(n*k*log(k))
