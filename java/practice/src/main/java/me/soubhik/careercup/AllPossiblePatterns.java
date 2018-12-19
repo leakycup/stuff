@@ -232,13 +232,10 @@ public class AllPossiblePatterns {
         tokens.put("123", Arrays.asList("h"));
         tokens.put("56", Arrays.asList("i"));
 
-        Set<String> expected = new HashSet<>();
-
-        expected.clear();
-
         testGeneratePatterns(tokens, "1", new HashSet<>(Arrays.asList("a", "b", "c")));
         testGeneratePatterns(tokens, "12", new HashSet<>(Arrays.asList("ad", "ae", "bd", "be", "cd", "ce", "j")));
         testGeneratePatterns(tokens, "14", new HashSet<>(Arrays.asList()));
+        testGeneratePatterns(tokens, "323", new HashSet<>(Arrays.asList("fdf", "fdg", "fef", "feg", "gdf", "gdg", "gef", "geg")));
     }
 
     public static void main(String[] args) {
