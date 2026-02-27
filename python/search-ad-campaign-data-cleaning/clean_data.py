@@ -69,7 +69,7 @@ def clean():
             dialect = csv.excel
         
         reader = csv.reader(infile, dialect=dialect)
-        writer = csv.writer(outfile, dialect=dialect)
+        writer = csv.writer(outfile, dialect=dialect, delimiter=',')
         
         headers = next(reader)
         writer.writerow(headers)
