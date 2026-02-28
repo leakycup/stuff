@@ -1,0 +1,1501 @@
+ID,Customer ID,Age,Gender,State,Annual Income,Annual Disposal,Education Level,Zip Code
+154,CB001154,46,Male,New Mexico,140000,11200,High School Diploma,87516
+324,CB001324,24,Male,Alabama,23000,1840,Some College,35460
+711,CB001711,47,Female,Utah,130000,9100,Master's Degree,84744
+359,CB001359,48,Male,Alabama,120000,9600,High School Diploma,35461
+239,CB001239,34,Male,Arizona,30000,2100,High School Diploma,85210
+97,CB001097,31,Female,Virginia,40000,3600,,22623
+387,CB001387,39,Female,North Carolina,84000,2520,GED,28707
+931,CB001931,40,Male,Michigan,150000,7500,Master's Degree,49130
+636,CB001636,26,Male,Illinois,31000,1550,Associate's Degree,62236
+839,CB001839,35,Female,Kansas,86000,6880,Master's Degree,67212
+506,CB001506,41,Male,Pennsylvania,150000,14500,High School Diploma,15201
+1157,CB002157,19,Male,California,2200,110,High School Diploma,92567
+888,CB001888,46,Male,Idaho,130000,3900,GED,83822
+74,CB001074,22,Male,North Dakota,19000,1330,Some High School,58366
+546,CB001546,32,Female,Iowa,50000,1500,Some High School,52132
+880,CB001880,18,Male,North Dakota,3200,96,GED,58323
+732,CB001732,17,Male,Washington,1000,80,GED,98582
+956,CB001956,21,Male,Illinois,22000,1540,Some High School,60104
+129,CB001129,40,Female,Michigan,100000,8000,Some College,49011
+593,CB001593,31,Male,Pennsylvania,30000,2100,Some High School,18092
+277,CB001277,16,Female,Wyoming,1500,60,,82801
+1421,CB002421,39,Male,Montana,59000,1770,Master's Degree,59226
+589,CB001589,17,Other,Mississippi,350,25,Some High School,38756
+1411,CB002411,19,Female,Kansas,4800,144,Some High School,67491
+1049,CB002049,37,Other,Ohio,55000,2200,Doctorate Degree,44851
+1333,CB002333,32,Other,North Carolina,28000,1400,Some College,28610
+48,CB001048,25,Female,Maine,43000,1290,Associate's Degree,4862
+309,CB001309,22,Male,Ohio,15000,1350,Associate's Degree,44504
+1041,CB002041,27,Other,Ohio,42000,1260,High School Diploma,44826
+55,CB001055,37,Male,Alaska,54000,2160,Associate's Degree,99681
+1093,CB002093,34,Male,Texas,31000,1240,,75778
+13,CB001013,43,Male,Louisiana,130000,5200,Bachelor's Degree,71232
+70,CB001070,16,Female,Pennsylvania,840,50,,18463
+1025,CB002025,46,Male,Ohio,120000,9600,,45898
+1159,CB002159,42,Male,Oregon,140000,9800,Master's Degree,97913
+397,CB001397,48,Male,Massachusetts,120000,7200,Master's Degree,1344
+444,CB001444,24,Male,Massachusetts,11000,770,Some College,1029
+262,CB001262,17,Female,Maryland,1000,90,Some High School,21722
+1194,CB002194,31,Other,Florida,37000,1480,Associate's Degree,32211
+1429,CB002429,38,Male,New Mexico,58000,4640,GED,87539
+1182,CB002182,23,Male,Arizona,20000,1400,Some High School,85339
+121,CB001121,41,Male,Colorado,130000,3900,Bachelor's Degree,81036
+797,CB001797,23,Male,Massachusetts,15000,1350,Some High School,2647
+916,CB001916,44,Other,Tennessee,130000,10400,Some High School,38107
+706,CB001706,21,Male,Nebraska,11000,770,Associate's Degree,68527
+1322,CB002322,27,Female,New Mexico,33000,1980,Bachelor's Degree,88255
+98,CB001098,22,Male,New Jersey,11000,770,Some College,7203
+1408,CB002408,20,Male,Alaska,8200,738,Some High School,99656
+1002,CB002002,19,Female,Arizona,2200,88,GED,85201
+360,CB001360,29,Male,Louisiana,46000,1380,Bachelor's Degree,71075
+141,CB001141,43,Male,Nebraska,130000,10400,Associate's Degree,68128
+268,CB001268,19,Male,Michigan,2600,104,GED,49249
+901,CB001901,38,Male,Illinois,80000,4800,High School Diploma,61753
+1062,CB002062,43,Male,New Mexico,130000,5200,Master's Degree,88046
+581,CB001581,29,Male,Wisconsin,35000,3150,Some High School,54984
+108,CB001108,29,Female,Wisconsin,43000,2580,High School Diploma,54614
+1330,CB002330,16,Male,,1300,91,,44143
+459,CB001459,26,Female,Kentucky,48000,2400,Associate's Degree,40906
+877,CB001877,42,Male,California,150000,10500,Master's Degree,92861
+740,CB001740,47,Male,Missouri,110000,8800,Some High School,65264
+1111,CB002111,28,Male,Illinois,49000,3430,High School Diploma,61462
+713,CB001713,18,Male,Tennessee,2700,108,,37186
+1101,CB002101,45,Male,Illinois,110000,8800,Associate's Degree,61008
+1193,CB002193,47,Male,Idaho,,6500,Some College,83647
+377,CB001377,31,Male,Missouri,34000,1020,GED,65803
+132,CB001132,30,Female,Ohio,33000,2310,,44026
+807,CB001807,18,Female,South Carolina,4500,135,,29377
+1484,CB002484,29,Male,West Virginia,45000,4050,GED,24934
+28,CB001028,34,Other,Ohio,45000,2700,,44090
+220,CB001220,44,Male,Illinois,130000,7800,Some College,60146
+1463,CB002463,40,Female,Arkansas,150000,13500,Bachelor's Degree,72855
+1374,CB002374,22,Female,New York,15000,750,High School Diploma,11977
+122,CB001122,42,Female,California,140000,5600,Some College,95930
+548,CB001548,32,Male,Arizona,31000,1240,High School Diploma,85032
+1433,CB002433,28,Male,California,32000,2240,High School Diploma,95675
+646,CB001646,44,Male,Colorado,110000,4400,Bachelor's Degree,80516
+1483,CB002483,48,Female,West Virginia,120000,8400,Associate's Degree,24898
+900,CB001900,29,Male,Hawaii,31000,1860,High School Diploma,96783
+1144,CB002144,22,Male,Kentucky,22000,,Some College,42206
+716,CB001716,45,Male,California,140000,12600,Some College,95497
+1188,CB002188,28,Female,New Hampshire,35000,3150,Master's Degree,3833
+899,CB001899,30,Other,Ohio,34000,2040,High School Diploma,43845
+203,CB001203,27,Male,Florida,42000,3780,Some High School,33478
+476,CB001476,48,Female,Virginia,140000,7000,Master's Degree,24540
+505,CB001505,38,Other,West Virginia,85000,7650,,25304
+139,CB001139,22,Male,Minnesota,18000,720,Associate's Degree,56120
+738,CB001738,28,Female,Maine,40000,1600,Some College,4922
+926,CB001926,29,Gender,Utah,43000,2580,GED,84062
+1052,CB002052,35,Male,Vermont,97000,8730,High School Diploma,5765
+525,CB001525,41,Male,Texas,150000,9000,Master's Degree,79119
+1340,CB002340,35,Male,California,93000,4650,Master's Degree,92807
+745,CB001745,40,Male,Pennsylvania,120000,7200,Some High School,17093
+1264,CB002264,16,Other,Arizona,500,25,,85357
+327,CB001327,21,Male,California,19000,1520,GED,96109
+976,CB001976,38,Other,Illinois,100000,7000,Bachelor's Degree,62951
+1012,CB002012,39,Male,Kansas,52000,2080,Some College,67730
+462,CB001462,,Other,Alaska,47000,4230,High School Diploma,99585
+414,CB001414,41,Male,Ohio,130000,5200,Master's Degree,44815
+1443,CB002443,18,Female,Hawaii,3100,124,GED,96770
+856,CB001856,20,Female,Michigan,9700,776,,49861
+1347,CB002347,36,Male,Louisiana,98000,7840,Some High School,71414
+50,CB001050,170,Male,Michigan,33000,2310,Master's Degree,49705
+705,CB001705,29,Male,South Carolina,29000,870,GED,29108
+712,CB001712,40,Female,Wisconsin,140000,7000,Some High School,54007
+333,CB001333,39,Male,Pennsylvania,72000,3600,Some High School,16510
+140,CB001140,20,Male,Kentucky,5500,495,High School Diploma,42040
+728,CB001728,16,Female,Florida,830,66,,33585
+1362,CB002362,29,Male,Missouri,44000,2640,Master's Degree,63535
+938,CB001938,35,Male,Georgia,72000,5760,GED,30650
+1336,CB002336,45,Male,Ohio,140000,7000,Some High School,45115
+852,CB001852,41,Male,North Carolina,140000,5600,High School Diploma,27925
+221,CB001221,35,Female,Florida,60000,1800,Master's Degree,34769
+625,CB001625,19,Female,New Mexico,4700,423,High School Diploma,87533
+837,CB001837,28,Female,New Jersey,46000,2760,Bachelor's Degree,7712
+429,CB001429,16,Other,Missouri,220,9,,64645
+560,CB001560,28,Male,Georgia,30000,1500,Some High School,31805
+460,CB001460,44,Female,Michigan,150000,9000,Some College,48157
+1389,CB002389,41,Male,North Dakota,140000,7000,Some High School,58421
+114,CB001114,39,Male,Wisconsin,79000,6320,Bachelor's Degree,53716
+652,CB001652,37,Male,Georgia,59000,2950,Some College,30576
+1295,CB002295,39,Male,Minnesota,99000,4950,Some College,56623
+335,CB001335,45,Female,Rhode Island,120000,8400,Bachelor's Degree,2915
+816,CB001816,17,Male,California,1200,72,High School Diploma,95672
+71,CB001071,42,Male,Texas,120000,10800,High School Diploma,78664
+39,CB001039,31,Male,Florida,36000,1080,Bachelor's Degree,32771
+963,CB001963,31,Female,,34000,2040,GED,55711
+124,CB001124,43,Male,South Dakota,130000,9100,Master's Degree,57625
+257,CB001257,27,Male,Arizona,31000,930,Master's Degree,85373
+694,CB001694,45,Female,Minnesota,150000,6000,Bachelor's Degree,55965
+894,CB001894,21,Female,Iowa,18000,1440,Associate's Degree,52042
+248,CB001248,27,Male,Louisiana,43000,2150,Some College,70773
+527,CB001527,30,Female,Washington,40000,3200,Some High School,98354
+872,CB001872,18,Female,Washington,3300,99,High School Diploma,99029
+320,CB001320,16,Male,New York,1700,68,,14802
+202,CB001202,23,Female,California,24000,960,Associate's Degree,93036
+1450,CB002450,29,Female,Nevada,26000,780,Bachelor's Degree,89138
+36,CB001036,39,Female,Iowa,66000,4620,Some College,51038
+64,CB001064,38,Other,South Dakota,95000,6650,High School Diploma,57748
+229,CB001229,39,Male,Wisconsin,84000,7560,Some High School,53928
+889,CB001889,39,Male,Michigan,85000,3400,High School Diploma,48206
+1496,CB002496,27,Female,Indiana,42000,1260,Master's Degree,46045
+1428,CB002428,46,Female,Florida,120000,6000,GED,34240
+868,CB001868,31,Female,New York,37000,1850,Bachelor's Degree,10014
+1123,CB002123,,Male,Vermont,87000,4350,Associate's Degree,5734
+779,CB001779,44,Male,Illinois,130000,5200,Master's Degree,62320
+1363,CB002363,23,Male,Virginia,21000,840,Some High School,23505
+675,CB001675,38,Male,Pennsylvania,85000,5100,Bachelor's Degree,19118
+112,CB001112,39,Male,Oregon,71000,4260,Some College,97636
+432,CB001432,31,Female,Virginia,43000,3870,Some College,23125
+533,CB001533,43,Male,Texas,120000,8400,High School Diploma,79021
+1397,CB002397,28,Other,North Carolina,33000,2310,High School Diploma,28590
+386,CB001386,47,Male,Washington,130000,6500,Some College,99152
+51,CB001051,19,Female,Washington,3100,217,High School Diploma,98164
+41,CB001041,19,Other,California,3100,155,,93634
+1071,CB002071,24,Female,Arizona,25000,1250,High School Diploma,86351
+759,CB001759,16,Male,Mississippi,1200,96,,38703
+6,CB001006,26,Female,Massachusetts,27000,2160,High School Diploma,2108
+1310,CB002310,36,Female,Tennessee,50000,4500,Master's Degree,37212
+821,CB001821,38,Male,Arkansas,83000,2490,Bachelor's Degree,72687
+810,CB001810,41,Male,Louisiana,140000,9800,Bachelor's Degree,70444
+347,CB001347,41,Other,Nebraska,120000,10800,GED,69038
+210,CB001210,47,Male,Georgia,120000,7200,Some College,30149
+144,CB001144,34,Female,North Carolina,47000,-3,Bachelor's Degree,28562
+1500,CB002500,22,Male,Kentucky,23000,920,GED,41544
+1180,CB002180,48,Female,Utah,150000,12000,Some College,84540
+692,CB001692,-45,Female,California,28000,1960,Associate's Degree,92007
+1332,CB002332,29,Male,California,28000,1400,Master's Degree,95670
+943,CB001943,29,Male,Utah,47000,3290,Master's Degree,84109
+18,CB001018,43,Other,Illinois,130000,5200,Some High School,61438
+1198,CB002198,46,Other,Minnesota,120000,6000,High School Diploma,55933
+305,CB001305,30,Male,New Jersey,35000,1400,Some College,8011
+178,CB001178,30,Female,Arkansas,40000,3200,Associate's Degree,71659
+1481,CB002481,33,Male,South Dakota,40000,2000,Associate's Degree,57718
+107,CB001107,24,Male,New York,14000,560,Bachelor's Degree,13624
+557,CB001557,19,Male,New York,3300,132,High School Diploma,14813
+379,CB001379,22,Male,New York,12000,1080,Some College,13685
+772,CB001772,45,Other,Illinois,150000,13500,Some College,61012
+1442,CB002442,23,Male,North Dakota,18000,540,High School Diploma,58561
+1270,CB002270,27,Male,Iowa,40000,3200,Master's Degree,50626
+1353,CB002353,31,Male,West Virginia,32000,2880,GED,25030
+887,CB001887,37,Male,South Dakota,60000,4800,Master's Degree,57633
+177,CB001177,17,Female,Tennessee,180,5,GED,38104
+1051,CB002051,20,Male,South Dakota,5600,168,GED,57311
+915,CB001915,34,Male,California,28000,1680,Master's Degree,95653
+605,CB001605,46,Male,Oklahoma,120000,10800,Some College,73132
+1225,CB002225,16,Female,Ohio,2000,160,,43805
+1014,CB002014,230,Female,Maryland,28000,1120,Some College,21541
+388,CB001388,23,Female,Virginia,15000,450,Associate's Degree,23829
+651,CB001651,30,Female,Florida,26000,1040,Bachelor's Degree,33145
+493,CB001493,16,Male,North Carolina,1900,152,,28023
+209,CB001209,37,Female,Washington,74000,2220,Associate's Degree,98862
+1149,CB002149,44,Male,Nebraska,120000,8400,Some High School,68362
+455,CB001455,31,Female,Montana,35000,1400,Associate's Degree,59643
+184,CB001184,37,Other,Ohio,64000,2560,Master's Degree,45660
+935,CB001935,38,Female,Colorado,87000,6960,GED,80902
+1402,CB002402,44,Male,West Virginia,110000,4400,Some High School,25164
+3,CB001003,19,Male,Arkansas,3300,297,GED,72442
+1132,CB002132,36,Male,Pennsylvania,88000,7920,GED,17023
+291,CB001291,25,Male,New Jersey,44000,2640,Some College,8223
+1087,CB002087,43,Other,,120000,10800,Some High School,97338
+16,CB001016,32,Male,New Hampshire,33000,990,GED,3740
+145,CB001145,16,Male,Ohio,1000,60,,44133
+663,CB001663,17,Female,Pennsylvania,1400,112,,17070
+1167,CB002167,48,Female,Iowa,130000,6500,Associate's Degree,50594
+289,CB001289,19,Other,Michigan,3600,216,GED,49817
+942,CB001942,45,Male,Oregon,130000,3900,High School Diploma,97868
+1440,CB002440,43,Male,South Dakota,110000,3300,Some College,57329
+1151,CB002151,36,Female,Utah,63000,3780,Some High School,84731
+367,CB001367,16,Male,Virginia,1300,104,,24656
+758,CB001758,23,Male,Washington,12000,480,High School Diploma,98642
+403,CB001403,47,Other,Kentucky,110000,9900,Some College,42003
+941,CB001941,20,Female,Tennessee,9100,273,GED,38315
+523,CB001523,20,Female,Idaho,9200,460,High School Diploma,83552
+1370,CB002370,33,Male,Arkansas,35000,2100,High School Diploma,71999
+1153,CB002153,25,Male,Michigan,39000,2340,Master's Degree,49235
+264,CB001264,25,Male,Nebraska,33000,2310,Some College,68653
+1287,CB002287,45,Male,Texas,140000,7000,High School Diploma,77984
+296,CB001296,41,Male,New York,130000,6500,Some College,13478
+717,CB001717,30,Male,,48000,1920,Master's Degree,75093
+500,CB001500,40,Male,California,140000,5600,GED,95228
+536,CB001536,24,Female,Texas,21000,1470,Some High School,77073
+1133,CB002133,24,Male,Kansas,15000,900,Some College,66857
+1156,CB002156,48,Male,Washington,140000,12600,High School Diploma,98568
+811,CB001811,36,Female,Virginia,90000,8100,Associate's Degree,22553
+477,CB001477,19,Male,Nebraska,,190,GED,68843
+972,CB001972,46,Male,Vermont,140000,9800,Bachelor's Degree,5474
+741,CB001741,39,Male,North Carolina,57000,5130,Master's Degree,28203
+153,CB001153,25,Male,Texas,34000,1700,Some High School,77378
+846,CB001846,23,Female,New Jersey,18000,1080,Bachelor's Degree,8750
+410,CB001410,35,Female,Texas,54000,3780,Some High School,79093
+442,CB001442,19,Other,Ohio,2700,216,GED,44420
+1383,CB002383,16,Female,Illinois,660,20,,61956
+833,CB001833,44,Male,South Dakota,100000,3000,Master's Degree,57358
+364,CB001364,41,Female,Iowa,150000,9000,High School Diploma,50050
+355,CB001355,23,Male,Washington,17000,680,High School Diploma,98831
+453,CB001453,16,Female,Kentucky,480,29,,42349
+957,CB001957,36,Male,Montana,69000,4830,High School Diploma,59019
+990,CB001990,42,Other,Idaho,110000,6600,Associate's Degree,83676
+448,CB001448,17,Female,Indiana,1800,144,Some High School,47229
+1466,CB002466,24,Male,Minnesota,18000,900,GED,56171
+174,CB001174,31,Other,Kansas,40000,1200,GED,66401
+539,CB001539,27,Male,New Jersey,43000,3870,High School Diploma,7730
+1317,CB002317,34,Female,Texas,26000,2080,Some High School,75862
+1298,CB002298,44,Male,Illinois,130000,6500,Bachelor's Degree,60957
+276,CB001276,19,Male,Missouri,0.05,210,,64457
+1453,CB002453,31,Male,North Carolina,45000,1350,Associate's Degree,27312
+1171,CB002171,33,Male,North Carolina,44000,3520,GED,27953
+1361,CB002361,22,Other,Idaho,12000,960,High School Diploma,83554
+1314,CB002314,31,Male,Oklahoma,27000,1890,Some High School,73030
+994,CB001994,36,Female,Delaware,,6030,Some College,19706
+612,CB001612,19,Female,Texas,2500,75,,78728
+1090,CB002090,48,Female,Texas,110000,5500,GED,79110
+1129,CB002129,20,Male,West Virginia,9600,864,,24874
+1448,CB002448,18,Male,Missouri,5000,150,,63045
+617,CB001617,36,Male,Oklahoma,58000,4060,Some College,74352
+138,CB001138,47,Male,Maine,140000,7000,Some High School,4454
+311,CB001311,41,Female,Nebraska,140000,9800,Bachelor's Degree,68448
+1165,CB002165,16,Male,Texas,2000,140,,79519
+905,CB001905,19,Male,Alabama,4000,200,,35173
+641,CB001641,20,Female,Minnesota,9500,665,GED,55125
+698,CB001698,31,Female,Texas,37000,2960,Master's Degree,78613
+1236,CB002236,25,Male,North Dakota,36000,1080,High School Diploma,58442
+336,CB001336,34,Female,Arkansas,39000,1950,,72732
+45,CB001045,42,Female,Kentucky,120000,4800,Associate's Degree,41537
+961,CB001961,44,Male,Vermont,130000,10400,Some College,5492
+393,CB001393,40,Female,Idaho,120000,4800,Associate's Degree,83848
+1299,CB002299,34,Female,Oregon,28000,1960,Master's Degree,97419
+975,CB001975,35,Male,New York,51000,3570,Bachelor's Degree,11572
+541,CB001541,20,Male,Maryland,8100,729,High School Diploma,20626
+1355,CB002355,16,Male,Texas,1300,65,,77562
+674,CB001674,43,Male,Mississippi,130000,3900,GED,39771
+1137,CB002137,35,Other,Virgin!a,70000,2800,Bachelor's Degree,23062
+1135,CB002135,27,Male,Mississippi,45000,2700,Some High School,38865
+1286,CB002286,27,Female,Florida,41000,1230,Some College,34216
+422,CB001422,18,Female,West Virginia,4400,308,High School Diploma,24818
+167,CB001167,33,Female,Mississippi,31000,2170,Some High School,38851
+1248,CB002248,43,Male,Kentucky,130000,11700,High School Diploma,42366
+337,CB001337,18,Male,Tennessee,4600,322,High School Diploma,37412
+1081,CB002081,20,Male,New York,9000,720,Some College,14760
+701,CB001701,31,Male,Utah,44000,3520,GED,84723
+648,CB001648,21,Male,Ohio,12000,1080,GED,43950
+259,CB001259,25,Male,Missouri,27000,810,Associate's Degree,64109
+396,CB001396,48,Male,Idaho,120000,10800,Associate's Degree,83353
+514,CB001514,27,Female,California,41000,2460,Bachelor's Degree,94937
+914,CB001914,25,Female,Pennsylvania,26000,780,Bachelor's Degree,15761
+944,CB001944,16,,Utah,1200,72,,84315
+195,CB001195,40,Male,Ohio,130000,9100,Some College,44815
+206,CB001206,39,Female,West Virginia,71000,4970,Bachelor's Degree,25688
+430,CB001430,33,Female,Oklahoma,32000,2240,Associate's Degree,73768
+1285,CB002285,30,Male,Texas,49000,1470,Associate's Degree,78561
+89,CB001089,17,Male,Ohio,1300,117,,43109
+747,CB001747,43,Female,Washington,150000,9000,GED,98665
+594,CB001594,40,Male,Connecticut,150000,10500,Master's Degree,6708
+564,CB001564,46,Male,Michigan,110000,6600,Associate's Degree,49839
+151,CB001151,29,Male,West Virginia,36000,1080,Bachelor's Degree,24716
+481,CB001481,45,Male,Pennsylvania,100000,6000,Master's Degree,16941
+661,CB001661,30,Female,Oregon,38000,1140,Master's Degree,97426
+1259,CB002259,43,Other,Wisconsin,120000,7200,High School Diploma,53556
+1414,CB002414,23,Male,Maine,12000,840,Some High School,4024
+345,CB001345,36,Male,California,64000,5760,Bachelor's Degree,95573
+1187,CB002187,45,Female,Ohio,130000,3900,GED,43723
+686,CB001686,23,Female,Illinois,16000,800,Associate's Degree,61815
+102,CB001102,40,Other,Nebraska,120000,3600,Bachelor's Degree,68463
+1154,CB002154,20,Female,Virginia,8200,246,Some High School,23180
+383,CB001383,48,Male,North Carolina,110000,8800,Some High School,28079
+339,CB001339,19,Male,Georgia,2800,112,Some High School,31076
+796,CB001796,40,Male,Illinois,110000,8800,GED,60406
+951,CB001951,39,Female,Pennsylvania,96000,7680,GED,17562
+509,CB001509,20,Male,Florida,9500,855,GED,33809
+232,CB001232,47,Male,Maryland,140000,9800,Associate's Degree,21814
+185,CB001185,24,Female,Illinois,18000,900,High School Diploma,61451
+858,CB001858,33,Male,Illinois,36000,2160,,61314
+1431,CB002431,38,Male,South Carolina,98000,5880,Some High School,29150
+4,CB001004,46,Female,Pennsylvania,130000,7800,Bachelor's Degree,15458
+731,CB001731,44,Female,Missouri,130000,11700,Associate's Degree,65039
+1240,CB002240,34,Female,Massachusetts,30000,2400,High School Diploma,2723
+1307,CB002307,32,Female,Michigan,38000,3040,Some High School,48837
+1291,CB002291,42,Male,New York,100000,9000,GEEEEEDDD,13826
+304,CB001304,16,Male,Indiana,270,19,,47868
+27,CB001027,47,Male,New Jersey,110000,4400,Bachelor's Degree,8805
+1495,CB002495,30,Female,Mississippi,43000,1720,High School Diploma,39367
+932,CB001932,21,Male,West Virginia,22000,1980,Some High School,26141
+1073,CB002073,22,Female,Texas,15000,1050,Bachelor's Degree,77657
+111,CB001111,40,Male,Ohio,120000,7200,High School Diploma,45648
+912,CB001912,31,Male,Illinois,47000,3760,,61072
+1126,CB002126,44,Male,South Dakota,120000,7200,GED,57770
+258,CB001258,46,Male,Arkansas,120000,10800,High School Diploma,72014
+1055,CB002055,43,Male,Kansas,120000,10800,Some High School,67142
+166,CB001166,16,Male,Unkown,610,55,,55424
+845,CB001845,31,Male,Ohio,35000,1400,GED,44417
+1146,CB002146,18,Female,Washington,2700,162,,98362
+66,CB001066,35,Male,North Dakota,70000,2100,Master's Degree,58472
+1091,CB002091,38,Male,Iowa,57000,3420,GED,50317
+297,CB001297,41,Female,Montana,150000,10500,Some College,59918
+550,CB001550,24,Female,Michigan,18000,1080,Some College,49677
+1294,CB002294,17,Male,Maine,860,77,GED,4444
+366,CB001366,29,Other,Nebraska,45000,1800,Some High School,69138
+158,CB001158,48,Male,Illinois,130000,10400,Some High School,60536
+299,CB001299,30,Male,Montana,44000,2640,Some High School,59722
+973,CB001973,17,Male,Vermont,290,12,Some High School,5038
+266,CB001266,16,Female,Minnesota,950,67,,56520
+1016,CB002016,16,Female,California,260,13,,92310
+23,CB001023,44,Female,New York,110000,8800,Bachelor's Degree,10306
+637,CB001637,23,Female,Texas,23000,1150,High School Diploma,75562
+465,CB001465,27,Female,California,32000,2880,Bachelor's Degree,90280
+287,CB001287,19,Male,Georgia,2800,84,High School Diploma,31093
+1316,CB002316,16,Male,Georgia,370,22,,30108
+778,CB001778,46,Male,Missouri,150000,6000,High School Diploma,65501
+1398,CB002398,25,Male,Virginia,49000,1960,Some College,22124
+997,CB001997,23,Male,Ohio,13000,1040,Associate's Degree,45899
+689,CB001689,24,Male,Colorado,17000,510,Bachelor's Degree,80601
+5,CB001005,19,Female,New York,3600,288,High School Diploma,11720
+1438,CB002438,27,Male,Illinois,40000,3200,Some College,62901
+1400,CB002400,45,Male,Louisiana,150000,6000,High School Diploma,71345
+284,CB001284,23,Female,Pennsylvania,21000,1470,Associate's Degree,18657
+1445,CB002445,19,Female,Minnesota,4600,276,,56663
+1304,CB002304,18,Female,Iowa,4100,246,,51022
+216,CB001216,34,Female,Oklahoma,38000,1900,Education unknown,73840
+621,CB001621,43,Male,New York,140000,9800,Some High School,12833
+919,CB001919,,Other,California,41000,2460,Some High School,94087
+1273,CB002273,26,Male,Kansas,27000,2160,High School Diploma,67576
+1335,CB002335,18,Female,Texas,5000,400,Some High School,77861
+834,CB001834,22,Male,Nevada,10000,300,Bachelor's Degree,89122
+585,CB001585,44,Male,Massachusetts,120000,7200,Bachelor's Degree,2025
+11,CB001011,34,Other,Georgia,50000,1500,,30145
+356,CB001356,43,Female,Kansas,100000,9000,Master's Degree,66833
+965,CB001965,35,Female,Ohio,96000,2880,Some High School,45132
+504,CB001504,39,Female,Louisiana,69000,2070,Doctorate Degree,71301
+1246,CB002246,29,Female,Kentucky,46000,3680,Master's Degree,41501
+619,CB001619,47,Female,Washington,100000,8000,Some High School,99012
+1197,CB002197,30,Female,California,27000,1350,GED,93653
+1244,CB002244,33,Female,Texas,35000,2800,Associate's Degree,75422
+1227,CB002227,38,Other,Michigan,59000,3540,Bachelor's Degree,48433
+1491,CB002491,19,,Georgia,3100,124,GED,30060
+33,CB001033,38,Female,North Carolina,72000,4320,Some High School,28032
+777,CB001777,19,Male,Montana,4900,343,education,59064
+752,CB001752,41,Male,New York,150000,10500,Associate's Degree,13606
+597,CB001597,28,Female,Washington,28000,2240,Some High School,98012
+1121,CB002121,33,Female,New York,26000,1300,Associate's Degree,12036
+441,CB001441,31,Male,Ohio,40000,2000,High School Diploma,43942
+1457,CB002457,34,Other,Arizona,38000,3040,,85551
+522,CB001522,37,Female,Ohio,57000,5130,Doctorate Degree,43110
+263,CB001263,33,Male,Oklahoma,31000,2170,Some College,73505
+633,CB001633,27,Male,Vermont,28000,1680,Some High School,5068
+142,CB001142,43,Male,Texas,130000,10400,Master's Degree,76557
+499,CB001499,46,Male,North Dakota,110000,5500,Some College,58353
+1328,CB002328,29,Other,Kansas,46000,3680,Some High School,67226
+261,CB001261,35,Male,California,52000,2600,Some High School,91905
+1454,CB002454,44,Female,Nebraska,100000,7000,High School Diploma,68332
+910,CB001910,47,Male,Illinois,140000,5600,Master's Degree,61524
+1324,CB002324,43,Male,Pennsylvania,120000,6000,Bachelor's Degree,16511
+182,CB001182,,Female,Arizona,6000,420,,86432
+1313,CB002313,41,Female,California,110000,5500,High School Diploma,90680
+2,CB001002,30,Male,Missouri,49000,1470,Some College,63073
+751,CB001751,41,Female,New Hampshire,140000,4200,Master's Degree,3832
+1261,CB002261,33,Female,Virginia,40000,2000,Some High School,22079
+699,CB001699,35,Female,Maryland,69000,3450,Associate's Degree,21797
+819,CB001819,46,Male,Georgia,140000,9800,Some High School,30458
+1377,CB002377,31,Other,California,48000,,Associate's Degree,93261
+1163,CB002163,42,Male,Washington,130000,10400,GED,99301
+1385,CB002385,26,Male,Arizona,42000,3780,Master's Degree,86314
+623,CB001623,39,Male,New Mexico,89000,3560,Some High School,87321
+417,CB001417,24,Male,Nebraska,22000,1320,High School Diploma,68946
+851,CB001851,22,Female,New York,21000,1680,Associate's Degree,14808
+1064,CB002064,35,Other,Indiana,52000,4680,Some High School,47905
+945,CB001945,37,Female,West Virginia,93000,8370,Some College,26534
+980,CB001980,45,Male,Mississippi,120000,7200,Bachelor's Degree,39426
+194,CB001194,30,Female,Florida,49000,3430,High School Diploma,33014
+217,CB001217,21,Male,Oregon,14000,840,Associate's Degree,97865
+863,CB001863,26,Other,Iowa,25000,2250,High School Diploma,50669
+315,CB001315,22,Male,New York,16000,800,Associate's Degree,10580
+885,CB001885,25,Male,Tennessee,43000,2150,GED,37377
+1032,CB002032,42,Female,Michigan,110000,3300,Associate's Degree,48661
+829,CB001829,33,Female,Missouri,,1550,Associate's Degree,65692
+351,CB001351,40,Female,Arkansas,110000,9900,Bachelor's Degree,72539
+322,CB001322,18,Female,Michigan,2500,100,GED,49240
+804,CB001804,21,Female,West Virginia,19000,1710,Some High School,26152
+1250,CB002250,42,Female,Arkansas,140000,4200,Some College,72017
+688,CB001688,31,Male,California,39000,3510,Some High School,94618
+62,CB001062,26,Female,Texas,37000,3330,Associate's Degree,76657
+368,CB001368,16,Male,Washington,430,30,,98601
+721,CB001721,23,Female,California,19000,1140,GED,92553
+596,CB001596,47,Male,California,140000,12600,Associate's Degree,93619
+507,CB001507,22,Other,North Dakota,23000,1380,Some High School,58467
+44,CB001044,34,Other,Iowa,26000,780,High School Diploma,52748
+1215,CB002215,34,Female,Puerto Rico,34000,2040,Some College,698
+40,CB001040,18,Male,Alabama,4400,396,Some High School,35441
+1205,CB002205,27,Female,Oregon,27000,1080,GED,97050
+1082,CB002082,47,Male,Pennsylvania,120000,8400,Associate's Degree,15378
+231,CB001231,26,Male,Pennsylvania,29000,2610,Master's Degree,15435
+606,CB001606,39,Male,Mississippi,63000,5670,GED,38677
+1080,CB002080,30,Male,Georgia,34000,2380,Some College,30565
+854,CB001854,27,Other,Nebraska,28000,1960,Bachelor's Degree,68442
+657,CB001657,23,Female,Missouri,20000,1600,Some High School,65052
+306,CB001306,44,Other,West Virginia,130000,3900,High School Diploma,25103
+110,CB001110,30,Male,Indiana,28000,2520,,46978
+349,CB001349,42,Male,West Virginia,110000,4400,High School Diploma,25162
+376,CB001376,17,Male,Oklahoma,730,51,GED,73647
+22,CB001022,26,Male,Virginia,48000,2880,Some High School,22834
+1061,CB002061,47,Female,Missouri,110000,3300,Associate's Degree,64153
+602,CB001602,48,Male,California,120000,7200,Some College,91205
+238,CB001238,error,Male,Virginia,23000,920,High School Diploma,22847
+212,CB001212,48,Male,Tennessee,120000,7200,Some College,37027
+1404,CB002404,28,Other,California,40000,3600,High School Diploma,92518
+1102,CB002102,16,Male,Florida,1400,70,,33308
+1094,CB002094,20,Female,Illinois,5600,280,Some College,62547
+431,CB001431,25,Female,Illinois,46000,1840,High School Diploma,60514
+927,CB001927,32,Male,Ohio,46000,4140,,43842
+578,CB001578,45,Female,Illinois,110000,3300,Bachelor's Degree,62522
+242,CB001242,33,Female,Texas,45000,1350,Bachelor's Degree,78253
+757,CB001757,46,Male,Pennsylvania,140000,4200,,15906
+838,CB001838,38,Male,Florida,64000,3840,Some College,33316
+451,CB001451,47,,Oregon,150000,7500,Bachelor's Degree,97326
+80,CB001080,17,Male,Pennsylvania,670,54,GED,19501
+1455,CB002455,37,Female,Wyoming,85000,4250,Doctorate Degree,82217
+555,CB001555,31,Male,South Dakota,26000,1560,High School Diploma,57259
+1221,CB002221,44,Male,California,150000,7500,Some College,91304
+1393,CB002393,45,Female,Pennsylvania,120000,8400,,15137
+369,CB001369,18,Other,Ohio,2200,154,High School Diploma,44067
+567,CB001567,37,Male,Montana,67000,2680,Master's Degree,59315
+906,CB001906,43,Female,Michigan,130000,6500,Bachelor's Degree,49686
+762,CB001762,40,Male,Michigan,120000,10800,Master's Degree,48197
+399,CB001399,46,Male,Mississippi,110000,6600,High School Diploma,38917
+1077,CB002077,39,Female,Maryland,63000,1890,GED,21853
+489,CB001489,43,Female,California,150000,6000,GED,93313
+787,CB001787,20,Male,Michigan,8400,672,GED,48853
+773,CB001773,31,Male,Montana,32000,1600,Bachelor's Degree,59461
+1136,CB002136,45,Female,Washington,110000,8800,High School Diploma,98022
+211,CB001211,44,Male,New York,140000,7000,GED,14843
+343,CB001343,22,Other,Wyoming,18000,900,Some College,82723
+725,CB001725,42,Male,Florida,100000,5000,GED,33407
+412,CB001412,32,Male,Alabama,48000,1440,Master's Degree,35986
+576,CB001576,20,Female,Utah,6400,576,High School Diploma,84733
+439,CB001439,31,Female,Georgia,38000,3040,GED,30711
+275,CB001275,33,Male,Illinois,41000,1640,Some High School,60053
+1190,CB002190,22,Male,Washington,11000,660,Some College,98527
+1447,CB002447,40,Male,North Carolina,150000,9000,Master's Degree,27890
+1257,CB002257,34,Male,Missouri,32000,1920,High School Diploma,64459
+1284,CB002284,30,Female,Missouri,40000,3600,Bachelor's Degree,65285
+1026,CB002026,40,Other,North Dakota,140000,9800,Some High School,58062
+720,CB001720,39,Female,Indiana,65000,3900,Bachelor's Degree,46201
+588,CB001588,22,Male,California,16000,800,Bachelor's Degree,95482
+127,CB001127,17,Female,New York,1400,56,GED,11970
+389,CB001389,29,Male,Michigan,45000,4050,Master's Degree,49265
+577,CB001577,18,Female,California,2400,72,Some High School,91791
+1013,CB002013,42,Male,Texas,120000,9600,Associate's Degree,75206
+73,CB001073,21,Male,New Jersey,19000,760,Associate's Degree,7066
+96,CB001096,21,Female,Pennsylvania,21000,1890,Associate's Degree,15924
+1407,CB002407,24,Male,Michigan,22000,1980,Associate's Degree,48727
+1070,CB002070,33,Male,Montana,29000,2610,Some College,59343
+1067,CB002067,39,Other,North Dakota,76000,5320,High School Diploma,58239
+1117,CB002117,35,Male,Wisconsin,70000,6300,High School Diploma,54135
+162,CB001162,46,Male,Michigan,130000,3900,Master's Degree,48335
+535,CB001535,28,Male,Illinois,36000,3240,GED,60406
+1451,CB002451,17,Female,Washington,1100,44,,98372
+765,CB001765,25,Male,Missouri,30000,1800,Some High School,64858
+392,CB001392,39,Male,Idaho,62000,5580,error,83301
+1108,CB002108,35,Male,Tennessee,100000,7000,Some High School,37317
+982,CB001982,17,Male,North Carolina,530,16,High School Diploma,28326
+133,CB001133,30,Male,Missouri,43000,1290,Some College,64433
+511,CB001511,41,Female,Massachusetts,110000,3300,High School Diploma,2356
+643,CB001643,41,Female,Virginia,110000,9900,Master's Degree,22654
+1175,CB002175,29,Male,North Carolina,43000,3440,Some College,28698
+620,CB001620,42,Female,Montana,130000,7800,Bachelor's Degree,59482
+805,CB001805,19,Female,California,2100,63,High School Diploma,94534
+1350,CB002350,37,Male,West Virginia,84000,6720,Master's Degree,26134
+1498,CB002498,2,Female,Colorado,130000,7800,Master's Degree,80824
+130,CB001130,41,Male,California,120000,7200,Some High School,92059
+17,CB001017,18,Male,New Jersey,3300,99,Some High School,7086
+562,CB001562,35,Male,Massachusetts,68000,4080,High School Diploma,1571
+1199,CB002199,27,Other,Illinois,34000,1360,High School Diploma,62914
+213,CB001213,47,Male,Texas,140000,5600,High School Diploma,75853
+196,CB001196,24,Female,Kansas,13000,1040,Associate's Degree,66840
+904,CB001904,42,Female,Oklahoma,120000,9600,High School Diploma,74401
+840,CB001840,29,Other,California,Income,4140,Some High School,95436
+1142,CB002142,26,Female,New Mexico,45000,4050,Associate's Degree,87042
+318,CB001318,28,Female,,36000,1800,Bachelor's Degree,12183
+390,CB001390,17,Male,Kentucky,580,29,High School Diploma,41836
+1158,CB002158,42,Male,Ohio,150000,9000,Bachelor's Degree,44682
+886,CB001886,19,Female,Alaska,2700,189,Some High School,99662
+551,CB001551,44,Male,Texas,130000,5200,Bachelor's Degree,78361
+676,CB001676,17,Male,Oregon,1400,98,Some High School,97037
+1048,CB002048,20,Female,Illinois,6500,520,Some High School,62028
+1245,CB002245,28,Female,Oklahoma,47000,1880,Some College,73543
+317,CB001317,29,Male,Michigan,41000,3280,High School Diploma,48234
+1449,CB002449,23,Male,West Virginia,13000,1040,GED,26271
+426,CB001426,23,Female,Kentucky,22000,1100,Some College,40010
+215,CB001215,43,Male,California,110000,3300,GED,94579
+480,CB001480,41,Other,Iowa,100000,5000,Associate's Degree,50240
+1412,CB002412,19,Female,Oklahoma,2200,198,,73440
+1366,CB002366,41,Male,Michigan,150000,7500,Some High School,48469
+283,CB001283,21,Male,Missouri,18000,1440,Some College,63135
+125,CB001125,33,Male,Massachusetts,37000,1110,Associate's Degree,1940
+52,CB001052,16,Male,Virginia,190,11,,24225
+1124,CB002124,44,Other,Pennsylvania,150000,12000,Associate's Degree,18624
+72,CB001072,29,29,Puerto Rico,34000,3060,Associate's Degree,976
+925,CB001925,40,Male,Pennsylvania,140000,7000,GED,18812
+1364,CB002364,23,Other,Kansas,25000,1750,Associate's Degree,67643
+622,CB001622,27,Male,,46000,1840,Bachelor's Degree,46123
+1130,CB002130,17,Male,California,1100,99,,93710
+729,CB001729,27,Female,New York,33000,2640,Some College,12953
+669,CB001669,21,Female,North Carolina,20000,1600,Some College,28428
+1120,CB002120,18,Female,Iowa,4100,164,High School Diploma,50466
+1179,CB002179,44,Male,Pennsylvania,140000,8400,Master's Degree,18058
+913,CB001913,46,Female,Indiana,130000,3900,Bachelor's Degree,46126
+1405,CB002405,21,Female,Alabama,24000,2160,High School Diploma,36441
+1210,CB002210,16,Female,Minnesota,1600,112,,55077
+56,CB001056,30,Female,Michigan,50000,3000,Bachelor's Degree,49970
+1401,CB002401,23,Male,Kentucky,17000,510,Some High School,41543
+1356,CB002356,37,Female,Wisconsin,,8820,Some College,53587
+134,CB001134,40,Female,Vermont,130000,5200,GED,5076
+30,CB001030,30,,New Jersey,40000,3600,High School Diploma,7630
+350,CB001350,33,Female,Colorado,49000,1470,Bachelor's Degree,80488
+1344,CB002344,29,Male,Idaho,49000,2940,Some College,83851
+1468,CB002468,45,Female,South Dakota,130000,11700,Some College,57576
+1474,CB002474,40,Other,New Jersey,150000,12000,Some High School,7068
+1139,CB002139,44,Male,West Virginia,110000,7700,Some College,24716
+1241,CB002241,21,Male,Illinois,14000,980,Bachelor's Degree,60173
+456,CB001456,37,Female,Texas,75000,4500,Some High School,79369
+83,CB001083,19,Male,New Mexico,3400,102,High School Diploma,88022
+865,CB001865,40,Male,California,140000,4200,GED,94586
+1279,CB002279,39,Female,New York,72000,5040,Bachelor's Degree,10168
+278,CB001278,48,Male,Kentucky,130000,5200,Some College,40514
+14,CB001014,42,Male,Iowa,120000,6000,High School Diploma,50668
+1410,CB002410,41,Male,New York,120000,3600,High School Diploma,13501
+435,CB001435,21,Other,Texas,10000,800,Bachelor's Degree,76429
+613,CB001613,46,Male,Texas,150000,10500,Some High School,78608
+924,CB001924,44,Female,Arizona,120000,6000,Some College,85281
+871,CB001871,41,Male,Florida,140000,12600,High School Diploma,34139
+1271,CB002271,33,Male,Mississippi,26000,780,,38944
+1168,CB002168,35,Female,Illinois,75000,5250,Master's Degree,60160
+1436,CB002436,20,Female,Pennsylvania,9800,294,High School Diploma,16410
+842,CB001842,29,Female,Virginia,41000,2460,High School Diploma,23875
+224,CB001224,26,Male,Texas,38000,2280,Master's Degree,78728
+735,CB001735,23,Female,Minnesota,14000,560,High School Diploma,55322
+1033,CB002033,17,Female,Minnesota,1100,33,Some High School,55798
+43,CB001043,31,Male,Massachusetts,39000,1170,Some High School,2557
+923,CB001923,38,Male,Texas,51000,3060,Some College,77831
+1224,CB002224,31,Other,,34000,1700,High School Diploma,84739
+1282,CB002282,19,Male,New York,4300,258,,14108
+1118,CB002118,20,Female,Texas,5600,448,,76869
+693,CB001693,27,Male,Oklahoma,45000,1800,,73054
+1427,CB002427,45,,Georgia,100000,6000,Associate's Degree,31032
+1296,CB002296,38,Female,New Hampshire,82000,4920,Some College,3860
+1419,CB002419,34,Male,North Carolina,36000,1080,Some High School,28511
+187,CB001187,39,Male,Massachusetts,54000,3780,GED,2645
+227,CB001227,36,Male,New York,51000,2550,Doctorate Degree,12170
+341,CB001341,34,Male,Michigan,40000,3600,High School Diploma,49841
+1348,CB002348,46,Male,Texas,150000,9000,Bachelor's Degree,75657
+513,CB001513,43,Male,North Carolina,150000,13500,Master's Degree,27018
+680,CB001680,35,Female,Wisconsin,100000,5000,High School Diploma,54474
+35,CB001035,31,Other,Iowa,41000,1230,Associate's Degree,50237
+1476,CB002476,18,Other,Missouri,2600,234,Some High School,65705
+600,CB001600,39,Male,Nebraska,81000,3240,Some College,68138
+998,CB001998,48,Female,Vermont,110000,7700,High School Diploma,5056
+918,CB001918,29,Female,Texas,29000,870,Some College,76490
+1315,CB002315,31,Female,Montana,28000,2520,Associate's Degree,59758
+849,CB001849,36,Male,,82000,7380,GED,56577
+168,CB001168,34,Male,Kansas,35000,2450,Associate's Degree,66026
+394,CB001394,,Other,Michigan,3400,204,Some High School,48211
+977,CB001977,28,Female,North Carolina,28000,1120,Bachelor's Degree,27051
+1256,CB002256,41,Female,Nevada,130000,10400,Some High School,89801
+968,CB001968,19,Male,Montana,3100,186,,59854
+1403,CB002403,40,Male,New York,140000,5600,Bachelor's Degree,12970
+733,CB001733,17,Male,Georgia,470,19,30401,30401
+1242,CB002242,48,Female,California,100000,6000,Some College,93526
+967,CB001967,46,Male,West Virginia,140000,11200,GED,24737
+532,CB001532,43,Female,Oklahoma,120000,8400,Bachelor's Degree,74468
+1243,CB002243,42,Male,Virginia,120000,4800,Associate's Degree,23315
+81,CB001081,27,Male,South Dakota,48000,2400,Associate's Degree,57278
+960,CB001960,43,Male,Kansas,120000,8400,GED,66760
+1213,CB002213,25,Female,Wyoming,26000,1300,Bachelor's Degree,82414
+875,CB001875,41,Other,Colorado,130000,11700,Master's Degree,80924
+611,CB001611,30,Female,North Carolina,36000,2160,GED,28693
+204,CB001204,33,Male,Missouri,43000,2580,GED,65658
+820,CB001820,46,Female,Florida,120000,6000,High School Diploma,33129
+831,CB001831,16,Female,Arkansas,1900,171,,71956
+628,CB001628,28,Male,New Hampshire,28000,1680,High School Diploma,3215
+1302,CB002302,23,Male,California,22000,1320,GED,94956
+1477,CB002477,20,Male,Florida,-5990,354,Some College,33585
+768,CB001768,19,Male,Pennsylvania,2300,161,Some High School,17084
+1253,CB002253,28,Male,Pennsylvania,28000,1120,Associate's Degree,15853
+1369,CB002369,40,Male,Oregon,130000,3900,GED,97014
+825,CB001825,43,Male,Connecticut,100000,4000,Associate's Degree,6810
+32,CB001032,43,Male,Illinois,-150000,9000,Bachelor's Degree,61434
+1043,CB002043,31,Female,Vermont,28000,1120,Associate's Degree,5252
+1435,CB002435,26,Other,North Carolina,46000,2760,Master's Degree,27030
+920,CB001920,44,Male,Maryland,130000,6500,High School Diploma,20646
+1251,CB002251,30,Female,Massachusetts,37000,2220,,2467
+1083,CB002083,32,Male,Iowa,32000,2240,Some High School,50138
+1186,CB002186,28,Female,Georgia,47000,4230,GED,31302
+249,CB001249,21,Male,Pennsylvania,22000,1540,Associate's Degree,15945
+1446,CB002446,38,Male,Michigan,77000,3080,Some College,49269
+1276,CB002276,16,Female,Wisconsin,1400,70,,53108
+783,CB001783,30,Male,Michigan,42000,2100,Associate's Degree,49959
+136,CB001136,24,Male,South Carolina,20000,1400,,29063
+1329,CB002329,26,Male,Florida,25000,750,High School Diploma,34744
+123,CB001123,46,Male,Arkansas,140000,8400,Bachelor's Degree,71659
+1216,CB002216,35,Female,Texas,74000,3700,High School Diploma,78344
+233,CB001233,17,Female,Maryland,240,14,High School Diploma,20758
+791,CB001791,18,Male,Nebraska,2500,225,,68520
+1050,CB002050,16,Male,Indiana,1600,112,,46530
+95,CB001095,44,Female,Maryland,150000,7500,Bachelor's Degree,21863
+936,CB001936,41,Male,Nebraska,140000,4200,Bachelor's Degree,68883
+1021,CB002021,42,Female,Minnesota,150000,6000,Some High School,56443
+1131,CB002131,41,Male,Georgia,130000,5200,Some College,30189
+218,CB001218,26,Male,Minnesota,26000,2080,GED,55397
+645,CB001645,41,Male,South Dakota,110000,5500,Some High School,57644
+1196,CB002196,34,Female,Virginia,44000,2640,Bachelor's Degree,23962
+21,CB001021,22,Female,Utah,14000,840,Associate's Degree,84334
+1044,CB002044,27,Female,Minnesota,45000,2700,Associate's Degree,56165
+1075,CB002075,41,Male,Nevada,130000,7800,Associate's Degree,89440
+280,CB001280,40,Female,New York,140000,9800,Some College,12496
+1499,CB002499,41,Male,Arkansas,140000,8400,Some College,72644
+342,CB001342,22,Male,Maryland,17000,850,Associate's Degree,20882
+1380,CB002380,48,Other,Alabama,130000,10400,Master's Degree,35082
+464,CB001464,22,Female,California,15000,1050,Some High School,90064
+1195,CB002195,19,Male,Missouri,3900,273,,64652
+34,CB001034,36,Male,Michigan,72000,4320,Some High School,49017
+1036,CB002036,43,Male,Kentucky,140000,8400,Associate's Degree,41301
+251,CB001251,22,Female,Kansas,14000,840,Some High School,66502
+433,CB001433,42,Male,Virginia,140000,8400,Associate's Degree,24577
+384,CB001384,33,Male,North Carolina,29000,1740,Bachelor's Degree,28304
+534,CB001534,40,Male,California,110000,8800,Bachelor's Degree,96124
+1047,CB002047,19,Female,California,3100,155,High School Diploma,93309
+695,CB001695,43,Male,New York,140000,7000,Bachelor's Degree,12502
+1300,CB002300,29,Male,North Carolina,37000,3330,Associate's Degree,28350
+563,CB001563,38,Male,Mississippi,96000,2880,High School Diploma,39115
+763,CB001763,26,Male,Texas,43000,3440,Bachelor's Degree,78526
+1425,CB002425,30,Female,Pennsylvania,30000,2700,,16826
+15,CB001015,31,Male,Arkansas,38000,1900,High School Diploma,71937
+293,CB001293,18,Male,Michigan,2500,200,GED,49955
+454,CB001454,30,Female,Wisconsin,46000,3680,High School Diploma,54448
+279,CB001279,43,Male,West Virginia,110000,5500,Associate's Degree,26264
+8,CB001008,24,Male,Pennsylvania,15000,1350,Associate's Degree,18104
+521,CB001521,31,Female,Indiana,39000,2340,Associate's Degree,46802
+1471,CB002471,30,Female,South Dakota,43000,3010,,57758
+1464,CB002464,43,Male,Nevada,150000,6000,Some College,89830
+1222,CB002222,30,Female,Virginia,33000,1980,Associate's Degree,24148
+670,CB001670,18,Male,North Dakota,3200,96,,58640
+495,CB001495,23,Female,Alabama,11000,990,Bachelor's Degree,35755
+537,CB001537,20,Female,West Virginia,5800,406,GED,25261
+415,CB001415,29,Other,Indiana,50000,2000,Bachelor's Degree,46563
+615,CB001615,46,Male,California,110000,3300,GED,92868
+666,CB001666,44,Male,Nebraska,130000,6500,Master's Degree,68863
+1384,CB002384,31,Female,Ohio,37000,2590,,44230
+1008,CB002008,33,Female,Pennsylvania,40000,1200,Master's Degree,17329
+591,CB001591,20,Female,Michigan,7800,702,GED,49406
+1371,CB002371,42,Male,North Carolina,120000,3600,Some High School,27821
+358,CB001358,44,Female,Maryland,110000,6600,Bachelor's Degree,21662
+874,CB001874,23,Male,West Virginia,16000,1120,Some College,26617
+135,CB001135,36,Other,Alabama,59000,4720,Bachelor's Degree,35801
+878,CB001878,18,Other,Pennsylvania,2300,92,High School Diploma,19320
+954,CB001954,30,Other,Illinois,33000,2640,High School Diploma,60605
+1000,CB002000,19,Male,Ohio,4000,120,,45861
+1394,CB002394,34,Male,Georgia,37000,2220,Associate's Degree,30438
+873,CB001873,38,Male,South Dakota,70000,4900,Some College,57446
+907,CB001907,36,Male,California,72000,6480,High School Diploma,95559
+568,CB001568,21,Male,Iowa,14000,980,GED,52737
+1424,CB002424,42,Male,Ohio,110000,6600,Some High School,45030
+1128,CB002128,17,Male,Louisiana,830,58,GED,70747
+188,CB001188,25,Female,North Carolina,48000,1440,Bachelor's Degree,27343
+806,CB001806,18,Female,Texas,4200,378,Some High School,76109
+482,CB001482,34,Female,New York,34000,1700,Some High School,10708
+1010,CB002010,19,Other,Connecticut,2900,87,Some High School,6254
+909,CB001909,32,Male,Minnesota,43000,3010,Master's Degree,56335
+678,CB001678,31,,Michigan,34000,2380,Bachelor's Degree,49762
+1078,CB002078,20,Other,California,5400,486,GED,90210
+1058,CB002058,39,Male,Ohio,"93,0OO",2730,Bachelor's Degree,44214
+775,CB001775,16,Male,Maine,230,12,,4271
+1207,CB002207,17,Male,Pennsylvania,1600,96,Some High School,17752
+681,CB001681,20,Female,New Jersey,8800,616,High School Diploma,7847
+310,CB001310,44,Male,West Virginia,120000,4800,Some College,25512
+616,CB001616,30,Male,Minnesota,43000,3440,High School Diploma,56657
+1005,CB002005,26,Male,New Hampshire,29000,1450,Bachelor's Degree,3598
+61,CB001061,46,Female,Illinois,140000,4200,Master's Degree,61537
+665,CB001665,37,Male,Iowa,84000,3360,Master's Degree,52245
+981,CB001981,42,Female,Missouri,120000,10800,GED,64101
+370,CB001370,24,Male,New Mexico,18000,540,Associate's Degree,87749
+75,CB001075,16,Male,Kentucky,1100,33,,42220
+1422,CB002422,25,Female,Texas,47000,4230,Some College,78712
+618,CB001618,19,Male,California,3300,231,GED,92356
+250,CB001250,34,,Kentucky,34000,3060,GED,42634
+1415,CB002415,44,Male,California,120000,4800,Some High School,95610
+117,CB001117,17,Male,Arkansas,1300,117,,72857
+93,CB001093,32,Male,Texas,41000,2050,Some College,75709
+1208,CB002208,22,Female,Ohio,13000,910,GED,44265
+647,CB001647,24,Male,Florida,15000,1350,Some High School,32091
+1112,CB002112,27,Other,Texas,47000,1880,Associate's Degree,79540
+434,CB001434,19,Other,New Jersey,2200,66,Some High School,8830
+1238,CB002238,35,Male,Pennsylvania,52000,4160,Some High School,16229
+962,CB001962,31,Male,Indiana,31000,2170,Some College,47324
+929,CB001929,36,Female,Arkansas,92000,5520,High School Diploma,72560
+147,CB001147,32,Female,Alabama,29000,2320,Some High School,35746
+405,CB001405,34,Male,Alabama,43000,2150,Master's Degree,35652
+848,CB001848,44,Male,Missouri,150000,7500,High School Diploma,64118
+1098,CB002098,21,Female,Texas,14000,700,Bachelor's Degree,77436
+1349,CB002349,30,Female,Utah,31000,1860,Some High School,84055
+640,CB001640,48,Male,Pennsylvania,120000,9600,Bachelor's Degree,15448
+691,CB001691,20,Female,Georgia,5200,364,High School Diploma,39827
+126,CB001126,35,Other,Maine,69000,3450,Master's Degree,4736
+644,CB001644,29,Female,Missouri,39000,3120,Some College,63117
+1368,CB002368,40,Female,North Dakota,130000,6500,Some High School,58793
+492,CB001492,48,Male,Indiana,140000,9800,Bachelor's Degree,47946
+1387,CB002387,23,Male,North Carolina,13000,520,Some College,28901
+401,CB001401,41,Other,New Jersey,110000,8800,High School Diploma,7032
+1030,CB002030,35,Male,Kansas,95000,5700,High School Diploma,67213
+1161,CB002161,33,Female,Maryland,28000,840,Associate's Degree,20833
+1011,CB002011,37,Female,Illinois,53000,1590,GED,60712
+1258,CB002258,46,Male,Colorado,150000,6000,GED,80447
+321,CB001321,19,Female,Wisconsin,4300,387,High School Diploma,54935
+161,CB001161,45,Male,Kansas,130000,3900,Some High School,66066
+497,CB001497,38,Female,South Carolina,57000,2280,Master's Degree,29906
+746,CB001746,26,Male,Iowa,48000,2880,Some College,52756
+1268,CB002268,38,Male,Nebraska,53000,3180,Some College,68327
+1185,CB002185,34,Male,Iowa,35000,2450,Associate's Degree,50510
+1359,CB002359,48,Female,Georgia,130000,10400,Associate's Degree,30830
+503,CB001503,47,Female,Maryland,140000,12600,Some College,21223
+632,CB001632,40,Male,New York,120000,7200,Some College,14072
+545,CB001545,21,Male,Kentucky,12000,480,GED,41538
+1176,CB002176,3,Other,Maryland,29000,2610,Some High School,21911
+428,CB001428,43,Male,Indiana,150000,4500,Some High School,46350
+7,CB001007,43,Female,Massachusetts,150000,9000,Some High School,1030
+272,CB001272,36,Female,New York,78000,6240,High School Diploma,12850
+270,CB001270,32,Female,Pennsylvania,42000,2940,Some High School,16803
+179,CB001179,27,Female,Pennsylvania,44000,1760,Associate's Degree,19342
+1373,CB002373,39,Male,Arkansas,90000,4500,Doctorate Degree,72940
+592,CB001592,30,Male,New Hampshire,27000,2430,High School Diploma,3033
+1038,CB002038,37,Female,Pennsylvania,92000,5520,Master's Degree,18354
+921,CB001921,41,Male,Arizona,120000,6000,Bachelor's Degree,85137
+47,CB001047,18,Female,Alabama,3200,128,,35051
+228,CB001228,46,Female,Florida,140000,11200,Some College,32202
+876,CB001876,31,Male,California,35000,2100,High School Diploma,90027
+1432,CB002432,33,Male,Nevada,48000,1440,Associate's Degree,89109
+970,CB001970,16,Other,California,720,22,,94938
+1266,CB002266,32,Male,North Dakota,33000,2310,GED,58343
+1263,CB002263,46,Male,Minnesota,140000,7000,Some High School,56308
+1022,CB002022,41,Female,California,130000,7800,Bachelor's Degree,93645
+143,CB001143,23,Female,Maryland,16000,1120,High School Diploma,21521
+802,CB001802,45,Female,California,150000,4500,Associate's Degree,95642
+579,CB001579,35,Female,North Dakota,63000,5040,Master's Degree,58707
+986,CB001986,30,Female,Missouri,43000,2580,Bachelor's Degree,65068
+156,CB001156,47,Male,Michigan,140000,4200,GED,49722
+256,CB001256,26,Male,New York,26000,1560,Some High School,12523
+1203,CB002203,20,Other,Michigan,7300,438,,49236
+1441,CB002441,46,Male,New Mexico,110000,9900,Some High School,88024
+1217,CB002217,18,Male,Missouri,4800,336,Some High School,65079
+1103,CB002103,21,,Pennsylvania,19000,1330,GED,15765
+898,CB001898,,Female,Georgia,65000,1950,GED,30621
+836,CB001836,43,Male,California,140000,5600,Some College,92618
+372,CB001372,35,Male,Ohio,93000,2790,Doctorate Degree,44827
+1228,CB002228,20,Female,Montana,8800,704,Some High School,59469
+471,CB001471,16,Male,Illinois,150,9,,61880
+171,CB001171,36,Female,Montana,77000,3850,Master's Degree,59833
+770,CB001770,16,Female,California,940,47,,90640
+1254,CB002254,34,Other,Oklahoma,25000,1500,Master's Degree,74126
+1074,CB002074,18,Female,Illinois,3900,351,,62664
+1249,CB002249,25,Female,Kentucky,38000,3420,Bachelor's Degree,42440
+467,CB001467,38,Other,Kansas,91000,4550,Some College,66741
+269,CB001269,36,Female,Oklahoma,54000,4320,Master's Degree,73601
+53,CB001053,16,Female,Utah,1600,112,,84074
+25,CB001025,35,Female,Ohio,71000,3550,Some College,45348
+782,CB001782,21,Other,California,22000,880,Some High School,95432
+866,CB001866,37,Female,Tennessee,65000,3900,Some High School,38376
+574,CB001574,37,Male,New Jersey,59000,4720,Some High School,8752
+583,CB001583,38,Male,California,94000,4700,Some High School,91351
+571,CB001571,43,Female,Pennsylvania,130000,3900,Some College,15059
+908,CB001908,46,Male,Kentucky,120000,10800,Associate's Degree,42354
+1097,CB002097,31,Male,Maine,37000,2220,High School Diploma,4969
+653,CB001653,,Female,Maryland,140000,7000,Some High School,20695
+1066,CB002066,45,Female,Indiana,140000,7000,GED,47849
+300,CB001300,28,Female,California,49000,4410,Some High School,94618
+575,CB001575,25,,Kentucky,43000,3440,Bachelor's Degree,42544
+1288,CB002288,43,Female,California,140000,5600,Some High School,93036
+1184,CB002184,38,Other,North Carolina,69000,5520,Master's Degree,28097
+1280,CB002280,34,Other,South Carolina,30000,2100,Master's Degree,29118
+271,CB001271,27,Female,North Carolina,26000,2080,Some High School,27214
+1110,CB002110,30,Female,Washington,29000,1740,Some High School,98027
+1472,CB002472,20,Male,California,9300,744,,90810
+443,CB001443,48,Female,California,120000,4800,High School Diploma,91710
+391,CB001391,41,Male,Nebraska,110000,5500,Bachelor's Degree,68715
+79,CB001079,28,Male,Alaska,46000,2300,Some College,99579
+883,CB001883,32,Female,Louisiana,45000,3150,GED,70501
+1114,CB002114,29,Male,Maryland,49000,4410,Master's Degree,21746
+985,CB001985,41,mail,Kansas,140000,5600,High School Diploma,67349
+635,CB001635,22,Male,Illinois,12000,840,Some College,62365
+458,CB001458,16,Male,Minnesota,1400,112,,55718
+1365,CB002365,32,Male,Illinois,29000,2030,Master's Degree,60141
+1320,CB002320,16,Male,Iowa,1800,126,,52533
+971,CB001971,26,Female,Nebraska,42000,3360,High School Diploma,68855
+835,CB001835,22,Female,Ohio,23000,1380,GED,43348
+655,CB001655,37,Female,New York,79000,5530,Doctorate Degree,12183
+991,CB001991,25,Male,Nebraska,46000,2760,Bachelor's Degree,68771
+409,CB001409,37,Male,New York,95000,2850,Doctorate Degree,14536
+983,CB001983,46,Female,Texas,110000,5500,Bachelor's Degree,76539
+1305,CB002305,39,Other,Arkansas,72000,4320,GED,72950
+992,CB001992,30,Male,Virginia,50000,2500,,23398
+222,CB001222,36,Male,New Mexico,57000,4560,Master's Degree,87313
+679,CB001679,36,Male,Pennsylvania,72000,5040,Some High School,15715
+827,CB001827,28,Male,South Carolina,28000,840,GED,29803
+859,CB001859,32,Male,West Virginia,33000,1980,Master's Degree,24701
+764,CB001764,41,Male,Ohio,140000,11200,Some High School,44288
+708,CB001708,43,Male,Pennsylvania,,8000,High School Diploma,19119
+656,CB001656,44,Other,Wyoming,130000,3900,Associate's Degree,82732
+244,CB001244,38,Male,Florida,63000,3780,Bachelor's Degree,33142
+67,CB001067,44,Female,Oklahoma,120000,8400,GED,73532
+1220,CB002220,35,Female,Oklahoma,98000,3920,Master's Degree,74421
+292,CB001292,46,Female,North Carolina,100000,5000,Master's Degree,28501
+793,CB001793,35,Other,Minnesota,63000,3150,Bachelor's Degree,55109
+1319,CB002319,16,Male,Arizona,570,40,,85045
+374,CB001374,22,Male,Georgia,19000,1140,GED,30182
+543,CB001543,33,Female,Missouri,34000,1700,Associate's Degree,64477
+995,CB001995,43,Male,Washington,150000,4500,Some College,98846
+780,CB001780,22,Other,North Carolina,10000,700,High School Diploma,28092
+252,CB001252,22,Female,Ohio,25000,750,Some College,43011
+488,CB001488,21,Female,Pennsylvania,23000,,Bachelor's Degree,16232
+1465,CB002465,48,Female,Iowa,140000,7000,High School Diploma,51528
+470,CB001470,32,Female,Texas,28000,2520,Associate's Degree,79789
+554,CB001554,26,Male,Minnesota,27000,1620,Some High School,56361
+486,CB001486,40,Male,Illinois,130000,5200,Bachelor's Degree,60137
+483,CB001483,39,Male,Tennessee,95000,7600,High School Diploma,38139
+1084,CB002084,33,Male,Florida,46000,1380,Some College,34120
+642,CB001642,43,Male,Tennessee,100000,3000,Some High School,37416
+165,CB001165,46,Female,Indiana,130000,3900,Associate's Degree,47954
+1345,CB002345,37,,Michigan,66000,2640,Some High School,48168
+743,CB001743,16,Female,,1700,119,,46928
+948,CB001948,16,Female,North Carolina,560,50,,28146
+683,CB001683,18,Other,Georgia,2400,96,Some High School,30627
+445,CB001445,23,Male,West Virginia,16000,1120,Bachelor's Degree,25051
+853,CB001853,31,Other,Oklahoma,48000,1440,Associate's Degree,73127
+1444,CB002444,,Female,New York,27000,1620,High School Diploma,13027
+382,CB001382,42,Female,New Mexico,110000,4400,Some College,87042
+753,CB001753,29,Male,Louisiana,37000,1110,High School Diploma,71008
+29,CB001029,32,Male,West Virginia,32000,1920,Associate's Degree,25062
+1231,CB002231,20,Male,Texas,5900,413,Some High School,76640
+37,CB001037,44,Female,Missouri,120000,3600,Some College,65332
+707,CB001707,25,Male,Virginia,27000,2430,Some College,23920
+718,CB001718,37,Other,Massachusetts,72000,3600,Associate's Degree,1431
+512,CB001512,21,Male,New York,19000,1710,Associate's Degree,13072
+1237,CB002237,21,Male,Arkansas,15000,750,Bachelor's Degree,71973
+1331,CB002331,30,Male,Ohio,35000,1400,Some College,43085
+1470,CB002470,28,Male,Massachusetts,38000,1900,Bachelor's Degree,1270
+150,CB001150,32,Male,Minnesota,46000,2300,Some College,56122
+1009,CB002009,32,Male,Pennsylvania,28000,1120,Bachelor's Degree,19153
+928,CB001928,38,Male,Alaska,97000,3880,High School Diploma,99840
+1367,CB002367,32,Male,Texas,37000,1850,,75103
+1223,CB002223,46,Female,Kansas,130000,10400,Some College,66508
+90,CB001090,22,Female,Michigan,19000,950,Associate's Degree,48009
+234,CB001234,42,Male,Georgia,110000,3300,GED,30349
+57,CB001057,39,Male,Alabama,72000,3600,High School Diploma,35212
+870,CB001870,39,,Illinois,87000,3480,Some College,61426
+1395,CB002395,21,Female,Colorado,11000,880,High School Diploma,80211
+893,CB001893,28,Male,Oklahoma,29000,870,GED,74856
+1292,CB002292,46,Male,Michigan,130000,10400,GED,48070
+966,CB001966,22,Male,Oregon,11000,660,Some College,97371
+996,CB001996,27,Male,Pennsylvania,41000,1230,Some College,15764
+726,CB001726,27,Male,Tennessee,41000,1230,Associate's Degree,38128
+1381,CB002381,32,Male,Mississippi,41000,3690,Bachelor's Degree,39501
+128,CB001128,31,Female,New York,36000,1800,High School Diploma,13088
+380,CB001380,16,Male,Texas,1300,78,,75063
+630,CB001630,29,Female,Montana,27000,1080,Bachelor's Degree,59035
+332,CB001332,17,Female,Nebraska,480,43,,68665
+654,CB001654,47,Male,North Carolina,130000,6500,Some High School,27109
+709,CB001709,46,Male,Missouri,140000,9800,GED,63735
+190,CB001190,45,Female,Texas,110000,3300,Master's Degree,76471
+427,CB001427,24,Female,Ohio,25000,1500,High School Diploma,44610
+191,CB001191,21,Male,California,13000,390,Some High School,91016
+687,CB001687,25,Female,New Hampshire,28000,2520,Master's Degree,3225
+60,CB001060,27,Female,New Mexico,44000,1320,Some College,87571
+319,CB001319,32,Male,Iowa,49000,3920,Master's Degree,50012
+338,CB001338,47,Male,New York,140000,12600,Bachelor's Degree,13411
+245,CB001245,39,Female,New Jersey,78000,3900,High School Diploma,7803
+255,CB001255,39,Alabama,Alabama,92000,8280,Bachelor's Degree,35083
+531,CB001531,20,Male,Michigan,5900,354,High School Diploma,49229
+404,CB001404,32,Other,Georgia,47000,1880,Some High School,30216
+181,CB001181,41,Male,Arkansas,130000,3900,Some High School,72327
+570,CB001570,32,Male,Pennsylvania,28000,1120,,18972
+544,CB001544,19,Female,New Jersey,5000,400,GED,7023
+65,CB001065,28,Female,Oklahoma,30000,2100,Some High School,73743
+330,CB001330,43,Other,Indiana,110000,5500,Some High School,46802
+301,CB001301,24,Male,Pennsylvania,22000,1980,,16364
+1229,CB002229,24,Male,Montana,18000,900,Bachelor's Degree,59039
+627,CB001627,34,Female,New Jersey,40000,2800,Bachelor's Degree,7950
+895,CB001895,24,Male,North Carolina,23000,1150,Some College,27101
+1352,CB002352,17,Male,Alabama,900,36,GED,35242
+498,CB001498,34,Other,Alaska,44000,3520,Master's Degree,99761
+818,CB001818,39,Male,Maine,66000,5280,Doctorate Degree,3904
+285,CB001285,33,Male,Illinois,37000,2590,Bachelor's Degree,62634
+85,CB001085,22,Male,Connecticut,11000,990,Some College,6370
+822,CB001822,33,Male,Minnesota,39000,2730,Some High School,56434
+223,CB001223,31,Male,South Dakota,30000,900,Associate's Degree,57054
+756,CB001756,34,Male,Texas,47000,1880,Some High School,79566
+650,CB001650,30,Female,Arizona,32000,1280,Some High School,85334
+1488,CB002488,27,Other,Georgia,47000,3760,Associate's Degree,31827
+603,CB001603,24,Male,Illinois,14000,700,Bachelor's Degree,62886
+1099,CB002099,35,Female,New York,83000,4150,Some College,14624
+119,CB001119,41,Male,Nebraska,130000,3900,CB001119,69333
+742,CB001742,35,Male,Montana,94000,5640,GED,59873
+1191,CB002191,43,Female,Illinois,140000,4200,Master's Degree,60901
+667,CB001667,47,Male,South Dakota,110000,5500,GED,57450
+786,CB001786,22,Male,California,21000,630,Some High School,94586
+325,CB001325,48,Female,California,-33000,7200,Some College,95493
+237,CB001237,41,Female,Minnesota,140000,5600,High School Diploma,56343
+466,CB001466,29,Female,Mississippi,45000,1800,Some College,38633
+724,CB001724,37,Male,Florida,98000,7840,Doctorate Degree,34997
+1416,CB002416,46,Male,Georgia,150000,7500,Bachelor's Degree,31061
+798,CB001798,43,Male,West Virginia,140000,8400,GED,25646
+260,CB001260,18,Male,Oregon,3600,324,,97110
+491,CB001491,34,Female,Pennsylvania,43000,1290,Master's Degree,15927
+1004,CB002004,48,Male,Minnesota,120000,10800,High School Diploma,56032
+423,CB001423,17,Female,Mississippi,1600,48,Some High School,39079
+411,CB001411,19,Male,Tennessee,3900,351,High School Diploma,38066
+1233,CB002233,20,Male,Arizona,7900,237,High School Diploma,85297
+529,CB001529,32,Female,New Hampshire,48000,4320,Some College,3442
+690,CB001690,17,Female,New Jersey,710,28,Some High School,8832
+1105,CB002105,44,Male,Pennsylvania,120000,4800,Master's Degree,15433
+1027,CB002027,41,Female,Nebraska,140000,8400,Associate's Degree,68883
+1007,CB002007,25,Female,Michigan,31000,2170,Master's Degree,49271
+1162,CB002162,17,Male,New York,1100,33,GED,12494
+789,CB001789,30,Other,North Dakota,28000,1120,Master's Degree,58704
+1487,CB002487,40,Male,Minnesota,140000,4200,Associate's Degree,56721
+437,CB001437,19,Female,West Virginia,3600,252,GED,25976
+1372,CB002372,25,Male,New York,35000,1400,Some High School,13850
+1326,CB002326,38,Male,New Jersey,51000,1530,High School Diploma,8502
+54,CB001054,33,Other,Georgia,47000,3760,GED,31093
+308,CB001308,33,Male,New York,40000,1200,Bachelor's Degree,13473
+1042,CB002042,-31,Other,Wisconsin,47000,2350,Associate's Degree,53040
+1341,CB002341,23,Female,Texas,21000,630,Associate's Degree,78670
+1289,CB002289,47,Female,Florida,120000,10800,High School Diploma,32052
+26,CB001026,27,Female,West Virginia,31000,2170,Bachelor's Degree,26215
+639,CB001639,38,Male,Illinois,55000,2200,High School Diploma,61938
+1486,CB002486,47,Other,Tennessee,120000,8400,Master's Degree,38347
+1283,CB002283,30,Male,Kentucky,45000,3600,,41041
+20,CB001020,30,Female,Minnesota,35000,1050,Bachelor's Degree,55609
+930,CB001930,33,Male,Pennsylvania,46000,1380,Some High School,16410
+58,CB001058,25,Female,Nebraska,,870,GED,69038
+419,CB001419,31,Male,Florida,29000,2030,Associate's Degree,32061
+1489,CB002489,21,Female,Iowa,15000,450,Bachelor's Degree,51358
+100,CB001100,25,Male,Texas,47000,2820,GED,76486
+808,CB001808,45,Male,New Hampshire,120000,8400,Associate's Degree,3838
+749,CB001749,27,Female,Indiana,25000,1000,Some College,47011
+565,CB001565,39,Female,Illinois,77000,4620,Some High School,61401
+1095,CB002095,29,Female,Pennsylvania,49000,3920,High School Diploma,15051
+1327,CB002327,21,Female,Massachusetts,25000,1500,High School Diploma,1969
+1178,CB002178,40,Male,Mississippi,130000,11700,Associate's Degree,39325
+84,CB001084,21,Male,Washington,16000,1440,Associate's Degree,98408
+771,CB001771,24,Female,Texas,15000,750,Associate's Degree,75852
+1375,CB002375,25,Female,New Jersey,46000,4140,GED,8105
+189,CB001189,35,Male,Idaho,84000,2520,GED,83806
+700,CB001700,21,Male,California,15000,750,Some College,95422
+78,CB001078,20,Male,Georgia,8200,492,High School Diploma,31512
+1063,CB002063,41,Female,Iowa,140000,7000,Some High School,50438
+979,CB001979,26,Male,Virginia,47000,2350,High School Diploma,23110
+891,CB001891,41,Male,Arizona,130000,6500,Some College,85268
+307,CB001307,31,Male,Arkansas,47000,2820,,72927
+461,CB001461,21,Male,Minnesota,12000,960,Bachelor's Degree,55049
+149,CB001149,40,Male,Nebraska,110000,7700,Some College,69036
+59,CB001059,28,Male,Arkansas,47000,2350,Bachelor's Degree,71958
+515,CB001515,37,Male,Virginia,76000,3800,Bachelor's Degree,24179
+475,CB001475,39,Female,Kentucky,95000,2850,High School Diploma,40350
+329,CB001329,39,Male,Florida,66000,1980,Associate's Degree,32708
+601,CB001601,22,Male,Pennsylvania,13000,,Some High School,15522
+246,CB001246,37,Male,Illinois,90000,2700,Some High School,62427
+828,CB001828,22,Female,New Hampshire,22000,880,High School Diploma,3255
+1143,CB002143,43,Male,Connecticut,140000,9800,Some College,6401
+1,CB001001,16,Female,Missouri,630,32,,63656
+587,CB001587,17,Male,Missouri,1100,77,High School Diploma,64636
+1278,CB002278,36,Male,South Carolina,69000,4140,Some High School,29407
+736,CB001736,22,Male,Colorado,13000,650,High School Diploma,80543
+1134,CB002134,29,Female,Idaho,40000,1600,Some High School,83554
+744,CB001744,17,Female,Colorado,340,10,Some High School,80938
+157,CB001157,47,Male,Texas,110000,3300,Some High School,75846
+1303,CB002303,36,Female,Texas,73000,3650,Doctorate Degree,76470
+1173,CB002173,26,Male,North Carolina,45000,3150,Bachelor's Degree,27920
+450,CB001450,22,Male,Virginia,19000,760,Some High School,22932
+240,CB001240,39,Male,Washington,69000,3450,Some College,99212
+1467,CB002467,42,Female,Arkansas,110000,8800,High School Diploma,72838
+959,CB001959,44,Female,Virginia,120000,9600,GED,23011
+298,CB001298,31,Female,New Hampshire,49000,2450,Bachelor's Degree,3771
+934,CB001934,43,Female,Kentucky,120000,8400,Bachelor's Degree,41526
+501,CB001501,17,Male,North Dakota,blank,91,GED,58402
+485,CB001485,36,Female,Maine,67000,4690,Master's Degree,4255
+1181,CB002181,28,Male,Colorado,45000,1350,Some College,80469
+354,CB001354,24,Female,California,15000,450,Bachelor's Degree,91732
+604,CB001604,28,Male,Wisconsin,46000,3220,Master's Degree,54541
+496,CB001496,29,Male,Texas,50000,3500,Master's Degree,78207
+993,CB001993,39,Male,Mississippi,96000,5760,Some College,39347
+1100,CB002100,31,Female,Vermont,49000,2450,Associate's Degree,5733
+1211,CB002211,31,Male,Massachusetts,42000,2100,Some High School,2188
+1396,CB002396,18,Female,Oklahoma,2100,147,,73620
+1399,CB002399,17,Female,Kentucky,1200,96,,42518
+1104,CB002104,42,Other,Georgia,110000,6600,Bachelor's Degree,30070
+169,CB001169,37,Female,Minnesota,65000,5850,Bachelor's Degree,55021
+1018,CB002018,19,Male,Nebraska,4800,144,GED,68528
+1260,CB002260,44,Male,Illinois,110000,4400,Some College,61761
+1430,CB002430,36,Female,Maine,90000,4500,Some High School,4853
+774,CB001774,25,Male,Michigan,47000,1410,GED,48846
+19,CB001019,29,Other,Ohio,32000,960,Some College,43940
+1226,CB002226,40,Female,Montana,130000,6500,Master's Degree,59002
+313,CB001313,41,Female,Oklahoma,120000,6000,High School Diploma,74577
+243,CB001243,31,Male,Texas,36000,2160,Some High School,77433
+109,CB001109,22,Male,New York,13000,1170,Associate's Degree,13362
+1232,CB002232,17,Male,Louisiana,200,16,Some High School,71227
+785,CB001785,29,Male,Alaska,35000,1750,Master's Degree,99756
+517,CB001517,47,Male,Tennessee,110000,5500,Bachelor's Degree,38333
+1497,CB002497,31,Female,Texas,28000,1400,,77075
+671,CB001671,17,Male,Pennsylvania,1200,84,GED,17935
+1201,CB002201,38,Female,Kentucky,96000,6720,Master's Degree,41052
+68,CB001068,19,Other,New Hampshire,2200,198,High School Diploma,3601
+1351,CB002351,30,Male,Oklahoma,34000,3060,Bachelor's Degree,74146
+1420,CB002420,22,Male,Georgia,15000,750,GED,30345
+273,CB001273,35,Male,Kansas,94000,,Doctorate Degree,67124
+1109,CB002109,20,Male,South Dakota,6400,512,Some High School,57323
+1046,CB002046,42,Male,Illinois,130000,6500,Associate's Degree,62668
+1311,CB002311,20,Female,California,5900,295,GED,91206
+1434,CB002434,36,Male,Nebraska,74000,3700,Bachelor's Degree,69029
+911,CB001911,21,Female,Oklahoma,19000,1140,High School Diploma,74060
+723,CB001723,38,Female,West Virginia,95000,5700,Some College,26739
+1020,CB002020,27,Male,Massachusetts,48000,3360,Master's Degree,1260
+879,CB001879,39,Female,Connecticut,73000,2920,Bachelor's Degree,6117
+1054,CB002054,40,Male,Indiana,120000,9600,GED,47424
+609,CB001609,18,Female,Nebraska,3800,152,Some High School,68658
+303,CB001303,47,Other,Connecticut,120000,9600,Master's Degree,6442
+864,CB001864,26,Other,North Carolina,28000,1120,Associate's Degree,27822
+989,CB001989,37,Male,Michigan,65000,3250,Doctorate Degree,49963
+1068,CB002068,34,Female,Massachusetts,47000,3760,Bachelor's Degree,1331
+703,CB001703,20,Male,Iowa,6800,204,GED,52534
+1293,CB002293,46,Male,California,100000,6000,Some College,96141
+49,CB001049,25,Male,South Dakota,47000,3760,Associate's Degree,57747
+254,CB001254,37,Male,Louisiana,76000,6080,Master's Degree,71104
+696,CB001696,28,Male,Washington,34000,1700,Some College,98649
+847,CB001847,26,Female,Pennsylvania,42000,3360,Master's Degree,18845
+518,CB001518,27,Other,Arkansas,43000,1720,Bachelor's Degree,72585
+363,CB001363,37,Male,Missouri,51000,4590,Some College,65588
+949,CB001949,37,Male,Tennessee,63000,5040,Master's Degree,38034
+1479,CB002479,42,Other,Massachusetts,110000,9900,Some High School,1740
+1039,CB002039,42,Female,Wisconsin,140000,8400,Bachelor's Degree,54870
+631,CB001631,41,Male,Indiana,120000,8400,High School Diploma,46256
+1170,CB002170,47,Male,Florida,110000,7700,GED,32331
+1346,CB002346,47,Male,Virginia,140000,4200,Master's Degree,24171
+1301,CB002301,24,Male,New Jersey,20000,800,High School Diploma,7641
+286,CB001286,40,Male,Maine,130000,3900,Some High School,4685
+1378,CB002378,30,Other,Alaska,48000,1440,Some College,99657
+1281,CB002281,27,Male,North Carolina,46000,1840,Master's Degree,28740
+1390,CB002390,47,Male,Nevada,110000,4400,Associate's Degree,89145
+722,CB001722,19,Male,Kentucky,2400,72,GED,42078
+685,CB001685,43,Male,Nevada,110000,6600,Some High School,89004
+365,CB001365,17,Male,Indiana,1500,75,Some High School,47043
+160,CB001160,16,Female,Oklahoma,870,44,,73547
+988,CB001988,34,Male,Oklahoma,32000,1280,Master's Degree,73720
+1235,CB002235,47,Female,Utah,140000,12600,Some College,84017
+1155,CB002155,17,Female,Missouri,1800,108,Some High School,64781
+1034,CB002034,33,Male,Alabama,27000,2160,Bachelor's Degree,35460
+1086,CB002086,27,Male,California,43000,1720,Some High School,93065
+823,CB001823,26,Female,California,26000,2340,Some College,94509
+180,CB001180,38,Female,North Dakota,66000,5940,Master's Degree,58448
+1166,CB002166,45,Female,California,110000,8800,Bachelor's Degree,92503
+748,CB001748,21,Male,Florida,23000,1840,GED,32680
+1092,CB002092,29,Male,Minnesota,49000,1470,Bachelor's Degree,56318
+1053,CB002053,36,Female,New York,63000,1890,Associate's Degree,12861
+1469,CB002469,29,Male,New York,46000,4140,Some High School,11024
+1150,CB002150,22,Male,Michigan,21000,630,Associate's Degree,48735
+373,CB001373,46,Other,Missouri,110000,7700,Some College,64448
+1202,CB002202,39,Female,Louisiana,76000,3800,Master's Degree,71303
+947,CB001947,35,Male,New Mexico,88000,2640,GED,88250
+788,CB001788,23,Male,Oklahoma,18000,1440,Bachelor's Degree,73040
+352,CB001352,25,Female,Kansas,43000,333333333,Master's Degree,66714
+559,CB001559,21,Female,Minnesota,12000,720,High School Diploma,55036
+1458,CB002458,17,Female,Vermont,340,10,,5444
+1309,CB002309,45,Female,Minnesota,140000,12600,Bachelor's Degree,55308
+69,CB001069,44,Male,Texas,140000,,GED,78002
+677,CB001677,34,Female,New York,36000,2880,Some High School,12086
+754,CB001754,36,Male,Oregon,75000,6000,Master's Degree,97431
+1478,CB002478,19,Other,Nebraska,3200,96,Some High School,68462
+469,CB001469,16,Male,Nebraska,340,14,,68430
+115,CB001115,31,Male,Virginia,44000,3520,High School Diploma,23879
+274,CB001274,42,Male,Pennsylvania,140000,4200,Bachelor's Degree,15754
+792,CB001792,32,Male,Iowa,40000,2800,Associate's Degree,52647
+12,CB001012,22,Other,Louisiana,23000,1150,Some College,70072
+734,CB001734,31,Female,Texas,35000,1400,GED,76869
+776,CB001776,41,Male,Oklahoma,130000,3900,High School Diploma,73950
+1031,CB002031,45,Female,Wisconsin,100000,7000,Bachelor's Degree,54428
+1230,CB002230,27,Male,New Mexico,34000,1360,Bachelor's Degree,88267
+881,CB001881,41,Female,California,150000,13500,High School Diploma,93309
+1357,CB002357,38,Male,Ohio,51000,2550,Some High School,43610
+917,CB001917,28,Male,Arkansas,47000,2350,GED,72088
+1379,CB002379,27,Female,Michigan,29000,1740,High School Diploma,48413
+104,CB001104,27,Female,Pennsylvania,43000,2580,Some College,18466
+86,CB001086,30,Male,California,47000,2350,High School Diploma,92082
+952,CB001952,26,Female,Colorado,47000,3760,Master's Degree,80864
+760,CB001760,age,Female,Oregon,11000,660,Bachelor's Degree,97007
+230,CB001230,23,Male,Mississippi,17000,1190,Bachelor's Degree,39426
+884,CB001884,46,Male,North Carolina,130000,5200,High School Diploma,28508
+346,CB001346,26,Male,Arkansas,35000,1750,Some College,71659
+31,CB001031,22,Other,Oklahoma,12000,360,Associate's Degree,74342
+824,CB001824,43,Male,Massachusetts,150000,6000,Some College,1778
+155,CB001155,44,Other,Tennessee,140000,9800,Bachelor's Degree,38232
+922,CB001922,29,Other,Maryland,33000,1980,Associate's Degree,21853
+38,CB001038,39,Male,Louisiana,73000,2190,Some High School,71103
+1096,CB002096,30,Female,Massachusetts,39000,2730,,2630
+116,CB001116,31,Male,Alaska,29000,1740,Some College,99782
+1172,CB002172,38,Male,California,60000,4200,Doctorate Degree,92065
+1391,CB002391,44,Male,Ohio,150000,10500,GED,43032
+582,CB001582,29,Male,California,35000,2800,Bachelor's Degree,91390
+381,CB001381,44,Female,Indiana,100000,5000,Bachelor's Degree,46216
+1040,CB002040,18,Male,Oklahoma,2900,145,High School Diploma,73555
+290,CB001290,41,Male,Illinois,110000,5500,GED,61925
+1113,CB002113,34,Female,Florida,40000,3600,,34957
+1306,CB002306,48,Other,Oklahoma,120000,8400,Bachelor's Degree,73057
+987,CB001987,23,Male,Florida,21000,1260,Some High School,32605
+192,CB001192,22,Male,Tennessee,21000,1680,Some High School,37872
+186,CB001186,25,Male,Missouri,38000,3420,High School Diploma,64625
+590,CB001590,40,Male,Michigan,,3300,Master's Degree,49651
+103,CB001103,17,Male,Illinois,1800,162,Some High School,61052
+402,CB001402,41,Male,Oklahoma,130000,11700,High School Diploma,74116
+406,CB001406,39,Male,Arizona,97000,4850,Some High School,85328
+201,CB001201,35,Female,Indiana,98000,6860,Doctorate Degree,47130
+520,CB001520,24,Female,Arizona,19000,1520,GED,85613
+1339,CB002339,36,Male,Ohio,72000,5760,Bachelor's Degree,44139
+87,CB001087,43,Female,Virginia,110000,7700,Master's Degree,22312
+719,CB001719,26,Female,New York,48000,2400,GED,11575
+999,CB001999,26,Male,Georgia,44000,1760,Master's Degree,31569
+937,CB001937,29,Female,Tennessee,46000,2300,GED,37755
+1252,CB002252,44,Other,Arkansas,110000,6600,Some High School,72569
+1265,CB002265,26,Male,Georgia,36000,1440,Bachelor's Degree,31098
+1119,CB002119,23,Male,Ohio,23000,1840,Bachelor's Degree,44485
+1343,CB002343,21,Male,Michigan,13000,650,High School Diploma,48214
+1152,CB002152,27,Female,California,47000,4230,GED,90035
+197,CB001197,26,Male,Texas,44000,3080,Master's Degree,77320
+1189,CB002189,33,Male,Illinois,33000,990,Master's Degree,62638
+815,CB001815,47,Male,Missouri,120000,4800,High School Diploma,65747
+173,CB001173,43,Other,New York,110000,5500,Associate's Degree,12919
+1323,CB002323,48,Other,North Carolina,150000,9000,Some High School,28211
+595,CB001595,18,Female,Texas,3200,160,Some High School,77993
+408,CB001408,35,Male,New Mexico,76000,3040,GED,88417
+1493,CB002493,43,Female,Oklahoma,140000,9800,High School Diploma,73059
+1417,CB002417,21,Female,North Dakota,11000,330,Associate's Degree,58490
+784,CB001784,25,Male,South Carolina,43000,1290,Associate's Degree,29039
+1480,CB002480,26,Male,Pennsylvania,29000,1740,Master's Degree,16351
+766,CB001766,44,Female,Florida,100000,8000,GED,32427
+1147,CB002147,36,Male,California,74000,3700,High School Diploma,90005
+1177,CB002177,45,Male,Georgia,120000,8400,Some High School,30565
+542,CB001542,30,Male,Ohio,33000,2310,GED,43822
+1277,CB002277,23,Female,Pennsylvania,24000,2160,Associate's Degree,15621
+843,CB001843,20,Male,South Dakota,7500,300,Some College,57460
+1267,CB002267,43,mallll,Virginia,140000,12600,GED,24577
+1024,CB002024,27,Female,Georgia,32000,1280,GED,31083
+282,CB001282,17,Female,New Mexico,170,9,GED,87056
+1461,CB002461,17,Female,Nebraska,1700,68,GED,68348
+226,CB001226,38,Female,Oklahoma,73000,3650,Doctorate Degree,74421
+361,CB001361,26,Female,Pennsylvania,42000,3780,High School Diploma,15661
+704,CB001704,36,Male,Pennsylvania,57000,2280,GED,16229
+1028,CB002028,36,Female,North Dakota,70000,2100,High School Diploma,58015
+1037,CB002037,33,Male,Ohio,47000,2350,Master's Degree,44470
+183,CB001183,34,Male,Michigan,45000,1800,Some High School,49612
+1423,CB002423,36,Male,Kansas,94000,5640,GED,67563
+294,CB001294,32,Female,Florida,42000,3360,Some High School,32127
+1312,CB002312,37,Male,Minnesota,86000,6020,Master's Degree,55965
+524,CB001524,42,Other,,130000,11700,GED,4255
+1015,CB002015,19,Female,Arkansas,4400,264,,72752
+897,CB001897,16,Male,New Hampshire,670,47,,3031
+624,CB001624,39,Female,Arkansas,78000,4680,Bachelor's Degree,71749
+1148,CB002148,23,Male,South Carolina,11000,990,High School Diploma,29448
+316,CB001316,16,Male,Alabama,1800,126,,36006
+302,CB001302,31,Male,Connecticut,49000,4410,,6373
+42,CB001042,22,Female,,15000,600,Some College,25508
+378,CB001378,24,Male,Ohio,16000,1280,GED,45617
+978,CB001978,32,Male,Georgia,35000,1050,Associate's Degree,31012
+1169,CB002169,36,Female,Wisconsin,78000,3900,Master's Degree,54737
+1029,CB002029,37,Female,Ohio,80000,6400,GED,45158
+1406,CB002406,21,Female,Iowa,20000,1400,Some High School,51532
+205,CB001205,23,Male,North Dakota,21000,1260,Associate's Degree,58277
+1076,CB002076,26,Male,Colorado,32000,224O,GED,80610
+1485,CB002485,17,Other,Puerto Rico,1500,105,GED,601
+1085,CB002085,32,Female,Kentucky,31000,930,,40155
+1079,CB002079,29,Female,Ohio,36000,1440,Some High School,43907
+608,CB001608,32,Female,Texas,41000,3280,Some College,75640
+809,CB001809,48,Male,Georgia,140000,,Master's Degree,30573
+510,CB001510,27,Female,Kansas,34000,2380,Associate's Degree,66209
+1106,CB002106,16,Male,Colorado,1400,56,,80017
+561,CB001561,32,Female,Montana,47000,3290,Associate's Degree,59826
+137,CB001137,37,Male,Wisconsin,60000,3600,Master's Degree,54425
+164,CB001164,35,Female,Montana,79000,2370,Doctorate Degree,59241
+862,CB001862,36,Other,New Jersey,75000,6750,High School Diploma,7436
+331,CB001331,35,Male,Virginia,81000,6480,Master's Degree,23294
+580,CB001580,22,Male,Pennsylvania,16000,1440,Some College,15454
+508,CB001508,37,Male,Louisiana,82000,6560,GED,71340
+1200,CB002200,21,Female,Pennsylvania,17000,850,Some High School,19562
+1418,CB002418,23,Male,Oregon,19000,1140,High School Diploma,97544
+1160,CB002160,30,Female,New York,30000,2700,Bachelor's Degree,12042
+200,CB001200,2,Female,Connecticut,120000,8400,Master's Degree,6811
+241,CB001241,17,Female,North Carolina,890,53,Some High School,28102
+344,CB001344,16,Male,Texas,1800,144,,75570
+1218,CB002218,17,Male,Mississippi,510,15,,39657
+449,CB001449,44,Female,Pennsylvania,130000,6500,Master's Degree,16142
+940,CB001940,19,Male,Wisconsin,4800,432,GED,53140
+803,CB001803,48,Male,South Dakota,120000,8400,GED,57433
+850,CB001850,25,Male,California,25000,2000,GED,92234
+702,CB001702,16,Other,Indiana,920,55,,46990
+572,CB001572,26,Male,Louisiana,37000,2220,Bachelor's Degree,70802
+664,CB001664,22,Male,Kansas,18000,1620,Some High School,67437
+714,CB001714,36,Other,Wisconsin,71000,6390,Doctorate Degree,54739
+312,CB001312,22,Male,West Virginia,13000,910,Some College,26412
+474,CB001474,16,Male,Missouri,1200,60,,63648
+424,CB001424,31,,Ohio,49000,2450,GED,43106
+407,CB001407,48,Female,Virginia,120000,9600,GED,22821
+152,CB001152,30,,Michigan,,2880,High School Diploma,49075
+340,CB001340,35,Male,Arkansas,71000,5680,Doctorate Degree,72653
+398,CB001398,18,Female,Michigan,3700,222,GED,48084
+1006,CB002006,42,Male,Montana,100000,4000,Master's Degree,59440
+1057,CB002057,28,Female,Michigan,33000,,Master's Degree,48071
+801,CB001801,48,Female,Pennsylvania,110000,5500,Master's Degree,19142
+614,CB001614,42,Other,Rhode Island,150000,13500,Some College,2859
+146,CB001146,46,Male,Michigan,130000,9100,GED,49726
+547,CB001547,26,Male,Louisiana,38000,1520,Bachelor's Degree,71303
+658,CB001658,20,Female,Pennsylvania,8300,332,Some High School,16066
+660,CB001660,222,Male,Florida,9100,637,,33035
+175,CB001175,47,Male,Illinois,100000,5000,GED,61529
+1376,CB002376,20,Other,Oregon,6600,198,,97876
+457,CB001457,24,Female,Montana,21000,1470,GED,59036
+800,CB001800,46,Male,Colorado,110000,5500,High School Diploma,81639
+413,CB001413,27,Male,New York,43000,3010,High School Diploma,12131
+1439,CB002439,42,Female,Georgia,130000,,Associate's Degree,31772
+1388,CB002388,45,Other,Tennessee,140000,8400,Master's Degree,37134
+253,CB001253,47,Male,Pennsylvania,110000,3300,Associate's Degree,16150
+1019,CB002019,18,Male,Indiana,3000,150,,47424
+832,CB001832,40,Female,Pennsylvania,120000,9600,Master's Degree,15214
+538,CB001538,28,Female,Indiana,43000,3870,Bachelor's Degree,46506
+599,CB001599,445,Male,Wisconsin,130000,3900,Associate's Degree,54555
+118,CB001118,42,Female,North Dakota,140000,7000,High School Diploma,58763
+715,CB001715,23,Female,Indiana,18000,720,GED,46408
+1269,CB002269,16,Female,Ohio,1900,133,,45428
+737,CB001737,23,Other,Michigan,12000,720,Some High School,48640
+357,CB001357,28,Female,Minnesota,25000,2250,High School Diploma,56119
+1209,CB002209,48,Male,South Carolina,130000,7800,High School Diploma,29911
+1492,CB002492,17,Male,New Mexico,1300,52,High School Diploma,88114
+549,CB001549,20,Male,Pennsylvania,5600,504,,17844
+1274,CB002274,32,Female,Pennsylvania,34000,1700,GED,15612
+502,CB001502,33,Male,Ohio,25000,1250,GED,44672
+1460,CB002460,17,Female,Michigan,1400,84,,48073
+659,CB001659,17,Female,Ohio,1900,76,,44904
+438,CB001438,28,Male,Nebraska,45000,2250,Master's Degree,68413
+1107,CB002107,28,Male,Pennsylvania,42000,1680,Bachelor's Degree,17352
+769,CB001769,47,Female,Maine,130000,11700,High School Diploma,4861
+1088,CB002088,46,Male,Ohio,140000,7000,High School Diploma,43974
+710,CB001710,39,Male,Missouri,86000,7740,Bachelor's Degree,63934
+314,CB001314,34,Female,Alabama,35000,1050,Some College,35070
+1122,CB002122,44,Other,Pennsylvania,120000,8400,GED,18826
+267,CB001267,37,Male,North Dakota,98000,5880,GED,58741
+463,CB001463,25,Male,Tennessee,35000,2450,Bachelor's Degree,37048
+353,CB001353,17,Female,Texas,860,69,Some High School,78069
+106,CB001106,35,Male,Pennsylvania,68000,6120,Master's Degree,17981
+958,CB001958,46,Male,Illinois,140000,8400,High School Diploma,61344
+105,CB001105,36,Other,North Carolina,92000,8280,Some High School,28332
+172,CB001172,40,Male,Illinois,130000,7800,Some High School,61332
+99,CB001099,26,Female,Alabama,45000,4050,Some College,36425
+526,CB001526,42,Female,Michigan,150000,9000,Some College,49660
+892,CB001892,38,Male,New York,76000,6840,Some High School,10199
+1290,CB002290,20,Male,Indiana,9600,672,,47260
+867,CB001867,45,Other,Alabama,100000,3000,Associate's Degree,36540
+214,CB001214,25,Female,California,26000,1040,Some College,96006
+814,CB001814,33,Male,Washington,49000,3920,Bachelor's Degree,98045
+755,CB001755,22,Female,South Carolina,20000,1200,Some High School,29364
+890,CB001890,40,Female,Washington,120000,10800,Some College,99217
+1337,CB002337,23,Female,Missouri,18000,1440,Some High School,64720
+207,CB001207,29,Female,New York,30000,2100,High School Diploma,14221
+77,CB001077,43,Male,Oklahoma,150000,12000,GED,73057
+1452,CB002452,38,Male,Florida,92000,7360,High School Diploma,32780
+490,CB001490,27,Female,Michigan,29000,2320,Master's Degree,49051
+1065,CB002065,30,Male,Mississippi,39000,1170,High School Diploma,39740
+662,CB001662,48,Female,Colorado,130000,10400,Some High School,81005
+421,CB001421,32,Female,Idaho,39000,2340,High School Diploma,83648
+1321,CB002321,29,Male,South Dakota,46000,4140,GED,57076
+395,CB001395,45,Male,Pennsylvania,110000,8800,Master's Degree,17563
+1023,CB002023,43,Male,Illinois,100000,3000,High School Diploma,61516
+1360,CB002360,47,Female,Colorado,120000,6000,Bachelor's Degree,80422
+328,CB001328,28,Female,Pennsylvania,46000,2300,Bachelor's Degree,15411
+24,CB001024,41,Female,Arkansas,130000,9100,High School Diploma,72103
+416,CB001416,41,Male,Texas,140000,11200,Master's Degree,75563
+1318,CB002318,41,Male,New Jersey,150000,6000,Master's Degree,7960
+1239,CB002239,33,,Texas,38000,3040,,77964
+447,CB001447,47,Male,Pennsylvania,100000,4000,Some High School,18237
+882,CB001882,31,Male,Carson City,31000,2790,Master's Degree,95825
+247,CB001247,39,Female,Washington,99000,8910,Associate's Degree,98103
+479,CB001479,43,Female,Texas,100000,6000,Associate's Degree,75705
+94,CB001094,22,Female,CANADA,19000,760,Some High School,76021
+1342,CB002342,40,Female,Utah,110000,5500,GED,84057
+1045,CB002045,40,Other,Indiana,120000,3600,Master's Degree,46310
+1409,CB002409,47,Other,Kansas,110000,5500,Bachelor's Degree,67005
+812,CB001812,27,Female,Kansas,35000,3150,GED,66024
+1338,CB002338,30,Male,California,27000,1350,Some High School,96056
+323,CB001323,39,Male,Mississippi,54000,2700,Bachelor's Degree,39744
+76,CB001076,45,Female,Texas,110000,7700,Master's Degree,75441
+10,CB001010,39,Female,Ohio,67000,4690,Some High School,44266
+1459,CB002459,44,Female,California,120000,9600,Some High School,95426
+861,CB001861,21,Female,New York,17000,1530,Some High School,12750
+1437,CB002437,37,Male,Indiana,76000,3800,Some High School,47527
+46,CB001046,19,Male,Delaware,2300,161,High School Diploma,19979
+1358,CB002358,29,Male,Michigan,45000,3150,Associate's Degree,49104
+817,CB001817,37,Female,Illinois,99000,8910,Bachelor's Degree,61550
+1001,CB002001,32,Other,Wisconsin,29000,870,Associate's Degree,54486
+219,CB001219,25,Male,,41000,3690,Some College,72843
+436,CB001436,17,Male,Florida,1300,39,,33704
+1141,CB002141,29,Male,Ohio,44000,3520,GED,44431
+1272,CB002272,32,Female,Georgia,30000,2700,Some High School,30634
+1089,CB002089,16,Other,Florida,1600,64,,34785
+326,CB001326,30,Male,Maine,49000,2450,Master's Degree,4426
+1214,CB002214,42,Male,Ohio,100000,3000,High School Diploma,44828
+1060,CB002060,39,Male,Arkansas,81000,6480,Master's Degree,72333
+131,CB001131,34,Female,Tennessee,48000,2400,,37892
+82,CB001082,41,Female,Iowa,150000,7500,Associate's Degree,51346
+799,CB001799,25,Male,State,36000,1440,Master's Degree,48759
+519,CB001519,24,Male,Mississippi,20000,1200,Some High School,39066
+841,CB001841,18,Female,New York,2200,88,GED,14767
+92,CB001092,41,Male,Indiana,110000,8800,Bachelor's Degree,46988
+781,CB001781,29,Male,Kentucky,48000,1440,Some High School,40810
+1334,CB002334,21,Female,Colorado,15000,450,Some High School,80809
+558,CB001558,45,Female,Michigan,150000,4500,Master's Degree,49315
+375,CB001375,26,Male,New York,39000,3120,Some High School,14103
+63,CB001063,41,Male,Kentucky,100000,3000,High School Diploma,41045
+9,CB001009,,Male,North Carolina,49000,2450,Some College,27239
+813,CB001813,37,Male,Arizona,69000,2760,Master's Degree,85207
+385,CB001385,37,Male,Wisconsin,92000,8280,Doctorate Degree,54847
+120,CB001120,33,Male,New Jersey,25000,2000,Master's Degree,8109
+88,CB001088,37,Male,Ohio,72000,3600,GED,43845
+1206,CB002206,41,Male,Wyoming,120000,4800,Associate's Degree,82435
+569,CB001569,48,Male,District of Columbia,110000,6600,Associate's Degree,20553
+420,CB001420,17,Male,Texas,940,56,High School Diploma,77872
+857,CB001857,24,Male,Florida,12000,360,High School Diploma,33993
+830,CB001830,37,Female,Indiana,85000,3400,Some High School,46911
+964,CB001964,17,Male,Tennessee,1800,72,High School Diploma,37865
+969,CB001969,44,Other,California,110000,7700,Master's Degree,91342
+1462,CB002462,37,Other,Georgia,76000,5320,Bachelor's Degree,39859
+730,CB001730,45,Male,Indiana,100000,5000,Some College,46379
+1072,CB002072,17,Female,Indiana,870,61,High School Diploma,46406
+468,CB001468,38,Female,Tennessee,94000,5640,GED,37779
+950,CB001950,32,Male,New Hampshire,45000,3150,Some College,3604
+955,CB001955,28,Male,Alabama,47000,2820,GED,36455
+484,CB001484,32,Other,California,28000,1120,High School Diploma,96019
+440,CB001440,45,Male,Ohio,140000,12600,Bachelor's Degree,45863
+790,CB001790,23,Male,New Mexico,19000,950,Bachelor's Degree,88264
+672,CB001672,30,Female,Illinois,41000,1640,Associate's Degree,62573
+1392,CB002392,30,Female,Missouri,29000,2610,Associate's Degree,64628
+974,CB001974,37,Female,Texas,95000,6650,Master's Degree,79748
+638,CB001638,26,Female,South Carolina,27000,1620,GED,29015
+225,CB001225,30,Male,Florida,27000,1080,,34983
+855,CB001855,19,Male,Virginia,3800,266,Some High School,22920
+795,CB001795,38,Female,Texas,63000,3150,Some College,79521
+265,CB001265,35,Male,Kentucky,98000,4900,Bachelor's Degree,42274
+236,CB001236,34,Male,Massachusetts,49000,3920,Bachelor's Degree,2054
+446,CB001446,38,Female,Oklahoma,95000,6650,Some College,74467
+629,CB001629,21,Female,Oregon,22000,1540,High School Diploma,97365
+91,CB001091,21,Female,Wyoming,13000,1040,Associate's Degree,82649
+1297,CB002297,35,Male,Oklahoma,90000,7200,Bachelor's Degree,73932
+953,CB001953,20,Female,New Hampshire,6000,360,Some College,3086
+530,CB001530,38,Male,California,84000,6720,Some High School,95054
+478,CB001478,27,Male,Iowa,36000,1800,Some High School,50207
+1017,CB002017,34,Male,California,43000,3870,Some College,91205
+939,CB001939,48,Male,Michigan,150000,6000,High School Diploma,48050
+288,CB001288,41,Female,North Dakota,130000,11700,Master's Degree,58216
+761,CB001761,26,Female,Louisiana,37000,2590,Master's Degree,71101
+566,CB001566,19,Male,Louisiana,3300,231,,70448
+1183,CB002183,23,Female,New York,22000,1540,Associate's Degree,13850
+362,CB001362,16,Male,Ohio,420,,,44504
+540,CB001540,31,Other,,43000,some high school,Some High School,98258
+418,CB001418,27,Male,Mexico,45000,2250,Master's Degree,78617
+1386,CB002386,33,Male,Indiana,49000,1470,Master's Degree,47471
+1473,CB002473,34,Male,Illinois,28000,1400,,62970
+516,CB001516,36,Other,California,89000,2670,Bachelor's Degree,95626
+607,CB001607,17,Male,Kansas,1700,136,High School Diploma,67008
+199,CB001199,-2,Female,Illinois,26000,1560,Bachelor's Degree,61323
+573,CB001573,41,Female,Nebraska,130000,5200,Master's Degree,68116
+1204,CB002204,48,Male,Virginia,140000,7000,High School Diploma,22963
+1116,CB002116,24,Female,Iowa,16000,800,GED,50662
+552,CB001552,19,Male,Connecticut,2800,196,GED,6235
+1035,CB002035,35,Female,Montana,69000,3450,Bachelor's Degree,59864
+984,CB001984,32,Male,Pennsylvania,45000,1350,Master's Degree,17017
+684,CB001684,31,Female,Oklahoma,30000,900,Bachelor's Degree,73170
+1494,CB002494,19,Female,Pennsylvania,2600,208,,15727
+1382,CB002382,47,Male,New Jersey,130000,10400,Master's Degree,7727
+1140,CB002140,18,Male,Texas,5000,150,High School Diploma,77371
+348,CB001348,37,Female,New Jersey,66000,2640,,7979
+1247,CB002247,45,Male,New Mexico,120000,3600,Some High School,87320
+626,CB001626,28,Other,Florida,44000,0,Associate's Degree,32804
+727,CB001727,48,Male,Missouri,140000,8400,Some College,63460
+1475,CB002475,33,Male,Illinois,34000,1360,Bachelor's Degree,60549
+101,CB001101,28,Male,Pennsylvania,29000,1740,Bachelor's Degree,15936
+1003,CB002003,40,Female,Ohio,140000,7000,Some College,45780
+1413,CB002413,37,Other,New Hampshire,58000,2900,Some College,3280
+584,CB001584,27,Female,Minnesota,43000,1290,Master's Degree,55971
+159,CB001159,46,Male,Pennsylvania,120000,8400,Bachelor's Degree,16120
+586,CB001586,29,Male,Kentucky,32000,1920,Associate's Degree,40117
+903,CB001903,42,Male,Oklahoma,120000,6000,Master's Degree,73627
+1056,CB002056,22,Female,Massachusetts,17000,1020,Bachelor's Degree,2481
+371,CB001371,23,Male,Montana,18000,540,Some College,59419
+487,CB001487,40,Male,California,130000,3900,Some High School,94923
+1262,CB002262,36,Female,Virginia,72000,5760,Bachelor's Degree,23452
+198,CB001198,31,Male,Oregon,29000,2030,Bachelor's Degree,97225
+400,CB001400,20,Female,Kentucky,7100,213,High School Diploma,41234
+208,CB001208,20,Female,Nebraska,7900,316,GED,68658
+697,CB001697,21,Male,Minnesota,12000,960,Some High School,56218
+649,CB001649,19,Male,Massachusetts,4000,120,GED,2071
+170,CB001170,22,Male,Colorado,18000,1260,GED,80449
+750,CB001750,19,Male,Ohio,2800,112,,45693
+598,CB001598,28,Male,South Carolina,43000,1290,Some College,29370
+1482,CB002482,33,Other,Ohio,41000,2870,Some High School,43910
+933,CB001933,46,Male,Utah,120000,10800,Bachelor's Degree,84626
+1234,CB002234,31,Female,Texas,42000,1680,Bachelor's Degree,77051
+1125,CB002125,43,Female,Florida,130000,11700,High School Diploma,34446
+494,CB001494,35,Male,Wisconsin,59000,5310,High School Diploma,53507
+528,CB001528,45,Other,Texas,120000,9600,Bachelor's Degree,76691
+1212,CB002212,45,Female,Pennsylvania,100000,8000,GED,15834
+1456,CB002456,21,Other,Utah,,1050,High School Diploma,84304
+1192,CB002192,44,Other,Minnesota,120000,8400,mn,56455
+163,CB001163,43,Female,Texas,130000,11700,Master's Degree,77026
+767,CB001767,20,Male,Indiana,8500,425,Some College,46373
+1354,CB002354,24,Female,Oregon,24000,1200,High School Diploma,97329
+634,CB001634,40,Male,Arizona,120000,10800,Bachelor's Degree,85145
+826,CB001826,36,Male,California,53000,3180,GED,93035
+1145,CB002145,28,Male,California,34000,2040,Bachelor's Degree,95046
+1426,CB002426,33,Male,New Jersey,30000,1500,Some High School,7935
+860,CB001860,19,Male,Idaho,4500,270,GED,83427
+668,CB001668,33,Male,Maine,26000,2340,High School Diploma,4769
+682,CB001682,28,Male,Minnesota,46000,3680,Some College,55103
+176,CB001176,36,Male,Florida,63000,3780,Associate's Degree,34785
+452,CB001452,35,Male,Wisconsin,55000,2200,Bachelor's Degree,53551
+844,CB001844,23,Male,Minnesota,13000,390,High School Diploma,55003
+896,CB001896,41,Male,California,150000,10500,Associate's Degree,92555
+235,CB001235,45,Female,New York,100000,7000,High School Diploma,11563
+610,CB001610,18,Female,Colorado,4800,192,,80011
+425,CB001425,17,Female,Iowa,700,63,GED,51035
+113,CB001113,37,Male,Kansas,97000,7760,Some High School,66769
+1164,CB002164,45,Other,Oregon,110000,7700,GED,97535
+1115,CB002115,38,Female,Pennsylvania,60000,2400,Master's Degree,19053
+739,CB001739,26,Male,Florida,45000,3150,Bachelor's Degree,33603
+556,CB001556,20,Male,New Hampshire,8600,344,Some High School,3077
+295,CB001295,31,Male,Nevada,43000,2150,Some High School,89317
+473,CB001473,33,Male,Wyoming,40000,1200,Associate's Degree,82835
+1275,CB002275,47,Female,Pennsylvania,110000,6600,GED,18357
+193,CB001193,24,Female,North Carolina,17000,1360,Some High School,28702
+869,CB001869,16,Female,Kansas,960,77,,67574
+794,CB001794,36,Male,California,82000,7380,Some High School,91010
+553,CB001553,43,Female,West Virginia,110000,4400,Associate's Degree,24938
+1174,CB002174,30,Male,Mississippi,42000,2520,Associate's Degree,39362
+1219,CB002219,28,Female,Virginia,35000,1750,Bachelor's Degree,24440
+472,CB001472,0,Male,Maryland,18000,540,Some College,20839
+1325,CB002325,45,Male,Vermont,130000,9100,Master's Degree,5874
+902,CB001902,28,Other,Minnesota,29000,1160,GED,56572
+334,CB001334,25,Female,Utah,44000,1320,Associate's Degree,84719
+1255,CB002255,31,Male,Minnesota,41000,3690,Some High School,56744
+1059,CB002059,48,Male,Wyoming,140000,12600,Bachelor's Degree,82435
+281,CB001281,40,Female,Pennsylvania,130000,3900,Some High School,15909
+1138,CB002138,43,Female,Vermont,130000,3900,GED,5151
+946,CB001946,17,Other,Massachusetts,1600,48,High School Diploma,1775
+1127,CB002127,41,Male,Tennessee,100000,8000,Master's Degree,37641
+673,CB001673,42,Male,Oklahoma,120000,8400,GED,73053
+1490,CB002490,36,Female,Iowa,98000,3920,Associate's Degree,52209
+1069,CB002069,29,Female,Missouri,39000,1560,GED,65351
+148,CB001148,35,Male,Maine,74000,4440,Some College,4932
+1308,CB002308,43,,Pennsylvania,120000,10800,GED,16852
